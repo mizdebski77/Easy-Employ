@@ -13,7 +13,6 @@ html {
   
 body {
   word-break: break-word;
-  background: ${({ theme }) => theme.color.mainColor};
-  font-family: 'Playfair Display', serif;
+  font-family: 'Libre Baskerville', serif;
   margin: 0;
 }`;

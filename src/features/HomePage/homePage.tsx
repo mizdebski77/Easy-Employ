@@ -1,11 +1,17 @@
 import React from 'react';
-import { ButtonLink, Title, Wrapper } from './styledHomePage';
+import { ButtonLink, Title, TitleFirstLetters, TitleParagraph, Wrapper } from './styledHomePage';
 
 export const HomePage = () => {
     return (
         <Wrapper>
-            <Title>Easy Employ - Your Way to Find a Job</Title>
-            <ButtonLink to = "/form">Get started</ButtonLink>
+            <Title>
+                <TitleFirstLetters>E</TitleFirstLetters>asy 
+                <TitleFirstLetters> E</TitleFirstLetters>mploy
+                <TitleParagraph>
+                    Your Way to Find a Job
+                </TitleParagraph>
+            </Title>
+            <ButtonLink to="/form">Get started</ButtonLink>
         </Wrapper>
     );
 };
