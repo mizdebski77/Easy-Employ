@@ -12,6 +12,7 @@ html {
   }
   
 body {
+  background: ${({ theme }) => theme.color.mainColor};
   word-break: break-word;
   font-family: 'Libre Baskerville', serif;
   margin: 0;

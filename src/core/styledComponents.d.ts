@@ -4,7 +4,8 @@ declare module 'styled-components' {
     export interface DefaultTheme extends StyledDefaultTheme {
         color: {
             mainColor: string;
-            fontColor: string;
+            fontMain: string;
+            fontSecond: string;
         }
         breakPoint: {
             firstBreakPoint: number,
