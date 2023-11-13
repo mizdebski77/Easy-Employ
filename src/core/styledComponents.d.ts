@@ -8,9 +8,9 @@ declare module 'styled-components' {
             fontSecond: string;
         }
         breakPoint: {
-            firstBreakPoint: number,
-            secondBreakPoint: number,
-            mobileMax: number
+            firstBp: number,
+            secondBp: number,
+            thirdBp: number
         };
     }
 }

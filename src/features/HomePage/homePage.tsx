@@ -1,7 +1,6 @@
 import React from 'react';
-import { ButtonLink, Title, TitleFirstLetters, TitleParagraph, Wrapper } from './styledHomePage';
+import { ButtonContainer, ButtonLink, Title, TitleFirstLetters, TitleParagraph, Wrapper } from './styledHomePage';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
 
 export const HomePage = () => {
 
@@ -33,7 +32,24 @@ export const HomePage = () => {
                 duration: 0.6,
             },
         },
-    }
+    };
+
+    const buttonVariant = {
+        hidden: {
+            opacity: 0,
+            y: -40,
+        },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                delay: 0.6,
+                duration: 0.6,
+            },
+        },
+    };
+
+
 
     return (
         <Wrapper>
@@ -54,7 +70,14 @@ export const HomePage = () => {
                     Your Way to Find a Job
                 </TitleParagraph>
             </Title>
-            <ButtonLink to="/Filters">Get started</ButtonLink>
+            <ButtonContainer
+                as={motion.div}
+                initial="hidden"
+                animate="visible"
+                variants={buttonVariant}
+            >
+                <ButtonLink to="/Filters">Get started</ButtonLink>
+            </ButtonContainer>
         </Wrapper >
     );
 };
