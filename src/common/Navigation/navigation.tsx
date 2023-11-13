@@ -1,9 +1,11 @@
 import React from 'react';
-import { LinkImg, ImgWrapper, LinksWrapper, LogoFirstLetters, LogoImg, LogoLink, LogoText, NavbarLink, Wrapper } from './styledNavigation';
+import { LinkImg, ImgWrapper, LinksWrapper, LogoFirstLetters, LogoImg, LogoLink, LogoText, NavbarLink, Wrapper, PhoneNavbar } from './styledNavigation';
 import logo from '../Images/logo.png';
 import { links } from './links';
 import accountImg from '../Images/account.svg';
 import languageImg from '../Images/language.svg';
+import { Divide as Hamburger } from 'hamburger-react';
+
 export const Navigation = () => {
 
     return (
@@ -28,6 +30,11 @@ export const Navigation = () => {
                 <LinkImg src={accountImg} />
                 <LinkImg src={languageImg} />
             </ImgWrapper>
+
+
+            <PhoneNavbar >
+                <Hamburger color='#97d04a' size={28} />
+            </PhoneNavbar>
         </Wrapper>
     );
 };

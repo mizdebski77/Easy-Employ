@@ -4,7 +4,7 @@ import { Wrapper } from './styledHome';
 export const Home = () => {
     return (
         <Wrapper>
-            siema
+            
         </Wrapper>
     );
 };

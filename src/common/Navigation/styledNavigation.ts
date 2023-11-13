@@ -6,6 +6,15 @@ export const Wrapper = styled.nav <{ homeScreen?: boolean }>`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 1px 20px ${({ theme }) => theme.color.fontMain};
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.firstBp}px){
+        padding: 20px 40px;
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        padding: 20px 12px;
+    };
 `;
 
 export const LogoLink = styled(Link)`
@@ -13,18 +22,30 @@ export const LogoLink = styled(Link)`
     align-items: center;
     gap: 20px;
     text-decoration: none;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.firstBp}px){
+        gap: 10px;
+    };
 `;
 
 export const LogoImg = styled.img`
     max-width: 64px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        max-width: 40px;
+    }
 `;
 
 export const LogoText = styled.span`
-    font-size: 40px;
+    font-size: 32px;
     text-transform: uppercase;
     color: ${({ theme }) => theme.color.fontSecond};
     font-weight: normal;
     letter-spacing: 2px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 20px;
+    };
 `;
 
 export const LogoFirstLetters = styled.span`
@@ -36,6 +57,14 @@ export const LinksWrapper = styled.div`
     display: flex;
     justify-content: space-around;
     gap: 80px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.firstBp}px){
+        gap: 40px;
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
+        display: none;
+    };
 `;
 
 export const NavbarLink = styled(NavLink)`
@@ -54,18 +83,32 @@ export const ImgWrapper = styled.div`
     justify-content: space-around;
     align-items: center;
     gap: 80px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.firstBp}px){
+        gap: 20px;
+    };    
 `;
 
 export const LinkImg = styled.img`
-    width: 64px;
-    height: 64px;
-    padding: 10px;
+    width: 56px;
+    height: 56px;
+    padding: 6px;
     cursor: pointer;
     border-radius: 50%;
     transition: 0.3s;
 
     &:hover {
         background: rgba(255, 255, 255, 0.1);
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
+        display: none;
+    };
+`;
+
+export const PhoneNavbar = styled.div`
+    @media (min-width: ${({ theme }) => theme.breakPoint.secondBp}px){
+        display: none;
     };
 `;
 
