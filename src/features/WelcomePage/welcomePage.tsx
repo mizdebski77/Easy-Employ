@@ -2,7 +2,7 @@ import React from 'react';
 import { ButtonContainer, ButtonLink, Title, TitleFirstLetters, TitleParagraph, Wrapper } from './styledHomePage';
 import { motion } from 'framer-motion';
 
-export const HomePage = () => {
+export const WelcomePage = () => {
 
     const titleVariants = {
         hidden: {
@@ -76,7 +76,7 @@ export const HomePage = () => {
                 animate="visible"
                 variants={buttonVariant}
             >
-                <ButtonLink to="/Filters">Get started</ButtonLink>
+                <ButtonLink to="/Home">Get started</ButtonLink>
             </ButtonContainer>
         </Wrapper >
     );

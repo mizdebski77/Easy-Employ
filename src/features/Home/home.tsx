@@ -1,7 +1,7 @@
 import React from 'react';
-import { Wrapper } from './styledFilterPage';
+import { Wrapper } from './styledHome';
 
-export const FilterPage = () => {
+export const Home = () => {
     return (
         <Wrapper>
             siema

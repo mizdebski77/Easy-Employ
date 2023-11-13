@@ -1,18 +1,17 @@
-import { FilterPage } from "../features/FiltersPage/filtersPage";
-import { HomePage } from "../features/HomePage/homePage";
+import { Navigation } from "../common/Navigation/navigation";
+import { Home } from "../features/Home/home";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
+import { WelcomePage } from "../features/WelcomePage/welcomePage";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/Home" element={<HomePage />} />
-        <Route path={"*"} element={<Navigate replace to="/Home" />}> </Route>
-        <Route path="/Filters" element={<FilterPage />} />
+        <Route path="/HomeScreen" element={<WelcomePage />} />
+        <Route path={"*"} element={<Navigate replace to="/HomeScreen" />}></Route>
+        <Route path="/Home" element={<><Navigation /><Home /></>} />
       </Routes>
-
     </BrowserRouter>
-
   );
 }
 
