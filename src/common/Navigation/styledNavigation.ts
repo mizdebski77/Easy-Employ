@@ -7,6 +7,8 @@ export const Wrapper = styled.nav <{ homeScreen?: boolean }>`
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 1px 20px ${({ theme }) => theme.color.fontMain};
+    position: sticky;
+    z-index: 10; 
 
     @media (max-width: ${({ theme }) => theme.breakPoint.firstBp}px){
         padding: 20px 40px;
@@ -14,6 +16,7 @@ export const Wrapper = styled.nav <{ homeScreen?: boolean }>`
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         padding: 20px 12px;
+        box-shadow: none;
     };
 `;
 
