@@ -6,12 +6,13 @@ export const Wrapper = styled.nav <{ homeScreen?: boolean }>`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 12px 54px;
+    padding: 16px 54px;
     position: sticky;
     z-index: 10; 
     top:0;
     background: ${({ theme }) => theme.color.mainColor};
     transition: 0.3s;
+    box-shadow: inset 0 -10px 10px -10px ${({ theme }) => theme.color.fontMain};
 
     @media (max-width: ${({ theme }) => theme.breakPoint.firstBp}px){
         padding: 20px 40px;
@@ -101,20 +102,41 @@ export const LinkImg = styled.img`
     padding: 6px;
     cursor: pointer;
     border-radius: 50%;
-    transition: 0.3s;
-
-    &:hover {
-        background: rgba(255, 255, 255, 0.1);
-    };
 
     @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
         display: none;
     };
 `;
 
+export const LinkImgWrapper = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 10px;  
+    transition: 0.3s;
+    padding: 0 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 166px;
+    
+    &:hover {
+        background: rgba(255, 255, 255, 0.1);
+    };
+`;
+
+export const LinkImgSpan = styled.span`
+    color: white;
+`;
+
 export const PhoneNavbar = styled.div`
     @media (min-width: ${({ theme }) => theme.breakPoint.secondBp}px){
         display: none;
     };
+`;
+
+export const LanguagesWrapper = styled.div`
+    height: 200px;
+    background: white;
+    position:fixed;
+    top: 40px;
 `;
 

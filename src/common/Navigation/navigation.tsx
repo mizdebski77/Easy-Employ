@@ -1,18 +1,28 @@
 import React, { useState } from 'react';
-import { LinkImg, ImgWrapper, LinksWrapper, LogoFirstLetters, LogoImg, LogoLink, LogoText, NavbarLink, Wrapper, PhoneNavbar } from './styledNavigation';
+import { LinkImg, ImgWrapper, LinksWrapper, LogoFirstLetters, LogoImg, LogoLink, LogoText, NavbarLink, Wrapper, PhoneNavbar, LinkImgWrapper, LinkImgSpan, LanguagesWrapper } from './styledNavigation';
 import logo from '../Images/logo.png';
 import { links } from './links';
 import accountImg from '../Images/account.svg';
 import languageImg from '../Images/language.svg';
 import { Divide as Hamburger } from 'hamburger-react';
 import { MobileNavbar } from './MobileNavbar/mobileNavbar';
+import { Language } from './Language/language';
 
 export const Navigation = () => {
 
     const [mobileNavigation, setMobileNavigation] = useState(false);
+    const [languageWindow, setLanguageWindow] = useState(false);
 
     const toggleMobileNavigation = () => {
         setMobileNavigation(!mobileNavigation);
+    };
+
+    const openLanguagWindow = () => {
+        setLanguageWindow(!languageWindow);
+    };
+
+    const closeLangWindow = () => {
+        setLanguageWindow(false); 
     };
 
     return (
@@ -36,19 +46,30 @@ export const Navigation = () => {
                 </LinksWrapper>
 
                 <ImgWrapper>
-                    <LinkImg src={accountImg} />
-                    <LinkImg src={languageImg} />
+                    <LinkImgWrapper>
+                        <LinkImg src={accountImg} />
+                        <LinkImgSpan>Account</LinkImgSpan>
+                    </LinkImgWrapper>
+
+                    <LinkImgWrapper onClick={openLanguagWindow}>
+                        <LinkImg src={languageImg} />
+                        <LinkImgSpan>English</LinkImgSpan>
+                    </LinkImgWrapper>
                 </ImgWrapper>
 
                 <PhoneNavbar onClick={toggleMobileNavigation}>
                     <Hamburger color='#97d04a' size={28} />
                 </PhoneNavbar>
-
             </Wrapper>
-                <MobileNavbar
-                    mobileNavigation={mobileNavigation}
+            <MobileNavbar
+                mobileNavigation={mobileNavigation}
+            />
+            {languageWindow && (
+                < Language
+                    languageWindow={languageWindow}
+                    closeLangWindow = {closeLangWindow}
                 />
-
+            )}
 
         </>
     );

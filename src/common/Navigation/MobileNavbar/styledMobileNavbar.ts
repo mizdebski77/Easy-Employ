@@ -12,6 +12,10 @@ export const Wrapper = styled.div`
     gap: 40px;
     text-align: center;
     box-shadow: inset 0 -10px 10px -10px ${({ theme }) => theme.color.fontMain};
+    
+    @media (min-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        display: none;
+    };
 `;
 
 export const NavbarLink = styled(NavLink)`
