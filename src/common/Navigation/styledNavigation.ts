@@ -2,13 +2,16 @@ import { Link, NavLink } from "react-router-dom";
 import { styled } from "styled-components";
 
 export const Wrapper = styled.nav <{ homeScreen?: boolean }>`
-    padding: 20px 120px;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    box-shadow: 0 1px 20px ${({ theme }) => theme.color.fontMain};
+    justify-content: space-between;
+    padding: 12px 54px;
     position: sticky;
     z-index: 10; 
+    top:0;
+    background: ${({ theme }) => theme.color.mainColor};
+    transition: 0.3s;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.firstBp}px){
         padding: 20px 40px;
