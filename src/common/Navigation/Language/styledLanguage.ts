@@ -20,14 +20,25 @@ export const FullScreenWrapper = styled.div`
 `;
 
 export const LanguagesWindow = styled.div`
-    background: ${({ theme }) => theme.color.secondColor};
+    background: rgba(71, 75, 79, 0.7);
     padding: 40px;
     border-radius: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     gap: 80px;
-    border: 4px solid ${({ theme }) => theme.color.fontMain};
+    border: 3px solid ${({ theme }) => theme.color.fontMain};
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
+        gap: 40px;
+        grid-template-columns: 1fr 1fr;
+        padding: 20px;
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        grid-template-columns: 1fr;
+        gap: 20px;
+    };
 `;
 
 export const LangWrapper = styled.div`
@@ -40,17 +51,26 @@ export const LangWrapper = styled.div`
     border-radius: 10px;
 
     &:hover {
-        background: ${({ theme }) => theme.color.fontMain};
-    }
+        background: rgba(	151, 208, 74, 0.5);
+    };
+
 `;
 
 export const LangCaption = styled.span`
     font-size: 24px;
     color: ${({ theme }) => theme.color.fontSecond};
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 16px;
+    };
 `;
 
 export const FlagImg = styled.img`
     width: 100px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        width: 40px;
+    };
 `;
 
 export const CloseButton = styled.button`
@@ -66,5 +86,5 @@ export const CloseButton = styled.button`
 
     &:hover {
         transform: scale(1.2);
-    }
+    };
 `;

@@ -5,7 +5,6 @@ import IT from '../../Images/Flags/it.png'
 import FR from '../../Images/Flags/fr.png'
 import SP from '../../Images/Flags/sp.png'
 
-
 export const languages = [
     { text: 'Deutsch', flag: DE },
     { text: 'English', flag: GB },

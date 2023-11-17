@@ -50,6 +50,7 @@ export const LogoText = styled.span`
     font-weight: normal;
     letter-spacing: 2px;
 
+
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         font-size: 20px;
     };
@@ -79,6 +80,7 @@ export const NavbarLink = styled(NavLink)`
     color: ${({ theme }) => theme.color.fontMain};
     text-decoration: none;
     transition: 0.3s;
+    text-align: center;
 
     &:hover {
         color: ${({ theme }) => theme.color.fontSecond};
@@ -125,6 +127,10 @@ export const LinkImgWrapper = styled.div`
 
 export const LinkImgSpan = styled.span`
     color: white;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
+        display: none;
+    };
 `;
 
 export const PhoneNavbar = styled.div`

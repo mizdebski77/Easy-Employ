@@ -13,7 +13,7 @@ export const Wrapper = styled.div`
     text-align: center;
     box-shadow: inset 0 -10px 10px -10px ${({ theme }) => theme.color.fontMain};
     
-    @media (min-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+    @media (min-width: ${({ theme }) => theme.breakPoint.secondBp}px){
         display: none;
     };
 `;
