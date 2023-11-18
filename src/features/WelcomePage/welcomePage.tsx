@@ -1,55 +1,9 @@
 import React from 'react';
 import { ButtonContainer, ButtonLink, Title, TitleFirstLetters, TitleParagraph, Wrapper } from './styledHomePage';
 import { motion } from 'framer-motion';
+import { buttonVariant, spanVariant, titleVariants } from '../../core/animationsStore';
 
 export const WelcomePage = () => {
-
-    const titleVariants = {
-        hidden: {
-            opacity: 0,
-            y: -40,
-        },
-        visible: {
-            opacity: 1,
-            y: 0,
-            transition: {
-                delay: 0.2,
-                duration: 0.6,
-            },
-        },
-    };
-
-    const spanVariant = {
-        hidden: {
-            opacity: 0,
-            y: -40,
-        },
-        visible: {
-            opacity: 1,
-            y: 0,
-            transition: {
-                delay: 0.4,
-                duration: 0.6,
-            },
-        },
-    };
-
-    const buttonVariant = {
-        hidden: {
-            opacity: 0,
-            y: -40,
-        },
-        visible: {
-            opacity: 1,
-            y: 0,
-            transition: {
-                delay: 0.6,
-                duration: 0.6,
-            },
-        },
-    };
-
-
 
     return (
         <Wrapper>

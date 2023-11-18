@@ -1,16 +1,29 @@
 import React from 'react';
 import { Button, Form, FormContainer, FormTitle, FormsWrapper, Input, Title, TitleSpan, Wrapper } from './styledLogIn';
+import { motion } from 'framer-motion';
+import { formVariant, titleVariants } from '../../core/animationsStore';
 
 export const LogIn = () => {
+
     return (
         <Wrapper>
-            <Title>Log in to our application
+            <Title
+                as={motion.h1}
+                initial="hidden"
+                animate="visible"
+                variants={titleVariants}
+            >Log in to our application
                 <TitleSpan> Or </TitleSpan>
                 create an account
             </Title>
 
             <FormsWrapper>
-                <FormContainer>
+                <FormContainer
+                    as={motion.div}
+                    initial="hidden"
+                    animate="visible"
+                    variants={formVariant}
+                >
                     <FormTitle>Log-In</FormTitle>
                     <Form>
                         <Input placeholder='E-Mail' type='email' />
@@ -19,7 +32,12 @@ export const LogIn = () => {
                     </Form>
                 </FormContainer>
 
-                <FormContainer>
+                <FormContainer
+                    as={motion.div}
+                    initial="hidden"
+                    animate="visible"
+                    variants={formVariant}
+                >
                     <FormTitle>Create an account</FormTitle>
                     <Form>
                         <Input placeholder='Name' type='name' />

@@ -63,6 +63,7 @@ export const Form = styled.form`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    box-shadow: 10px 10px 4px ${({ theme }) => theme.color.fontMain};
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         padding: 40px 12px;
