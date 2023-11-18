@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { LinkImg, ImgWrapper, LinksWrapper, LogoFirstLetters, LogoImg, LogoLink, LogoText, NavbarLink, Wrapper, PhoneNavbar, LinkImgWrapper, LinkImgSpan, LanguagesWrapper } from './styledNavigation';
+import { LinkImg, ImgWrapper, LinksWrapper, LogoFirstLetters, LinkImgWrapperLang, LogoImg, LogoLink, LogoText, NavbarLink, Wrapper, PhoneNavbar, LinkImgWrapper, LinkImgSpan, LanguagesWrapper } from './styledNavigation';
 import logo from '../Images/logo.png';
 import { links } from './links';
 import accountImg from '../Images/account.svg';
@@ -22,7 +22,7 @@ export const Navigation = () => {
     };
 
     const closeLangWindow = () => {
-        setLanguageWindow(false); 
+        setLanguageWindow(false);
     };
 
     return (
@@ -46,15 +46,15 @@ export const Navigation = () => {
                 </LinksWrapper>
 
                 <ImgWrapper>
-                    <LinkImgWrapper>
+                    <LinkImgWrapper to="/Log-In">
                         <LinkImg src={accountImg} />
                         <LinkImgSpan>Account</LinkImgSpan>
                     </LinkImgWrapper>
 
-                    <LinkImgWrapper onClick={openLanguagWindow}>
+                    <LinkImgWrapperLang onClick={openLanguagWindow}>
                         <LinkImg src={languageImg} />
                         <LinkImgSpan>English</LinkImgSpan>
-                    </LinkImgWrapper>
+                    </LinkImgWrapperLang>
                 </ImgWrapper>
 
                 <PhoneNavbar onClick={toggleMobileNavigation}>
@@ -67,7 +67,7 @@ export const Navigation = () => {
             {languageWindow && (
                 < Language
                     languageWindow={languageWindow}
-                    closeLangWindow = {closeLangWindow}
+                    closeLangWindow={closeLangWindow}
                 />
             )}
 

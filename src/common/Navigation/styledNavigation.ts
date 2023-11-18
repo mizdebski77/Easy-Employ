@@ -110,7 +110,22 @@ export const LinkImg = styled.img`
     };
 `;
 
-export const LinkImgWrapper = styled.div`
+export const LinkImgWrapper = styled(Link)`
+    display: flex;
+    align-items: center;
+    gap: 10px;  
+    transition: 0.3s;
+    padding: 0 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 166px;
+    
+    &:hover {
+        background: rgba(255, 255, 255, 0.1);
+    };
+`;
+
+export const LinkImgWrapperLang = styled.div`
     display: flex;
     align-items: center;
     gap: 10px;  
