@@ -6,6 +6,10 @@ export const Wrapper = styled.section`
     align-items: center;
     padding: 40px;
     flex-direction: column;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        padding: 40px 12px;
+    };
 `;
 
 export const Title = styled.h1`
@@ -13,6 +17,10 @@ export const Title = styled.h1`
     font-weight: normal;
     color: ${({ theme }) => theme.color.fontSecond};
     text-align: center;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
+        font-size: 28px;
+    };
 `;
 
 export const TitleSpan = styled.span`
@@ -25,6 +33,10 @@ export const FormsWrapper = styled.div`
     gap: 40px;
     max-width: 1200px;
     width: 100%;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
+        grid-template-columns: 1fr;
+    };
 `;
 
 export const FormTitle = styled.h2`
@@ -33,6 +45,10 @@ export const FormTitle = styled.h2`
     font-weight: normal;
     font-size: 36px;
     margin: 20px 10px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
+        font-size: 20px;
+    };
 `;
 export const FormContainer = styled.div`
     max-width: 1200px;
@@ -47,6 +63,10 @@ export const Form = styled.form`
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        padding: 40px 12px;
+    };
 `;
 
 export const Input = styled.input`
@@ -59,6 +79,11 @@ export const Input = styled.input`
     outline: none;
     color: ${({ theme }) => theme.color.fontMain};
     margin-bottom: 20px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 16px;
+        border: 1px solid white;
+    };
 `;
 
 export const Button = styled.button`
@@ -75,5 +100,10 @@ export const Button = styled.button`
     &:hover {
         background: rgba(151, 208, 74, 0.8);
         box-shadow: 0 0 4px rgba(151, 208, 74, 0.8);
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        padding: 8px 40px;
+        font-size: 16px;
     };
 `;
