@@ -15,7 +15,6 @@ function App() {
         <Route path="/Log-In" element={<><Navigation /><LogIn /></>} />
         <Route path="/Carrer" element={<><Navigation /><MyCarrer /></>} />
         <Route path="/Carrer:link" element={<><Navigation /><MyCarrer /></>} />
-
       </Routes>
     </BrowserRouter>
   );

@@ -14,7 +14,7 @@ export const Wrapper = styled.nav <{ homeScreen?: boolean }>`
     transition: 0.3s;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.firstBp}px){
-        padding: 20px 40px;
+        padding: 20px;
     };
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
@@ -63,10 +63,10 @@ export const LogoFirstLetters = styled.span`
 export const LinksWrapper = styled.div`
     display: flex;
     justify-content: space-around;
-    gap: 80px;
+    gap: 60px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.firstBp}px){
-        gap: 40px;
+        gap: 30px;
     };
 
     @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
@@ -90,7 +90,7 @@ export const ImgWrapper = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 80px;
+    gap: 40px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.firstBp}px){
         gap: 20px;
@@ -117,7 +117,6 @@ export const LinkImgWrapper = styled(Link)`
     padding: 0 10px;
     cursor: pointer;
     border-radius: 10px;
-    width: 166px;
     text-decoration: none;
     
     &:hover {
@@ -133,7 +132,6 @@ export const LinkImgWrapperLang = styled.div`
     padding: 0 10px;
     cursor: pointer;
     border-radius: 10px;
-    width: 166px;
     
     &:hover {
         background: ${({ theme }) => theme.color.thirdColor};
