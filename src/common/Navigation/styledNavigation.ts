@@ -80,7 +80,6 @@ export const NavbarLink = styled(NavLink)`
     text-decoration: none;
     transition: 0.3s;
     text-align: center;
-    font-weight: bold;
 
     &:hover {
         color: ${({ theme }) => theme.color.fontMain};

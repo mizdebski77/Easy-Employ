@@ -2,7 +2,6 @@ import React from 'react';
 import { Button, Form, FormContainer, FormTitle, FormsWrapper, Input, Title, TitleSpan, Wrapper } from './styledLogIn';
 import { motion } from 'framer-motion';
 import { formVariant, titleVariants } from '../../core/animationsStore';
-import { toast } from 'react-toastify';
 
 export const LogIn = () => {
 

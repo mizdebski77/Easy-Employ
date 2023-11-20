@@ -13,15 +13,10 @@ export const MobileNavbar: React.FC<MobileNavbarProps> = ({ mobileNavigation }) 
 
     const mobileNavbarVariant = {
         hidden: {
-            y: "-100%",
-            opacity: 0,
-            transition: {
-                type: "tween",
-            },
+            x: "-100%",
         },
         visible: {
-            y: 0,
-            opacity: 1,
+            x: 0,
             transition: {
                 type: "tween",
             },
@@ -30,23 +25,23 @@ export const MobileNavbar: React.FC<MobileNavbarProps> = ({ mobileNavigation }) 
 
     return (
         <AnimatePresence>
-                <Wrapper
-                    as={motion.div}
-                    initial="hidden"
-                    animate={mobileNavigation ? "visible" : "hidden"}
-                    exit="hidden"
-                    variants={mobileNavbarVariant}
-                >
-                    {links.map((link, index) => (
-                        <NavbarLink key={index} to={link.link}>
-                            {link.text}
-                        </NavbarLink>
-                    ))}
-                    <ImgWrapper>
-                        <LinkImg src={accountImg} />
-                        <LinkImg src={languageImg} />
-                    </ImgWrapper>
-                </Wrapper>
+            <Wrapper
+                as={motion.div}
+                initial="hidden"
+                animate={mobileNavigation ? "visible" : "hidden"}
+                exit="hidden"
+                variants={mobileNavbarVariant}
+            >
+                {links.map((link, index) => (
+                    <NavbarLink key={index} to={link.link}>
+                        {link.text}
+                    </NavbarLink>
+                ))}
+                <ImgWrapper>
+                    <LinkImg src={accountImg} />
+                    <LinkImg src={languageImg} />
+                </ImgWrapper>
+            </Wrapper>
         </AnimatePresence>
     );
 };
