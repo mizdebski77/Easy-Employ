@@ -94,7 +94,7 @@ export const Button = styled.button`
     font-size: 20px;
     border-radius: 4px;
     background: ${({ theme }) => theme.color.fontMain};
-    color: ${({ theme }) => theme.color.fontSecond};
+    color: ${({ theme }) => theme.color.secondColor};
     transition: 0.3s;
     border: none;
 

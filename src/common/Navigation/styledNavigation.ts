@@ -119,6 +119,7 @@ export const LinkImgWrapper = styled(Link)`
     cursor: pointer;
     border-radius: 10px;
     width: 166px;
+    text-decoration: none;
     
     &:hover {
         background: ${({ theme }) => theme.color.thirdColor};
@@ -143,7 +144,7 @@ export const LinkImgWrapperLang = styled.div`
 export const LinkImgSpan = styled.span`
     color: ${({ theme }) => theme.color.fontMain};
     font-weight: bold;
-    text-decoration: underline;
+
 
     @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
         display: none;
