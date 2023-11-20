@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/Easy-Employ/static/js/main.6fb3c236.js",
+    "static/js/787.9d8ea4c6.chunk.js": "/Easy-Employ/static/js/787.9d8ea4c6.chunk.js",
+    "static/media/homeScreenBG.jpg": "/Easy-Employ/static/media/homeScreenBG.3e5179990f6d2d10c6cb.jpg",
+    "static/media/sp.png": "/Easy-Employ/static/media/sp.09111a444172964d7548.png",
+    "static/media/logo.png": "/Easy-Employ/static/media/logo.c0b2ea9650ce8b4b9f06.png",
+    "static/media/account.svg": "/Easy-Employ/static/media/account.113f1ad043c4f6308b419cd102865628.svg",
+    "index.html": "/Easy-Employ/index.html",
+    "static/media/language.svg": "/Easy-Employ/static/media/language.ff3b13b1466ffb34ed3fc18379084551.svg",
+    "main.6fb3c236.js.map": "/Easy-Employ/static/js/main.6fb3c236.js.map",
+    "787.9d8ea4c6.chunk.js.map": "/Easy-Employ/static/js/787.9d8ea4c6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.6fb3c236.js"
+  ]
+}
