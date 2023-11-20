@@ -57,13 +57,13 @@ export const FormContainer = styled.div`
 
 export const Form = styled.form`
     background: transparent;
-    border: 2px solid ${({ theme }) => theme.color.fontMain};
-    border-radius: 20px;
+    border: 2px solid ${({ theme }) => theme.color.thirdColor};
+    border-radius: 10px;
     padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    box-shadow: 10px 10px 4px ${({ theme }) => theme.color.fontMain};
+    background: ${({ theme }) => theme.color.secondColor};
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         padding: 40px 12px;
@@ -73,12 +73,12 @@ export const Form = styled.form`
 export const Input = styled.input`
     width: 100%;
     padding: 10px;
-    border-radius: 10px;
-    background: transparent;
+    border-radius: 4px;
+    background: ${({ theme }) => theme.color.thirdColor};;
     border: 2px solid white;
     font-size: 20px;
     outline: none;
-    color: ${({ theme }) => theme.color.fontMain};
+    color: ${({ theme }) => theme.color.fontSecond};
     margin-bottom: 20px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
@@ -92,15 +92,14 @@ export const Button = styled.button`
     cursor: pointer;
     padding: 8px 80px;
     font-size: 20px;
-    border-radius: 10px;
+    border-radius: 4px;
     background: ${({ theme }) => theme.color.fontMain};
     color: ${({ theme }) => theme.color.fontSecond};
     transition: 0.3s;
     border: none;
 
     &:hover {
-        background: rgba(151, 208, 74, 0.8);
-        box-shadow: 0 0 4px rgba(151, 208, 74, 0.8);
+        background: ${({ theme }) => theme.color.fontMainHover};;
     };
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){

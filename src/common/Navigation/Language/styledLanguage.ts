@@ -20,14 +20,13 @@ export const FullScreenWrapper = styled.div`
 `;
 
 export const LanguagesWindow = styled.div`
-    background: rgba(71, 75, 79, 0.7);
+    background: white;
     padding: 40px;
-    border-radius: 10px;
+    border-radius: 4px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     gap: 80px;
-    border: 3px solid ${({ theme }) => theme.color.fontMain};
 
     @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
         gap: 40px;
@@ -48,10 +47,11 @@ export const LangWrapper = styled.div`
     gap: 20px;
     cursor: pointer;
     transition: 0.3s;
-    border-radius: 10px;
+    border-radius: 4px;
+    background: ${({ theme }) => theme.color.thirdColor};
 
     &:hover {
-        background: rgba(	151, 208, 74, 0.5);
+        background: ${({ theme }) => theme.color.fontMain};
     };
 
 `;
@@ -59,7 +59,8 @@ export const LangWrapper = styled.div`
 export const LangCaption = styled.span`
     font-size: 24px;
     color: ${({ theme }) => theme.color.fontSecond};
-
+    font-weight: bold;
+    
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         font-size: 16px;
     };
