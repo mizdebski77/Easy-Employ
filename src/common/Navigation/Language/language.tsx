@@ -3,6 +3,7 @@ import { CloseButton, FlagImg, FullScreenWrapper, LangCaption, LangWrapper, Lang
 import { AiOutlineClose } from 'react-icons/ai'
 import { AnimatePresence, motion } from 'framer-motion';
 import { languages } from './languagesData';
+import { closeWindow, closeWrapper, openWindow, openWrapper } from '../../../core/animationsStore';
 
 interface CloseLangWindow {
     languageWindow: boolean;
@@ -11,21 +12,6 @@ interface CloseLangWindow {
 
 export const Language: React.FC<CloseLangWindow> = ({ closeLangWindow, languageWindow }) => {
 
-    const openWrapper = {
-        opacity: 1,
-    };
-
-    const closeWrapper = {
-        opacity: 0,
-    };
-
-    const openWindow = {
-        scale: 1,
-    };
-
-    const closeWindow = {
-        scale: 0,
-    };
     return (
         <Wrapper>
             <AnimatePresence>

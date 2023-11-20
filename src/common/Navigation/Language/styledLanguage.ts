@@ -67,6 +67,8 @@ export const LangCaption = styled.span`
 
 export const FlagImg = styled.img`
     width: 100px;
+    height: 100px;
+    border-radius: 50%;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         width: 40px;

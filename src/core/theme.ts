@@ -1,11 +1,11 @@
 export const theme = {
     color: {
-        mainColor: "#222629;",
-        fontMain: "#97d04a",
-        fontSecond: "#fff",
+        mainColor: "#f1f1f0;",
+        fontMain: "#fd7900",
+        fontSecond: "#4b4c4b",
         fontMainHover: "#9fd557",
-        secondColor: "#474B4F",
-
+        secondColor: "#ffff",
+        thirdColor: "#e6e6e6",
     },
 
     breakPoint: {

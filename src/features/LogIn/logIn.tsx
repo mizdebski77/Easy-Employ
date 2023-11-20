@@ -26,11 +26,13 @@ export const LogIn = () => {
                 >
                     <FormTitle>Log-In</FormTitle>
                     <Form>
-                        <Input placeholder='E-Mail' type='email' />
-                        <Input placeholder='Password' type='password' />
+                        <Input placeholder='E-Mail' type='email' required />
+                        <Input placeholder='Password' type='password' required />
                         <Button>Log-In</Button>
                     </Form>
                 </FormContainer>
+
+
 
                 <FormContainer
                     as={motion.div}
@@ -40,11 +42,11 @@ export const LogIn = () => {
                 >
                     <FormTitle>Create an account</FormTitle>
                     <Form>
-                        <Input placeholder='Name' type='name' />
-                        <Input placeholder='Surname' type='name' />
-                        <Input placeholder='E-Mail' type='email' />
-                        <Input placeholder='Password' type='password' />
-                        <Input placeholder='Reapeat password' type='password' />
+                        <Input placeholder='Name' type='name' required />
+                        <Input placeholder='Surname' type='name' required />
+                        <Input placeholder='E-Mail' type='email' required />
+                        <Input placeholder='Password' type='password' required />
+                        <Input placeholder='Reapeat password' type='password' required />
                         <Button>Create an account</Button>
                     </Form>
                 </FormContainer>

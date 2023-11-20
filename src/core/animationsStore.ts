@@ -58,3 +58,19 @@ export const formVariant = {
         },
     },
 };
+
+export const openWrapper = {
+    opacity: 1,
+};
+
+export const closeWrapper = {
+    opacity: 0,
+};
+
+export const openWindow = {
+    scale: 1,
+};
+
+export const closeWindow = {
+    scale: 0,
+};

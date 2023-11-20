@@ -10,9 +10,8 @@ export const Wrapper = styled.nav <{ homeScreen?: boolean }>`
     position: sticky;
     z-index: 10; 
     top:0;
-    background: ${({ theme }) => theme.color.mainColor};
+    background: ${({ theme }) => theme.color.secondColor};
     transition: 0.3s;
-    box-shadow: inset 0 -10px 10px -10px ${({ theme }) => theme.color.fontMain};
 
     @media (max-width: ${({ theme }) => theme.breakPoint.firstBp}px){
         padding: 20px 40px;
@@ -77,13 +76,14 @@ export const LinksWrapper = styled.div`
 
 export const NavbarLink = styled(NavLink)`
     font-size: 20px;
-    color: ${({ theme }) => theme.color.fontMain};
+    color: ${({ theme }) => theme.color.fontSecond};
     text-decoration: none;
     transition: 0.3s;
     text-align: center;
+    font-weight: bold;
 
     &:hover {
-        color: ${({ theme }) => theme.color.fontSecond};
+        color: ${({ theme }) => theme.color.fontMain};
     };
 `;
 
@@ -121,7 +121,7 @@ export const LinkImgWrapper = styled(Link)`
     width: 166px;
     
     &:hover {
-        background: rgba(255, 255, 255, 0.1);
+        background: ${({ theme }) => theme.color.thirdColor};
     };
 `;
 
@@ -136,12 +136,14 @@ export const LinkImgWrapperLang = styled.div`
     width: 166px;
     
     &:hover {
-        background: rgba(255, 255, 255, 0.1);
+        background: ${({ theme }) => theme.color.thirdColor};
     };
 `;
 
 export const LinkImgSpan = styled.span`
-    color: white;
+    color: ${({ theme }) => theme.color.fontMain};
+    font-weight: bold;
+    text-decoration: underline;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
         display: none;

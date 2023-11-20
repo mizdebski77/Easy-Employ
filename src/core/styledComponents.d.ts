@@ -8,6 +8,7 @@ declare module 'styled-components' {
             fontSecond: string;
             fontMainHover: string;
             secondColor: string;
+            thirdColor: string;
         }
         breakPoint: {
             firstBp: number,
