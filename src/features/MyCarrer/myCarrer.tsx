@@ -1,12 +1,9 @@
 import React from 'react';
-import { SectionsWrapper, Wrapper } from './styledMyCarrer';
-import Hamburger from 'hamburger-react';
-import { Calculator } from './Sections/Calculator/calculator';
+import {  Wrapper } from './styledMyCarrer';
 
 export const MyCarrer = () => {
     return (
         <Wrapper>
-            <Calculator />
         </Wrapper>
     );
 };

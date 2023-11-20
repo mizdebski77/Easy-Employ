@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import { WelcomePage } from "../features/WelcomePage/welcomePage";
 import { LogIn } from "../features/LogIn/logIn";
 import { MyCarrer } from "../features/MyCarrer/myCarrer";
+import { Calculator } from "../features/Calculator/calculator";
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
         <Route path="/Home" element={<><Navigation /><Home /></>} />
         <Route path="/Log-In" element={<><Navigation /><LogIn /></>} />
         <Route path="/Carrer" element={<><Navigation /><MyCarrer /></>} />
-        <Route path="/Carrer:link" element={<><Navigation /><MyCarrer /></>} />
+        <Route path="/Calculator" element={<><Navigation /><Calculator /></>} />
+
       </Routes>
     </BrowserRouter>
   );
