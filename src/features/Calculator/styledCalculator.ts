@@ -8,13 +8,15 @@ export const Title = styled.h1`
     text-align: center;
     font-size: 44px;
     font-weight: bold;
+    margin-bottom: 80px;
 `;
 
 export const FormWrapper = styled.div`
     max-width: 1000px;
     margin: 0 auto;
     background: ${({ theme }) => theme.color.secondColor};
-    padding: 20px;
+    padding: 40px;
+    box-shadow: 0 0 20px ${({ theme }) => theme.color.thirdColor};
 `;
 
 export const Form = styled.form`
@@ -58,4 +60,53 @@ export const Button = styled.button`
     &:hover {
         background: ${({ theme }) => theme.color.fontMainHover};
     }
+`;
+
+export const ResultWrapper = styled.div`
+    max-width: 1400px;
+    margin: 0 auto;
+    background: ${({ theme }) => theme.color.fontMain};
+    margin-top: 40px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px ${({ theme }) => theme.color.thirdColor};
+`;
+
+export const ResultTile = styled.div`
+    background: ${({ theme }) => theme.color.secondColor};
+    padding: 20px;
+    color:${({ theme }) => theme.color.thirdColor};
+    display: grid;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+`;
+
+export const ResultTitle = styled.span`
+    font-size: 24px;
+    color: black;
+`;
+
+export const Result = styled.span`
+    font-size: 32px;
+    color: ${({ theme }) => theme.color.fontMain};
+`;
+
+export const DisclaimerWrapper = styled.div`
+    max-width: 500px;
+    text-align: justify;
+    margin: 0 auto;
+`;
+
+export const DisclaimerTitle = styled.h3`
+    margin-top: 120px;
+    font-size: 24px;
+    color: ${({ theme }) => theme.color.fontMain};
+`;
+
+export const DisclaimerText = styled.span`
+    font-size: 16px;
 `;
