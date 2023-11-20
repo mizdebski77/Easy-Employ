@@ -2,6 +2,10 @@ import { styled } from "styled-components";
 
 export const Wrapper = styled.section`
     padding: 40px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        padding: 20px 12px;
+    };
 `;
 
 export const Title = styled.h1`
@@ -9,6 +13,11 @@ export const Title = styled.h1`
     font-size: 44px;
     font-weight: bold;
     margin-bottom: 80px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 24px;
+        margin-bottom: 32px;
+    };
 `;
 
 export const FormWrapper = styled.div`
@@ -17,6 +26,10 @@ export const FormWrapper = styled.div`
     background: ${({ theme }) => theme.color.secondColor};
     padding: 40px;
     box-shadow: 0 0 20px ${({ theme }) => theme.color.thirdColor};
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        padding: 32px 12px;
+    };
 `;
 
 export const Form = styled.form`
@@ -24,15 +37,24 @@ export const Form = styled.form`
     gap: 20px;
     align-items: center;
     justify-content: space-around;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
+        flex-direction:column;
+    };
 `;
 
 export const Input = styled.input`
     padding: 10px;
-    min-width: 400px;
+    max-width: 400px;
+    width: 100%;
     background: ${({ theme }) => theme.color.thirdColor};
     outline: none;
     border: none;
     border-radius: 10px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
+        max-width: 800px;
+    };
 `;
 
 export const Label = styled.label`
@@ -59,7 +81,15 @@ export const Button = styled.button`
 
     &:hover {
         background: ${({ theme }) => theme.color.fontMainHover};
-    }
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
+        width: 100%;
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 16px;
+    };
 `;
 
 export const ResultWrapper = styled.div`
@@ -73,6 +103,15 @@ export const ResultWrapper = styled.div`
     gap: 40px;
     border-radius: 10px;
     box-shadow: 0 0 20px ${({ theme }) => theme.color.thirdColor};
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.firstBp}px){
+        grid-template-columns: 1fr 1fr;
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        grid-template-columns: 1fr;
+        padding: 20px 12px;
+    };
 `;
 
 export const ResultTile = styled.div`
@@ -83,16 +122,28 @@ export const ResultTile = styled.div`
     border-radius: 10px;
     justify-content: center;
     text-align: center;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        padding: 12px;
+    };
 `;
 
 export const ResultTitle = styled.span`
     font-size: 24px;
     color: black;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 20px;
+    };
 `;
 
 export const Result = styled.span`
     font-size: 32px;
     color: ${({ theme }) => theme.color.fontMain};
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 24px;
+    };
 `;
 
 export const DisclaimerWrapper = styled.div`
@@ -105,8 +156,17 @@ export const DisclaimerTitle = styled.h3`
     margin-top: 120px;
     font-size: 24px;
     color: ${({ theme }) => theme.color.fontMain};
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        margin-top: 40px;
+        font-size: 20px;
+    };
 `;
 
 export const DisclaimerText = styled.span`
     font-size: 16px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 14px;
+    };
 `;

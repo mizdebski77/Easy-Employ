@@ -2,6 +2,7 @@
   "name": "jobs-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://mizdebski77.github.io/Easy-Employ/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -13,6 +14,7 @@
     "@types/react-dom": "^18.2.15",
     "@types/styled-components": "^5.1.30",
     "framer-motion": "^10.16.4",
+    "gh-pages": "^6.1.0",
     "hamburger-react": "^2.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
