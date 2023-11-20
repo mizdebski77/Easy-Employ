@@ -4,6 +4,6 @@ export const Wrapper = styled.section`
 
 `;
 
-export const SectionsWrapper = styled.div`
-    position: absolute;
+export const Title = styled.h1`
+
 `;

@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { MenuButton, MenuWrapper, Title, Wrapper } from './styledCarrerMenu';
+import { Links, LinksWrapper, MenuButton, MenuWrapper, Title, Wrapper } from './styledCarrerMenu';
 import Hamburger from 'hamburger-react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { carrerMenu, menuVariant } from '../../../core/animationsStore';
+import { links } from './links';
+import { menuVariant } from '../../core/animationsStore';
 
 export const CarrerMenu = () => {
     const [menu, setMenu] = useState(false);
@@ -15,7 +16,7 @@ export const CarrerMenu = () => {
     return (
         <Wrapper>
             <MenuButton onClick={toggleMobileNavigation}>
-                <Hamburger  color='#ffff' size={28} />
+                <Hamburger color='#ffff' size={28} />
             </MenuButton>
             <AnimatePresence>
                 {menu && (
@@ -27,6 +28,13 @@ export const CarrerMenu = () => {
                         variants={menuVariant}
                     >
                         <Title>Your Career</Title>
+                        <LinksWrapper>
+                            {links.map((link, index) => (
+                                <Links key={index} to={link.link}>
+                                    {link.text}
+                                </Links>
+                            ))}
+                        </LinksWrapper>
                     </MenuWrapper>
                 )}
             </AnimatePresence>

@@ -1,13 +1,12 @@
 import React from 'react';
-import { Wrapper } from './styledMyCarrer';
-import { CarrerMenu } from './CarrerMenu/carrerMenu';
+import { SectionsWrapper, Wrapper } from './styledMyCarrer';
 import Hamburger from 'hamburger-react';
+import { Calculator } from './Sections/Calculator/calculator';
 
 export const MyCarrer = () => {
     return (
         <Wrapper>
-            <CarrerMenu />
-
+            <Calculator />
         </Wrapper>
     );
 };
