@@ -29,7 +29,7 @@ export const spanVariant = {
     },
 };
 
-export const buttonVariant = {
+export const bottomVariant = {
     hidden: {
         opacity: 0,
         y: -40,
@@ -73,19 +73,6 @@ export const openWindow = {
 
 export const closeWindow = {
     scale: 0,
-};
-
-export const carrerMenu = {
-    hidden: {
-        width: 0,
-    },
-    visible: {
-        width: 300,
-        transition: {
-            delay: 0.7,
-            duration: 0.3
-        },
-    },
 };
 
 export const menuVariant = {

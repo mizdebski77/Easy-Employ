@@ -1,7 +1,7 @@
 import React from 'react';
 import { ButtonContainer, ButtonLink, Title, TitleFirstLetters, TitleParagraph, Wrapper } from './styledHomePage';
 import { motion } from 'framer-motion';
-import { buttonVariant, spanVariant, titleVariants } from '../../core/animationsStore';
+import { bottomVariant, spanVariant, titleVariants } from '../../core/animationsStore';
 
 export const WelcomePage = () => {
 
@@ -28,7 +28,7 @@ export const WelcomePage = () => {
                 as={motion.div}
                 initial="hidden"
                 animate="visible"
-                variants={buttonVariant}
+                variants={bottomVariant}
             >
                 <ButtonLink to="/Home">Get started</ButtonLink>
             </ButtonContainer>
