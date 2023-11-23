@@ -16,7 +16,6 @@ function App() {
         <Route path="/Log-In" element={<><Navigation /><LogIn /></>} />
         <Route path="/Carrer" element={<><Navigation /><MyCarrer /></>} />
         <Route path="/Calculator" element={<><Navigation /><Calculator /></>} />
-
       </Routes>
     </BrowserRouter>
   );
