@@ -166,6 +166,7 @@ export const DisclaimerTitle = styled.h3`
 export const DisclaimerText = styled.span`
     font-size: 16px;
 
+    
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         font-size: 14px;
     };
