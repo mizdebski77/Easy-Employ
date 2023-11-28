@@ -6,17 +6,16 @@ import { spanVariant, titleVariants, bottomVariant, formVariant } from '../../co
 export const Calculator = () => {
     const [selectedOption, setSelectedOption] = useState('');
     const [monthlySalary, setMonthlySalary] = useState<string | number>('');
-
+    const [title, setTitle] = useState('Gross Net Consumption Calculator (2023)')
     const handleFormSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         console.log('Monthly Salary:', monthlySalary);
         console.log('Selected Option:', selectedOption);
+        const unselectedOption = selectedOption === 'gross' ? 'net' : 'gross';
+        setTitle(`${monthlySalary} zł ${selectedOption} - check how much to ${unselectedOption}`);
     };
 
-    const handleOptionChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        setSelectedOption(event.target.value);
-    };
-    
+
     return (
         <Wrapper>
             <Title
@@ -25,7 +24,7 @@ export const Calculator = () => {
                 animate="visible"
                 variants={titleVariants}
             >
-                Gross Net Consumption Calculator (2023)
+                {title}
             </Title>
 
             <FormWrapper
@@ -48,7 +47,7 @@ export const Calculator = () => {
                             name="calculationOption"
                             value="gross"
                             checked={selectedOption === 'gross'}
-                            onChange={handleOptionChange}
+                            onChange={({ target }) => setSelectedOption((target.value))}
                             required
                         />
                         Gross
@@ -60,7 +59,7 @@ export const Calculator = () => {
                             name="calculationOption"
                             value="net"
                             checked={selectedOption === 'net'}
-                            onChange={handleOptionChange}
+                            onChange={({ target }) => setSelectedOption((target.value))}
                             required
                         />
                         Net
