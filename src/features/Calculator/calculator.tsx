@@ -5,10 +5,18 @@ import { spanVariant, titleVariants, bottomVariant, formVariant } from '../../co
 
 export const Calculator = () => {
     const [selectedOption, setSelectedOption] = useState('');
+    const [monthlySalary, setMonthlySalary] = useState(0);
+
+    const handleFormSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        console.log('Monthly Salary:', monthlySalary);
+        console.log('Selected Option:', selectedOption);
+    };
 
     const handleOptionChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setSelectedOption(event.target.value);
     };
+
     return (
         <Wrapper>
             <Title
@@ -16,15 +24,23 @@ export const Calculator = () => {
                 initial="hidden"
                 animate="visible"
                 variants={titleVariants}
-            >Gross Net Consumption Calculator (2023)</Title>
+            >
+                Gross Net Consumption Calculator (2023)
+            </Title>
+
             <FormWrapper
                 as={motion.div}
                 initial="hidden"
                 animate="visible"
                 variants={spanVariant}
             >
-                <Form>
-                    <Input placeholder='Enter your monthly salary' type='number' min={0} />
+                <Form onSubmit={handleFormSubmit}>
+                    <Input
+                        placeholder='Enter your monthly salary (PLN)'
+                        type='number'
+                        min={0}
+                        onChange={({ target }) => setMonthlySalary(parseFloat(target.value))}
+                    />
                     <Label>
                         <CheckBox
                             type="radio"
@@ -89,4 +105,3 @@ export const Calculator = () => {
         </Wrapper >
     );
 };
-
