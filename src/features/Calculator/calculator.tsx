@@ -5,7 +5,7 @@ import { spanVariant, titleVariants, bottomVariant, formVariant } from '../../co
 
 export const Calculator = () => {
     const [selectedOption, setSelectedOption] = useState('');
-    const [monthlySalary, setMonthlySalary] = useState(0);
+    const [monthlySalary, setMonthlySalary] = useState<string | number>('');
 
     const handleFormSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
@@ -16,7 +16,7 @@ export const Calculator = () => {
     const handleOptionChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setSelectedOption(event.target.value);
     };
-
+    
     return (
         <Wrapper>
             <Title
@@ -39,6 +39,7 @@ export const Calculator = () => {
                         placeholder='Enter your monthly salary (PLN)'
                         type='number'
                         min={0}
+                        required
                         onChange={({ target }) => setMonthlySalary(parseFloat(target.value))}
                     />
                     <Label>
@@ -48,6 +49,7 @@ export const Calculator = () => {
                             value="gross"
                             checked={selectedOption === 'gross'}
                             onChange={handleOptionChange}
+                            required
                         />
                         Gross
                     </Label>
@@ -59,6 +61,7 @@ export const Calculator = () => {
                             value="net"
                             checked={selectedOption === 'net'}
                             onChange={handleOptionChange}
+                            required
                         />
                         Net
                     </Label>
