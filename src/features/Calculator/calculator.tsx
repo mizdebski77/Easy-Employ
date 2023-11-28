@@ -9,8 +9,6 @@ export const Calculator = () => {
     const [title, setTitle] = useState('Gross Net Consumption Calculator (2023)')
     const handleFormSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        console.log('Monthly Salary:', monthlySalary);
-        console.log('Selected Option:', selectedOption);
         const unselectedOption = selectedOption === 'gross' ? 'net' : 'gross';
         setTitle(`${monthlySalary} zł ${selectedOption} - check how much to ${unselectedOption}`);
     };
