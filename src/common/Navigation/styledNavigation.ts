@@ -74,6 +74,8 @@ export const LinksWrapper = styled.div`
     };
 `;
 
+const activeClassName = "active";
+
 export const NavbarLink = styled(NavLink)`
     font-size: 20px;
     color: ${({ theme }) => theme.color.fontSecond};
@@ -83,7 +85,16 @@ export const NavbarLink = styled(NavLink)`
 
     &:hover {
         color: ${({ theme }) => theme.color.fontMain};
+        transform: translateY(-5px);
     };
+
+    &.${activeClassName} {
+        color: ${({ theme }) => theme.color.fontMain};
+
+        &:hover {
+            transform: translateY(0px);
+        };    
+    }
 `;
 
 export const ImgWrapper = styled.div`

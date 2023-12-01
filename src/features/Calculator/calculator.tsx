@@ -4,9 +4,11 @@ import { motion } from 'framer-motion';
 import { spanVariant, titleVariants, bottomVariant, formVariant } from '../../core/animationsStore';
 
 export const Calculator = () => {
+    
     const [selectedOption, setSelectedOption] = useState('');
     const [monthlySalary, setMonthlySalary] = useState<string | number>('');
     const [title, setTitle] = useState('Gross Net Consumption Calculator (2023)')
+    
     const handleFormSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         const unselectedOption = selectedOption === 'gross' ? 'net' : 'gross';
