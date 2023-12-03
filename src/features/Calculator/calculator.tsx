@@ -4,15 +4,60 @@ import { motion } from 'framer-motion';
 import { spanVariant, titleVariants, bottomVariant, formVariant } from '../../core/animationsStore';
 
 export const Calculator = () => {
-    
+
     const [selectedOption, setSelectedOption] = useState('');
-    const [monthlySalary, setMonthlySalary] = useState<string | number>('');
+    const [monthlySalary, setMonthlySalary] = useState(0);
     const [title, setTitle] = useState('Gross Net Consumption Calculator (2023)')
-    
+    const [COE, setCOE] = useState(0);
+    const [MC, setMC] = useState(0);
+    const [CW, setCW] = useState(0);
+    const [B2B, setB2B] = useState(0);
+
     const handleFormSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         const unselectedOption = selectedOption === 'gross' ? 'net' : 'gross';
         setTitle(`${monthlySalary} zł ${selectedOption} - check how much to ${unselectedOption}`);
+    };
+
+    const socialSecurityContributions = {
+        pension: monthlySalary * 0.0976,
+        rent: monthlySalary * 0.1371,
+        sickness: monthlySalary * 0.0245,
+        accident: monthlySalary * 0.0167,
+        total: 0,
+    };
+
+    const dowyjebania = monthlySalary - Object.values(socialSecurityContributions).reduce((sum, contribution) => sum + contribution, 0);
+
+    console.log(dowyjebania);
+
+
+
+
+
+    const countCOE = () => {
+        setCOE(monthlySalary * 2)
+    };
+
+    const countMC = () => {
+        setMC(monthlySalary * 4)
+    };
+
+    const countCW = () => {
+        setCW(monthlySalary * 6)
+    };
+
+    const countB2B = () => {
+        setB2B(monthlySalary * 8)
+    };
+
+    const handleButtonCLick = () => {
+        if (selectedOption) {
+            countCOE();
+            countMC();
+            countCW();
+            countB2B();
+        }
     };
 
 
@@ -64,7 +109,7 @@ export const Calculator = () => {
                         />
                         Net
                     </Label>
-                    <Button>Count</Button>
+                    <Button onClick={() => handleButtonCLick()}>Count</Button>
                 </Form>
             </FormWrapper>
 
@@ -76,19 +121,19 @@ export const Calculator = () => {
             >
                 <ResultTile>
                     <ResultTitle>Contract of employment</ResultTitle>
-                    <Result>3200zł</Result>
+                    <Result>{COE} zł</Result>
                 </ResultTile>
                 <ResultTile>
                     <ResultTitle>Mandatory contract</ResultTitle>
-                    <Result>3200zł</Result>
+                    <Result>{MC} zł</Result>
                 </ResultTile>
                 <ResultTile>
                     <ResultTitle>Contract work</ResultTitle>
-                    <Result>3200zł</Result>
+                    <Result>{CW} zł</Result>
                 </ResultTile>
                 <ResultTile>
                     <ResultTitle>B2B Contract</ResultTitle>
-                    <Result>3200zł</Result>
+                    <Result>{B2B} zł</Result>
                 </ResultTile>
             </ResultWrapper>
 
