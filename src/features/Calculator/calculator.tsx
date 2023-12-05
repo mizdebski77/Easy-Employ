@@ -27,9 +27,8 @@ export const Calculator = () => {
         total: 0,
     };
 
-    const dowyjebania = monthlySalary - Object.values(socialSecurityContributions).reduce((sum, contribution) => sum + contribution, 0);
 
-    console.log(dowyjebania);
+    console.log(socialSecurityContributions);
 
 
 
