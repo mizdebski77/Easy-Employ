@@ -58,15 +58,14 @@ export const ButtonContainer = styled.div`
 `;
 
 export const ButtonLink = styled(Link)`
-    color: ${({ theme }) => theme.color.fontMain};
+    color: ${({ theme }) => theme.color.secondColor};
     text-decoration: none;
-    background: transparent;
-    border-radius: 40px;
+    background: ${({ theme }) => theme.color.fontMain};
+    border-radius: 12px;
     font-size: 24px;
     padding: 16px 80px;
     margin: 0 auto;
     transition: 0.3s;
-    border: 1px solid white;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         padding: 10px 20px;
@@ -74,7 +73,10 @@ export const ButtonLink = styled(Link)`
     };
 
     &:hover {
-        transform: scale(1.01);
-        box-shadow: 4px 0 10px white;
+        background: rgba(0, 150, 255, 0.7)
+    };
+
+    &:active {
+        background: rgba(0, 150, 255, 0.5)
     };
 `;
