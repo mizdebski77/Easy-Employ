@@ -60,7 +60,7 @@ export const LangCaption = styled.span`
     font-size: 24px;
     color: ${({ theme }) => theme.color.fontSecond};
     font-weight: bold;
-    
+
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         font-size: 16px;
     };
