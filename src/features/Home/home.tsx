@@ -1,10 +1,10 @@
 import React from 'react';
-import { Wrapper } from './styledHome';
+import { Title, Wrapper } from './styledHome';
 
 export const Home = () => {
     return (
         <Wrapper>
-            
+            <Title>Easy Employ - Your Way to Find a Job</Title>
         </Wrapper>
     );
 };
