@@ -21,17 +21,14 @@ export const Calculator = () => {
 
     const socialSecurityContributions = {
         pension: monthlySalary * 0.0976,
-        rent: monthlySalary * 0.1371,
+        rent: monthlySalary * 0.015,
         sickness: monthlySalary * 0.0245,
-        accident: monthlySalary * 0.0167,
-        total: 0,
+        accident: monthlySalary * 0.077662,
+        advance : monthlySalary * 0.0376,
     };
 
 
     console.log(socialSecurityContributions);
-
-
-
 
 
     const countCOE = () => {
