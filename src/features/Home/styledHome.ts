@@ -25,3 +25,19 @@ export const CaptionNumber = styled.span`
     color: ${({theme}) => theme.color.fontMain};
 `;
 
+export const OffersWrapper = styled.div`
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 20px;
+`;
+
+
+export const OffersTitle = styled.h3`
+    text-align: center;
+    font-size: 44px;
+    font-weight: normal;
+    color: ${({theme}) => theme.color.fontMain
+    };
+`;
+
