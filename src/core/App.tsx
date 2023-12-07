@@ -6,6 +6,7 @@ import { LogIn } from "../features/LogIn/logIn";
 import { Calculator } from "../features/Calculator/calculator";
 import JobOffers from "../features/JobOffers/jobOffers";
 import { Carrer } from "../features/Carrer/carrer";
+import { Creator } from "../features/Creator/creator";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/Carrer" element={<><Navigation /><Carrer /></>} />
         <Route path="/Calculator" element={<><Navigation /><Calculator /></>} />
         <Route path="/Offers" element={<><Navigation /><JobOffers /></>} />
+        <Route path="/CV-Creator" element={<><Navigation /><Creator /></>} />
       </Routes>
     </BrowserRouter>
   );
