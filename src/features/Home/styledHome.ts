@@ -12,3 +12,16 @@ export const Title = styled.h1`
     text-align: center;
     color: ${({ theme }) => theme.color.fontMain};
 `;
+
+export const Captions = styled.h2`
+    font-size: 40px;
+    font-weight: normal;
+    color: ${({theme}) => theme.color.fontSecond};
+    text-align: center;
+`;
+
+export const CaptionNumber = styled.span`
+    font-weight: bold;
+    color: ${({theme}) => theme.color.fontMain};
+`;
+
