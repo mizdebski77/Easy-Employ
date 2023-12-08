@@ -32,12 +32,48 @@ export const OffersWrapper = styled.div`
     border-radius: 20px;
 `;
 
-
 export const OffersTitle = styled.h3`
     text-align: center;
     font-size: 44px;
     font-weight: normal;
-    color: ${({theme}) => theme.color.fontMain
-    };
+    color: ${({theme}) => theme.color.fontMain};
 `;
 
+export const OfferWrapper = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 20px;
+`;
+
+export const OfferTile = styled.div`
+    background: ${({theme}) => theme.color.secondColor};
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px ${({theme}) => theme.color.fontSecond};
+    display: grid;
+    gap: 20px;
+`;
+
+export const OfferTitle = styled.span`
+    font-size: 24px;
+    text-align: center;
+    color:${({theme}) => theme.color.fontMain}
+`;
+
+export const OfferArticle = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 20px ;
+`;
+
+export const OfferLogo = styled.img`
+    max-width: 80px;
+`;
+
+export const OfferDetails = styled.span`
+    font-size: 20px;
+`;
+
+export const FavoriteButton = styled.button`
+
+`;  
