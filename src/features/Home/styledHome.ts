@@ -42,7 +42,7 @@ export const OffersTitle = styled.h3`
 export const OfferWrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
-    gap: 20px;
+    gap: 30px;
 `;
 
 export const OfferTile = styled.div`
@@ -52,6 +52,13 @@ export const OfferTile = styled.div`
     box-shadow: 0 0 10px ${({theme}) => theme.color.fontSecond};
     display: grid;
     gap: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0 0 10px ${({theme}) => theme.color.fontMain};
+        transform: scale(1.03);
+    }
 `;
 
 export const OfferTitle = styled.span`
@@ -73,7 +80,3 @@ export const OfferLogo = styled.img`
 export const OfferDetails = styled.span`
     font-size: 20px;
 `;
-
-export const FavoriteButton = styled.button`
-
-`;  

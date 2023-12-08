@@ -18,7 +18,70 @@ export const Home = () => {
                             <OfferLogo src={logo} />
                             <OfferDetails>Easy Employ</OfferDetails>
                         </OfferArticle>
-                    
+                    </OfferTile>
+
+                    <OfferTile>
+                        <OfferTitle>Junior Frontend Developer</OfferTitle>
+                        <OfferArticle>
+                            <OfferLogo src={logo} />
+                            <OfferDetails>Easy Employ</OfferDetails>
+                        </OfferArticle>
+                    </OfferTile>
+
+                    <OfferTile>
+                        <OfferTitle>Junior Frontend Developer</OfferTitle>
+                        <OfferArticle>
+                            <OfferLogo src={logo} />
+                            <OfferDetails>Easy Employ</OfferDetails>
+                        </OfferArticle>
+                    </OfferTile>
+
+                    <OfferTile>
+                        <OfferTitle>Junior Frontend Developer</OfferTitle>
+                        <OfferArticle>
+                            <OfferLogo src={logo} />
+                            <OfferDetails>Easy Employ</OfferDetails>
+                        </OfferArticle>
+                    </OfferTile>
+
+                    <OfferTile>
+                        <OfferTitle>Junior Frontend Developer</OfferTitle>
+                        <OfferArticle>
+                            <OfferLogo src={logo} />
+                            <OfferDetails>Easy Employ</OfferDetails>
+                        </OfferArticle>
+                    </OfferTile>
+
+                    <OfferTile>
+                        <OfferTitle>Junior Frontend Developer</OfferTitle>
+                        <OfferArticle>
+                            <OfferLogo src={logo} />
+                            <OfferDetails>Easy Employ</OfferDetails>
+                        </OfferArticle>
+                    </OfferTile>
+
+                    <OfferTile>
+                        <OfferTitle>Junior Frontend Developer</OfferTitle>
+                        <OfferArticle>
+                            <OfferLogo src={logo} />
+                            <OfferDetails>Easy Employ</OfferDetails>
+                        </OfferArticle>
+                    </OfferTile>
+
+                    <OfferTile>
+                        <OfferTitle>Junior Frontend Developer</OfferTitle>
+                        <OfferArticle>
+                            <OfferLogo src={logo} />
+                            <OfferDetails>Easy Employ</OfferDetails>
+                        </OfferArticle>
+                    </OfferTile>
+
+                    <OfferTile>
+                        <OfferTitle>Junior Frontend Developer</OfferTitle>
+                        <OfferArticle>
+                            <OfferLogo src={logo} />
+                            <OfferDetails>Easy Employ</OfferDetails>
+                        </OfferArticle>
                     </OfferTile>
 
                 </OfferWrapper>
