@@ -1,5 +1,5 @@
 import React from 'react';
-import { CaptionNumber, Captions, OfferArticle, OfferDetails, OfferLogo, OfferTile, OfferTitle, OfferWrapper, OffersTitle, OffersWrapper, Title, Wrapper } from './styledHome';
+import { AllOffersButton, CaptionNumber, Captions, OfferArticle, OfferDetails, OfferLogo, OfferTile, OfferTitle, OfferWrapper, OffersTitle, OffersWrapper, Title, Wrapper } from './styledHome';
 import logo from '../../common/Images/logo.png';
 
 export const Home = () => {
@@ -85,6 +85,7 @@ export const Home = () => {
                     </OfferTile>
 
                 </OfferWrapper>
+                <AllOffersButton to='/Offers'>All offers</AllOffersButton>
             </OffersWrapper>
         </Wrapper>
     );
