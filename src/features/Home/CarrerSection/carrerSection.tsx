@@ -1,5 +1,5 @@
 import React from 'react';
-import { CarrerImg, CarrerTile, ContentWrapper, ProfileImg, ProfileLink, ProfileSpan, ProfileTitle, ProfileWrapper, TextContainer, TextWrapper, TileSpan, TileTitle, TilesWrapper, Title, Wrapper } from './styledCarrerSection';
+import { CarrerImg, CarrerTile, ContentWrapper, ProfileImg, ProfileLink, ProfileSpan, ProfileTitle, ProfileWrapper, TextContainer, TextWrapper, TileLink, TileSpan, TileTitle, TilesWrapper, Title, Wrapper } from './styledCarrerSection';
 import profile from '../../../common/Images/profile.png';
 import calculator from '../../../common/Images/Carrer/sallarycalculaor.jpg';
 import offers from '../../../common/Images/Carrer/joboffers.jpg';
@@ -30,6 +30,7 @@ export const CarrerSection = () => {
                         <TileTitle>CV Creator</TileTitle>
                         <TileSpan>Create your CV in a few simple steps with our CV creator</TileSpan>
                     </TextContainer>
+                    <TileLink to='/CV-Creator'>Check 🡢 </TileLink>
                 </CarrerTile>
 
                 <CarrerTile>
@@ -38,6 +39,7 @@ export const CarrerSection = () => {
                         <TileTitle>Job Offers</TileTitle>
                         <TileSpan>Check the latest job offers and find your dream job</TileSpan>
                     </TextContainer>
+                    <TileLink to='/Offers'>Check 🡢 </TileLink>
                 </CarrerTile>
 
                 <CarrerTile>
@@ -46,6 +48,7 @@ export const CarrerSection = () => {
                         <TileTitle>Salary Calculator</TileTitle>
                         <TileSpan>Calculate net and gross earnings for different types of contracts.</TileSpan>
                     </TextContainer>
+                    <TileLink to='/Calculator'>Check 🡢 </TileLink>
                 </CarrerTile>
             </TilesWrapper>
 

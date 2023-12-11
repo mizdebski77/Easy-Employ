@@ -84,6 +84,7 @@ export const TilesWrapper = styled.div`
 export const CarrerTile = styled.div`
     background: white;
     border-radius: 20px;
+    box-shadow: 0 0 10px white;
 `;
 
 export const CarrerImg = styled.img`
@@ -105,4 +106,20 @@ export const TileTitle = styled.h3`
 
 export const TileSpan = styled.span`
     font-size: 20px;
+`;
+
+export const TileLink = styled(Link)`
+    float: right;
+    margin: 0 20px 20px 0;
+    background: ${({ theme }) => theme.color.fontMain};
+    padding: 8px 20px;
+    color: ${({ theme }) => theme.color.secondColor};
+    text-decoration: none;
+    border-radius: 20px;
+    transition: 0.3s;
+
+    &:hover {
+        transform: scale(1.02);
+        box-shadow: 0 0 4px ${({ theme }) => theme.color.fontMain};
+    }
 `;
