@@ -1,6 +1,5 @@
 import React from 'react';
 import { CaptionNumber, Captions, Wrapper, Title } from './styledHome';
-import logo from '../../common/Images/logo.png';
 import { OfferSection } from './OfferSection/offerSection';
 
 export const Home = () => {
