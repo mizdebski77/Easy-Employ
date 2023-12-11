@@ -27,7 +27,7 @@ export const CarrerSection = () => {
                 <CarrerTile>
                     <CarrerImg src={cv} />
                     <TextContainer>
-                        <TileTitle>Salary Calculator</TileTitle>
+                        <TileTitle>CV Creator</TileTitle>
                         <TileSpan>Create your CV in a few simple steps with our CV creator</TileSpan>
                     </TextContainer>
                 </CarrerTile>
@@ -35,7 +35,7 @@ export const CarrerSection = () => {
                 <CarrerTile>
                     <CarrerImg src={offers} />
                     <TextContainer>
-                        <TileTitle>Salary Calculator</TileTitle>
+                        <TileTitle>Job Offers</TileTitle>
                         <TileSpan>Check the latest job offers and find your dream job</TileSpan>
                     </TextContainer>
                 </CarrerTile>
