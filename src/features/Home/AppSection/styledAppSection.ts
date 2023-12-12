@@ -5,4 +5,15 @@ export const Wrapper = styled.div`
     padding: 20px;
     border-radius: 20px;
     background: ${({ theme }) => theme.color.secondColor};
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 `;
+
+export const TextWrapper = styled.div`
+
+`;
+
+export const ImagesWrapper = styled.div`
+
+`;
+

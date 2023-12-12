@@ -1,10 +1,16 @@
 import React from 'react';
-import { Wrapper } from './styledAppSection';
+import { ImagesWrapper, TextWrapper, Wrapper } from './styledAppSection';
 
 export const AppSection = () => {
     return (
         <Wrapper>
-            xd
+            <ImagesWrapper>
+
+            </ImagesWrapper>
+
+            <TextWrapper>
+                
+            </TextWrapper>
         </Wrapper>
     );
 };
