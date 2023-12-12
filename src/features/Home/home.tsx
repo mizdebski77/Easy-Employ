@@ -2,6 +2,7 @@ import React from 'react';
 import { CaptionNumber, Captions, Wrapper, Title } from './styledHome';
 import { OfferSection } from './OfferSection/offerSection';
 import { CarrerSection } from './CarrerSection/carrerSection';
+import { News } from './News/news';
 
 export const Home = () => {
     return (
@@ -10,6 +11,7 @@ export const Home = () => {
             <Captions>Find your dream job in IT among <CaptionNumber>20 000</CaptionNumber> offers</Captions>
             <OfferSection />
             <CarrerSection />
+            <News />
         </Wrapper>
     );
 };
