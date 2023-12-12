@@ -3,6 +3,7 @@ import { CaptionNumber, Captions, Wrapper, Title } from './styledHome';
 import { OfferSection } from './OfferSection/offerSection';
 import { CarrerSection } from './CarrerSection/carrerSection';
 import { News } from './News/news';
+import { AppSection } from './AppSection/appSection';
 
 export const Home = () => {
     return (
@@ -12,6 +13,7 @@ export const Home = () => {
             <OfferSection />
             <CarrerSection />
             <News />
+            <AppSection />
         </Wrapper>
     );
 };
