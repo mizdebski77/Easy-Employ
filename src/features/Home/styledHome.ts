@@ -11,6 +11,10 @@ export const Title = styled.h1`
     font-weight: normal;
     text-align: center;
     color: ${({ theme }) => theme.color.fontMain};
+    
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 32px;
+    };
 `;
 
 export const Captions = styled.h2`
@@ -18,6 +22,10 @@ export const Captions = styled.h2`
     font-weight: normal;
     color: ${({ theme }) => theme.color.fontSecond};
     text-align: center;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 24px;
+    };
 `;
 
 export const CaptionNumber = styled.span`

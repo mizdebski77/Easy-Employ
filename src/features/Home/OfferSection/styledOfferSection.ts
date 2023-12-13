@@ -6,6 +6,10 @@ export const Wrapper = styled.div`
     margin: 40px auto;
     padding: 20px;
     border-radius: 20px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        margin: 0px auto;
+    };
 `;
 
 export const OffersTitle = styled.h3`
