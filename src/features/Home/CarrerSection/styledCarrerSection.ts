@@ -20,6 +20,15 @@ export const ContentWrapper = styled.div`
     display: flex;
     gap: 40px;
     position: relative;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.firstBp}px){
+        gap: 20px;
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        flex-direction: column;
+        justify-content: center;
+    };
 `;
 
 export const ProfileWrapper = styled.div`
@@ -28,31 +37,62 @@ export const ProfileWrapper = styled.div`
     gap: 40px;
     align-items: center;
     background: white;
-    padding: 20px 80px 20px;
+    padding: 20px 80px ;
     border-radius: 20px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.firstBp}px){
+        padding: 20px 40px;
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
+        flex-direction: column;
+    };
+    
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        gap: 20px;
+    };
 `;
 
 export const TextWrapper = styled.div`
-    padding-left: 480px;
+    padding-left: 440px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
+        padding-left: 0;
+    };
 `;
 
 export const ProfileTitle = styled.h2`
     font-size: 40px;
     color: ${({ theme }) => theme.color.fontMain};;
     font-weight: normal;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        text-align: center;
+        font-size:28px;
+        margin:0;
+    };
 `;
 
 export const ProfileSpan = styled.p`
     color: ${({ theme }) => theme.color.fontMain};;
-
 `;
 
 export const ProfileImg = styled.img`
-  position: absolute;
-  top: -80px; 
-  left: 0;
-  z-index: 1; 
-  width: 400px;
+    position: absolute;
+    top: -80px; 
+    left: 0;
+    max-width: 400px;
+    width: 100%;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
+        position: static;
+        max-width: 280px;
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        margin: 0 auto;
+        max-width: 200px;
+    };
 `;
 
 export const ProfileLink = styled(Link)`
@@ -72,6 +112,15 @@ export const ProfileLink = styled(Link)`
         background: ${({ theme }) => theme.color.fontMainActive};
     };
 
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.firstBp}px){
+        padding: 12px 24px;
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 16px;
+    };
+
 `;
 
 export const TilesWrapper = styled.div`
@@ -79,6 +128,14 @@ export const TilesWrapper = styled.div`
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 40px;
     gap: 40px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
+        grid-template-columns:  1fr 1fr;
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        grid-template-columns:  1fr;
+    };
 `;
 
 export const CarrerTile = styled.div`
@@ -101,11 +158,19 @@ export const TileTitle = styled.h3`
     text-align: center;
     margin: 0 0 20px 0;
     font-weight: normal;
-    color:${({ theme }) => theme.color.fontMain}
+    color:${({ theme }) => theme.color.fontMain};
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 24px;
+    };
 `;
 
 export const TileSpan = styled.span`
     font-size: 20px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 16px;
+    };    
 `;
 
 export const TileLink = styled(Link)`
@@ -121,5 +186,9 @@ export const TileLink = styled(Link)`
     &:hover {
         transform: scale(1.02);
         box-shadow: 0 0 4px ${({ theme }) => theme.color.fontMain};
-    }
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 14px;
+    };
 `;
