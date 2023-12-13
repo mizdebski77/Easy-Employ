@@ -1,5 +1,5 @@
 import React from 'react';
-import { ImagesWrapper, TextWrapper, Wrapper } from './styledAppSection';
+import { ImagesWrapper, TextWrapper, Title, Wrapper } from './styledAppSection';
 
 export const AppSection = () => {
     return (
@@ -9,7 +9,7 @@ export const AppSection = () => {
             </ImagesWrapper>
 
             <TextWrapper>
-                
+                <Title>Mobile application on your phone</Title>
             </TextWrapper>
         </Wrapper>
     );

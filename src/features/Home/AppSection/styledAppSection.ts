@@ -21,6 +21,10 @@ export const Title = styled.h1`
 
 `;
 
+export const TitleSpan = styled.span`
+
+`;
+
 export const Captions = styled.article`
 
 `;
