@@ -42,6 +42,6 @@ export const StoresIconsWrapper = styled.div`
 `;
 
 export const StoreIcon = styled.img`
-
+    max-width: 120px;
 `;
 
