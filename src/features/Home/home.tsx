@@ -13,7 +13,7 @@ export const Home = () => {
             <OfferSection />
             <CarrerSection />
             <News />
-            {/* <AppSection /> */}
+            <AppSection />
         </Wrapper>
     );
 };

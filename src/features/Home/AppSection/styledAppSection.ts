@@ -17,3 +17,19 @@ export const ImagesWrapper = styled.div`
 
 `;
 
+export const Title = styled.h1`
+
+`;
+
+export const Captions = styled.article`
+
+`;
+
+export const StoresIconsWrapper = styled.div`
+
+`;
+
+export const StoreIcon = styled.img`
+
+`;
+
