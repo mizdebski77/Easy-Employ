@@ -12,8 +12,8 @@ export const Home = () => {
             <Captions>Find your dream job in IT among <CaptionNumber>20 000</CaptionNumber> offers</Captions>
             <OfferSection />
             <CarrerSection />
-            {/* <News />
-            <AppSection /> */}
+            <News />
+            {/* <AppSection /> */}
         </Wrapper>
     );
 };

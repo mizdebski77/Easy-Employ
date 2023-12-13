@@ -10,12 +10,25 @@ export const Title = styled.h1`
     font-weight: normal;
     color: ${({ theme }) => theme.color.fontMain};
     text-align: center;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 32px;
+    };
 `;
 
 export const TileWrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
+        grid-template-columns: 1fr 1fr;
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        grid-template-columns: 1fr ;
+        gap: 20px;
+    };
 `;
 
 export const Tile = styled.div`
@@ -26,7 +39,13 @@ export const Tile = styled.div`
 
     &:hover {
         box-shadow: 0 0 10px ${({ theme }) => theme.color.fontMain};
-    }
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        &:hover {
+            box-shadow: 0 0 10px ${({ theme }) => theme.color.fontSecond};
+        };   
+    };
 `;
 
 export const TileImage = styled.img`
@@ -44,11 +63,20 @@ export const TileTitle = styled.h2`
     font-weight: normal;
     color: ${({ theme }) => theme.color.fontMain};
     text-align: center;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 28px;
+        margin: 20px 0;
+    };
 `;
 
 export const TileArticle = styled.article`
     font-size: 20px;
     text-align: justify;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 16px;
+    };
 `;
 
 export const ReadMore = styled(Link)`
@@ -61,5 +89,9 @@ export const ReadMore = styled(Link)`
 
     &:hover {
         transform: scale(1.05);
-    }
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 14px;
+    };
 `;
