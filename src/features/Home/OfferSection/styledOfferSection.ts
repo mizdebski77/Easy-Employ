@@ -113,5 +113,11 @@ export const AllOffersButton = styled(Link)`
 
     &:hover {
         background: ${({ theme }) => theme.color.fontMainHover};
-    }
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 16px;
+        max-width: 160px;
+        padding: 10px 20px;
+    };
 `;

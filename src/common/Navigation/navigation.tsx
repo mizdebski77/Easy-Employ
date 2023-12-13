@@ -58,7 +58,7 @@ export const Navigation = () => {
                 </ImgWrapper>
 
                 <PhoneNavbar onClick={toggleMobileNavigation}>
-                    <Hamburger color='#97d04a' size={28} />
+                    <Hamburger color='#0096ff' size={28} />
                 </PhoneNavbar>
             </Wrapper>
             <MobileNavbar

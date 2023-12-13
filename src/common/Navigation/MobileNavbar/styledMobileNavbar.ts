@@ -2,8 +2,8 @@ import { NavLink } from "react-router-dom";
 import { styled } from "styled-components";
 
 export const Wrapper = styled.div`
-    border-bottom: 1px solid ${({ theme }) => theme.color.fontMain};
-    background: #474B4F;
+    border-bottom: 2cap solid ${({ theme }) => theme.color.fontMain};
+    background: ${({theme}) => theme.color.thirdColor};
     position: fixed;
     width: 100%;
     z-index: 1;
@@ -11,7 +11,6 @@ export const Wrapper = styled.div`
     display: grid;
     gap: 40px;
     text-align: center;
-    box-shadow: inset 0 -10px 10px -10px ${({ theme }) => theme.color.fontMain};
     
     @media (min-width: ${({ theme }) => theme.breakPoint.secondBp}px){
         display: none;
