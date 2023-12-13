@@ -11,7 +11,7 @@ export const theme = {
 
     breakPoint: {
         firstBp: 1380,
-        secondBp: 1100,
+        secondBp: 1155,
         thirdBp: 767,
     }
 };
