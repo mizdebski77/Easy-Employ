@@ -14,6 +14,11 @@ export const Title = styled.h1`
     color: white;
     font-weight: normal;
     margin-bottom: 80px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 32px;
+        margin: 20px 0;
+    };
 `;
 
 export const ContentWrapper = styled.div`
