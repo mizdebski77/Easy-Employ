@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import { styled } from "styled-components";
 
 export const Wrapper = styled.div`
-    border-bottom: 2cap solid ${({ theme }) => theme.color.fontMain};
+    border-bottom: 2px solid ${({ theme }) => theme.color.fontMain};
     background: ${({theme}) => theme.color.thirdColor};
     position: fixed;
     width: 100%;
