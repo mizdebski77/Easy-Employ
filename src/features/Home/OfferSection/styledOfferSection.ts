@@ -13,12 +13,24 @@ export const OffersTitle = styled.h3`
     font-size: 44px;
     font-weight: normal;
     color: ${({ theme }) => theme.color.fontMain};
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 32px;
+    };
 `;
 
 export const OfferWrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
     gap: 30px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
+        grid-template-columns: 1fr 1fr;
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        grid-template-columns: 1fr;
+    };
 `;
 
 export const OfferTile = styled.div`
@@ -34,13 +46,26 @@ export const OfferTile = styled.div`
     &:hover {
         box-shadow: 0 0 10px ${({ theme }) => theme.color.fontMain};
         transform: scale(1.03);
-    }
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        &:hover {
+            box-shadow: 0 0 10px ${({ theme }) => theme.color.fontSecond};
+            transform: scale(1);
+        };  
+        border-radius: 10px;
+
+    };
 `;
 
 export const OfferTitle = styled.span`
     font-size: 24px;
     text-align: center;
-    color:${({ theme }) => theme.color.fontMain}
+    color:${({ theme }) => theme.color.fontMain};
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 20px;
+    };
 `;
 
 export const OfferArticle = styled.div`
@@ -52,10 +77,18 @@ export const OfferArticle = styled.div`
 
 export const OfferLogo = styled.img`
     max-width: 80px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        max-width: 64px;
+    };
 `;
 
 export const OfferDetails = styled.span`
     font-size: 20px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 16px;
+    };
 `;
 
 export const AllOffersButton = styled(Link)`
@@ -75,6 +108,6 @@ export const AllOffersButton = styled(Link)`
     float: right;
 
     &:hover {
-        background: ${({theme}) => theme.color.fontMainHover};
+        background: ${({ theme }) => theme.color.fontMainHover};
     }
 `;
