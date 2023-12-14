@@ -30,6 +30,7 @@ export const DownloadInformation = styled.h2`
     font-size: 32px;
     font-weight: normal;
     text-align: center;
+    margin-bottom: 0px;
 `;
 
 export const Captions = styled.p`
@@ -38,10 +39,19 @@ export const Captions = styled.p`
 `;
 
 export const StoresIconsWrapper = styled.div`
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
 `;
 
 export const StoreIcon = styled.img`
     max-width: 120px;
+    transition: 0.3s;
+
+    &:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+    }
 `;
 
