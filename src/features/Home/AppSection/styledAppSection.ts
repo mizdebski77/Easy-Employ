@@ -1,5 +1,4 @@
 import { styled } from "styled-components";
-import appImage from '../../../common/Images/appSection/appsection.jpg'
 
 export const Wrapper = styled.div`
     margin-top: 120px;
