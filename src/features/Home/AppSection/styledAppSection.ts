@@ -49,6 +49,10 @@ export const Title = styled.h1`
     text-align: center;
     font-weight: normal;
 
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
+        font-size: 40px;
+    };
+
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         font-size: 32px;
     };
@@ -60,6 +64,10 @@ export const DownloadInformation = styled.h2`
     font-weight: normal;
     text-align: center;
     margin-bottom: 0px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
+        font-size: 28px;
+    };
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         font-size: 24px;
