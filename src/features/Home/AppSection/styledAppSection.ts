@@ -9,6 +9,12 @@ export const Wrapper = styled.div`
     grid-template-columns: 2fr 1.5fr;
     gap: 40px;
     position: relative;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 20px;
+    };
 `;
 
 export const TextWrapper = styled.div`
@@ -21,10 +27,20 @@ export const ImagesWrapper = styled.div`
 `;
 
 export const MobileImg = styled.img`
-    width: 440px;
+    max-width: 440px;
+    width: 100%;
     position: absolute;
     margin: 0 auto;
     bottom: 40px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
+        max-width: 360px;
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        max-width: 240px;
+        position: sticky;
+    };
 `;
 
 export const Title = styled.h1`
@@ -32,6 +48,10 @@ export const Title = styled.h1`
     font-size: 54px;
     text-align: center;
     font-weight: normal;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 32px;
+    };
 `;
 
 export const DownloadInformation = styled.h2`
@@ -40,11 +60,19 @@ export const DownloadInformation = styled.h2`
     font-weight: normal;
     text-align: center;
     margin-bottom: 0px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 24px;
+    };
 `;
 
 export const Captions = styled.p`
     color: ${({ theme }) => theme.color.fontSecond};
     font-size: 20px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 16px;
+    };
 `;
 
 export const StoresIconsWrapper = styled.div`
