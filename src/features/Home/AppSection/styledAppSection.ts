@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import appImage from '../../../common/Images/appSection/appsection.jpg'
 
 export const Wrapper = styled.div`
     margin-top: 80px;
@@ -7,6 +8,7 @@ export const Wrapper = styled.div`
     background: ${({ theme }) => theme.color.secondColor};
     display: grid;
     grid-template-columns: 2fr 1.5fr;
+    gap: 40px;
 `;
 
 export const TextWrapper = styled.div`
@@ -14,7 +16,10 @@ export const TextWrapper = styled.div`
 `;
 
 export const ImagesWrapper = styled.div`
-
+    background-image: url(${appImage});
+    background-size: cover;
+    background-position: center;
+    box-shadow:-154px 27px 59.4px -17px white inset
 `;
 
 export const Title = styled.h1`
@@ -26,7 +31,7 @@ export const Title = styled.h1`
 `;
 
 export const DownloadInformation = styled.h2`
-    color: ${({theme}) => theme.color.fontMain};
+    color: ${({ theme }) => theme.color.fontMain};
     font-size: 32px;
     font-weight: normal;
     text-align: center;

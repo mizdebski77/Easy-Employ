@@ -1,7 +1,7 @@
 import React from 'react';
 import { Captions, DownloadInformation, ImagesWrapper, StoreIcon, StoresIconsWrapper, TextWrapper, Title, Wrapper } from './styledAppSection';
-import appStore from '../../../common/Images/Stores/app.png';
-import googlePlay from '../../../common/Images/Stores/google.png';
+import appStore from '../../../common/Images/appSection/app.png';
+import googlePlay from '../../../common/Images/appSection/google.png';
 
 export const AppSection = () => {
     return (
