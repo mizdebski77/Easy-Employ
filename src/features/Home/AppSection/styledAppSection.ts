@@ -2,13 +2,14 @@ import { styled } from "styled-components";
 import appImage from '../../../common/Images/appSection/appsection.jpg'
 
 export const Wrapper = styled.div`
-    margin-top: 80px;
+    margin-top: 120px;
     padding: 20px;
     border-radius: 20px;
     background: ${({ theme }) => theme.color.secondColor};
     display: grid;
     grid-template-columns: 2fr 1.5fr;
     gap: 40px;
+    position: relative;
 `;
 
 export const TextWrapper = styled.div`
@@ -16,10 +17,15 @@ export const TextWrapper = styled.div`
 `;
 
 export const ImagesWrapper = styled.div`
-    background-image: url(${appImage});
-    background-size: cover;
-    background-position: center;
-    box-shadow:-154px 27px 59.4px -17px white inset
+    display: flex;
+    justify-content: center;
+`;
+
+export const MobileImg = styled.img`
+    width: 440px;
+    position: absolute;
+    margin: 0 auto;
+    bottom: 40px;
 `;
 
 export const Title = styled.h1`
@@ -27,7 +33,6 @@ export const Title = styled.h1`
     font-size: 54px;
     text-align: center;
     font-weight: normal;
-
 `;
 
 export const DownloadInformation = styled.h2`

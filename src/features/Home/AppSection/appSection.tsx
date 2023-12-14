@@ -1,13 +1,14 @@
 import React from 'react';
-import { Captions, DownloadInformation, ImagesWrapper, StoreIcon, StoresIconsWrapper, TextWrapper, Title, Wrapper } from './styledAppSection';
+import { Captions, DownloadInformation, ImagesWrapper, MobileImg, StoreIcon, StoresIconsWrapper, TextWrapper, Title, Wrapper } from './styledAppSection';
 import appStore from '../../../common/Images/appSection/app.png';
 import googlePlay from '../../../common/Images/appSection/google.png';
+import smartphone from '../../../common/Images/smartphone.png';
 
 export const AppSection = () => {
     return (
         <Wrapper>
             <ImagesWrapper>
-
+                <MobileImg src={smartphone} />
             </ImagesWrapper>
 
             <TextWrapper>
