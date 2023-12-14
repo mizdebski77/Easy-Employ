@@ -1,17 +1,23 @@
 {
   "files": {
-    "main.js": "/Easy-Employ/static/js/main.6fb3c236.js",
+    "main.js": "/Easy-Employ/static/js/main.2ff894f8.js",
     "static/js/787.9d8ea4c6.chunk.js": "/Easy-Employ/static/js/787.9d8ea4c6.chunk.js",
     "static/media/homeScreenBG.jpg": "/Easy-Employ/static/media/homeScreenBG.3e5179990f6d2d10c6cb.jpg",
+    "static/media/CVCreator.jpg": "/Easy-Employ/static/media/CVCreator.2d7a1ce4c27b13f5b011.jpg",
+    "static/media/joboffers.jpg": "/Easy-Employ/static/media/joboffers.a585750260afeede991f.jpg",
+    "static/media/sallarycalculaor.jpg": "/Easy-Employ/static/media/sallarycalculaor.a923963620d03e4e64ff.jpg",
+    "static/media/profile.png": "/Easy-Employ/static/media/profile.69254248d227b6314faf.png",
     "static/media/sp.png": "/Easy-Employ/static/media/sp.09111a444172964d7548.png",
     "static/media/logo.png": "/Easy-Employ/static/media/logo.c0b2ea9650ce8b4b9f06.png",
+    "static/media/google.png": "/Easy-Employ/static/media/google.88c0cf672ae4dd873d7f.png",
+    "static/media/app.png": "/Easy-Employ/static/media/app.2a8f2a38110b76832fb2.png",
     "static/media/account.svg": "/Easy-Employ/static/media/account.113f1ad043c4f6308b419cd102865628.svg",
     "index.html": "/Easy-Employ/index.html",
     "static/media/language.svg": "/Easy-Employ/static/media/language.ff3b13b1466ffb34ed3fc18379084551.svg",
-    "main.6fb3c236.js.map": "/Easy-Employ/static/js/main.6fb3c236.js.map",
+    "main.2ff894f8.js.map": "/Easy-Employ/static/js/main.2ff894f8.js.map",
     "787.9d8ea4c6.chunk.js.map": "/Easy-Employ/static/js/787.9d8ea4c6.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.6fb3c236.js"
+    "static/js/main.2ff894f8.js"
   ]
 }
