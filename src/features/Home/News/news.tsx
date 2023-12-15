@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ReadMore, Tile, TileArticle, TileContent, TileImage, TileTitle, TileWrapper, Title, Wrapper } from './styledNews';
 import ex from '../../../common/Images/Carrer/CVCreator.jpg';
 import { useQuery } from '@tanstack/react-query';
 import { Article } from '../../../core/interface';
 
 export const News = () => {
+
+    const [displayNews, setDisplayNews] = useState(3);
+
+    const handleShowMore = () => {
+        setDisplayNews(displayNews + 3);
+    };
+
     const { data, isLoading, error } = useQuery({
         queryKey: ['news'],
         queryFn: () => fetch("https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=1b6e99a4f4244702bd1caf4f3fd8e680")
@@ -19,7 +26,7 @@ export const News = () => {
             <TileWrapper>
                 {isLoading ? <div>Czekaj!</div> : (
                     data.articles
-                        .filter((article: Article) => article.urlToImage)
+                        .filter((article: Article, index: number) => article.urlToImage && index < displayNews)
                         .map((article: Article, index: number) => (
                             <Tile key={index}>
                                 <TileImage src={article.urlToImage} />
@@ -32,6 +39,9 @@ export const News = () => {
                         ))
                 )}
             </TileWrapper>
+            {displayNews < data?.articles.length && (
+                <button onClick={handleShowMore}>Show more</button>
+            )}
         </Wrapper>
     );
 };
