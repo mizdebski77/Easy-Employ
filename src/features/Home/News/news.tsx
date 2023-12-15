@@ -7,7 +7,7 @@ import { Article } from '../../../core/interface';
 export const News = () => {
     const { data, isLoading, error } = useQuery({
         queryKey: ['news'],
-        queryFn: () => fetch("https://newsapi.org/v2/top-headlines?country=us&apiKey=1b6e99a4f4244702bd1caf4f3fd8e680")
+        queryFn: () => fetch("https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=1b6e99a4f4244702bd1caf4f3fd8e680")
             .then((response: Response) => response.json())
     });
 
@@ -18,9 +18,9 @@ export const News = () => {
             <Title>The most important news from the business world in one place</Title>
             <TileWrapper>
                 {isLoading ? <div>Czekaj!</div> : (
-                    data?.articles.map((article: Article) => (
-                        <Tile key={article.title}>
-                            <TileImage src={ex} />
+                    data.articles.map((article: Article, index: number) => (
+                        <Tile key={index}>
+                            <TileImage src={article.urlToImage} />
                             <TileContent>
                                 <TileTitle>{article.title}</TileTitle>
                                 <TileArticle>{article.content}</TileArticle>
