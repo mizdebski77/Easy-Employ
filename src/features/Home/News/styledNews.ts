@@ -50,6 +50,7 @@ export const Tile = styled.div`
 
 export const TileImage = styled.img`
     max-width: 600px;
+    max-height:240px;
     width: 100%;
     border-radius: 20px 20px 0 0;
 `;

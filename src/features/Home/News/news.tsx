@@ -18,16 +18,18 @@ export const News = () => {
             <Title>The most important news from the business world in one place</Title>
             <TileWrapper>
                 {isLoading ? <div>Czekaj!</div> : (
-                    data.articles.map((article: Article, index: number) => (
-                        <Tile key={index}>
-                            <TileImage src={article.urlToImage} />
-                            <TileContent>
-                                <TileTitle>{article.title}</TileTitle>
-                                <TileArticle>{article.content}</TileArticle>
-                                <ReadMore to='/Article'> Read more 🡢 </ReadMore>
-                            </TileContent>
-                        </Tile>
-                    ))
+                    data.articles
+                        .filter((article: Article) => article.urlToImage)
+                        .map((article: Article, index: number) => (
+                            <Tile key={index}>
+                                <TileImage src={article.urlToImage} />
+                                <TileContent>
+                                    <TileTitle>{article.title}</TileTitle>
+                                    <TileArticle>{article.content}</TileArticle>
+                                    <ReadMore to='/Article'> Read more 🡢 </ReadMore>
+                                </TileContent>
+                            </Tile>
+                        ))
                 )}
             </TileWrapper>
         </Wrapper>
