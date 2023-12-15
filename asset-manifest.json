@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/Easy-Employ/static/js/main.8a3d740f.js",
+    "main.js": "/Easy-Employ/static/js/main.a7066841.js",
     "static/js/787.9d8ea4c6.chunk.js": "/Easy-Employ/static/js/787.9d8ea4c6.chunk.js",
     "static/media/homeScreenBG.jpg": "/Easy-Employ/static/media/homeScreenBG.3e5179990f6d2d10c6cb.jpg",
     "static/media/CVCreator.jpg": "/Easy-Employ/static/media/CVCreator.2d7a1ce4c27b13f5b011.jpg",
@@ -15,10 +15,10 @@
     "static/media/account.svg": "/Easy-Employ/static/media/account.113f1ad043c4f6308b419cd102865628.svg",
     "index.html": "/Easy-Employ/index.html",
     "static/media/language.svg": "/Easy-Employ/static/media/language.ff3b13b1466ffb34ed3fc18379084551.svg",
-    "main.8a3d740f.js.map": "/Easy-Employ/static/js/main.8a3d740f.js.map",
+    "main.a7066841.js.map": "/Easy-Employ/static/js/main.a7066841.js.map",
     "787.9d8ea4c6.chunk.js.map": "/Easy-Employ/static/js/787.9d8ea4c6.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.8a3d740f.js"
+    "static/js/main.a7066841.js"
   ]
 }
