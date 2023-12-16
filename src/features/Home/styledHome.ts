@@ -1,9 +1,17 @@
 import { styled } from "styled-components";
+import bg from '../../common/Images/header.jpg';
 
 export const Wrapper = styled.section`
     max-width: 1500px;
     margin: 0 auto;
     padding: 20px;
+`;
+
+export const TitleWrapper = styled.div`
+    background-image: url(${bg});
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
 `;
 
 export const Title = styled.h1`
