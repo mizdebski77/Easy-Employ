@@ -24,6 +24,7 @@ export const Title = styled.h1`
     font-weight: normal;
     text-align: center;
     color: ${({ theme }) => theme.color.fontMain};
+    margin: 40px 0 20px 0;
     
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         font-size: 32px;
