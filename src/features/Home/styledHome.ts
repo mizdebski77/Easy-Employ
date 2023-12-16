@@ -15,6 +15,7 @@ export const TitleWrapper = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-radius: 40px;
 `;
 
 export const Title = styled.h1`
