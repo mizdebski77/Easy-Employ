@@ -16,6 +16,7 @@ export const TitleWrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     box-shadow: 100px 0px 175.8px 27px #f1f1f0 inset;
+    border-radius: 0 0 200px 200px;
 `;
 
 export const Title = styled.h1`
