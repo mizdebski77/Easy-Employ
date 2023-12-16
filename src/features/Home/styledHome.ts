@@ -18,7 +18,7 @@ export const TitleWrapper = styled.div`
 `;
 
 export const Title = styled.h1`
-    font-size: 54px;
+    font-size: 80px;
     font-weight: normal;
     text-align: center;
     color: ${({ theme }) => theme.color.fontMain};
