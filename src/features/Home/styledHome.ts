@@ -4,7 +4,7 @@ import bg from '../../common/Images/header.jpg';
 export const Wrapper = styled.section`
     max-width: 1500px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0 20px 0 ;
 `;
 
 export const TitleWrapper = styled.div`
