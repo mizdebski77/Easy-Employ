@@ -12,6 +12,9 @@ export const TitleWrapper = styled.div`
     background-size: cover;
     background-position: center;
     min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 `;
 
 export const Title = styled.h1`
