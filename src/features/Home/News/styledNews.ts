@@ -21,6 +21,7 @@ export const CustomSwiper = styled(Swiper)`
     max-width: 1500px;
     width: 100%;
     margin: 0 auto;
+    padding: 20px;
 
     .swiper-button-next {
       color: ${({ theme }) => theme.color.fontMain};
@@ -41,6 +42,7 @@ export const Tile = styled(SwiperSlide)`
     box-shadow: 0 0 10px ${({ theme }) => theme.color.fontSecond};
     border-radius: 20px;
     transition: 0.3s;
+    min-height: 320px;
 
     &:hover {
         box-shadow: 0 0 10px ${({ theme }) => theme.color.fontMain};
@@ -55,7 +57,7 @@ export const Tile = styled(SwiperSlide)`
 
 export const TileImage = styled.img`
     max-width: 600px;
-    max-height:240px;
+    height:240px;
     width: 100%;
     border-radius: 20px 20px 0 0;
 `;
@@ -79,6 +81,7 @@ export const TileTitle = styled.h2`
 export const TileArticle = styled.article`
     font-size: 20px;
     text-align: justify;
+    min-height: 160px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         font-size: 16px;
