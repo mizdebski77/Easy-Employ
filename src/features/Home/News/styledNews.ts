@@ -17,26 +17,23 @@ export const Title = styled.h1`
     };
 `;
 
-export const TileWrapper = styled.div`
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 40px;
-
-    @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
-        grid-template-columns: 1fr 1fr;
-    };
-
-    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
-        grid-template-columns: 1fr ;
-        gap: 20px;
-    };
-`;
-
 export const CustomSwiper = styled(Swiper)`
     max-width: 1500px;
     width: 100%;
-    padding: 40px;
     margin: 0 auto;
+
+    .swiper-button-next {
+      color: ${({ theme }) => theme.color.fontMain};
+      margin-left: 20px;
+    }
+
+    .swiper-button-prev {
+      color: ${({ theme }) => theme.color.fontMain};
+    }
+`;
+
+export const TilesWrapper = styled.div`
+    padding: 40px;
 `;
 
 export const Tile = styled(SwiperSlide)`
