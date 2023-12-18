@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { styled } from "styled-components";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 export const Wrapper = styled.section`
     margin-top: 80px;
@@ -31,7 +32,14 @@ export const TileWrapper = styled.div`
     };
 `;
 
-export const Tile = styled.div`
+export const CustomSwiper = styled(Swiper)`
+    max-width: 1500px;
+    width: 100%;
+    padding: 40px;
+    margin: 0 auto;
+`;
+
+export const Tile = styled(SwiperSlide)`
     background: ${({ theme }) => theme.color.thirdColor};
     box-shadow: 0 0 10px ${({ theme }) => theme.color.fontSecond};
     border-radius: 20px;

@@ -29,6 +29,7 @@
     "react-toastify": "^9.1.3",
     "react-tsparticles": "^2.12.2",
     "styled-components": "^6.1.1",
+    "swiper": "^11.0.5",
     "tsparticles-slim": "^2.12.0",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"

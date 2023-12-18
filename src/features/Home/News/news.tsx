@@ -1,16 +1,15 @@
 import React, { useState } from 'react';
-import { ReadMore, Tile, TileArticle, TileContent, TileImage, TileTitle, TileWrapper, Title, Wrapper } from './styledNews';
+import { CustomSwiper, ReadMore, Tile, TileArticle, TileContent, TileImage, TileTitle, TileWrapper, Title, Wrapper } from './styledNews';
 import ex from '../../../common/Images/Carrer/CVCreator.jpg';
 import { useQuery } from '@tanstack/react-query';
 import { Article } from '../../../core/interface';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { Navigation } from 'swiper/modules';
 
 export const News = () => {
 
-    const [displayNews, setDisplayNews] = useState(3);
-
-    const handleShowMore = () => {
-        setDisplayNews(displayNews + 3);
-    };
 
     const { data, isLoading, error } = useQuery({
         queryKey: ['news'],
@@ -18,16 +17,18 @@ export const News = () => {
             .then((response: Response) => response.json())
     });
 
-    console.log(data?.articles);
 
     return (
         <Wrapper>
             <Title>The most important news from the business world in one place</Title>
             <TileWrapper>
-                {isLoading ? <div>Czekaj!</div> : (
-                    data.articles
-                        .filter((article: Article, index: number) => article.urlToImage && index < displayNews)
-                        .map((article: Article, index: number) => (
+
+                    <CustomSwiper
+                        navigation={true}
+                        modules={[Navigation]}
+                        slidesPerView={1}
+                    >
+                        {data.articles.map((article: Article, index: number) => (
                             <Tile key={index}>
                                 <TileImage src={article.urlToImage} />
                                 <TileContent>
@@ -36,12 +37,9 @@ export const News = () => {
                                     <ReadMore to='/Article'> Read more 🡢 </ReadMore>
                                 </TileContent>
                             </Tile>
-                        ))
-                )}
+                        ))}
+                    </CustomSwiper>
             </TileWrapper>
-            {displayNews < data?.articles.length && (
-                <button onClick={handleShowMore}>Show more</button>
-            )}
         </Wrapper>
     );
 };
