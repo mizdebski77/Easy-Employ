@@ -11,6 +11,5 @@ export const Title = styled.h1`
     font-weight: normal;
     color: ${({theme}) => theme.color.fontMain};
     text-align: center;
-    
 `;
 
