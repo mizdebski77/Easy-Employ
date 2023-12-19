@@ -8,6 +8,8 @@ import { Navigation, EffectCoverflow, Scrollbar, Pagination, } from 'swiper/modu
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { Loader } from '../../../common/Loader/loader';
+import { Error } from '../../../common/Error/error';
 
 export const News = () => {
 
@@ -19,10 +21,13 @@ export const News = () => {
     });
 
 
+
+
+
     return (
         <Wrapper>
             <Title>The most important news from the business world in one place</Title>
-            {isLoading ? <div>Czekaj!</div> : (
+            {isLoading ? <Loader /> : error ? <Error /> : (
                 <CustomSwiper
                     breakpoints={{
                         900: {
@@ -51,10 +56,11 @@ export const News = () => {
                         slideShadows: true,
                     }}
                 >
-                    {data.articles
-                        .filter((article: Article) => article.urlToImage && article.content)
-                        .map((article: Article, index: number) => (
-                            <TilesWrapper>
+                    <TilesWrapper >
+
+                        {data.articles
+                            .filter((article: Article) => article.urlToImage && article.content)
+                            .map((article: Article, index: number) => (
                                 <Tile key={index}>
                                     <TileImage src={article.urlToImage} />
                                     <TileContent>
@@ -63,8 +69,9 @@ export const News = () => {
                                         <ReadMore to='/Article'> Read more 🡢 </ReadMore>
                                     </TileContent>
                                 </Tile>
-                            </TilesWrapper>
-                        ))}
+                            ))}
+                    </TilesWrapper>
+
                 </CustomSwiper>
             )}
         </Wrapper >
