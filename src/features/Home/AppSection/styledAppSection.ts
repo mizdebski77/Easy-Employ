@@ -14,6 +14,7 @@ export const Wrapper = styled.div`
         display: flex;
         flex-direction: column-reverse;
         gap: 20px;
+        margin-top: 40px;
     };
 `;
 

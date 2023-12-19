@@ -22,23 +22,17 @@ export const News = () => {
     return (
         <Wrapper>
             <Title>The most important news from the business world in one place</Title>
-
             {isLoading ? <div>Czekaj!</div> : (
                 <CustomSwiper
-
                     breakpoints={{
                         900: {
                             slidesPerView: 2,
                             spaceBetween: 40,
-
                         },
                         1200: {
                             slidesPerView: 3,
                         },
                     }}
-
-
-
                     effect={'coverflow'}
                     centeredSlides={true}
                     slidesPerView={1}
@@ -72,10 +66,7 @@ export const News = () => {
                             </TilesWrapper>
                         ))}
                 </CustomSwiper>
-
-            )
-            }
-
+            )}
         </Wrapper >
     );
 };

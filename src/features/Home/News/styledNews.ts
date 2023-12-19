@@ -23,6 +23,10 @@ export const CustomSwiper = styled(Swiper)`
     margin: 0 auto;
     padding: 40px 20px;
 
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        padding: 20px 10px;
+    };
+
     .swiper-button-next {
       color: ${({ theme }) => theme.color.fontMain};
       margin-left: 20px;
