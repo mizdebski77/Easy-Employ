@@ -28,12 +28,20 @@ export const CustomSwiper = styled(Swiper)`
     };
 
     .swiper-button-next {
-      color: ${({ theme }) => theme.color.fontMain};
-      margin-left: 20px;
+        color: ${({ theme }) => theme.color.fontMain};
+        margin-left: 20px;
+
+        @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+            display: none;
+        };
     }
 
     .swiper-button-prev {
-      color: ${({ theme }) => theme.color.fontMain};
+        color: ${({ theme }) => theme.color.fontMain};
+
+        @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+            display: none;
+        };
     }
 `;
 
