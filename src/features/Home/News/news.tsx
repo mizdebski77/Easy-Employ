@@ -52,7 +52,7 @@ export const News = () => {
                     }}
                 >
                     {data.articles
-                        .filter((article: Article, index: number) => article.urlToImage && article.content)
+                        .filter((article: Article) => article.urlToImage && article.content)
                         .map((article: Article, index: number) => (
                             <TilesWrapper>
                                 <Tile key={index}>
