@@ -1,10 +1,14 @@
 import React from 'react';
-import { Wrapper } from './styledLoader';
+import { Spinner, Title, Wrapper } from './styledLoader';
+import spinner from './spinner.svg';
 
 export const Loader = () => {
     return (
         <Wrapper>
-            hej
+            <Spinner src={spinner} />
+            <Title>
+                Data download ...
+            </Title>
         </Wrapper>
     );
 };

@@ -1,9 +1,6 @@
-import React, { useState } from 'react';
 import { CustomSwiper, ReadMore, Tile, TileArticle, TileContent, TileImage, TileTitle, TilesWrapper, Title, Wrapper } from './styledNews';
-import ex from '../../../common/Images/Carrer/CVCreator.jpg';
 import { useQuery } from '@tanstack/react-query';
 import { Article } from '../../../core/interface';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, EffectCoverflow, Scrollbar, Pagination, } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -19,9 +16,6 @@ export const News = () => {
         queryFn: () => fetch("https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=1b6e99a4f4244702bd1caf4f3fd8e680")
             .then((response: Response) => response.json())
     });
-
-
-
 
 
     return (
@@ -57,7 +51,6 @@ export const News = () => {
                     }}
                 >
                     <TilesWrapper >
-
                         {data.articles
                             .filter((article: Article) => article.urlToImage && article.content)
                             .map((article: Article, index: number) => (
@@ -71,7 +64,6 @@ export const News = () => {
                                 </Tile>
                             ))}
                     </TilesWrapper>
-
                 </CustomSwiper>
             )}
         </Wrapper >
