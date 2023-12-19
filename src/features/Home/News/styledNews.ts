@@ -21,7 +21,7 @@ export const CustomSwiper = styled(Swiper)`
     max-width: 1500px;
     width: 100%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 40px 20px;
 
     .swiper-button-next {
       color: ${({ theme }) => theme.color.fontMain};

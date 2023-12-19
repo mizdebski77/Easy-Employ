@@ -4,7 +4,7 @@ import ex from '../../../common/Images/Carrer/CVCreator.jpg';
 import { useQuery } from '@tanstack/react-query';
 import { Article } from '../../../core/interface';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, EffectCoverflow, Scrollbar, } from 'swiper/modules';
+import { Navigation, EffectCoverflow, Scrollbar, Pagination, } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -25,13 +25,30 @@ export const News = () => {
 
             {isLoading ? <div>Czekaj!</div> : (
                 <CustomSwiper
+
+                    breakpoints={{
+                        900: {
+                            slidesPerView: 2,
+                            spaceBetween: 40,
+
+                        },
+                        1200: {
+                            slidesPerView: 3,
+                        },
+                    }}
+
+
+
                     effect={'coverflow'}
                     centeredSlides={true}
-                    slidesPerView={3}
-                    modules={[Navigation, Scrollbar, EffectCoverflow]}
-                    spaceBetween={100}
+                    slidesPerView={1}
+                    modules={[Navigation, Scrollbar, EffectCoverflow, Pagination]}
+                    spaceBetween={20}
                     loop={true}
                     navigation
+                    pagination={{
+                        clickable: true
+                    }}
                     coverflowEffect={{
                         rotate: 50,
                         stretch: 0,
@@ -56,8 +73,9 @@ export const News = () => {
                         ))}
                 </CustomSwiper>
 
-            )}
+            )
+            }
 
-        </Wrapper>
+        </Wrapper >
     );
 };
