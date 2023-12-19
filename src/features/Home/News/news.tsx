@@ -51,19 +51,22 @@ export const News = () => {
                         slideShadows: true,
                     }}
                 >
-                    <TilesWrapper >
+                    <TilesWrapper>
                         {data && data.articles
-                            .filter((article: Article) => article.urlToImage && article.content)
-                            .map((article: Article, index: number) => (
-                                <Tile key={index}>
-                                    <TileImage src={article.urlToImage} />
-                                    <TileContent>
-                                        <TileTitle>{article.title}</TileTitle>
-                                        <TileArticle>{article.content}</TileArticle>
-                                        <ReadMore to='/Article'> Read more 🡢 </ReadMore>
-                                    </TileContent>
-                                </Tile>
-                            ))}
+                            ? data.articles
+                                .filter((article: Article) => article.urlToImage && article.content)
+                                .map((article: Article, index: number) => (
+                                    <Tile key={index}>
+                                        <TileImage src={article.urlToImage} />
+                                        <TileContent>
+                                            <TileTitle>{article.title}</TileTitle>
+                                            <TileArticle>{article.content}</TileArticle>
+                                            <ReadMore to='/Article'> Read more 🡢 </ReadMore>
+                                        </TileContent>
+                                    </Tile>
+                                ))
+                            : <Error />
+                        }
                     </TilesWrapper>
                 </CustomSwiper>
             )}
