@@ -52,7 +52,7 @@ export const News = () => {
                     }}
                 >
                     <TilesWrapper >
-                        {data.articles
+                        {data && data.articles
                             .filter((article: Article) => article.urlToImage && article.content)
                             .map((article: Article, index: number) => (
                                 <Tile key={index}>
