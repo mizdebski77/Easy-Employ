@@ -32,6 +32,7 @@ export const News = () => {
                             slidesPerView: 3,
                         },
                     }}
+                    grabCursor
                     effect={'coverflow'}
                     centeredSlides={true}
                     slidesPerView={1}
