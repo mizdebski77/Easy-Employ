@@ -61,7 +61,7 @@ export const News = () => {
                                         <TileContent>
                                             <TileTitle>{article.title}</TileTitle>
                                             <TileArticle>{article.content}</TileArticle>
-                                            <ReadMore to='/Article'> Read more 🡢 </ReadMore>
+                                            <ReadMore href={article.url} target='_blank'> Read more 🡢 </ReadMore>
                                         </TileContent>
                                     </Tile>
                                 ))

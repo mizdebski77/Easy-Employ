@@ -100,7 +100,7 @@ export const TileArticle = styled.article`
     };
 `;
 
-export const ReadMore = styled(Link)`
+export const ReadMore = styled.a`
     color: ${({ theme }) => theme.color.fontMain};
     font-size: 18px;
     text-decoration: none;
