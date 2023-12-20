@@ -2,6 +2,7 @@ import { styled } from "styled-components";
 
 export const Wrapper = styled.section`
     padding: 40px;
+    min-height: 100vh;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         padding: 20px 12px;
