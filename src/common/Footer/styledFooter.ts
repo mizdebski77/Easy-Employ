@@ -50,6 +50,7 @@ export const ToolsTitle = styled.span`
     color: ${({ theme }) => theme.color.fontMain};
     font-size: 32px;
     font-weight: normal;
+    margin-bottom: 20px;
 `;
 
 export const ToolsLinksWrapper = styled.div`
@@ -70,12 +71,28 @@ export const ToolsLink = styled(Link)`
 `;
 
 export const AppWrapper = styled.div`
-
+    display: flex;
+    flex-direction: column;
 `;
 
 export const AppTitle = styled.span`
-
+    color: ${({ theme }) => theme.color.fontMain};
+    font-size: 32px;
+    font-weight: normal;
+    margin-bottom: 20px;
 `;
+
+
+export const AppImg = styled.img`
+    max-width: 200px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        transform: scale(1.02);
+    }
+`;
+
 
 export const IformationsWrapper = styled.section`
 

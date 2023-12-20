@@ -1,8 +1,9 @@
 import React from 'react';
-import { AppTitle, AppWrapper, Logo, LogoFirstLetters, LogoText, LogoWrapper, MainSection, ToolsLink, ToolsLinksWrapper, ToolsTitle, ToolsWrapper, Wrapper } from './styledFooter';
+import { AppImg, AppTitle, AppWrapper, Logo, LogoFirstLetters, LogoText, LogoWrapper, MainSection, ToolsLink, ToolsLinksWrapper, ToolsTitle, ToolsWrapper, Wrapper } from './styledFooter';
 import logo from '../Images/logo.png';
 import { links } from '../links';
-
+import app from '../Images/appSection/app.png';
+import google from '../Images/appSection/google.png';
 
 export const Footer = () => {
     return (
@@ -27,7 +28,9 @@ export const Footer = () => {
                 </ToolsWrapper>
 
                 <AppWrapper>
-                    <AppTitle></AppTitle>
+                    <AppTitle>Download the app</AppTitle>
+                    <AppImg src={app} />
+                    <AppImg src={google} />
                 </AppWrapper>
             </MainSection>
         </Wrapper>
