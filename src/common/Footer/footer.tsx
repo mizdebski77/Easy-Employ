@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppImg, AppTitle, AppWrapper, IformationsWrapper, InformationLink, InformationsLinksWrapper, Logo, LogoFirstLetters, LogoText, LogoWrapper, MainSection, ToolsLink, ToolsLinksWrapper, ToolsTitle, ToolsWrapper, Wrapper } from './styledFooter';
+import { AppImg, AppTitle, AppWrapper, IformationsWrapper, InformationAppWrapper, InformationLink, InformationsLinksWrapper, Logo, LogoFirstLetters, LogoText, LogoWrapper, MainSection, SocialLink, ToolsLink, ToolsLinksWrapper, ToolsTitle, ToolsWrapper, Wrapper } from './styledFooter';
 import logo from '../Images/logo.png';
 import { links } from '../links';
 import app from '../Images/appSection/app.png';
@@ -45,6 +45,12 @@ export const Footer = () => {
                     <InformationLink>Privacy policy</InformationLink>
                     <InformationLink>Cookie policy</InformationLink>
                 </InformationsLinksWrapper>
+
+                <InformationAppWrapper>
+                    <SocialLink src={link}/>
+                    <SocialLink src={fb}/>
+                    <SocialLink src={insta}/>
+                </InformationAppWrapper>
             </IformationsWrapper>
         </Wrapper>
     );

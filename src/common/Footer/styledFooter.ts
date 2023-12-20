@@ -98,21 +98,28 @@ export const AppImg = styled.img`
 
 export const IformationsWrapper = styled.section`
     border-top: 1px solid ${({ theme }) => theme.color.fontSecond};
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
 `;
 
-export const InformationsLinksWrapper =styled.div`
-
+export const InformationsLinksWrapper = styled.div`
+    display: flex;
+    justify-content: space-around;
+    gap: 80px;
 `;
 
-export const Privacy = styled.span`
+export const InformationLink = styled.span`
 
 `;
 
 export const InformationAppWrapper = styled.div`
-
+    display: flex;
+    gap: 32px;
 `;
 
 export const SocialLink = styled.img`
-
+    max-width: 56px;
+    width: 100%;
 `;
 
