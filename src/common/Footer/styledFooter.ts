@@ -5,12 +5,11 @@ export const Wrapper = styled.footer`
     background: ${({ theme }) => theme.color.thirdColor};
     padding: 120px 40px;
     margin-top: 40px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
 `;
 
 export const MainSection = styled.section`
-
+    display: flex;
+    justify-content: space-between;
 `;
 
 
@@ -43,13 +42,13 @@ export const LogoFirstLetters = styled.span`
 `;
 
 export const ToolsWrapper = styled.div`
-
+    display: flex;
+    flex-direction: column;
 `;
 
-export const ToolsTitle = styled.h1`
+export const ToolsTitle = styled.span`
     color: ${({ theme }) => theme.color.fontMain};
     font-size: 32px;
-    text-align: center;
     font-weight: normal;
 `;
 
@@ -62,7 +61,6 @@ export const ToolsLinksWrapper = styled.div`
 export const ToolsLink = styled(Link)`
     color: ${({ theme }) => theme.color.fontSecond};
     text-decoration: none;
-    text-align: center;
     font-size: 20px;
     transition: 0.3s;
 
@@ -72,6 +70,10 @@ export const ToolsLink = styled(Link)`
 `;
 
 export const AppWrapper = styled.div`
+
+`;
+
+export const AppTitle = styled.span`
 
 `;
 
