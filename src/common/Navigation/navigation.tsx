@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { LinkImg, ImgWrapper, LinksWrapper, LogoFirstLetters, LinkImgWrapperLang, LogoImg, LogoLink, LogoText, NavbarLink, Wrapper, PhoneNavbar, LinkImgWrapper, LinkImgSpan } from './styledNavigation';
 import logo from '../Images/logo.png';
-import { links } from './links';
+import { links } from '../links';
 import accountImg from '../Images/account.svg';
 import languageImg from '../Images/language.svg';
 import { Divide as Hamburger } from 'hamburger-react';

@@ -5,6 +5,8 @@ export const Wrapper = styled.footer`
     background: ${({ theme }) => theme.color.thirdColor};
     padding: 120px 40px;
     margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 `;
 
 export const LogoWrapper = styled(Link)`
@@ -37,6 +39,31 @@ export const LogoFirstLetters = styled.span`
 
 export const ToolsWrapper = styled.div`
 
+`;
+
+export const ToolsTitle = styled.h1`
+    color: ${({ theme }) => theme.color.fontMain};
+    font-size: 32px;
+    text-align: center;
+    font-weight: normal;
+`;
+
+export const ToolsLinksWrapper = styled.div`
+    display: grid;  
+    justify-content: center;
+    gap: 10px;
+`;
+
+export const ToolsLink = styled(Link)`
+    color: ${({ theme }) => theme.color.fontSecond};
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    transition: 0.3s;
+
+    &:hover {
+        color: ${({ theme }) => theme.color.fontMain};
+    };    
 `;
 
 export const AppWrapper = styled.div`
