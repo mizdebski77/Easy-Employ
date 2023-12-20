@@ -6,6 +6,7 @@ export const Wrapper = styled.section`
     align-items: center;
     padding: 40px;
     flex-direction: column;
+    min-height: 100vh;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         padding: 40px 12px;
