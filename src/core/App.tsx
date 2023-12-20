@@ -7,20 +7,22 @@ import { Calculator } from "../features/Calculator/calculator";
 import JobOffers from "../features/JobOffers/jobOffers";
 import { Carrer } from "../features/Carrer/carrer";
 import { Creator } from "../features/Creator/creator";
+import { Footer } from "../common/Footer/footer";
 
 function App() {
   return (
     <BrowserRouter>
+      <Navigation />
       <Routes>
-        <Route path="/HomeScreen" element={<WelcomePage />} />
-        <Route path={"*"} element={<Navigate replace to="/HomeScreen" />}></Route>
-        <Route path="/Home" element={<><Navigation /><Home /></>} />
-        <Route path="/Log-In" element={<><Navigation /><LogIn /></>} />
-        <Route path="/Carrer" element={<><Navigation /><Carrer /></>} />
-        <Route path="/Calculator" element={<><Navigation /><Calculator /></>} />
-        <Route path="/Offers" element={<><Navigation /><JobOffers /></>} />
-        <Route path="/CV-Creator" element={<><Navigation /><Creator /></>} />
+        <Route path={"*"} element={<Navigate replace to="/Home" />}></Route>
+        <Route path="/Home" element={<Home />} />
+        <Route path="/Log-In" element={<LogIn />} />
+        <Route path="/Carrer" element={<Carrer />} />
+        <Route path="/Calculator" element={<Calculator />} />
+        <Route path="/Offers" element={<JobOffers />} />
+        <Route path="/CV-Creator" element={<Creator />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }
