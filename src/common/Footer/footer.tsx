@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppImg, AppTitle, AppWrapper, Logo, LogoFirstLetters, LogoText, LogoWrapper, MainSection, ToolsLink, ToolsLinksWrapper, ToolsTitle, ToolsWrapper, Wrapper } from './styledFooter';
+import { AppImg, AppTitle, AppWrapper, IformationsWrapper, Logo, LogoFirstLetters, LogoText, LogoWrapper, MainSection, ToolsLink, ToolsLinksWrapper, ToolsTitle, ToolsWrapper, Wrapper } from './styledFooter';
 import logo from '../Images/logo.png';
 import { links } from '../links';
 import app from '../Images/appSection/app.png';
@@ -33,6 +33,10 @@ export const Footer = () => {
                     <AppImg src={google} />
                 </AppWrapper>
             </MainSection>
+
+            <IformationsWrapper>
+                            
+            </IformationsWrapper>
         </Wrapper>
     );
 };

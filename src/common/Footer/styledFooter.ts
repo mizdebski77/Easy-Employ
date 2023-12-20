@@ -10,8 +10,8 @@ export const Wrapper = styled.footer`
 export const MainSection = styled.section`
     display: flex;
     justify-content: space-between;
+    padding: 40px 10px;
 `;
-
 
 export const LogoWrapper = styled(Link)`
     display: flex;
@@ -95,5 +95,5 @@ export const AppImg = styled.img`
 
 
 export const IformationsWrapper = styled.section`
-
+    border-top: 1px solid ${({ theme }) => theme.color.fontSecond};
 `;
