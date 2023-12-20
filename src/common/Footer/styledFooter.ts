@@ -9,6 +9,11 @@ export const Wrapper = styled.footer`
     grid-template-columns: 1fr 1fr 1fr;
 `;
 
+export const MainSection = styled.section`
+
+`;
+
+
 export const LogoWrapper = styled(Link)`
     display: flex;
     align-items: center;
@@ -70,6 +75,6 @@ export const AppWrapper = styled.div`
 
 `;
 
-export const IformationsWrapper = styled.div`
+export const IformationsWrapper = styled.section`
 
 `;
