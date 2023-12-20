@@ -1,7 +1,6 @@
 import { Navigation } from "../common/Navigation/navigation";
 import { Home } from "../features/Home/home";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
-import { WelcomePage } from "../features/WelcomePage/welcomePage";
 import { LogIn } from "../features/LogIn/logIn";
 import { Calculator } from "../features/Calculator/calculator";
 import JobOffers from "../features/JobOffers/jobOffers";
