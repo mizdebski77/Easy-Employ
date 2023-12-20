@@ -4,6 +4,7 @@ export const Wrapper = styled.section`
     max-width: 1500px;
     margin: 0 auto;
     padding: 20px;
+    min-height: 100vh;
 `;
 
 export const Title = styled.h1`
