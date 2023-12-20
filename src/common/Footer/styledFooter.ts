@@ -73,6 +73,8 @@ export const ToolsLink = styled(Link)`
 export const AppWrapper = styled.div`
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 `;
 
 export const AppTitle = styled.span`
@@ -97,3 +99,20 @@ export const AppImg = styled.img`
 export const IformationsWrapper = styled.section`
     border-top: 1px solid ${({ theme }) => theme.color.fontSecond};
 `;
+
+export const InformationsLinksWrapper =styled.div`
+
+`;
+
+export const Privacy = styled.span`
+
+`;
+
+export const InformationAppWrapper = styled.div`
+
+`;
+
+export const SocialLink = styled.img`
+
+`;
+
