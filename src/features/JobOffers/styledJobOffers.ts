@@ -16,12 +16,14 @@ export const Title = styled.h1`
 
 export const FormWrapper = styled.div`
     background: ${({ theme }) => theme.color.thirdColor};
-
+    max-width: 1200px;
+    margin: 0 auto;
 `;
 
 export const Form = styled.form`
     padding: 40px;
     display: flex;
+    justify-content: space-around;
 `;
 
 export const Input = styled.input`
@@ -40,7 +42,21 @@ export const KeyWordsWrapper = styled.div`
 `;
 
 export const SearchButton = styled.button`
+    padding: 8px 64px;
+    background: ${({ theme }) => theme.color.fontMain};
+    border-radius: 10px;
+    border:none;
+    color:${({ theme }) => theme.color.secondColor};
+    cursor: pointer;
+    transition: 0.3s;
 
+    &:hover {
+        background: ${({ theme }) => theme.color.fontMainHover};
+    }
+
+    &:active {
+        background: ${({ theme }) => theme.color.fontMainActive};
+    }
 `;
-    
+
 
