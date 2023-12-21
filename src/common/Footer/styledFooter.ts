@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 
 export const Wrapper = styled.footer`
     background: ${({ theme }) => theme.color.thirdColor};
-    padding: 120px 40px;
+    padding: 80px;
     margin-top: 40px;
 `;
 
@@ -110,7 +110,12 @@ export const InformationsLinksWrapper = styled.div`
 `;
 
 export const InformationLink = styled.span`
+    transition: 0.3s;
+    cursor: pointer;
 
+    &:hover {
+        color:${({ theme }) => theme.color.fontMain}
+    }
 `;
 
 export const InformationAppWrapper = styled.div`
@@ -121,5 +126,11 @@ export const InformationAppWrapper = styled.div`
 export const SocialLink = styled.img`
     max-width: 56px;
     width: 100%;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.05);
+    }
 `;
 
