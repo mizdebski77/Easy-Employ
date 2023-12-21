@@ -27,7 +27,6 @@ export const Navigation = () => {
 
     return (
         <>
-
             <Wrapper>
                 <LogoLink to='/Home'>
                     <LogoImg src={logo} />

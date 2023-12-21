@@ -2,8 +2,8 @@ import { NavLink } from "react-router-dom";
 import { styled } from "styled-components";
 
 export const Wrapper = styled.div`
-    border-bottom: 2px solid ${({ theme }) => theme.color.fontMain};
-    background: ${({theme}) => theme.color.thirdColor};
+    border-bottom: 2px  solid ${({ theme }) => theme.color.fontMain};
+    background: linear-gradient(to bottom, #ffff, #f1f1f0);
     position: fixed;
     width: 100%;
     z-index: 1;
