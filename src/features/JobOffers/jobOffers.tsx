@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, FormWrapper, Input, SearchButton, Title, Wrapper } from './styledJobOffers';
+import { Form, FormWrapper, Input, KeyWord, KeyWordsWrapper, Legend, SearchButton, Title, Wrapper } from './styledJobOffers';
 
 const JobOffers = () => {
     return (
@@ -22,6 +22,11 @@ const JobOffers = () => {
 
                     <SearchButton>Search</SearchButton>
                 </Form>
+
+                <KeyWordsWrapper>
+                    <Legend>Key words</Legend>
+                    <KeyWord>Frontend developer</KeyWord>
+                </KeyWordsWrapper>
             </FormWrapper>
 
         </Wrapper>

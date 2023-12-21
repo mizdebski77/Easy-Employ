@@ -18,6 +18,7 @@ export const FormWrapper = styled.div`
     background: ${({ theme }) => theme.color.thirdColor};
     max-width: 1200px;
     margin: 0 auto;
+    padding: 20px;
 `;
 
 export const Form = styled.form`
@@ -38,9 +39,6 @@ export const Input = styled.input`
     }
 `;
 
-export const KeyWordsWrapper = styled.div`
-
-`;
 
 export const SearchButton = styled.button`
     padding: 8px 64px;
@@ -61,3 +59,23 @@ export const SearchButton = styled.button`
 `;
 
 
+
+export const KeyWordsWrapper = styled.fieldset`
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 2px solid ${({ theme }) => theme.color.fontMainActive};
+`;
+
+export const Legend = styled.legend`
+    font-size: 24px;
+    padding: 0 10px;
+`;
+
+export const KeyWord = styled.span`
+    background: ${({ theme }) => theme.color.fontMainActive};
+    padding: 8px 10px;
+    border-radius: 20px;
+    color: ${({ theme }) => theme.color.mainColor};
+`;
