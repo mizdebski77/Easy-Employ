@@ -13,3 +13,16 @@ export const Title = styled.h1`
     color: ${({ theme }) => theme.color.fontMain};
     font-weight: normal;
 `;
+
+export const Form = styled.form`
+
+`;
+
+export const Input = styled.input`
+
+`;
+
+export const KeyWordsWrapper =styled.div`
+
+`;
+
