@@ -1,7 +1,7 @@
 import React from 'react';
-import { Form, FormWrapper, Input, KeyWord, KeyWordsWrapper, Legend, SearchButton, Title, Wrapper } from './styledJobOffers';
+import { Form, FormWrapper, Input, KeyWord, KeyWordContainer, KeyWordsWrapper, Legend, RemoveButton, SearchButton, Title, Wrapper } from './styledJobOffers';
 
-const JobOffers = () => {
+export const JobOffers = () => {
     return (
         <Wrapper>
             <Title>
@@ -25,12 +25,24 @@ const JobOffers = () => {
 
                 <KeyWordsWrapper>
                     <Legend>Key words</Legend>
-                    <KeyWord>Frontend developer</KeyWord>
+
+                    <KeyWordContainer>
+                        <KeyWord>Frontend developer</KeyWord>
+                        <RemoveButton>x</RemoveButton>
+                    </KeyWordContainer>
+
+                    <KeyWordContainer>
+                        <KeyWord>JS</KeyWord>
+                        <RemoveButton>x</RemoveButton>
+                    </KeyWordContainer>
+
+                    <KeyWordContainer>
+                        <KeyWord>React</KeyWord>
+                        <RemoveButton>x</RemoveButton>
+                    </KeyWordContainer>
                 </KeyWordsWrapper>
             </FormWrapper>
 
         </Wrapper>
     );
 };
-
-export default JobOffers;

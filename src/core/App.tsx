@@ -3,7 +3,7 @@ import { Home } from "../features/Home/home";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import { LogIn } from "../features/LogIn/logIn";
 import { Calculator } from "../features/Calculator/calculator";
-import JobOffers from "../features/JobOffers/jobOffers";
+import { JobOffers } from "../features/JobOffers/jobOffers";
 import { Carrer } from "../features/Carrer/carrer";
 import { Creator } from "../features/Creator/creator";
 import { Footer } from "../common/Footer/footer";

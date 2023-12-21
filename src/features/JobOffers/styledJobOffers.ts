@@ -66,6 +66,9 @@ export const KeyWordsWrapper = styled.fieldset`
     margin: 0 auto;
     border-radius: 10px;
     border: 2px solid ${({ theme }) => theme.color.fontMainActive};
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
 `;
 
 export const Legend = styled.legend`
@@ -73,9 +76,25 @@ export const Legend = styled.legend`
     padding: 0 10px;
 `;
 
+export const KeyWordContainer = styled.div`
+    position: relative;
+`;
+
 export const KeyWord = styled.span`
     background: ${({ theme }) => theme.color.fontMainActive};
     padding: 8px 10px;
     border-radius: 20px;
     color: ${({ theme }) => theme.color.mainColor};
+`;
+
+export const RemoveButton = styled.button`
+    position: absolute;
+    border-radius: 50%;
+    font-size: 12px;
+    background: #bf0005;
+    color: white;
+    border: none;
+    right: 2px;
+    bottom: 20px;
+    cursor: pointer;
 `;
