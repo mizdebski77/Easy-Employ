@@ -5,6 +5,10 @@ export const Wrapper = styled.section`
     max-width: 1500px;
     margin: 0 auto;
     padding: 0 20px 0 ;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        padding: 0 12px 0;
+    };
 `;
 
 export const TitleWrapper = styled.div`
@@ -17,6 +21,10 @@ export const TitleWrapper = styled.div`
     justify-content: center;
     box-shadow: 100px 0px 175.8px 27px #f1f1f0 inset;
     border-radius: 0 0 160px 160px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        border-radius: 0 0 40px 40px;
+    };
 `;
 
 export const Title = styled.h1`
