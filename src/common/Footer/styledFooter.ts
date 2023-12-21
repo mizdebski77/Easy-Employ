@@ -141,6 +141,7 @@ export const IformationsWrapper = styled.section`
     @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
         flex-direction: column;
         gap: 40px;
+        padding: 20px 10px;
     };
 `;
 
@@ -148,6 +149,13 @@ export const InformationsLinksWrapper = styled.div`
     display: flex;
     justify-content: space-around;
     gap: 80px;
+
+    
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    };
 `;
 
 export const InformationLink = styled.span`
@@ -156,7 +164,11 @@ export const InformationLink = styled.span`
 
     &:hover {
         color:${({ theme }) => theme.color.fontMain}
-    }
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        text-align:center;
+    };
 `;
 
 export const InformationAppWrapper = styled.div`
@@ -174,5 +186,9 @@ export const SocialLink = styled.img`
     &:hover {
         transform: scale(1.05);
     }
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        max-width: 40px;
+    };
 `;
 
