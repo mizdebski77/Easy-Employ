@@ -5,12 +5,22 @@ export const Wrapper = styled.footer`
     background: ${({ theme }) => theme.color.thirdColor};
     padding: 80px;
     margin-top: 40px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
+        padding: 20px;
+    };
 `;
 
 export const MainSection = styled.section`
     display: flex;
     justify-content: space-between;
     padding: 40px 10px;
+    align-items: center;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
+        flex-direction: column;
+        gap: 40px;
+    };
 `;
 
 export const LogoWrapper = styled(Link)`
@@ -22,6 +32,10 @@ export const LogoWrapper = styled(Link)`
 
 export const Logo = styled.img`
     max-width: 80px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        max-width: 40px;
+    };
 `;
 
 export const LogoText = styled.span`
@@ -32,7 +46,7 @@ export const LogoText = styled.span`
     letter-spacing: 2px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
-        font-size: 20px;
+        font-size: 24px;
     };
 `;
 
@@ -51,6 +65,11 @@ export const ToolsTitle = styled.span`
     font-size: 32px;
     font-weight: normal;
     margin-bottom: 20px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 24px;
+        text-align: center;
+    };
 `;
 
 export const ToolsLinksWrapper = styled.div`
@@ -67,7 +86,13 @@ export const ToolsLink = styled(Link)`
 
     &:hover {
         color: ${({ theme }) => theme.color.fontMain};
-    };    
+    };   
+    
+    
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 16px;
+        text-align: center;
+    };
 `;
 
 export const AppWrapper = styled.div`
@@ -82,6 +107,11 @@ export const AppTitle = styled.span`
     font-size: 32px;
     font-weight: normal;
     margin-bottom: 20px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 24px;
+        text-align: center;
+    };
 `;
 
 
@@ -92,7 +122,12 @@ export const AppImg = styled.img`
 
     &:hover {
         transform: scale(1.02);
-    }
+    };
+
+    
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        max-width: 120px;
+    };
 `;
 
 
@@ -101,6 +136,12 @@ export const IformationsWrapper = styled.section`
     padding: 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+      
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
+        flex-direction: column;
+        gap: 40px;
+    };
 `;
 
 export const InformationsLinksWrapper = styled.div`
@@ -121,6 +162,7 @@ export const InformationLink = styled.span`
 export const InformationAppWrapper = styled.div`
     display: flex;
     gap: 32px;
+
 `;
 
 export const SocialLink = styled.img`
