@@ -31,7 +31,8 @@ export const Input = styled.input`
     font-size: 16px;
     border-radius: 8px;
     border: 1px solid ${({ theme }) => theme.color.fontMain};
-    
+    min-width: 280px;
+
     &:focus {
         outline: none;
     }
@@ -52,11 +53,11 @@ export const SearchButton = styled.button`
 
     &:hover {
         background: ${({ theme }) => theme.color.fontMainHover};
-    }
+    };
 
     &:active {
         background: ${({ theme }) => theme.color.fontMainActive};
-    }
+    };
 `;
 
 
