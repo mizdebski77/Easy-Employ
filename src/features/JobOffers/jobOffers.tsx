@@ -6,7 +6,9 @@ import {
     KeyWordContainer,
     KeyWordsWrapper,
     Legend,
-    OfferSallary,
+    OfferCaptionTContent,
+    OfferCaptionTitle,
+    OfferCaptionWrapper,
     OfferTile,
     OfferTitle,
     OffersWrapper,
@@ -54,7 +56,11 @@ export const JobOffers = () => {
             <OffersWrapper>
                 <OfferTile>
                     <OfferTitle>Junior Frontend Developer</OfferTitle>
-                    <OfferSallary>10 000 - 12 000 zł</OfferSallary>
+                    <OfferCaptionWrapper>
+                        <OfferCaptionTitle>Sallary:</OfferCaptionTitle>
+                        <OfferCaptionTContent>10 000 - 12 000 zł</OfferCaptionTContent>
+                    </OfferCaptionWrapper>
+
                 </OfferTile>
             </OffersWrapper>
         </Wrapper>

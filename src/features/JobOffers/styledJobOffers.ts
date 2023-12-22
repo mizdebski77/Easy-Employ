@@ -139,11 +139,19 @@ export const OfferTitle = styled.h2`
     font-size: 28px;
 `;
 
-export const OfferCaptionTitle= styled.span`
-
+export const OfferCaptionWrapper = styled.div`
+    max-width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 `;
 
-export const OfferCaptionTContent= styled.span`
+export const OfferCaptionTitle = styled.span`
+    font-size: 20px; 
+    color: ${({ theme }) => theme.color.fontMain};
+`;
+
+export const OfferCaptionTContent = styled.span`
 
 `;
 
