@@ -37,26 +37,16 @@ export const JobOffers = () => {
                     <SearchButton>Search</SearchButton>
                 </Form>
                
-
                 <KeyWordsWrapper>
                     <Legend>Key words</Legend>
-
                     <KeyWordContainer>
                         <KeyWord>Frontend developer</KeyWord>
                         <RemoveButton>x</RemoveButton>
                     </KeyWordContainer>
-
-                    <KeyWordContainer>
-                        <KeyWord>JS</KeyWord>
-                        <RemoveButton>x</RemoveButton>
-                    </KeyWordContainer>
-
-                    <KeyWordContainer>
-                        <KeyWord>React</KeyWord>
-                        <RemoveButton>x</RemoveButton>
-                    </KeyWordContainer>
                 </KeyWordsWrapper>
             </FormWrapper>
+
+            
         </Wrapper>
     );
 };

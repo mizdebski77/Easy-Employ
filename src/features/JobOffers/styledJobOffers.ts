@@ -118,3 +118,36 @@ export const RemoveButton = styled.button`
     bottom: 20px;
     cursor: pointer;
 `;
+
+export const OffersWrapper = styled.div`
+
+`;
+
+export const OfferTile = styled.div`
+
+`;
+
+export const OfferTitle = styled.h2`
+
+`;
+
+export const OfferSallary = styled.span`
+
+`;
+
+export const OfferCompany = styled.span`
+
+`;
+
+export const OfferLocation = styled.span`
+
+`;
+
+export const OfferCaption = styled.span`
+
+`;
+
+export const FavButton = styled.button`
+
+`;
+
