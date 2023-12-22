@@ -40,11 +40,25 @@ export const Input = styled.input`
 `;
 
 export const Select = styled.select`
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid ${({ theme }) => theme.color.fontMain};
+    min-width: 280px;
+    cursor: pointer;
 
+    @media (max-width:${({ theme }) => theme.breakPoint.thirdBp}px) {
+        font-size: 14px;
+    }
+
+    
+    &:focus {
+        outline: none;
+    }
 `;
 
 export const Option = styled.option`
-
+    cursor: pointer;
 `;
 
 export const SearchButton = styled.button`
@@ -63,7 +77,7 @@ export const SearchButton = styled.button`
     &:active {
         background: ${({ theme }) => theme.color.fontMainActive};
     };
-`;  
+`;
 
 
 export const KeyWordsWrapper = styled.fieldset`
