@@ -134,17 +134,16 @@ export const OfferTile = styled.div`
 `;
 
 export const OfferTitle = styled.h2`
+    color: ${({ theme }) => theme.color.fontMain};
+    text-align: center;
+    font-size: 28px;
 `;
 
-export const OfferSallary = styled.span`
+export const OfferCaptionTitle= styled.span`
 
 `;
 
-export const OfferCompany = styled.span`
-
-`;
-
-export const OfferLocation = styled.span`
+export const OfferCaptionTContent= styled.span`
 
 `;
 
