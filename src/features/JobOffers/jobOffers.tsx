@@ -1,4 +1,6 @@
 import {
+    CaptionsContainer,
+    ContentWrapper,
     Form,
     FormWrapper,
     Input,
@@ -6,6 +8,7 @@ import {
     KeyWordContainer,
     KeyWordsWrapper,
     Legend,
+    Logo,
     OfferCaptionTContent,
     OfferCaptionTitle,
     OfferCaptionWrapper,
@@ -19,6 +22,7 @@ import {
     Title,
     Wrapper
 } from './styledJobOffers';
+import logo from '../../common/Images/logo.png';
 
 export const JobOffers = () => {
 
@@ -55,11 +59,27 @@ export const JobOffers = () => {
 
             <OffersWrapper>
                 <OfferTile>
-                    <OfferTitle>Junior Frontend Developer</OfferTitle>
-                    <OfferCaptionWrapper>
-                        <OfferCaptionTitle>Sallary:</OfferCaptionTitle>
-                        <OfferCaptionTContent>10 000 - 12 000 zł</OfferCaptionTContent>
-                    </OfferCaptionWrapper>
+                    <Logo src={logo} />
+                    <ContentWrapper>
+                        <OfferTitle>Junior Frontend Developer</OfferTitle>
+                        <CaptionsContainer>
+                            <OfferCaptionWrapper>
+                                <OfferCaptionTitle>Sallary:</OfferCaptionTitle>
+                                <OfferCaptionTContent>10 000 - 12 000 zł / brutto</OfferCaptionTContent>
+                            </OfferCaptionWrapper>
+
+                            <OfferCaptionWrapper>
+                                <OfferCaptionTitle>Location:</OfferCaptionTitle>
+                                <OfferCaptionTContent>Warsaw / Poland</OfferCaptionTContent>
+                            </OfferCaptionWrapper>
+
+                            <OfferCaptionWrapper>
+                                <OfferCaptionTitle>Type of work:</OfferCaptionTitle>
+                                <OfferCaptionTContent>Remote work</OfferCaptionTContent>
+                            </OfferCaptionWrapper>
+                        </CaptionsContainer>
+
+                    </ContentWrapper>
 
                 </OfferTile>
             </OffersWrapper>

@@ -131,19 +131,34 @@ export const OfferTile = styled.div`
     background: ${({ theme }) => theme.color.thirdColor};
     padding: 20px;
     border-radius: 20px;
+    display: flex;
+    gap: 40px;
+`;
+
+export const ContentWrapper = styled.div`
+    display: grid;
 `;
 
 export const OfferTitle = styled.h2`
     color: ${({ theme }) => theme.color.fontMain};
-    text-align: center;
     font-size: 28px;
+    margin: 0 0 20px 0;
+`;
+
+export const Logo = styled.img`
+    max-width: 80px;
+`;
+
+export const CaptionsContainer = styled.div`
+    display: flex;
+    justify-content: space-around;
 `;
 
 export const OfferCaptionWrapper = styled.div`
-    max-width: 200px;
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
     align-items: center;
+    gap: 20px;
 `;
 
 export const OfferCaptionTitle = styled.span`
