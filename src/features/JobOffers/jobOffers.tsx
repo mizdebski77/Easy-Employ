@@ -7,6 +7,7 @@ import {
     KeyWordsWrapper,
     Legend,
     OfferTile,
+    OfferTitle,
     OffersWrapper,
     Option,
     RemoveButton,
@@ -38,7 +39,7 @@ export const JobOffers = () => {
                     </Select>
                     <SearchButton>Search</SearchButton>
                 </Form>
-               
+
                 <KeyWordsWrapper>
                     <Legend>Key words</Legend>
                     <KeyWordContainer>
@@ -51,7 +52,7 @@ export const JobOffers = () => {
 
             <OffersWrapper>
                 <OfferTile>
-                    
+                    <OfferTitle>Junior Frontend Developer</OfferTitle>
                 </OfferTile>
             </OffersWrapper>
         </Wrapper>

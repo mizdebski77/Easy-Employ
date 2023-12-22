@@ -128,11 +128,12 @@ export const OffersWrapper = styled.div`
 `;
 
 export const OfferTile = styled.div`
-
+    background: ${({ theme }) => theme.color.thirdColor};
+    padding: 20px;
+    border-radius: 20px;
 `;
 
 export const OfferTitle = styled.h2`
-
 `;
 
 export const OfferSallary = styled.span`
