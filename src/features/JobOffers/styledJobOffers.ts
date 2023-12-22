@@ -39,6 +39,13 @@ export const Input = styled.input`
     }
 `;
 
+export const Select = styled.select`
+
+`;
+
+export const Option = styled.option`
+
+`;
 
 export const SearchButton = styled.button`
     padding: 8px 64px;
@@ -56,8 +63,7 @@ export const SearchButton = styled.button`
     &:active {
         background: ${({ theme }) => theme.color.fontMainActive};
     };
-`;
-
+`;  
 
 
 export const KeyWordsWrapper = styled.fieldset`
