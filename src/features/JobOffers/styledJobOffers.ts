@@ -91,7 +91,7 @@ export const RemoveButton = styled.button`
     position: absolute;
     border-radius: 50%;
     font-size: 12px;
-    background: #bf0005;
+    background: #ff2d32;
     color: white;
     border: none;
     right: 2px;
