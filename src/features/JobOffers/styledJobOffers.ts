@@ -152,12 +152,9 @@ export const OfferCaptionTitle = styled.span`
 `;
 
 export const OfferCaptionTContent = styled.span`
-
+    font-size: 16px;
 `;
 
-export const OfferCaption = styled.span`
-
-`;
 
 export const FavButton = styled.button`
 
