@@ -6,6 +6,8 @@ import {
     KeyWordContainer,
     KeyWordsWrapper,
     Legend,
+    OfferTile,
+    OffersWrapper,
     Option,
     RemoveButton,
     SearchButton,
@@ -46,7 +48,12 @@ export const JobOffers = () => {
                 </KeyWordsWrapper>
             </FormWrapper>
 
-            
+
+            <OffersWrapper>
+                <OfferTile>
+                    
+                </OfferTile>
+            </OffersWrapper>
         </Wrapper>
     );
 };

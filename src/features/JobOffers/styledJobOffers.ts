@@ -120,7 +120,11 @@ export const RemoveButton = styled.button`
 `;
 
 export const OffersWrapper = styled.div`
-
+    background: ${({ theme }) => theme.color.secondColor};
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 40px;
 `;
 
 export const OfferTile = styled.div`
