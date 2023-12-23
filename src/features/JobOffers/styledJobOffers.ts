@@ -127,22 +127,29 @@ export const OffersWrapper = styled.div`
     padding: 40px;
 `;
 
+export const MainSection = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 20px;
+`;
+
 export const OfferTile = styled.div`
     background: ${({ theme }) => theme.color.thirdColor};
-    padding: 20px;
+    padding: 20px 80px;
     border-radius: 20px;
     display: flex;
-    gap: 40px;
+    justify-content: space-between;
+    gap: 32px;
 `;
 
 export const ContentWrapper = styled.div`
-    display: grid;
+    display: flex;
+    justify-content: space-between;
 `;
 
 export const OfferTitle = styled.h2`
     color: ${({ theme }) => theme.color.fontMain};
     font-size: 28px;
-    margin: 0 0 20px 0;
 `;
 
 export const Logo = styled.img`
@@ -150,8 +157,8 @@ export const Logo = styled.img`
 `;
 
 export const CaptionsContainer = styled.div`
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    justify-content: space-between;
 `;
 
 export const OfferCaptionWrapper = styled.div`
@@ -164,6 +171,8 @@ export const OfferCaptionWrapper = styled.div`
 export const OfferCaptionTitle = styled.span`
     font-size: 20px; 
     color: ${({ theme }) => theme.color.fontMain};
+    min-width: 120px;
+    text-align: right;
 `;
 
 export const OfferCaptionTContent = styled.span`
