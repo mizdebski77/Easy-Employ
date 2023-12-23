@@ -9,6 +9,7 @@ import {
     KeyWordsWrapper,
     Legend,
     Logo,
+    MainSection,
     OfferCaptionTContent,
     OfferCaptionTitle,
     OfferCaptionWrapper,
@@ -59,9 +60,12 @@ export const JobOffers = () => {
 
             <OffersWrapper>
                 <OfferTile>
-                    <Logo src={logo} />
-                    <ContentWrapper>
+                    <MainSection>
+                        <Logo src={logo} />
                         <OfferTitle>Junior Frontend Developer</OfferTitle>
+                    </MainSection>
+
+                    <ContentWrapper>
                         <CaptionsContainer>
                             <OfferCaptionWrapper>
                                 <OfferCaptionTitle>Sallary:</OfferCaptionTitle>
