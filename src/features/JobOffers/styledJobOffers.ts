@@ -143,6 +143,12 @@ export const OfferTile = styled.div`
     justify-content: space-between;
     gap: 32px;
     cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        transform: scale(1.02);
+        box-shadow: 0 0 10px ${({ theme }) => theme.color.fontMainHover};
+    }
 `;
 
 export const ContentWrapper = styled.div`
