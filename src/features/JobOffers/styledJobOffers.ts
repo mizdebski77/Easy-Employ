@@ -142,6 +142,7 @@ export const OfferTile = styled.div`
     display: flex;
     justify-content: space-between;
     gap: 32px;
+    cursor: pointer;
 `;
 
 export const ContentWrapper = styled.div`
