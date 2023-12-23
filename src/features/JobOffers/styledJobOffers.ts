@@ -125,6 +125,8 @@ export const OffersWrapper = styled.div`
     margin: 0 auto;
     margin-top: 40px;
     padding: 40px;
+    display: grid;
+    gap: 40px;
 `;
 
 export const MainSection = styled.div`
