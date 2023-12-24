@@ -1,7 +1,6 @@
 import React from 'react';
 import { Button, Form, FormContainer, FormTitle, FormsWrapper, Input, Title, TitleSpan, Wrapper } from './styledLogIn';
 import { motion } from 'framer-motion';
-import { formVariant, titleVariants } from '../../core/animationsStore';
 
 export const LogIn = () => {
 
@@ -21,8 +20,6 @@ export const LogIn = () => {
                         <Button>Log-In</Button>
                     </Form>
                 </FormContainer>
-
-
 
                 <FormContainer>
                     <FormTitle>Create an account</FormTitle>
