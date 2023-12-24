@@ -7,23 +7,13 @@ export const LogIn = () => {
 
     return (
         <Wrapper>
-            <Title
-                as={motion.h1}
-                initial="hidden"
-                animate="visible"
-                variants={titleVariants}
-            >Log in to our application
+            <Title>Log in to our application
                 <TitleSpan> Or </TitleSpan>
                 create an account
             </Title>
 
             <FormsWrapper>
-                <FormContainer
-                    as={motion.div}
-                    initial="hidden"
-                    animate="visible"
-                    variants={formVariant}
-                >
+                <FormContainer>
                     <FormTitle>Log-In</FormTitle>
                     <Form>
                         <Input placeholder='E-Mail' type='email' required />
@@ -34,12 +24,7 @@ export const LogIn = () => {
 
 
 
-                <FormContainer
-                    as={motion.div}
-                    initial="hidden"
-                    animate="visible"
-                    variants={formVariant}
-                >
+                <FormContainer>
                     <FormTitle>Create an account</FormTitle>
                     <Form>
                         <Input placeholder='Name' type='name' required />
