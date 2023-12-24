@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Button, CheckBox, DisclaimerText, DisclaimerTitle, DisclaimerWrapper, Form, FormWrapper, Input, Label, Result, ResultTile, ResultTitle, ResultWrapper, Title, Wrapper } from './styledCalculator';
 import { motion } from 'framer-motion';
-import { spanVariant, titleVariants, bottomVariant, formVariant } from '../../core/animationsStore';
 
 export const Calculator = () => {
 
@@ -59,21 +58,11 @@ export const Calculator = () => {
 
     return (
         <Wrapper>
-            <Title
-                as={motion.h1}
-                initial="hidden"
-                animate="visible"
-                variants={titleVariants}
-            >
+            <Title>
                 {title}
             </Title>
 
-            <FormWrapper
-                as={motion.div}
-                initial="hidden"
-                animate="visible"
-                variants={spanVariant}
-            >
+            <FormWrapper>
                 <Form onSubmit={handleFormSubmit}>
                     <Input
                         placeholder='Enter your monthly salary (PLN)'
@@ -109,12 +98,7 @@ export const Calculator = () => {
                 </Form>
             </FormWrapper>
 
-            <ResultWrapper
-                as={motion.div}
-                initial="hidden"
-                animate="visible"
-                variants={bottomVariant}
-            >
+            <ResultWrapper>
                 <ResultTile>
                     <ResultTitle>Contract of employment</ResultTitle>
                     <Result>{COE} zł</Result>
@@ -133,12 +117,7 @@ export const Calculator = () => {
                 </ResultTile>
             </ResultWrapper>
 
-            <DisclaimerWrapper
-                as={motion.div}
-                initial="hidden"
-                animate="visible"
-                variants={formVariant}
-            >
+            <DisclaimerWrapper>
                 <DisclaimerTitle>Disclaimer</DisclaimerTitle>
                 <DisclaimerText>
                     "The final calculation result is consistent with Polish standards for determining remuneration, taking into account contracts and applicable taxes. This information constitutes a declaration to ensure transparency on our website."

@@ -1,34 +1,4 @@
 
-export const spanVariant = {
-    hidden: {
-        opacity: 0,
-        y: -40,
-    },
-    visible: {
-        opacity: 1,
-        y: 0,
-        transition: {
-            delay: 0.4,
-            duration: 0.6,
-        },
-    },
-};
-
-export const bottomVariant = {
-    hidden: {
-        opacity: 0,
-        y: -40,
-    },
-    visible: {
-        opacity: 1,
-        y: 0,
-        transition: {
-            delay: 0.6,
-            duration: 0.6,
-        },
-    },
-};
-
 
 export const openWrapper = {
     opacity: 1,
