@@ -1,6 +1,21 @@
 import React, { useState } from 'react';
-import { Button, CheckBox, DisclaimerText, DisclaimerTitle, DisclaimerWrapper, Form, FormWrapper, Input, Label, Result, ResultTile, ResultTitle, ResultWrapper, Title, Wrapper } from './styledCalculator';
-import { motion } from 'framer-motion';
+import {
+    Button,
+    CheckBox,
+    DisclaimerText,
+    DisclaimerTitle,
+    DisclaimerWrapper,
+    Form,
+    FormWrapper,
+    Input,
+    Label,
+    Result,
+    ResultTile,
+    ResultTitle,
+    ResultWrapper,
+    Title,
+    Wrapper
+} from './styledCalculator';
 
 export const Calculator = () => {
 
@@ -23,7 +38,7 @@ export const Calculator = () => {
         rent: monthlySalary * 0.015,
         sickness: monthlySalary * 0.0245,
         accident: monthlySalary * 0.077662,
-        advance : monthlySalary * 0.0376,
+        advance: monthlySalary * 0.0376,
     };
 
 
