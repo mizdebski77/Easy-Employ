@@ -57,7 +57,7 @@ export const Tile = styled(SwiperSlide)`
     min-height: 320px;
 
     &:hover {
-        box-shadow: 0 0 10px ${({ theme }) => theme.color.fontMain};
+        box-shadow: 0 0 10px ${({ theme }) => theme.color.fontMainActive};
     };
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){

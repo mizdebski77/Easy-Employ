@@ -1,4 +1,15 @@
-import { CustomSwiper, ReadMore, Tile, TileArticle, TileContent, TileImage, TileTitle, TilesWrapper, Title, Wrapper } from './styledNews';
+import {
+    CustomSwiper,
+    ReadMore,
+    Tile,
+    TileArticle,
+    TileContent,
+    TileImage,
+    TileTitle,
+    TilesWrapper,
+    Title,
+    Wrapper
+} from './styledNews';
 import { useQuery } from '@tanstack/react-query';
 import { Article } from '../../../core/interface';
 import { Navigation, EffectCoverflow, Scrollbar, Pagination, } from 'swiper/modules';
