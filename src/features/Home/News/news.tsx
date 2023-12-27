@@ -21,13 +21,11 @@ import { Error } from '../../../common/Error/error';
 
 export const News = () => {
 
-
     const { data, isLoading, error } = useQuery({
         queryKey: ['news'],
         queryFn: () => fetch("https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=1b6e99a4f4244702bd1caf4f3fd8e680")
             .then((response: Response) => response.json())
     });
-
 
     return (
         <Wrapper>
