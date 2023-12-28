@@ -12,6 +12,10 @@ export const Title = styled.h1`
     font-size: 54px;
     color: ${({ theme }) => theme.color.fontMain};
     font-weight: normal;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 28px;
+    };
 `;
 
 export const FormWrapper = styled.div`
@@ -29,7 +33,7 @@ export const Form = styled.form`
     gap: 20px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
-        padding: 40px 12px;
+        padding: 32px 12px;
     };
 `;
 
