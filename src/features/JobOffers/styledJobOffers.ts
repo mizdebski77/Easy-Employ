@@ -220,6 +220,10 @@ export const OfferTitle = styled.h2`
 
 export const Logo = styled.img`
     max-width: 80px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        max-width: 54px;
+    };
 `;
 
 export const CaptionsContainer = styled.div`
