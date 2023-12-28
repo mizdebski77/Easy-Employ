@@ -93,7 +93,8 @@ export const TileTitle = styled.h2`
 export const TileArticle = styled.article`
     font-size: 20px;
     text-align: justify;
-    min-height: 160px;
+    max-height: 160px;
+    overflow: auto;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         font-size: 16px;
