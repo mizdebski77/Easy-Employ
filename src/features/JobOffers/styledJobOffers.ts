@@ -125,6 +125,10 @@ export const KeyWordsWrapper = styled.fieldset`
 export const Legend = styled.legend`
     font-size: 24px;
     padding: 0 10px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 20px;
+    };
 `;
 
 export const KeyWordContainer = styled.div`
@@ -136,6 +140,10 @@ export const KeyWord = styled.span`
     padding: 8px 10px;
     border-radius: 20px;
     color: ${({ theme }) => theme.color.mainColor};
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 12px;
+    };
 `;
 
 export const RemoveButton = styled.button`
