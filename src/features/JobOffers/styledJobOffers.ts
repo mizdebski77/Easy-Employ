@@ -201,6 +201,7 @@ export const OfferTile = styled.div`
         flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
+        padding: 12px;
     };
 `;
 
@@ -236,6 +237,10 @@ export const OfferCaptionWrapper = styled.div`
     justify-content: start;
     align-items: center;
     gap: 20px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        gap:10px;
+    };
 `;
 
 export const OfferCaptionTitle = styled.span`
@@ -243,10 +248,18 @@ export const OfferCaptionTitle = styled.span`
     color: ${({ theme }) => theme.color.fontMain};
     min-width: 120px;
     text-align: right;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 16px;
+    };
 `;
 
 export const OfferCaptionTContent = styled.span`
     font-size: 16px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 12px;
+    };
 `;
 
 
