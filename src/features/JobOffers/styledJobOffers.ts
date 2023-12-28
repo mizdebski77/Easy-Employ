@@ -24,7 +24,13 @@ export const FormWrapper = styled.div`
 export const Form = styled.form`
     padding: 40px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+    gap: 20px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        padding: 40px 12px;
+    };
 `;
 
 export const Input = styled.input`
@@ -32,11 +38,17 @@ export const Input = styled.input`
     font-size: 16px;
     border-radius: 8px;
     border: 1px solid ${({ theme }) => theme.color.fontMain};
-    min-width: 280px;
+    max-width: 280px;
+    width: 100%;
 
     &:focus {
         outline: none;
-    }
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        max-width: 480px;
+        width: 100%;
+    };
 `;
 
 export const Select = styled.select`
@@ -44,17 +56,20 @@ export const Select = styled.select`
     font-size: 16px;
     border-radius: 8px;
     border: 1px solid ${({ theme }) => theme.color.fontMain};
-    min-width: 280px;
+    max-width: 280px;
+    width: 100%;
     cursor: pointer;
 
     @media (max-width:${({ theme }) => theme.breakPoint.thirdBp}px) {
         font-size: 14px;
+        max-width: 480px;
+        width: 100%;
     }
 
     
     &:focus {
         outline: none;
-    }
+    };
 `;
 
 export const Option = styled.option`
@@ -70,12 +85,24 @@ export const SearchButton = styled.button`
     cursor: pointer;
     transition: 0.3s;
 
+
     &:hover {
         background: ${({ theme }) => theme.color.fontMainHover};
     };
 
     &:active {
         background: ${({ theme }) => theme.color.fontMainActive};
+    };
+
+    
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
+        max-width: 280px;
+        width: 100%;
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        max-width: 480px;
+        width: 100%;
     };
 `;
 
