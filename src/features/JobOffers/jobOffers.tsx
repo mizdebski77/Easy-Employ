@@ -51,9 +51,26 @@ export const JobOffers = () => {
                 <KeyWordsWrapper>
                     <Legend>Key words</Legend>
                     <KeyWordContainer>
+                        <KeyWord>Frontend </KeyWord>
+                        <RemoveButton>x</RemoveButton>
+                    </KeyWordContainer>
+                    <KeyWordContainer>
                         <KeyWord>Frontend developer</KeyWord>
                         <RemoveButton>x</RemoveButton>
                     </KeyWordContainer>
+                    <KeyWordContainer>
+                        <KeyWord>Frontend developer</KeyWord>
+                        <RemoveButton>x</RemoveButton>
+                    </KeyWordContainer>
+                    <KeyWordContainer>
+                        <KeyWord>Frontend developer</KeyWord>
+                        <RemoveButton>x</RemoveButton>
+                    </KeyWordContainer>
+                    <KeyWordContainer>
+                        <KeyWord>Frontend developer</KeyWord>
+                        <RemoveButton>x</RemoveButton>
+                    </KeyWordContainer>
+
                 </KeyWordsWrapper>
             </FormWrapper>
 

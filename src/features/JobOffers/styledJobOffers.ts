@@ -120,6 +120,10 @@ export const KeyWordsWrapper = styled.fieldset`
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        justify-content: center;
+    };
 `;
 
 export const Legend = styled.legend`
