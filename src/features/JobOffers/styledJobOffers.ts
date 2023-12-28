@@ -202,6 +202,11 @@ export const OfferTile = styled.div`
         justify-content: center;
         gap: 10px;
         padding: 12px;
+
+        &:hover {
+        transform: scale(1);
+        box-shadow: 0 0 10px ${({ theme }) => theme.color.fontMainHover};
+    };
     };
 `;
 
