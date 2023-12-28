@@ -212,6 +212,10 @@ export const ContentWrapper = styled.div`
 export const OfferTitle = styled.h2`
     color: ${({ theme }) => theme.color.fontMain};
     font-size: 28px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 20px;
+    };
 `;
 
 export const Logo = styled.img`
