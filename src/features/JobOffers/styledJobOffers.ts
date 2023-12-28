@@ -191,7 +191,17 @@ export const OfferTile = styled.div`
     &:hover {
         transform: scale(1.02);
         box-shadow: 0 0 10px ${({ theme }) => theme.color.fontMainHover};
-    }
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.firstBp}px){
+        padding: 20px 40px;
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    };
 `;
 
 export const ContentWrapper = styled.div`
