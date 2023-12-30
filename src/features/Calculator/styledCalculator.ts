@@ -12,7 +12,7 @@ export const Wrapper = styled.section`
 export const Title = styled.h1`
     text-align: center;
     font-size: 44px;
-    font-weight: bold;
+    font-weight: normal;
     margin-bottom: 80px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
