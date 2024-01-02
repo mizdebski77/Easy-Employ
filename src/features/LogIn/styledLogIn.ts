@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom";
 import { styled } from "styled-components";
 
 export const Wrapper = styled.section`
     display: grid;
     grid-template-columns: 2fr 1fr;
-    padding: 40px;
+
     flex-direction: column;
     min-height: 100vh;
 
@@ -100,6 +101,32 @@ export const Button = styled.button`
 `;
 
 export const RegisterWrapper = styled.div`
+    background: linear-gradient(309deg, rgba(230,230,230,1) 12%, rgba(0,150,255,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+`;
 
+export const RegisterTitle = styled.h2`
+    font-size: 54px;
+    font-weight: normal;
+    margin-bottom: 10px;
+`;
+
+export const RegisterButton = styled(Link)`
+    text-decoration: none;
+    background: ${({ theme }) => theme.color.secondColor};
+    padding: 12px 80px;
+    color: black;
+    border-radius: 20px;
+`;
+
+export const RegisterCaption = styled.h3`
+    font-size: 24px;
+    color: ${({ theme }) => theme.color.secondColor};
+    font-weight: normal;
+    text-align: center;
 `;
 
