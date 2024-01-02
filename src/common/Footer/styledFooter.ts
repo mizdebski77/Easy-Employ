@@ -4,7 +4,6 @@ import { styled } from "styled-components";
 export const Wrapper = styled.footer`
     background: ${({ theme }) => theme.color.thirdColor};
     padding: 80px;
-    margin-top: 40px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
         padding: 20px;

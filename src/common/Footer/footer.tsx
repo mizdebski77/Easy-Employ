@@ -12,7 +12,6 @@ import insta from '../Images/SocialMedia/ig.png';
 export const Footer = () => {
     return (
         <Wrapper>
-
             <MainSection>
                 <LogoWrapper to='/Home'>
                     <Logo src={logo} />
