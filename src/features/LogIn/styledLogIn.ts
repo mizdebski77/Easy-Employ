@@ -57,17 +57,24 @@ export const Form = styled.form`
     width: 100%;
 `;
 
+export const Label =styled.label`
+    margin: 20px 20px 0px;
+    font-size: 16px;
+`;
+
 export const Input = styled.input`
-    padding:  10px;
+    padding:  12px;
     border-radius: 20px;
     border: none;
-    background: ${({ theme }) => theme.color.thirdColor};
+    background: ${({ theme }) => theme.color.fourthColor};
+    color: black;
+    
 `;
 
 export const Button = styled.button`
     max-width: 240px;
     width: 100%;
-    margin: 0 auto;
+    margin: 20px auto;
 `;
 
 export const RegisterWrapper = styled.div`

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Form, Icon, IconsWrapper, Input, LoginSpan, LoginTitle, LoginWrapper, Wrapper } from './styledLogIn';
+import { Button, Form, Icon, IconsWrapper, Input, Label, LoginSpan, LoginTitle, LoginWrapper, Wrapper } from './styledLogIn';
 import fb from '../../common/Images/SocialMedia/fb.png';
 import lk from '../../common/Images/SocialMedia/link.png';
 import gg from '../../common/Images/SocialMedia/google.png';
@@ -20,9 +20,13 @@ export const LogIn = () => {
                 <LoginSpan>or</LoginSpan>
 
                 <Form>
+                    <Label>Username</Label>
+                    <Input placeholder='Enter E-Mail' type='email' />
+
+                    <Label placeholder='Enter Password' typeof='password' >Password</Label>
+
                     <Input />
-                    <Input />
-                <Button>Sign In</Button>
+                    <Button>Sign In</Button>
                 </Form>
             </LoginWrapper>
 
