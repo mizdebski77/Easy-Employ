@@ -70,7 +70,9 @@ export const Input = styled.input`
     background: linear-gradient(to right, ${({ theme }) => theme.color.fourthColor}, ${({ theme }) => theme.color.secondColor});
     color: black;
     
-    
+    &:focus {
+        outline: none;
+    }
 `;
 
 export const Button = styled.button`

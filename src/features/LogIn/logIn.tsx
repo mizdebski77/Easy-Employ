@@ -23,9 +23,9 @@ export const LogIn = () => {
                     <Label>Username</Label>
                     <Input placeholder='Enter E-Mail' type='email' />
 
-                    <Label placeholder='Enter Password' typeof='password' >Password</Label>
+                    <Label>Password</Label>
 
-                    <Input />
+                    <Input placeholder='Enter Password' type='password' />
                     <Button>Sign In</Button>
                 </Form>
             </LoginWrapper>
