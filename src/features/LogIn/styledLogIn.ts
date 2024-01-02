@@ -47,6 +47,7 @@ export const Icon = styled.img`
 
     &:hover {
         transform: scale(1.05);
+        filter: drop-shadow(6px 7px 8px ${({ theme }) => theme.color.fontMain});
     };
 `;
 
@@ -69,16 +70,33 @@ export const Input = styled.input`
     border: none;
     background: linear-gradient(to right, ${({ theme }) => theme.color.fourthColor}, ${({ theme }) => theme.color.secondColor});
     color: black;
-    
+    transition: 0.3s;
+
     &:focus {
         outline: none;
-    }
+        filter: drop-shadow(6px 4px 4px ${({ theme }) => theme.color.fontMain});
+    };
 `;
 
 export const Button = styled.button`
     max-width: 240px;
     width: 100%;
     margin: 20px auto;
+    padding: 12px;
+    border-radius: 20px;
+    border: none;
+    background: ${({ theme }) => theme.color.fontMain};
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        background: ${({ theme }) => theme.color.fontMainHover};
+    };
+
+    &:active {
+        background: ${({ theme }) => theme.color.fontMainActive};
+    };
 `;
 
 export const RegisterWrapper = styled.div`
