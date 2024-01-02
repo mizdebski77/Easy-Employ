@@ -10,6 +10,7 @@ declare module 'styled-components' {
             secondColor: string;
             thirdColor: string;
             fontMainActive: string;
+            fourthColor: string;
         }
         breakPoint: {
             firstBp: number,

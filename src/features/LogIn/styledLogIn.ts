@@ -58,9 +58,10 @@ export const Form = styled.form`
 `;
 
 export const Input = styled.input`
-    padding: 8px 10px;
+    padding:  10px;
     border-radius: 20px;
-
+    border: none;
+    background: ${({ theme }) => theme.color.thirdColor};
 `;
 
 export const Button = styled.button`

@@ -7,6 +7,7 @@ export const theme = {
         fontMainActive: "rgba(0,150,255, 0.5)",
         secondColor: "#ffff",
         thirdColor: "#e6e6e6",
+        fourthColor: 'rgba(197,235,254,255)',
     },
 
     breakPoint: {
