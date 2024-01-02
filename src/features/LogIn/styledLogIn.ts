@@ -121,6 +121,12 @@ export const RegisterButton = styled(Link)`
     padding: 12px 80px;
     color: black;
     border-radius: 20px;
+    transition: 0.3s;
+
+    &:hover {
+        transform: scale(1.02);
+        filter: drop-shadow(16px 7px 8px ${({ theme }) => theme.color.fontMain});
+    };      
 `;
 
 export const RegisterCaption = styled.h3`
