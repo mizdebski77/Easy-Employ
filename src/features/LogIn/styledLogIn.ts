@@ -13,11 +13,14 @@ export const Wrapper = styled.section`
 `;
 
 export const LoginWrapper = styled.div`
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 `;
 
 export const LoginTitle = styled.h1`
-
+    font-size: 54px;
 `;
 
 export const RegisterWrapper = styled.div`

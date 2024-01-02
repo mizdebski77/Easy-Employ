@@ -1,5 +1,5 @@
 import React from 'react';
-import { LoginTitle, LoginWrapper, Title, TitleSpan, Wrapper } from './styledLogIn';
+import { LoginTitle, LoginWrapper, Wrapper } from './styledLogIn';
 
 export const LogIn = () => {
 
