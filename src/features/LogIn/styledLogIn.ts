@@ -57,17 +57,19 @@ export const Form = styled.form`
     width: 100%;
 `;
 
-export const Label =styled.label`
-    margin: 20px 20px 0px;
+export const Label = styled.label`
     font-size: 16px;
+    padding: 0 20px;
+    color: ${({ theme }) => theme.color.fontSecond};
 `;
 
 export const Input = styled.input`
     padding:  12px;
     border-radius: 20px;
     border: none;
-    background: ${({ theme }) => theme.color.fourthColor};
+    background: linear-gradient(to right, ${({ theme }) => theme.color.fourthColor}, ${({ theme }) => theme.color.secondColor});
     color: black;
+    
     
 `;
 
