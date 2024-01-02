@@ -1,9 +1,8 @@
 import { styled } from "styled-components";
 
 export const Wrapper = styled.section`
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     padding: 40px;
     flex-direction: column;
     min-height: 100vh;
