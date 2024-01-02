@@ -79,6 +79,10 @@ export const Input = styled.input`
     };
 `;
 
+export const ShowHideButton = styled.button`
+    
+`;
+
 export const Button = styled.button`
     max-width: 240px;
     width: 100%;

@@ -1,10 +1,12 @@
-import React from 'react';
-import { Button, Form, Icon, IconsWrapper, Input, Label, LoginSpan, LoginTitle, LoginWrapper, RegisterButton, RegisterCaption, RegisterTitle, RegisterWrapper, Wrapper } from './styledLogIn';
+import React, { useState } from 'react';
+import { Button, Form, Icon, IconsWrapper, Input, Label, LoginSpan, LoginTitle, LoginWrapper, RegisterButton, RegisterCaption, RegisterTitle, RegisterWrapper, ShowHideButton, Wrapper } from './styledLogIn';
 import fb from '../../common/Images/SocialMedia/fb.png';
 import lk from '../../common/Images/SocialMedia/link.png';
 import gg from '../../common/Images/SocialMedia/google.png';
 
 export const LogIn = () => {
+
+    const [password, setPassword] = useState(false);
 
     return (
         <Wrapper>
@@ -26,6 +28,7 @@ export const LogIn = () => {
                     <Label>Password</Label>
 
                     <Input placeholder='Enter Password' type='password' />
+                    <ShowHideButton> {password ? 'Hide' : 'Show'} password </ShowHideButton>
                     <Button>Sign In</Button>
                 </Form>
             </LoginWrapper>
