@@ -50,6 +50,24 @@ export const Icon = styled.img`
     };
 `;
 
+export const Form = styled.form`
+    display: grid;
+    gap: 10px;
+    max-width: 480px;
+    width: 100%;
+`;
+
+export const Input = styled.input`
+    padding: 8px 10px;
+    border-radius: 20px;
+
+`;
+
+export const Button = styled.button`
+    max-width: 240px;
+    width: 100%;
+    margin: 0 auto;
+`;
 
 export const RegisterWrapper = styled.div`
 
