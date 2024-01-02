@@ -1,5 +1,8 @@
 import React from 'react';
-import { LoginTitle, LoginWrapper, Wrapper } from './styledLogIn';
+import { Icon, IconsWrapper, LoginSpan, LoginTitle, LoginWrapper, Wrapper } from './styledLogIn';
+import fb from '../../common/Images/SocialMedia/fb.png';
+import lk from '../../common/Images/SocialMedia/link.png';
+import gg from '../../common/Images/SocialMedia/google.png';
 
 export const LogIn = () => {
 
@@ -7,6 +10,14 @@ export const LogIn = () => {
         <Wrapper>
             <LoginWrapper>
                 <LoginTitle>Login to Your Account</LoginTitle>
+                <LoginSpan>Login using social networks</LoginSpan>
+
+                <IconsWrapper>
+                    <Icon src={fb} />
+                    <Icon src={lk} />
+                    <Icon src={gg} />
+
+                </IconsWrapper>
             </LoginWrapper>
 
         </Wrapper >

@@ -17,11 +17,30 @@ export const LoginWrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 `;
 
 export const LoginTitle = styled.h1`
     font-size: 54px;
+    font-weight: normal;
+    color: ${({ theme }) => theme.color.fontMain};
+    margin-bottom: 0px;
 `;
+
+export const LoginSpan = styled.span`
+    font-size: 20px;
+    color: ${({ theme }) => theme.color.fontSecond};
+`;
+
+export const IconsWrapper = styled.div`
+    display: flex;
+    justify-content: space-between;
+`;
+
+export const Icon = styled.img`
+    max-width: 64px;
+`;
+
 
 export const RegisterWrapper = styled.div`
 
