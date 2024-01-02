@@ -34,11 +34,20 @@ export const LoginSpan = styled.span`
 
 export const IconsWrapper = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 320px;
+    width: 100%;
 `;
 
 export const Icon = styled.img`
-    max-width: 64px;
+    max-width: 52px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        transform: scale(1.05);
+    };
 `;
 
 
