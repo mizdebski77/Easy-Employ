@@ -61,6 +61,10 @@ export const Icon = styled.img`
         transform: scale(1.05);
         filter: drop-shadow(6px 7px 8px ${({ theme }) => theme.color.fontMain});
     };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        max-width: 36px;
+    };
 `;
 
 export const Form = styled.form`
