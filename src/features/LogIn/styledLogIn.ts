@@ -184,7 +184,11 @@ export const RegisterButton = styled(Link)`
     &:hover {
         transform: scale(1.02);
         filter: drop-shadow(16px 7px 8px ${({ theme }) => theme.color.fontMain});
-    };      
+    };     
+    
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        padding: 8px 40px;
+    };
 `;
 
 export const RegisterCaption = styled.h3`
