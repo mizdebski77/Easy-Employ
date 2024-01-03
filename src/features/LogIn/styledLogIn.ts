@@ -80,7 +80,10 @@ export const Input = styled.input`
 `;
 
 export const ShowHideButton = styled.button`
-    
+    border: none;
+    background: red;
+    max-width: 160px;
+    float: right;
 `;
 
 export const Button = styled.button`
