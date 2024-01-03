@@ -97,6 +97,11 @@ export const Input = styled.input`
         outline: none;
         filter: drop-shadow(6px 4px 4px ${({ theme }) => theme.color.fontMain});
     };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        padding: 8px;
+        font-size: 14px;
+    };
 `;
 
 export const ShowHideButton = styled.button`
