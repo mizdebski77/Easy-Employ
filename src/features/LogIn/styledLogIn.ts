@@ -29,6 +29,10 @@ export const LoginTitle = styled.h1`
     font-weight: normal;
     color: ${({ theme }) => theme.color.fontMain};
     margin-bottom: 0px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 32px;
+    };
 `;
 
 export const LoginSpan = styled.span`
