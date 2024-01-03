@@ -1,5 +1,21 @@
 import React, { useState } from 'react';
-import { Button, Form, Icon, IconsWrapper, Input, Label, LoginSpan, LoginTitle, LoginWrapper, RegisterButton, RegisterCaption, RegisterTitle, RegisterWrapper, ShowHideButton, Wrapper } from './styledLogIn';
+import {
+    Button,
+    Form,
+    Icon,
+    IconsWrapper,
+    Input,
+    Label,
+    LoginSpan,
+    LoginTitle,
+    LoginWrapper,
+    RegisterButton,
+    RegisterCaption,
+    RegisterTitle,
+    RegisterWrapper,
+    ShowHideButton,
+    Wrapper
+} from './styledLogIn';
 import fb from '../../common/Images/SocialMedia/fb.png';
 import lk from '../../common/Images/SocialMedia/link.png';
 import gg from '../../common/Images/SocialMedia/google.png';
