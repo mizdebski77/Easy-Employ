@@ -38,6 +38,10 @@ export const LoginTitle = styled.h1`
 export const LoginSpan = styled.span`
     font-size: 20px;
     color: ${({ theme }) => theme.color.fontSecond};
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 16px;
+    };
 `;
 
 export const IconsWrapper = styled.div`
