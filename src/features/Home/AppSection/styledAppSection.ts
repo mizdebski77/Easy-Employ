@@ -9,6 +9,7 @@ export const Wrapper = styled.div`
     grid-template-columns: 2fr 1.5fr;
     gap: 40px;
     position: relative;
+    margin-bottom: 80px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         display: flex;
@@ -92,12 +93,13 @@ export const StoresIconsWrapper = styled.div`
 `;
 
 export const StoreIcon = styled.img`
-    max-width: 120px;
+    max-width: 180px;
     transition: 0.3s;
+    margin-top: 20px;
 
     &:hover {
         transform: scale(1.05);
         cursor: pointer;
-    }
+    };
 `;
 
