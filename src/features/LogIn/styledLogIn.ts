@@ -12,7 +12,7 @@ export const Wrapper = styled.section`
     };
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
-        padding: 20px 12px;
+        padding: 20px 0px 0px;
     };
 `;
 
@@ -25,6 +25,7 @@ export const LoginWrapper = styled.div`
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         gap: 10px;
+        padding: 0 20px;
     };
 `;
 
@@ -165,6 +166,11 @@ export const RegisterTitle = styled.h2`
     font-size: 54px;
     font-weight: normal;
     margin-bottom: 10px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 32px;
+        margin: 10px 0;
+    };
 `;
 
 export const RegisterButton = styled(Link)`
@@ -186,5 +192,9 @@ export const RegisterCaption = styled.h3`
     color: ${({ theme }) => theme.color.secondColor};
     font-weight: normal;
     text-align: center;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 18px;
+    };
 `;
 

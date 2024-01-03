@@ -50,7 +50,6 @@ export const LogIn = () => {
             </LoginWrapper>
 
             <RegisterWrapper>
-
                 <RegisterTitle>New Here?</RegisterTitle>
                 <RegisterCaption>Sign up and discovery a great amount of new opportunities</RegisterCaption>
                 <RegisterButton to='/xd'>Sign Up</RegisterButton>
