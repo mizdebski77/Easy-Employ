@@ -172,6 +172,13 @@ export const OffersWrapper = styled.div`
     gap: 40px;
 `;
 
+export const OffersTitle = styled.h2`
+    text-align: center;
+    margin: 64px 0 20px;
+    font-size: 44px;
+    font-weight: normal;
+`;
+
 export const MainSection = styled.div`
     display: flex;
     align-items: center;
@@ -189,8 +196,8 @@ export const OfferTile = styled.div`
     transition: 0.3s;
 
     &:hover {
-        transform: scale(1.02);
-        box-shadow: 0 0 10px ${({ theme }) => theme.color.fontMainHover};
+        transform: scale(1.01);
+        box-shadow: 0 0 6px ${({ theme }) => theme.color.fontMainHover};
     };
 
     @media (max-width: ${({ theme }) => theme.breakPoint.firstBp}px){
@@ -218,6 +225,7 @@ export const ContentWrapper = styled.div`
 export const OfferTitle = styled.h2`
     color: ${({ theme }) => theme.color.fontMain};
     font-size: 28px;
+    font-weight: normal;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         font-size: 20px;

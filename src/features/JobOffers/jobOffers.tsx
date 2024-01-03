@@ -15,6 +15,7 @@ import {
     OfferCaptionWrapper,
     OfferTile,
     OfferTitle,
+    OffersTitle,
     OffersWrapper,
     Option,
     RemoveButton,
@@ -54,12 +55,11 @@ export const JobOffers = () => {
                         <KeyWord>Frontend </KeyWord>
                         <RemoveButton>x</RemoveButton>
                     </KeyWordContainer>
-                  </KeyWordsWrapper>
+                </KeyWordsWrapper>
             </FormWrapper>
-
-
+            
+            <OffersTitle>Offer zone</OffersTitle>
             <OffersWrapper>
-
                 <OfferTile>
                     <MainSection>
                         <Logo src={logo} />
@@ -87,7 +87,6 @@ export const JobOffers = () => {
                     </ContentWrapper>
 
                 </OfferTile>
-                
             </OffersWrapper>
         </Wrapper>
     );
