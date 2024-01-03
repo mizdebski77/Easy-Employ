@@ -78,6 +78,11 @@ export const Label = styled.label`
     font-size: 16px;
     padding: 0 20px;
     color: ${({ theme }) => theme.color.fontSecond};
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 14px;
+        padding: 0 12px;
+    };
 `;
 
 export const Input = styled.input`
