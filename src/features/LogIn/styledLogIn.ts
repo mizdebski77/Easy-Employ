@@ -12,7 +12,7 @@ export const Wrapper = styled.section`
     };
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
-        padding: 40px 12px;
+        padding: 20px 12px;
     };
 `;
 
@@ -143,6 +143,12 @@ export const Button = styled.button`
 
     &:active {
         background: ${({ theme }) => theme.color.fontMainActive};
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        max-width: 120px;
+        padding: 8px;
+        margin: 10px auto;
     };
 `;
 
