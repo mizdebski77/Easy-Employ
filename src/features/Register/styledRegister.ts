@@ -12,6 +12,7 @@ export const SignUpPanel = styled.div`
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+    padding: 20px;
 `;
 
 export const RegisterTitle = styled.h1`
@@ -22,19 +23,29 @@ export const RegisterTitle = styled.h1`
 `;
 
 export const IconsWrapper = styled.div`
-
+    display: grid;
+    gap: 20px;
 `;
 
 export const IconContainer = styled.div`
-
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    gap: 10px;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
 `;
 
 export const Icon = styled.img`
-
+    max-width: 48px;
+    width: 100%;
 `;
 
 export const IconSpan = styled.span`
-
+    font-size: 20px;
 `;
 
 export const Span = styled.span`
