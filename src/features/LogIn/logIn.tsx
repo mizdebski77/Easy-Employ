@@ -52,7 +52,7 @@ export const LogIn = () => {
             <RegisterWrapper>
                 <RegisterTitle>New Here?</RegisterTitle>
                 <RegisterCaption>Sign up and discovery a great amount of new opportunities</RegisterCaption>
-                <RegisterButton to='/xd'>Sign Up</RegisterButton>
+                <RegisterButton to='/Register'>Sign Up</RegisterButton>
             </RegisterWrapper>
 
         </Wrapper >

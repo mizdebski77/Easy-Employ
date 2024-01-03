@@ -7,6 +7,7 @@ import { JobOffers } from "../features/JobOffers/jobOffers";
 import { Carrer } from "../features/Carrer/carrer";
 import { Creator } from "../features/Creator/creator";
 import { Footer } from "../common/Footer/footer";
+import { Register } from "../features/Register/register";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/Calculator" element={<Calculator />} />
         <Route path="/Offers" element={<JobOffers />} />
         <Route path="/CV-Creator" element={<Creator />} />
+        <Route path="/Register" element={<Register />} />
       </Routes>
       <Footer />
     </BrowserRouter>
