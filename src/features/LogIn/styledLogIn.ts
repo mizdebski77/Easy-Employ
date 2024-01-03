@@ -85,6 +85,15 @@ export const ShowHideButton = styled.button`
     margin: auto;
     color: ${({ theme }) => theme.color.fontMain};
     cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        color: ${({ theme }) => theme.color.fontMainHover};
+    };
+
+    &:active {
+        color: ${({ theme }) => theme.color.fontMainActive};
+    };
 `;
 
 export const Button = styled.button`
