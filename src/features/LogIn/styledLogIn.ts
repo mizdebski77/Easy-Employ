@@ -22,6 +22,10 @@ export const LoginWrapper = styled.div`
     justify-content: center;
     align-items: center;
     gap: 20px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        gap: 10px;
+    };
 `;
 
 export const LoginTitle = styled.h1`
