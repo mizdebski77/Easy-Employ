@@ -4,9 +4,12 @@ import { styled } from "styled-components";
 export const Wrapper = styled.section`
     display: grid;
     grid-template-columns: 2fr 1fr;
-
     flex-direction: column;
     min-height: 100vh;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
+        grid-template-columns: 1fr;
+    };
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         padding: 40px 12px;
