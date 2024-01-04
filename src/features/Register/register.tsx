@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Icon, IconContainer, IconSpan, IconsWrapper, InfoWrapper, InformationSpan, InfosWrapper, Input, Label, RegisterTitle, SignUpPanel, Span, SpanColor, Wrapper } from './styledRegister';
+import { CheckBox, Form, Icon, IconContainer, IconSpan, IconsWrapper, InfoWrapper, InformationSpan, InfosWrapper, Input, Label, RegisterTitle, SignUpPanel, Span, SpanColor, Wrapper } from './styledRegister';
 import fb from '../../common/Images/SocialMedia/fb.png';
 import link from '../../common/Images/SocialMedia/link.png';
 import google from '../../common/Images/SocialMedia/google.png';
@@ -37,7 +37,7 @@ export const Register = () => {
 
                 <InfosWrapper>
                     <InfoWrapper>
-                        <Input type='checkbox' />
+                        <CheckBox type='checkbox' />
                         <InformationSpan>I confirm that I've read and I agree to the site's Terms & Conditions and Privacy Policy.*</InformationSpan>
                     </InfoWrapper>
 

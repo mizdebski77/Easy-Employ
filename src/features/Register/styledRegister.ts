@@ -102,11 +102,12 @@ export const CheckBox = styled.input`
 `;
 
 export const InfosWrapper =styled.div`
-
+    margin-top: 20px;
 `;
 
 export const InfoWrapper = styled.div`
-
+    display: flex;
+    gap: 20px;
 `;
 
 export const InformationSpan = styled.span`
