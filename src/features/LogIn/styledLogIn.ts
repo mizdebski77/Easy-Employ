@@ -93,10 +93,11 @@ export const Label = styled.label`
 export const Input = styled.input`
     padding:  12px;
     border-radius: 20px;
-    border: none;
-    background: linear-gradient(to right, ${({ theme }) => theme.color.fourthColor}, ${({ theme }) => theme.color.secondColor});
+    border: 2px solid ${({ theme }) => theme.color.thirdColor};
     color: black;
     transition: 0.3s;
+    max-width: 480px;
+    width: 100%;
 
     &:focus {
         outline: none;
