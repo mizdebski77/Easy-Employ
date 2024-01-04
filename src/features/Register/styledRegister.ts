@@ -9,10 +9,10 @@ export const Wrapper = styled.section`
 
 export const SignUpPanel = styled.div`
     background: ${({ theme }) => theme.color.secondColor};
-    max-width: 1200px;
+    max-width: 600px;
     width: 100%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 40px 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -67,6 +67,8 @@ export const Span = styled.span`
 export const Form = styled.form`
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     max-width: 500px;
     width: 100%;
     margin: 0 auto;
