@@ -28,11 +28,11 @@ export const Register = () => {
 
                 <Form>
                     <Label>Email address <SpanColor>*</SpanColor></Label>
-                    <Input/>
-                    <Label>Email address <SpanColor>*</SpanColor></Label>
-                    <Input/>
-                    <Label>Email address <SpanColor>*</SpanColor></Label>
-                    <Input/>
+                    <Input />
+                    <Label>Password <SpanColor>*</SpanColor></Label>
+                    <Input />
+                    <Label>Repeat password <SpanColor>*</SpanColor></Label>
+                    <Input />
                 </Form>
             </SignUpPanel>
         </Wrapper>

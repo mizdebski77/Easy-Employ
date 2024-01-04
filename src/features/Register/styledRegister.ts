@@ -67,11 +67,13 @@ export const Span = styled.span`
 export const Form = styled.form`
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
 `;
 
 export const Label = styled.label`
-
+    margin: 20px 20px 10px 12px;
 `;
 export const Input = styled.input`
     padding:  12px;
@@ -79,6 +81,8 @@ export const Input = styled.input`
     border: 2px solid ${({ theme }) => theme.color.thirdColor};
     color: black;
     transition: 0.3s;
+    max-width: 400px;
+    width: 100%;
 
     &:focus {
         outline: none;
