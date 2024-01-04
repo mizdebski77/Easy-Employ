@@ -51,7 +51,7 @@ export const Icon = styled.img`
 `;
 
 export const IconSpan = styled.span`
-    font-size: 20px;
+    font-size: 16px;
 `;
 
 export const Span = styled.span`
