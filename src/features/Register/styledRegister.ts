@@ -71,3 +71,17 @@ export const Form = styled.form`
 export const Input = styled.input`
 
 `;
+
+
+export const InformationSpan = styled.span`
+
+`;
+
+export const InformationSpanColor = styled.span`
+
+`;
+
+export const CreateAccountButton = styled.button`
+
+`;
+

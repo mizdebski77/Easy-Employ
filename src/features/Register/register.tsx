@@ -1,5 +1,5 @@
 import React from 'react';
-import { Icon, IconContainer, IconSpan, IconsWrapper, RegisterTitle, SignUpPanel, Span, Wrapper } from './styledRegister';
+import { Form, Icon, IconContainer, IconSpan, IconsWrapper, Input, RegisterTitle, SignUpPanel, Span, Wrapper } from './styledRegister';
 import fb from '../../common/Images/SocialMedia/fb.png';
 import link from '../../common/Images/SocialMedia/link.png';
 import google from '../../common/Images/SocialMedia/google.png';
@@ -25,6 +25,12 @@ export const Register = () => {
                 </IconsWrapper>
 
                 <Span>Or</Span>
+
+                <Form>
+                    <Input/>
+                    <Input/>
+                    <Input/>
+                </Form>
             </SignUpPanel>
         </Wrapper>
     );
