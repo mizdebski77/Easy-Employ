@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Easy-Employ/static/css/main.4b763604.css",
-    "main.js": "/Easy-Employ/static/js/main.e436c36c.js",
-    "static/js/787.6ccd55aa.chunk.js": "/Easy-Employ/static/js/787.6ccd55aa.chunk.js",
+    "main.js": "/Easy-Employ/static/js/main.e6d655e0.js",
+    "static/js/787.9d8ea4c6.chunk.js": "/Easy-Employ/static/js/787.9d8ea4c6.chunk.js",
     "static/media/CVCreator.jpg": "/Easy-Employ/static/media/CVCreator.2d7a1ce4c27b13f5b011.jpg",
     "static/media/joboffers.jpg": "/Easy-Employ/static/media/joboffers.a585750260afeede991f.jpg",
     "static/media/header.jpg": "/Easy-Employ/static/media/header.7faaf27428b9c266b88d.jpg",
@@ -15,18 +15,18 @@
     "static/media/google.png": "/Easy-Employ/static/media/google.443fbb9f4d9a9e138285.png",
     "static/media/app.png": "/Easy-Employ/static/media/app.2a8f2a38110b76832fb2.png",
     "static/media/fb.png": "/Easy-Employ/static/media/fb.6c83ee5c1bdbedbc947a.png",
-    "static/media/link.png": "/Easy-Employ/static/media/link.8b89ce01929a419c5625.png",
+    "static/media/link.png": "/Easy-Employ/static/media/link.96e24c9c277c12aa811d.png",
     "static/media/account.svg": "/Easy-Employ/static/media/account.113f1ad043c4f6308b419cd102865628.svg",
     "index.html": "/Easy-Employ/index.html",
     "static/media/language.svg": "/Easy-Employ/static/media/language.ff3b13b1466ffb34ed3fc18379084551.svg",
     "static/media/error.svg": "/Easy-Employ/static/media/error.61aadec832bf78feb9fc7439f427ee58.svg",
     "static/media/spinner.svg": "/Easy-Employ/static/media/spinner.224f59c229647a22e13e190e5a6761ab.svg",
     "main.4b763604.css.map": "/Easy-Employ/static/css/main.4b763604.css.map",
-    "main.e436c36c.js.map": "/Easy-Employ/static/js/main.e436c36c.js.map",
-    "787.6ccd55aa.chunk.js.map": "/Easy-Employ/static/js/787.6ccd55aa.chunk.js.map"
+    "main.e6d655e0.js.map": "/Easy-Employ/static/js/main.e6d655e0.js.map",
+    "787.9d8ea4c6.chunk.js.map": "/Easy-Employ/static/js/787.9d8ea4c6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4b763604.css",
-    "static/js/main.e436c36c.js"
+    "static/js/main.e6d655e0.js"
   ]
 }
