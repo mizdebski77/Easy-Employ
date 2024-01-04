@@ -133,4 +133,14 @@ export const CreateAccountButton = styled.button`
     background: ${({ theme }) => theme.color.fontMain};
     color: white;
     border: none;
+    transition: 0.3s;
+    cursor: pointer;
+    
+    &:hover {
+        background: ${({ theme }) => theme.color.fontMainHover};
+    };
+
+    &:active {
+        background: ${({ theme }) => theme.color.fontMainActive};
+    };
 `;
