@@ -46,7 +46,7 @@ export const IconContainer = styled.div`
 `;
 
 export const Icon = styled.img`
-    max-width: 48px;
+    max-width: 40px;
     width: 100%;
 `;
 
