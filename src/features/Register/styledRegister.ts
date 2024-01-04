@@ -43,6 +43,12 @@ export const IconContainer = styled.div`
     margin: 0 auto;
     border-radius: 40px;
     border: 2px solid ${({ theme }) => theme.color.thirdColor};
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        border: 2px solid ${({ theme }) => theme.color.fontMainActive};
+    }
 `;
 
 export const Icon = styled.img`
@@ -55,7 +61,7 @@ export const IconSpan = styled.span`
 `;
 
 export const Span = styled.span`
-
+    color: ${({ theme }) => theme.color.fontSecond};
 `;
 
 export const CreateAccountButton = styled.button`
