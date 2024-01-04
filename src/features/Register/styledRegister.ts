@@ -64,10 +64,6 @@ export const Span = styled.span`
     color: ${({ theme }) => theme.color.fontSecond};
 `;
 
-export const CreateAccountButton = styled.button`
-
-`;
-
 export const Form = styled.form`
 
 `;
