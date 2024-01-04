@@ -114,7 +114,10 @@ export const InfoWrapper = styled.div`
 `;
 
 export const InformationSpan = styled.span`
-    font-size: 12;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    line-height: 20px;
+    font-family: Open Sans;
 `;
 
 export const SpanColor = styled.span`
