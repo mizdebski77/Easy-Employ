@@ -17,7 +17,7 @@ export const SignUpPanel = styled.div`
 
 export const RegisterTitle = styled.h1`
     font-weight: normal;
-    color: ${({theme}) => theme.color.fontSecond};
+    color: ${({ theme }) => theme.color.fontSecond};
     text-align: center;
     font-size: 48px;
 `;
@@ -28,7 +28,6 @@ export const IconsWrapper = styled.div`
 `;
 
 export const IconContainer = styled.div`
-    background: red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,6 +36,8 @@ export const IconContainer = styled.div`
     max-width: 400px;
     width: 100%;
     margin: 0 auto;
+    border-radius: 40px;
+    border: 2px solid ${({ theme }) => theme.color.thirdColor};
 `;
 
 export const Icon = styled.img`
