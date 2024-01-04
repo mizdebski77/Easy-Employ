@@ -5,6 +5,7 @@ export const Wrapper = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 40px;
 `;
 
 export const SignUpPanel = styled.div`
@@ -135,7 +136,7 @@ export const CreateAccountButton = styled.button`
     border: none;
     transition: 0.3s;
     cursor: pointer;
-    
+
     &:hover {
         background: ${({ theme }) => theme.color.fontMainHover};
     };
