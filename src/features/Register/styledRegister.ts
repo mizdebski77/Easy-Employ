@@ -98,11 +98,14 @@ export const Input = styled.input`
 `;
 
 export const CheckBox = styled.input`
-
+    cursor: pointer;
 `;
 
-export const InfosWrapper =styled.div`
+export const InfosWrapper = styled.div`
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 `;
 
 export const InfoWrapper = styled.div`

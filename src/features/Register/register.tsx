@@ -41,10 +41,10 @@ export const Register = () => {
                         <InformationSpan>I confirm that I've read and I agree to the site's Terms & Conditions and Privacy Policy.*</InformationSpan>
                     </InfoWrapper>
 
-                    {/* <InfoWrapper>
-                        <Input type='checkbox' />
-                        <InformationSpan></InformationSpan>
-                    </InfoWrapper> */}
+                    <InfoWrapper>
+                        <CheckBox type='checkbox' />
+                        <InformationSpan>I agree to receive commercial correspondence regarding JustJoin.it, RocketJobs.pl and HelloHR job boards from Just Join IT sp. z o. o. with its registered office in Gdańsk at the e-mail address I have provided.more</InformationSpan>
+                    </InfoWrapper>
                 </InfosWrapper>
             </SignUpPanel>
         </Wrapper>
