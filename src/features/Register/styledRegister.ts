@@ -97,12 +97,16 @@ export const Input = styled.input`
     };
 `;
 
+export const CheckBox = styled.input`
+
+`;
+
 export const InfosWrapper =styled.div`
 
 `;
 
 export const InfoWrapper = styled.div`
-    
+
 `;
 
 export const InformationSpan = styled.span`
