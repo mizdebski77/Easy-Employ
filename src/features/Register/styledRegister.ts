@@ -13,6 +13,11 @@ export const SignUpPanel = styled.div`
     width: 100%;
     margin: 0 auto;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
 `;
 
 export const RegisterTitle = styled.h1`
@@ -31,7 +36,7 @@ export const IconContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 12px;
+    padding: 12px 32px;
     gap: 10px;
     max-width: 400px;
     width: 100%;
