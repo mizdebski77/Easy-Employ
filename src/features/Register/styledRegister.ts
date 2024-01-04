@@ -65,9 +65,14 @@ export const Span = styled.span`
 `;
 
 export const Form = styled.form`
-
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 `;
 
+export const Label = styled.label`
+
+`;
 export const Input = styled.input`
 
 `;
@@ -77,8 +82,8 @@ export const InformationSpan = styled.span`
 
 `;
 
-export const InformationSpanColor = styled.span`
-
+export const SpanColor = styled.span`
+    color: red;
 `;
 
 export const CreateAccountButton = styled.button`
