@@ -74,9 +74,22 @@ export const Label = styled.label`
 
 `;
 export const Input = styled.input`
+    padding:  12px;
+    border-radius: 20px;
+    border: 2px solid ${({ theme }) => theme.color.thirdColor};
+    color: black;
+    transition: 0.3s;
 
+    &:focus {
+        outline: none;
+        filter: drop-shadow(6px 4px 4px ${({ theme }) => theme.color.fontMain});
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        padding: 8px;
+        font-size: 14px;
+    };
 `;
-
 
 export const InformationSpan = styled.span`
 
