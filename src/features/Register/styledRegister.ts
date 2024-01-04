@@ -125,6 +125,12 @@ export const SpanColor = styled.span`
 `;
 
 export const CreateAccountButton = styled.button`
-
+    margin-top: 20px;
+    padding: 10px;
+    max-width: 360px;
+    width: 100%;
+    border-radius: 20px;
+    background: ${({ theme }) => theme.color.fontMain};
+    color: white;
+    border: none;
 `;
-
