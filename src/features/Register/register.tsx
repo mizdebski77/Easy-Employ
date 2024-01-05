@@ -4,6 +4,7 @@ import fb from '../../common/Images/SocialMedia/fb.png';
 import link from '../../common/Images/SocialMedia/link.png';
 import google from '../../common/Images/SocialMedia/google.png';
 
+
 export const Register = () => {
     return (
         <Wrapper>
