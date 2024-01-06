@@ -1,5 +1,5 @@
 import React from 'react';
-import { ImgWrapper, NavbarLink, Wrapper, LinkImg } from './styledMobileNavbar';
+import { ImgWrapper, NavbarLink, Wrapper, Img, LinkImg } from './styledMobileNavbar';
 import { links } from '../../links';
 import accountImg from '../../Images/account.svg';
 import languageImg from '../../Images/language.svg';
@@ -38,8 +38,13 @@ export const MobileNavbar: React.FC<MobileNavbarProps> = ({ mobileNavigation }) 
                     </NavbarLink>
                 ))}
                 <ImgWrapper>
-                    <LinkImg src={accountImg} />
-                    <LinkImg src={languageImg} />
+                    <LinkImg to="/Log-In">
+                        <Img src={accountImg} />
+                    </LinkImg>
+
+                    
+                        <Img src={languageImg} />
+
                 </ImgWrapper>
             </Wrapper>
         </AnimatePresence>

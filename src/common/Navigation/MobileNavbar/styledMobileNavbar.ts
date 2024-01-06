@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { styled } from "styled-components";
 
 export const Wrapper = styled.div`
@@ -34,9 +34,13 @@ export const ImgWrapper = styled.div`
     margin: 0 auto;
 `;
 
-export const LinkImg = styled.img`
+export const Img = styled.img`
     width: 40px;
     height: 40px;
+`;
+
+export const LinkImg = styled(Link)`
+
 `;
 
 
