@@ -67,10 +67,18 @@ export const IconContainer = styled.div`
 export const Icon = styled.img`
     max-width: 40px;
     width: 100%;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
+        max-width: 24px;
+    };
 `;
 
 export const IconSpan = styled.span`
     font-size: 16px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
+        font-size: 28px;
+    };
 `;
 
 export const Span = styled.span`
