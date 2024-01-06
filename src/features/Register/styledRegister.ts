@@ -34,6 +34,10 @@ export const RegisterTitle = styled.h1`
     color: ${({ theme }) => theme.color.fontSecond};
     text-align: center;
     font-size: 48px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
+        font-size: 28px;
+    };
 `;
 
 export const IconsWrapper = styled.div`
