@@ -7,7 +7,7 @@ export const Wrapper = styled.section`
     justify-content: center;
     padding: 40px;
 
-    @media (min-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         padding: 12px;
     };
 `;
@@ -23,6 +23,10 @@ export const SignUpPanel = styled.div`
     gap: 20px;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
+        padding: 20px 10px;
+    };
 `;
 
 export const RegisterTitle = styled.h1`
