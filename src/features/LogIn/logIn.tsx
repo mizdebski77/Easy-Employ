@@ -9,6 +9,7 @@ import {
     LoginSpan,
     LoginTitle,
     LoginWrapper,
+    PasswordWrapper,
     RegisterButton,
     RegisterCaption,
     RegisterTitle,
@@ -45,6 +46,12 @@ export const LogIn = () => {
 
                     <Input placeholder='Enter Password' type='password' />
                     <ShowHideButton> {password ? 'Hide' : 'Show'} password </ShowHideButton>
+                    
+                    <PasswordWrapper>
+                        <ShowHideButton> {password ? 'Hide' : 'Show'} password </ShowHideButton>
+                        <ShowHideButton> {password ? 'Hide' : 'Show'} password </ShowHideButton>
+                    </PasswordWrapper>
+
                     <Button>Sign In</Button>
                 </Form>
             </LoginWrapper>
