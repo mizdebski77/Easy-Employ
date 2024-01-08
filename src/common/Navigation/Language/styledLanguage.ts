@@ -49,17 +49,18 @@ export const LangWrapper = styled.div`
     transition: 0.3s;
     border-radius: 4px;
     background: ${({ theme }) => theme.color.thirdColor};
+    color: ${({ theme }) => theme.color.fontSecond};
 
     &:hover {
         background: ${({ theme }) => theme.color.fontMain};
+        color: ${({ theme }) => theme.color.mainColor};
     };
 
 `;
 
 export const LangCaption = styled.span`
     font-size: 24px;
-    color: ${({ theme }) => theme.color.fontSecond};
-    font-weight: bold;
+    font-weight: normal;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         font-size: 16px;
