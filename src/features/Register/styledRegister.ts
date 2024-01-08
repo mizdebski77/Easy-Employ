@@ -76,8 +76,8 @@ export const Icon = styled.img`
 export const IconSpan = styled.span`
     font-size: 16px;
 
-    @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
-        font-size: 28px;
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 14px;
     };
 `;
 
