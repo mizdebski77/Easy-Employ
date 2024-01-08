@@ -29,11 +29,11 @@ export const Register = () => {
 
                 <Form>
                     <Label>Email address <SpanColor>*</SpanColor></Label>
-                    <Input />
+                    <Input placeholder='name@domain.com' />
                     <Label>Password <SpanColor>*</SpanColor></Label>
-                    <Input />
+                    <Input placeholder='At least 8 characters' />
                     <Label>Repeat password <SpanColor>*</SpanColor></Label>
-                    <Input />
+                    <Input placeholder='Same password as above' />
 
 
                     <InfosWrapper>
