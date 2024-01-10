@@ -194,7 +194,7 @@ export const MainSection = styled.div`
 
 export const OfferTile = styled.div`
     background: ${({ theme }) => theme.color.thirdColor};
-    padding: 20px 80px;
+    padding: 20px 40px;
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
