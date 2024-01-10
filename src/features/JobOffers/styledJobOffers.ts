@@ -172,7 +172,8 @@ export const OffersContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr 2fr;
     max-width: 1500px;
-    margin-top: 40px;
+    margin: 40px auto;
+    justify-content: center;
 `;
 
 export const OffersTitle = styled.h2`
@@ -183,7 +184,10 @@ export const OffersTitle = styled.h2`
 `;
 
 export const FiltersWrapper = styled.div`
-    background: red;
+    background: ${({ theme }) => theme.color.secondColor};
+    box-shadow: 0 0 6px ${({ theme }) => theme.color.thirdColor};
+    border-radius: 10px;
+    padding: 20px;
 `;
 
 export const MainSection = styled.div`
@@ -201,6 +205,7 @@ export const OfferTile = styled.div`
     gap: 32px;
     cursor: pointer;
     transition: 0.3s;
+    box-shadow: 0 0 6px ${({ theme }) => theme.color.thirdColor};
 
     &:hover {
         transform: scale(1.01);
