@@ -163,14 +163,13 @@ export const RemoveButton = styled.button`
 `;
 
 export const OffersWrapper = styled.div`
-    display: grid;
-    gap: 20px;
+
 `;
 
 export const OffersContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr 2fr;
-    max-width: 1500px;
+    max-width: 1200px;
     margin: 40px auto;
     justify-content: center;
     gap: 40px;
@@ -179,15 +178,33 @@ export const OffersContainer = styled.div`
 export const OffersTitle = styled.h2`
     text-align: center;
     margin:0px;
-    font-size: 36px;
+    font-size: 32px;
     font-weight: normal;
+    margin-bottom: 40px;
 `;
 
 export const FiltersWrapper = styled.div`
     background: ${({ theme }) => theme.color.secondColor};
     box-shadow: 0 0 6px ${({ theme }) => theme.color.thirdColor};
     border-radius: 10px;
-    padding: 20px;
+`;
+
+export const FilterCategory = styled.div`
+    border-bottom: 2px solid ${({ theme }) => theme.color.thirdColor};
+    padding: 20px 10px ;
+    display: flex;
+    justify-content: space-between;
+`;
+
+export const Arrow = styled.button`
+    color: ${({ theme }) => theme.color.fontMain};
+    background: none;
+    border: none;
+    cursor: pointer;
+`;
+
+export const Category = styled.span`
+
 `;
 
 export const MainSection = styled.div`
@@ -206,6 +223,7 @@ export const OfferTile = styled.div`
     cursor: pointer;
     transition: 0.3s;
     box-shadow: 0 0 6px ${({ theme }) => theme.color.thirdColor};
+    margin-bottom: 20px;
 
     &:hover {
         transform: scale(1.01);
