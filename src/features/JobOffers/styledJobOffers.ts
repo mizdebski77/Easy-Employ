@@ -163,13 +163,15 @@ export const RemoveButton = styled.button`
 `;
 
 export const OffersWrapper = styled.div`
-    background: ${({ theme }) => theme.color.secondColor};
-    max-width: 1200px;
     margin: 0 auto;
-    margin-top: 40px;
-    padding: 40px;
     display: grid;
     gap: 40px;
+`;
+
+export const OffersContainer = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 1500px;
 `;
 
 export const OffersTitle = styled.h2`
@@ -177,6 +179,10 @@ export const OffersTitle = styled.h2`
     margin: 64px 0 20px;
     font-size: 44px;
     font-weight: normal;
+`;
+
+export const FiltersWrapper = styled.div`
+    background: red;
 `;
 
 export const MainSection = styled.div`

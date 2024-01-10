@@ -1,6 +1,7 @@
 import {
     CaptionsContainer,
     ContentWrapper,
+    FiltersWrapper,
     Form,
     FormWrapper,
     Input,
@@ -15,6 +16,7 @@ import {
     OfferCaptionWrapper,
     OfferTile,
     OfferTitle,
+    OffersContainer,
     OffersTitle,
     OffersWrapper,
     Option,
@@ -58,37 +60,44 @@ export const JobOffers = () => {
                 </KeyWordsWrapper>
             </FormWrapper>
 
-            <OffersTitle>Offer zone</OffersTitle>
+            <OffersContainer>
 
-            <OffersWrapper>
-                <OfferTile>
-                    <MainSection>
-                        <Logo src={logo} />
-                        <OfferTitle>Junior Frontend Developer</OfferTitle>
-                    </MainSection>
+                <FiltersWrapper>
+                    xd
+                </FiltersWrapper>
+                <OffersWrapper>
+                    <OffersTitle>Offers recommended for you </OffersTitle>
 
-                    <ContentWrapper>
-                        <CaptionsContainer>
-                            <OfferCaptionWrapper>
-                                <OfferCaptionTitle>Sallary:</OfferCaptionTitle>
-                                <OfferCaptionTContent>10 000 - 12 000 zł / brutto</OfferCaptionTContent>
-                            </OfferCaptionWrapper>
+                    <OfferTile>
+                        <MainSection>
+                            <Logo src={logo} />
+                            <OfferTitle>Junior Frontend Developer</OfferTitle>
+                        </MainSection>
 
-                            <OfferCaptionWrapper>
-                                <OfferCaptionTitle>Location:</OfferCaptionTitle>
-                                <OfferCaptionTContent>Warsaw / Poland</OfferCaptionTContent>
-                            </OfferCaptionWrapper>
+                        <ContentWrapper>
+                            <CaptionsContainer>
+                                <OfferCaptionWrapper>
+                                    <OfferCaptionTitle>Sallary:</OfferCaptionTitle>
+                                    <OfferCaptionTContent>10 000 - 12 000 zł / brutto</OfferCaptionTContent>
+                                </OfferCaptionWrapper>
 
-                            <OfferCaptionWrapper>
-                                <OfferCaptionTitle>Type of work:</OfferCaptionTitle>
-                                <OfferCaptionTContent>Remote work</OfferCaptionTContent>
-                            </OfferCaptionWrapper>
-                        </CaptionsContainer>
+                                <OfferCaptionWrapper>
+                                    <OfferCaptionTitle>Location:</OfferCaptionTitle>
+                                    <OfferCaptionTContent>Warsaw / Poland</OfferCaptionTContent>
+                                </OfferCaptionWrapper>
 
-                    </ContentWrapper>
+                                <OfferCaptionWrapper>
+                                    <OfferCaptionTitle>Type of work:</OfferCaptionTitle>
+                                    <OfferCaptionTContent>Remote work</OfferCaptionTContent>
+                                </OfferCaptionWrapper>
+                            </CaptionsContainer>
 
-                </OfferTile>
-            </OffersWrapper>
+                        </ContentWrapper>
+
+                    </OfferTile>
+                </OffersWrapper>
+            </OffersContainer>
+
         </Wrapper>
     );
 };
