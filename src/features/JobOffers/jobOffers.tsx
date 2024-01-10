@@ -70,62 +70,11 @@ export const JobOffers = () => {
                         <Category>Poziom stanowiska</Category>
                         <Arrow>🡣</Arrow>
                     </FilterCategory>
-                    <FilterCategory>
-                        <Category>Poziom stanowiska</Category>
-                        <Arrow>🡣</Arrow>
-                    </FilterCategory>
-
-                    <FilterCategory>
-                        <Category>Poziom stanowiska</Category>
-                        <Arrow>🡣</Arrow>
-                    </FilterCategory>
-
-                    <FilterCategory>
-                        <Category>Poziom stanowiska</Category>
-                        <Arrow>🡣</Arrow>
-                    </FilterCategory>
-                    
-                    <FilterCategory>
-                        <Category>Poziom stanowiska</Category>
-                        <Arrow>🡣</Arrow>
-                    </FilterCategory>
-                    <FilterCategory>
-                        <Category>Poziom stanowiska</Category>
-                        <Arrow>🡣</Arrow>
-                    </FilterCategory>
                 </FiltersWrapper>
 
 
                 <OffersWrapper>
                     <OffersTitle>Offers recommended for you </OffersTitle>
-
-                    <OfferTile>
-                        <MainSection>
-                            <Logo src={logo} />
-                            <OfferTitle>Junior Frontend Developer</OfferTitle>
-                        </MainSection>
-
-                        <ContentWrapper>
-                            <CaptionsContainer>
-                                <OfferCaptionWrapper>
-                                    <OfferCaptionTitle>Sallary:</OfferCaptionTitle>
-                                    <OfferCaptionTContent>10 000 - 12 000 zł / brutto</OfferCaptionTContent>
-                                </OfferCaptionWrapper>
-
-                                <OfferCaptionWrapper>
-                                    <OfferCaptionTitle>Location:</OfferCaptionTitle>
-                                    <OfferCaptionTContent>Warsaw / Poland</OfferCaptionTContent>
-                                </OfferCaptionWrapper>
-
-                                <OfferCaptionWrapper>
-                                    <OfferCaptionTitle>Type of work:</OfferCaptionTitle>
-                                    <OfferCaptionTContent>Remote work</OfferCaptionTContent>
-                                </OfferCaptionWrapper>
-                            </CaptionsContainer>
-
-                        </ContentWrapper>
-
-                    </OfferTile>
 
                     <OfferTile>
                         <MainSection>
