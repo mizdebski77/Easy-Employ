@@ -172,11 +172,12 @@ export const OffersContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr 2fr;
     max-width: 1500px;
+    margin-top: 40px;
 `;
 
 export const OffersTitle = styled.h2`
     text-align: center;
-    margin: 64px 0 20px;
+    margin:0px;
     font-size: 44px;
     font-weight: normal;
 `;
