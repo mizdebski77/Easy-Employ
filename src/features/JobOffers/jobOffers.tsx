@@ -32,7 +32,7 @@ export const JobOffers = () => {
     return (
         <Wrapper>
             <Title>
-                Job Offers
+                What kind of job are you looking for?
             </Title>
 
             <FormWrapper>
@@ -57,8 +57,9 @@ export const JobOffers = () => {
                     </KeyWordContainer>
                 </KeyWordsWrapper>
             </FormWrapper>
-            
+
             <OffersTitle>Offer zone</OffersTitle>
+
             <OffersWrapper>
                 <OfferTile>
                     <MainSection>
