@@ -165,7 +165,7 @@ export const RemoveButton = styled.button`
 export const OffersWrapper = styled.div`
     margin: 0 auto;
     display: grid;
-    gap: 40px;
+    gap: 20px;
 `;
 
 export const OffersContainer = styled.div`
@@ -178,7 +178,7 @@ export const OffersContainer = styled.div`
 export const OffersTitle = styled.h2`
     text-align: center;
     margin:0px;
-    font-size: 44px;
+    font-size: 36px;
     font-weight: normal;
 `;
 
@@ -195,7 +195,7 @@ export const MainSection = styled.div`
 export const OfferTile = styled.div`
     background: ${({ theme }) => theme.color.thirdColor};
     padding: 20px 40px;
-    border-radius: 20px;
+    border-radius: 10px;
     display: flex;
     justify-content: space-between;
     gap: 32px;
@@ -231,7 +231,7 @@ export const ContentWrapper = styled.div`
 
 export const OfferTitle = styled.h2`
     color: ${({ theme }) => theme.color.fontMain};
-    font-size: 28px;
+    font-size: 24px;
     font-weight: normal;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
@@ -240,7 +240,7 @@ export const OfferTitle = styled.h2`
 `;
 
 export const Logo = styled.img`
-    max-width: 80px;
+    max-width: 64px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         max-width: 54px;
@@ -256,7 +256,7 @@ export const OfferCaptionWrapper = styled.div`
     display: flex;
     justify-content: start;
     align-items: center;
-    gap: 20px;
+    gap: 12px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         gap:10px;
@@ -264,7 +264,7 @@ export const OfferCaptionWrapper = styled.div`
 `;
 
 export const OfferCaptionTitle = styled.span`
-    font-size: 20px; 
+    font-size: 18px; 
     color: ${({ theme }) => theme.color.fontMain};
     min-width: 120px;
     text-align: right;
@@ -275,7 +275,7 @@ export const OfferCaptionTitle = styled.span`
 `;
 
 export const OfferCaptionTContent = styled.span`
-    font-size: 16px;
+    font-size: 14px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         font-size: 12px;
