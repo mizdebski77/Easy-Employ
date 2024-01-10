@@ -40,7 +40,7 @@ export const OfferWrapper = styled.div`
 export const OfferTile = styled.div`
     background: ${({ theme }) => theme.color.secondColor};
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 0 0 10px ${({ theme }) => theme.color.fontSecond};
     display: grid;
     gap: 20px;
