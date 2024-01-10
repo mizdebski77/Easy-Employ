@@ -163,7 +163,6 @@ export const RemoveButton = styled.button`
 `;
 
 export const OffersWrapper = styled.div`
-    margin: 0 auto;
     display: grid;
     gap: 20px;
 `;
@@ -174,6 +173,7 @@ export const OffersContainer = styled.div`
     max-width: 1500px;
     margin: 40px auto;
     justify-content: center;
+    gap: 40px;
 `;
 
 export const OffersTitle = styled.h2`
