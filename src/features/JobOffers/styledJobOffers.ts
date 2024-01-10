@@ -193,7 +193,7 @@ export const MainSection = styled.div`
 `;
 
 export const OfferTile = styled.div`
-    background: ${({ theme }) => theme.color.thirdColor};
+    background: ${({ theme }) => theme.color.secondColor};
     padding: 20px 40px;
     border-radius: 10px;
     display: flex;
