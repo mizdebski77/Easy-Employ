@@ -192,16 +192,24 @@ export const FiltersWrapper = styled.div`
 export const FilterCategory = styled.div`
     border-bottom: 2px solid ${({ theme }) => theme.color.thirdColor};
     padding: 20px 10px ;
+
+`;
+
+export const CategoryWrapper = styled.div`
     display: flex;
     justify-content: space-between;
 `;
 
 export const List = styled.div`
-    padding: 20px;
+    margin-top: 20px;
+    padding: 10px;
 `;
 
 export const ListItemWrapper = styled.div`
-
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
 `;
 
 export const ListItem = styled.span`

@@ -31,7 +31,8 @@ import {
     ListItemWrapper,
     Select,
     Title,
-    Wrapper
+    Wrapper,
+    CategoryWrapper
 } from './styledJobOffers';
 import logo from '../../common/Images/logo.png';
 
@@ -71,8 +72,11 @@ export const JobOffers = () => {
 
                 <FiltersWrapper>
                     <FilterCategory>
-                        <Category>Poziom stanowiska</Category>
-                        <Arrow>🡣</Arrow>
+                        <CategoryWrapper>
+                            <Category>Poziom stanowiska</Category>
+                            <Arrow>🡣</Arrow>
+                        </CategoryWrapper>
+
 
                         <List>
                             <ListItemWrapper>
