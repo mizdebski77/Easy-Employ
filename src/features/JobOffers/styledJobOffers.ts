@@ -202,7 +202,6 @@ export const CategoryWrapper = styled.div`
 
 export const List = styled.div`
     margin-top: 20px;
-    padding: 10px;
 `;
 
 export const ListItemWrapper = styled.label`
@@ -210,6 +209,12 @@ export const ListItemWrapper = styled.label`
     align-items: center;
     gap: 10px;
     cursor: pointer;
+    padding: 4px 8px;
+    transition: 0.3s;
+
+    &:hover {
+        background: ${({ theme }) => theme.color.mainColor};
+    }
 `;
 
 export const ListItem = styled.span`
