@@ -39,14 +39,14 @@ import { useState } from 'react';
 
 export const JobOffers = () => {
 
-    const [showmore, setShowMore] = useState(false);
+    const [showMore, setShowMore] = useState(false);
 
     const handleShowMore = () => {
-        setShowMore(!showmore);
+        setShowMore(!showMore);
     };
 
-    console.log(showmore);
-    
+    console.log(showMore);
+
 
 
     return (
@@ -85,11 +85,11 @@ export const JobOffers = () => {
                     <FilterCategory>
                         <CategoryWrapper>
                             <Category>Poziom stanowiska</Category>
-                            <Arrow>🡣 🡡</Arrow>
+                            <Arrow onClick={handleShowMore}>{showMore === false ? '🡣' : "🡡"}</Arrow>
                         </CategoryWrapper>
 
 
-                        <List>
+                        <List >
                             <ListItemWrapper>
                                 <ListCheckbox type='checkbox' />
                                 <ListItem>Junior</ListItem>
