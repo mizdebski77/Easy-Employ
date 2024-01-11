@@ -217,6 +217,11 @@ export const ListItemWrapper = styled.label`
     }
 `;
 
+export const FilterCountSpan = styled.span`
+    font-size: 12px;
+    color: ${({ theme }) => theme.color.fontSecond};
+`;
+
 export const ListItem = styled.span`
 
 `;

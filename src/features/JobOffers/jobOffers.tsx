@@ -32,7 +32,8 @@ import {
     Select,
     Title,
     Wrapper,
-    CategoryWrapper
+    CategoryWrapper,
+    FilterCountSpan
 } from './styledJobOffers';
 import logo from '../../common/Images/logo.png';
 import { useState } from 'react';
@@ -84,24 +85,44 @@ export const JobOffers = () => {
 
                     <FilterCategory>
                         <CategoryWrapper>
-                            <Category>Poziom stanowiska</Category>
+                            <Category>Operating mode</Category>
                             <Arrow onClick={handleShowMore}>{showMore === false ? '🡣' : "🡡"}</Arrow>
                         </CategoryWrapper>
 
+                        {showMore && (
+                            <>
+                                <List >
+                                    <ListItemWrapper>
+                                        <ListCheckbox type='checkbox' />
+                                        <ListItem>Remote Work</ListItem>
+                                        <FilterCountSpan>(12)</FilterCountSpan>
+                                    </ListItemWrapper>
+                                </List>
 
-                        <List >
-                            <ListItemWrapper>
-                                <ListCheckbox type='checkbox' />
-                                <ListItem>Junior</ListItem>
-                            </ListItemWrapper>
-                        </List>
+                                <List >
+                                    <ListItemWrapper>
+                                        <ListCheckbox type='checkbox' />
+                                        <ListItem>Hybrid Work</ListItem>
+                                    </ListItemWrapper>
+                                </List>
 
-                        <List>
-                            <ListItemWrapper>
-                                <ListCheckbox type='checkbox' />
-                                <ListItem>Mid</ListItem>
-                            </ListItemWrapper>
-                        </List>
+                                <List >
+                                    <ListItemWrapper>
+                                        <ListCheckbox type='checkbox' />
+                                        <ListItem>Stationary Work</ListItem>
+                                    </ListItemWrapper>
+                                </List>
+
+                                <List >
+                                    <ListItemWrapper>
+                                        <ListCheckbox type='checkbox' />
+                                        <ListItem>Remote Work</ListItem>
+                                    </ListItemWrapper>
+                                </List>
+                            </>
+
+                        )}
+
 
                     </FilterCategory>
 
