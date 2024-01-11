@@ -12,6 +12,9 @@ import {
     KeyWordContainer,
     KeyWordsWrapper,
     Legend,
+    List,
+    ListCheckbox,
+    ListItem,
     Logo,
     MainSection,
     OfferCaptionTContent,
@@ -25,6 +28,7 @@ import {
     Option,
     RemoveButton,
     SearchButton,
+    ListItemWrapper,
     Select,
     Title,
     Wrapper
@@ -69,7 +73,15 @@ export const JobOffers = () => {
                     <FilterCategory>
                         <Category>Poziom stanowiska</Category>
                         <Arrow>🡣</Arrow>
+
+                        <List>
+                            <ListItemWrapper>
+                                <ListCheckbox type='checkbox' />
+                                <ListItem>Junior</ListItem>
+                            </ListItemWrapper>
+                        </List>
                     </FilterCategory>
+
                 </FiltersWrapper>
 
 

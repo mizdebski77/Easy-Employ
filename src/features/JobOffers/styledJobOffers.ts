@@ -196,6 +196,22 @@ export const FilterCategory = styled.div`
     justify-content: space-between;
 `;
 
+export const List = styled.div`
+    padding: 20px;
+`;
+
+export const ListItemWrapper = styled.div`
+
+`;
+
+export const ListItem = styled.span`
+
+`;
+
+export const ListCheckbox = styled.input`
+
+`;
+
 export const Arrow = styled.button`
     color: ${({ theme }) => theme.color.fontMain};
     background: none;
