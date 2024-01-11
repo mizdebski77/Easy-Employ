@@ -205,7 +205,7 @@ export const List = styled.div`
     padding: 10px;
 `;
 
-export const ListItemWrapper = styled.div`
+export const ListItemWrapper = styled.label`
     display: flex;
     align-items: center;
     gap: 10px;
