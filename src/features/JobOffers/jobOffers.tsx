@@ -37,7 +37,7 @@ import {
 } from './styledJobOffers';
 import logo from '../../common/Images/logo.png';
 import { useState } from 'react';
-import { typeOfWorks } from './listItems';
+import { specializations, typeOfWorks } from './listItems';
 
 export const JobOffers = () => {
 
@@ -91,7 +91,7 @@ export const JobOffers = () => {
                         </CategoryWrapper>
                         {showMore && (
                             < List >
-                                {typeOfWorks.map(( typeOfWork) => (
+                                {typeOfWorks.map((typeOfWork) => (
                                     <ListItemWrapper>
                                         <ListCheckbox type='checkbox' />
                                         <ListItem>{typeOfWork.text}</ListItem>
@@ -101,7 +101,25 @@ export const JobOffers = () => {
                             </List>
                         )}
                     </FilterCategory>
-                    
+
+                    <FilterCategory>
+                        <CategoryWrapper>
+                            <Category>Specializations</Category>
+                            <Arrow onClick={handleShowMore}>{showMore === false ? '🡣' : "🡡"}</Arrow>
+                        </CategoryWrapper>
+                        {showMore && (
+                            < List >
+                                {specializations.map((specialization) => (
+                                    <ListItemWrapper>
+                                        <ListCheckbox type='checkbox' />
+                                        <ListItem>{specialization.text}</ListItem>
+                                        <FilterCountSpan>(12)</FilterCountSpan>
+                                    </ListItemWrapper>
+                                ))}
+                            </List>
+                        )}
+                    </FilterCategory>
+
                 </FiltersWrapper>
                 <OffersWrapper>
                     <OffersTitle>Offers recommended for you </OffersTitle>
