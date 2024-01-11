@@ -209,7 +209,7 @@ export const ListItemWrapper = styled.label`
     align-items: center;
     gap: 10px;
     cursor: pointer;
-    padding: 4px 8px;
+    padding: 6px 8px;
     transition: 0.3s;
 
     &:hover {

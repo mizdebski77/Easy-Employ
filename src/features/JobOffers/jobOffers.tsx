@@ -89,7 +89,6 @@ export const JobOffers = () => {
                             <Category>Operating mode</Category>
                             <Arrow onClick={handleShowMore}>{showMore === false ? '🡣' : "🡡"}</Arrow>
                         </CategoryWrapper>
-
                         {showMore && (
                             < List >
                                 {typeOfWorks.map(( typeOfWork) => (
@@ -102,6 +101,7 @@ export const JobOffers = () => {
                             </List>
                         )}
                     </FilterCategory>
+                    
                 </FiltersWrapper>
                 <OffersWrapper>
                     <OffersTitle>Offers recommended for you </OffersTitle>
