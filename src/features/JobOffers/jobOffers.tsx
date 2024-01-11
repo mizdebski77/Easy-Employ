@@ -37,6 +37,7 @@ import {
 } from './styledJobOffers';
 import logo from '../../common/Images/logo.png';
 import { useState } from 'react';
+import { typeOfWorks } from './listItems';
 
 export const JobOffers = () => {
 
@@ -90,47 +91,18 @@ export const JobOffers = () => {
                         </CategoryWrapper>
 
                         {showMore && (
-                            <>
-                                <List >
+                            < List >
+                                {typeOfWorks.map(( typeOfWork) => (
                                     <ListItemWrapper>
                                         <ListCheckbox type='checkbox' />
-                                        <ListItem>Remote Work</ListItem>
+                                        <ListItem>{typeOfWork.text}</ListItem>
                                         <FilterCountSpan>(12)</FilterCountSpan>
                                     </ListItemWrapper>
-                                </List>
-
-                                <List >
-                                    <ListItemWrapper>
-                                        <ListCheckbox type='checkbox' />
-                                        <ListItem>Hybrid Work</ListItem>
-                                    </ListItemWrapper>
-                                </List>
-
-                                <List >
-                                    <ListItemWrapper>
-                                        <ListCheckbox type='checkbox' />
-                                        <ListItem>Stationary Work</ListItem>
-                                    </ListItemWrapper>
-                                </List>
-
-                                <List >
-                                    <ListItemWrapper>
-                                        <ListCheckbox type='checkbox' />
-                                        <ListItem>Remote Work</ListItem>
-                                    </ListItemWrapper>
-                                </List>
-                            </>
-
+                                ))}
+                            </List>
                         )}
-
-
                     </FilterCategory>
-
                 </FiltersWrapper>
-
-
-
-
                 <OffersWrapper>
                     <OffersTitle>Offers recommended for you </OffersTitle>
 
@@ -164,6 +136,6 @@ export const JobOffers = () => {
                 </OffersWrapper>
             </OffersContainer>
 
-        </Wrapper>
+        </Wrapper >
     );
 };

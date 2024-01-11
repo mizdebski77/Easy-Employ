@@ -1,4 +1,4 @@
-export const typeOfWork = [
+export const typeOfWorks = [
     { text: 'Hybrid Work',  },
     { text: 'Remote Work',  },
     { text: 'Stationary Work',  },
