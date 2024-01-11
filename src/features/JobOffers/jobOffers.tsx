@@ -35,8 +35,18 @@ import {
     CategoryWrapper
 } from './styledJobOffers';
 import logo from '../../common/Images/logo.png';
+import { useState } from 'react';
 
 export const JobOffers = () => {
+
+    const [showmore, setShowMore] = useState(false);
+
+    const handleShowMore = () => {
+        setShowMore(!showmore);
+    };
+
+    console.log(showmore);
+    
 
 
     return (
@@ -71,10 +81,11 @@ export const JobOffers = () => {
             <OffersContainer>
 
                 <FiltersWrapper>
+
                     <FilterCategory>
                         <CategoryWrapper>
                             <Category>Poziom stanowiska</Category>
-                            <Arrow>🡣</Arrow>
+                            <Arrow>🡣 🡡</Arrow>
                         </CategoryWrapper>
 
 
@@ -84,9 +95,19 @@ export const JobOffers = () => {
                                 <ListItem>Junior</ListItem>
                             </ListItemWrapper>
                         </List>
+
+                        <List>
+                            <ListItemWrapper>
+                                <ListCheckbox type='checkbox' />
+                                <ListItem>Mid</ListItem>
+                            </ListItemWrapper>
+                        </List>
+
                     </FilterCategory>
 
                 </FiltersWrapper>
+
+
 
 
                 <OffersWrapper>
