@@ -219,7 +219,7 @@ export const ListItemWrapper = styled.label`
 
 export const FilterCountSpan = styled.span`
     font-size: 12px;
-    color: ${({ theme }) => theme.color.fontSecond};
+    color: ${({ theme }) => theme.color.fontMainHover};
 `;
 
 export const ListItem = styled.span`
