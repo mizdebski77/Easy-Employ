@@ -7,6 +7,8 @@ import { GlobalStyles } from './core/globalStyles';
 import { theme } from './core/theme';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
+import { Provider } from 'react-redux';
+import store from './core/store';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -15,14 +17,15 @@ const root = ReactDOM.createRoot(
 const queryClient = new QueryClient();
 
 root.render(
-  <QueryClientProvider client={queryClient}>
-    <ThemeProvider theme={theme}>
-      <GlobalStyles />
-      <ReactQueryDevtools />
-      <App />
-    </ThemeProvider>
-  </QueryClientProvider>
-
+  <Provider store={store}>
+    <QueryClientProvider client={queryClient}>
+      <ThemeProvider theme={theme}>
+        <GlobalStyles />
+        <ReactQueryDevtools />
+        <App />
+      </ThemeProvider>
+    </QueryClientProvider>
+  </Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function
