@@ -24,7 +24,6 @@ import {
     OfferTitle,
     OffersContainer,
     OffersTitle,
-    OffersWrapper,
     Option,
     RemoveButton,
     SearchButton,
