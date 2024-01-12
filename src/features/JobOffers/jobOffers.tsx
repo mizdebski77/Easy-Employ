@@ -47,6 +47,7 @@ export const JobOffers = () => {
     };
 
 
+
     return (
         <Wrapper>
             <Title>
@@ -89,7 +90,10 @@ export const JobOffers = () => {
                                     <List>
                                         {category.items.map((item, index) => (
                                             <ListItemWrapper key={index}>
-                                                <ListCheckbox type='checkbox' />
+                                                <ListCheckbox
+                                                    type='checkbox'
+                                                />
+
                                                 <ListItem>{item.text}</ListItem>
                                                 <FilterCountSpan>(12)</FilterCountSpan>
                                             </ListItemWrapper>
@@ -104,7 +108,6 @@ export const JobOffers = () => {
 
                 <div>
                     <OffersTitle>Offers recommended for you </OffersTitle>
-
                     <OfferTile>
                         <MainSection>
                             <Logo src={logo} />
@@ -132,119 +135,6 @@ export const JobOffers = () => {
                         </ContentWrapper>
 
                     </OfferTile>
-
-                    <OfferTile>
-                        <MainSection>
-                            <Logo src={logo} />
-                            <OfferTitle>Junior Frontend Developer</OfferTitle>
-                        </MainSection>
-
-                        <ContentWrapper>
-                            <CaptionsContainer>
-                                <OfferCaptionWrapper>
-                                    <OfferCaptionTitle>Sallary:</OfferCaptionTitle>
-                                    <OfferCaptionTContent>10 000 - 12 000 zł / brutto</OfferCaptionTContent>
-                                </OfferCaptionWrapper>
-
-                                <OfferCaptionWrapper>
-                                    <OfferCaptionTitle>Location:</OfferCaptionTitle>
-                                    <OfferCaptionTContent>Warsaw / Poland</OfferCaptionTContent>
-                                </OfferCaptionWrapper>
-
-                                <OfferCaptionWrapper>
-                                    <OfferCaptionTitle>Type of work:</OfferCaptionTitle>
-                                    <OfferCaptionTContent>Remote work</OfferCaptionTContent>
-                                </OfferCaptionWrapper>
-                            </CaptionsContainer>
-
-                        </ContentWrapper>
-
-                    </OfferTile>
-
-                    <OfferTile>
-                        <MainSection>
-                            <Logo src={logo} />
-                            <OfferTitle>Junior Frontend Developer</OfferTitle>
-                        </MainSection>
-
-                        <ContentWrapper>
-                            <CaptionsContainer>
-                                <OfferCaptionWrapper>
-                                    <OfferCaptionTitle>Sallary:</OfferCaptionTitle>
-                                    <OfferCaptionTContent>10 000 - 12 000 zł / brutto</OfferCaptionTContent>
-                                </OfferCaptionWrapper>
-
-                                <OfferCaptionWrapper>
-                                    <OfferCaptionTitle>Location:</OfferCaptionTitle>
-                                    <OfferCaptionTContent>Warsaw / Poland</OfferCaptionTContent>
-                                </OfferCaptionWrapper>
-
-                                <OfferCaptionWrapper>
-                                    <OfferCaptionTitle>Type of work:</OfferCaptionTitle>
-                                    <OfferCaptionTContent>Remote work</OfferCaptionTContent>
-                                </OfferCaptionWrapper>
-                            </CaptionsContainer>
-
-                        </ContentWrapper>
-
-                    </OfferTile>
-
-                    <OfferTile>
-                        <MainSection>
-                            <Logo src={logo} />
-                            <OfferTitle>Junior Frontend Developer</OfferTitle>
-                        </MainSection>
-
-                        <ContentWrapper>
-                            <CaptionsContainer>
-                                <OfferCaptionWrapper>
-                                    <OfferCaptionTitle>Sallary:</OfferCaptionTitle>
-                                    <OfferCaptionTContent>10 000 - 12 000 zł / brutto</OfferCaptionTContent>
-                                </OfferCaptionWrapper>
-
-                                <OfferCaptionWrapper>
-                                    <OfferCaptionTitle>Location:</OfferCaptionTitle>
-                                    <OfferCaptionTContent>Warsaw / Poland</OfferCaptionTContent>
-                                </OfferCaptionWrapper>
-
-                                <OfferCaptionWrapper>
-                                    <OfferCaptionTitle>Type of work:</OfferCaptionTitle>
-                                    <OfferCaptionTContent>Remote work</OfferCaptionTContent>
-                                </OfferCaptionWrapper>
-                            </CaptionsContainer>
-
-                        </ContentWrapper>
-
-                    </OfferTile>
-
-                    <OfferTile>
-                        <MainSection>
-                            <Logo src={logo} />
-                            <OfferTitle>Junior Frontend Developer</OfferTitle>
-                        </MainSection>
-
-                        <ContentWrapper>
-                            <CaptionsContainer>
-                                <OfferCaptionWrapper>
-                                    <OfferCaptionTitle>Sallary:</OfferCaptionTitle>
-                                    <OfferCaptionTContent>10 000 - 12 000 zł / brutto</OfferCaptionTContent>
-                                </OfferCaptionWrapper>
-
-                                <OfferCaptionWrapper>
-                                    <OfferCaptionTitle>Location:</OfferCaptionTitle>
-                                    <OfferCaptionTContent>Warsaw / Poland</OfferCaptionTContent>
-                                </OfferCaptionWrapper>
-
-                                <OfferCaptionWrapper>
-                                    <OfferCaptionTitle>Type of work:</OfferCaptionTitle>
-                                    <OfferCaptionTContent>Remote work</OfferCaptionTContent>
-                                </OfferCaptionWrapper>
-                            </CaptionsContainer>
-
-                        </ContentWrapper>
-
-                    </OfferTile>
-
                 </div>
             </OffersContainer>
 
