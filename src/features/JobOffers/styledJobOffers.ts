@@ -169,6 +169,10 @@ export const OffersContainer = styled.div`
     margin: 40px auto;
     justify-content: center;
     gap: 40px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
+        grid-template-columns: 1fr;
+    };
 `;
 
 export const OffersTitle = styled.h2`
