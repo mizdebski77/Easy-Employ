@@ -33,7 +33,7 @@ import {
     Title,
     Wrapper,
     CategoryWrapper,
-    FilterCountSpan
+    FilterCountSpan,
 } from './styledJobOffers';
 import logo from '../../common/Images/logo.png';
 import { useState } from 'react';
@@ -80,31 +80,32 @@ export const JobOffers = () => {
             </FormWrapper>
 
             <OffersContainer>
+                <div>
+                    <FiltersWrapper>
+                        {Categories.map((category) => (
+                            <FilterCategory>
+                                <CategoryWrapper>
+                                    <Category>{category.title}</Category>
+                                    <Arrow onClick={handleShowMore}>{showMore === false ? '🡣' : "🡡"}</Arrow>
+                                </CategoryWrapper>
+                                {showMore && (
+                                    <List>
+                                        {category.items.map((item, index) => (
+                                            <ListItemWrapper key={index}>
+                                                <ListCheckbox type='checkbox' />
+                                                <ListItem>{item.text}</ListItem>
+                                                <FilterCountSpan>(12)</FilterCountSpan>
+                                            </ListItemWrapper>
+                                        ))}
+                                    </List>
+                                )}
+                            </FilterCategory>
+                        ))}
+                    </FiltersWrapper>
 
-                <FiltersWrapper>
-                    {Categories.map((category) => (
+                </div>
 
-
-                        <FilterCategory>
-                            <CategoryWrapper>
-                                <Category>{category.title}</Category>
-                                <Arrow onClick={handleShowMore}>{showMore === false ? '🡣' : "🡡"}</Arrow>
-                            </CategoryWrapper>
-                            {showMore && (
-                                <List>
-                                    {category.items.map((item, index) => (
-                                        <ListItemWrapper key={index}>
-                                            <ListCheckbox type='checkbox' />
-                                            <ListItem>{item.text}</ListItem>
-                                            <FilterCountSpan>(12)</FilterCountSpan>
-                                        </ListItemWrapper>
-                                    ))}
-                                </List>
-                            )}
-                        </FilterCategory>
-                    ))}
-                </FiltersWrapper>
-                <OffersWrapper>
+                <div>
                     <OffersTitle>Offers recommended for you </OffersTitle>
 
                     <OfferTile>
@@ -190,7 +191,64 @@ export const JobOffers = () => {
                         </ContentWrapper>
 
                     </OfferTile>
-                </OffersWrapper>
+
+                    <OfferTile>
+                        <MainSection>
+                            <Logo src={logo} />
+                            <OfferTitle>Junior Frontend Developer</OfferTitle>
+                        </MainSection>
+
+                        <ContentWrapper>
+                            <CaptionsContainer>
+                                <OfferCaptionWrapper>
+                                    <OfferCaptionTitle>Sallary:</OfferCaptionTitle>
+                                    <OfferCaptionTContent>10 000 - 12 000 zł / brutto</OfferCaptionTContent>
+                                </OfferCaptionWrapper>
+
+                                <OfferCaptionWrapper>
+                                    <OfferCaptionTitle>Location:</OfferCaptionTitle>
+                                    <OfferCaptionTContent>Warsaw / Poland</OfferCaptionTContent>
+                                </OfferCaptionWrapper>
+
+                                <OfferCaptionWrapper>
+                                    <OfferCaptionTitle>Type of work:</OfferCaptionTitle>
+                                    <OfferCaptionTContent>Remote work</OfferCaptionTContent>
+                                </OfferCaptionWrapper>
+                            </CaptionsContainer>
+
+                        </ContentWrapper>
+
+                    </OfferTile>
+
+                    <OfferTile>
+                        <MainSection>
+                            <Logo src={logo} />
+                            <OfferTitle>Junior Frontend Developer</OfferTitle>
+                        </MainSection>
+
+                        <ContentWrapper>
+                            <CaptionsContainer>
+                                <OfferCaptionWrapper>
+                                    <OfferCaptionTitle>Sallary:</OfferCaptionTitle>
+                                    <OfferCaptionTContent>10 000 - 12 000 zł / brutto</OfferCaptionTContent>
+                                </OfferCaptionWrapper>
+
+                                <OfferCaptionWrapper>
+                                    <OfferCaptionTitle>Location:</OfferCaptionTitle>
+                                    <OfferCaptionTContent>Warsaw / Poland</OfferCaptionTContent>
+                                </OfferCaptionWrapper>
+
+                                <OfferCaptionWrapper>
+                                    <OfferCaptionTitle>Type of work:</OfferCaptionTitle>
+                                    <OfferCaptionTContent>Remote work</OfferCaptionTContent>
+                                </OfferCaptionWrapper>
+                            </CaptionsContainer>
+
+                        </ContentWrapper>
+
+                    </OfferTile>
+
+                </div>
             </OffersContainer>
 
         </Wrapper >

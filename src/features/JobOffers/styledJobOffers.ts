@@ -192,7 +192,6 @@ export const FiltersWrapper = styled.div`
 export const FilterCategory = styled.div`
     border-bottom: 2px solid ${({ theme }) => theme.color.thirdColor};
     padding: 20px 10px ;
-
 `;
 
 export const CategoryWrapper = styled.div`
