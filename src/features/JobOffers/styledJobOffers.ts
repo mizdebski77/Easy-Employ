@@ -162,10 +162,6 @@ export const RemoveButton = styled.button`
     cursor: pointer;
 `;
 
-export const OffersWrapper = styled.div`
-
-`;
-
 export const OffersContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr 2fr;
