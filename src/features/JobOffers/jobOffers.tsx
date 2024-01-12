@@ -33,6 +33,7 @@ import {
     Wrapper,
     CategoryWrapper,
     FilterCountSpan,
+    FilterTitle,
 } from './styledJobOffers';
 import logo from '../../common/Images/logo.png';
 import { useState } from 'react';
@@ -40,12 +41,11 @@ import { Categories } from './listItems';
 
 export const JobOffers = () => {
 
-    const [showMore, setShowMore] = useState(false);
+    const [showMore, setShowMore] = useState(true);
 
     const handleShowMore = () => {
         setShowMore(!showMore);
     };
-
 
 
     return (
@@ -80,6 +80,7 @@ export const JobOffers = () => {
             <OffersContainer>
                 <div>
                     <FiltersWrapper>
+                        <FilterTitle>Filters</FilterTitle>
                         {Categories.map((category) => (
                             <FilterCategory>
                                 <CategoryWrapper>

@@ -170,7 +170,7 @@ export const OffersContainer = styled.div`
     justify-content: center;
     gap: 40px;
 
-    @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         grid-template-columns: 1fr;
     };
 `;
@@ -187,6 +187,16 @@ export const FiltersWrapper = styled.div`
     background: ${({ theme }) => theme.color.secondColor};
     box-shadow: 0 0 6px ${({ theme }) => theme.color.thirdColor};
     border-radius: 10px;
+`;
+
+export const FilterTitle = styled.h3`
+    font-size: 28px;
+    font-weight: normal;
+    color: ${({ theme }) => theme.color.fontMain};
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid ${({theme}) => theme.color.thirdColor};
+    margin: 0;
 `;
 
 export const FilterCategory = styled.div`
