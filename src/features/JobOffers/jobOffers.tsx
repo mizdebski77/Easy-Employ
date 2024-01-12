@@ -47,8 +47,6 @@ export const JobOffers = () => {
     };
 
 
-
-
     return (
         <Wrapper>
             <Title>
