@@ -37,7 +37,7 @@ import {
 } from './styledJobOffers';
 import logo from '../../common/Images/logo.png';
 import { useState } from 'react';
-import { specializations, typeOfWorks } from './listItems';
+import { Categories } from './listItems';
 
 export const JobOffers = () => {
 
@@ -47,7 +47,6 @@ export const JobOffers = () => {
         setShowMore(!showMore);
     };
 
-    console.log(showMore);
 
 
 
@@ -83,46 +82,86 @@ export const JobOffers = () => {
             <OffersContainer>
 
                 <FiltersWrapper>
+                    {Categories.map((category) => (
 
-                    <FilterCategory>
-                        <CategoryWrapper>
-                            <Category>Operating mode</Category>
-                            <Arrow onClick={handleShowMore}>{showMore === false ? '🡣' : "🡡"}</Arrow>
-                        </CategoryWrapper>
-                        {showMore && (
-                            < List >
-                                {typeOfWorks.map((typeOfWork) => (
-                                    <ListItemWrapper>
-                                        <ListCheckbox type='checkbox' />
-                                        <ListItem>{typeOfWork.text}</ListItem>
-                                        <FilterCountSpan>(12)</FilterCountSpan>
-                                    </ListItemWrapper>
-                                ))}
-                            </List>
-                        )}
-                    </FilterCategory>
 
-                    <FilterCategory>
-                        <CategoryWrapper>
-                            <Category>Specializations</Category>
-                            <Arrow onClick={handleShowMore}>{showMore === false ? '🡣' : "🡡"}</Arrow>
-                        </CategoryWrapper>
-                        {showMore && (
-                            < List >
-                                {specializations.map((specialization) => (
-                                    <ListItemWrapper>
-                                        <ListCheckbox type='checkbox' />
-                                        <ListItem>{specialization.text}</ListItem>
-                                        <FilterCountSpan>(12)</FilterCountSpan>
-                                    </ListItemWrapper>
-                                ))}
-                            </List>
-                        )}
-                    </FilterCategory>
-
+                        <FilterCategory>
+                            <CategoryWrapper>
+                                <Category>{category.title}</Category>
+                                <Arrow onClick={handleShowMore}>{showMore === false ? '🡣' : "🡡"}</Arrow>
+                            </CategoryWrapper>
+                            {showMore && (
+                                <List>
+                                    {category.items.map((item, index) => (
+                                        <ListItemWrapper key={index}>
+                                            <ListCheckbox type='checkbox' />
+                                            <ListItem>{item.text}</ListItem>
+                                            <FilterCountSpan>(12)</FilterCountSpan>
+                                        </ListItemWrapper>
+                                    ))}
+                                </List>
+                            )}
+                        </FilterCategory>
+                    ))}
                 </FiltersWrapper>
                 <OffersWrapper>
                     <OffersTitle>Offers recommended for you </OffersTitle>
+
+                    <OfferTile>
+                        <MainSection>
+                            <Logo src={logo} />
+                            <OfferTitle>Junior Frontend Developer</OfferTitle>
+                        </MainSection>
+
+                        <ContentWrapper>
+                            <CaptionsContainer>
+                                <OfferCaptionWrapper>
+                                    <OfferCaptionTitle>Sallary:</OfferCaptionTitle>
+                                    <OfferCaptionTContent>10 000 - 12 000 zł / brutto</OfferCaptionTContent>
+                                </OfferCaptionWrapper>
+
+                                <OfferCaptionWrapper>
+                                    <OfferCaptionTitle>Location:</OfferCaptionTitle>
+                                    <OfferCaptionTContent>Warsaw / Poland</OfferCaptionTContent>
+                                </OfferCaptionWrapper>
+
+                                <OfferCaptionWrapper>
+                                    <OfferCaptionTitle>Type of work:</OfferCaptionTitle>
+                                    <OfferCaptionTContent>Remote work</OfferCaptionTContent>
+                                </OfferCaptionWrapper>
+                            </CaptionsContainer>
+
+                        </ContentWrapper>
+
+                    </OfferTile>
+
+                    <OfferTile>
+                        <MainSection>
+                            <Logo src={logo} />
+                            <OfferTitle>Junior Frontend Developer</OfferTitle>
+                        </MainSection>
+
+                        <ContentWrapper>
+                            <CaptionsContainer>
+                                <OfferCaptionWrapper>
+                                    <OfferCaptionTitle>Sallary:</OfferCaptionTitle>
+                                    <OfferCaptionTContent>10 000 - 12 000 zł / brutto</OfferCaptionTContent>
+                                </OfferCaptionWrapper>
+
+                                <OfferCaptionWrapper>
+                                    <OfferCaptionTitle>Location:</OfferCaptionTitle>
+                                    <OfferCaptionTContent>Warsaw / Poland</OfferCaptionTContent>
+                                </OfferCaptionWrapper>
+
+                                <OfferCaptionWrapper>
+                                    <OfferCaptionTitle>Type of work:</OfferCaptionTitle>
+                                    <OfferCaptionTContent>Remote work</OfferCaptionTContent>
+                                </OfferCaptionWrapper>
+                            </CaptionsContainer>
+
+                        </ContentWrapper>
+
+                    </OfferTile>
 
                     <OfferTile>
                         <MainSection>
