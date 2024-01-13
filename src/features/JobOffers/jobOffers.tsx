@@ -41,7 +41,7 @@ import { Categories } from './listItems';
 
 export const JobOffers = () => {
 
-    const [showMore, setShowMore] = useState(true);
+    const [showMore, setShowMore] = useState(false);
 
     const handleShowMore = () => {
         setShowMore(!showMore);
