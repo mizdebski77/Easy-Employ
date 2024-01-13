@@ -137,22 +137,9 @@ export const PasswordInput = styled.input`
     };
 `;
 
-export const ShowHideButton = styled.button`
-    border: none;
-    max-width: 160px;
-    margin: auto;
-    color: ${({ theme }) => theme.color.fontMain};
+export const ShowHideButton = styled.img`
+    padding-right: 20px;
     cursor: pointer;
-    transition: 0.3s;
-    background: none;
-
-    &:hover {
-        color: ${({ theme }) => theme.color.fontMainHover};
-    };
-
-    &:active {
-        color: ${({ theme }) => theme.color.fontMainActive};
-    };
 `;
 
 export const PasswordWrapper = styled.div`

@@ -22,6 +22,8 @@ import {
 import fb from '../../common/Images/SocialMedia/fb.png';
 import lk from '../../common/Images/SocialMedia/link.png';
 import gg from '../../common/Images/SocialMedia/google.png';
+import show from '../../common/Images/ShowHide/show.svg';
+import hide from '../../common/Images/ShowHide/hide.svg';
 
 export const LogIn = () => {
 
@@ -48,13 +50,13 @@ export const LogIn = () => {
 
                     <PasswordLabel>
                         <PasswordInput placeholder='Enter Password' type='password' />
-                        <ShowHideButton> {password ? 'Hide' : 'Show'} password </ShowHideButton>
+                        <ShowHideButton src={show} />
                     </PasswordLabel>
 
-                    <PasswordWrapper>
+                    {/* <PasswordWrapper>
                         <ShowHideButton> Forgot your password? </ShowHideButton>
                         <ShowHideButton> {password ? 'Hide' : 'Show'} password </ShowHideButton>
-                    </PasswordWrapper>
+                    </PasswordWrapper> */}
 
                     <Button>Sign In</Button>
                 </Form>
