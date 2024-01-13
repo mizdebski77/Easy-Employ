@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { styled } from "styled-components";
+import { css, styled } from "styled-components";
 
 export const Wrapper = styled.section`
     display: grid;
@@ -90,10 +90,37 @@ export const Label = styled.label`
     };
 `;
 
+export const PasswordLabel = styled.div`
+    display: flex;
+    background: white;
+    border-radius: 20px;
+    border: 2px solid ${({ theme }) => theme.color.thirdColor};
+`;
+
 export const Input = styled.input`
     padding:  12px;
     border-radius: 20px;
     border: 2px solid ${({ theme }) => theme.color.thirdColor};
+    color: black;
+    transition: 0.3s;
+    max-width: 480px;
+    width: 100%;
+
+    &:focus {
+        outline: none;
+        filter: drop-shadow(6px 4px 4px ${({ theme }) => theme.color.fontMain});
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        padding: 8px;
+        font-size: 14px;
+    };
+`;
+
+export const PasswordInput = styled.input`
+    padding:  12px;
+    border-radius: 20px;
+    border: none;
     color: black;
     transition: 0.3s;
     max-width: 480px;
@@ -117,6 +144,7 @@ export const ShowHideButton = styled.button`
     color: ${({ theme }) => theme.color.fontMain};
     cursor: pointer;
     transition: 0.3s;
+    background: none;
 
     &:hover {
         color: ${({ theme }) => theme.color.fontMainHover};

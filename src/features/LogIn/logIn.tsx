@@ -9,6 +9,8 @@ import {
     LoginSpan,
     LoginTitle,
     LoginWrapper,
+    PasswordInput,
+    PasswordLabel,
     PasswordWrapper,
     RegisterButton,
     RegisterCaption,
@@ -44,11 +46,13 @@ export const LogIn = () => {
 
                     <Label>Password</Label>
 
-                    <Input placeholder='Enter Password' type='password' />
-                    <ShowHideButton> {password ? 'Hide' : 'Show'} password </ShowHideButton>
-                    
-                    <PasswordWrapper>
+                    <PasswordLabel>
+                        <PasswordInput placeholder='Enter Password' type='password' />
                         <ShowHideButton> {password ? 'Hide' : 'Show'} password </ShowHideButton>
+                    </PasswordLabel>
+
+                    <PasswordWrapper>
+                        <ShowHideButton> Forgot your password? </ShowHideButton>
                         <ShowHideButton> {password ? 'Hide' : 'Show'} password </ShowHideButton>
                     </PasswordWrapper>
 
