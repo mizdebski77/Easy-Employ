@@ -128,7 +128,6 @@ export const PasswordInput = styled.input`
 
     &:focus {
         outline: none;
-        filter: drop-shadow(6px 4px 4px ${({ theme }) => theme.color.fontMain});
     };
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
