@@ -68,7 +68,7 @@ export const LogIn = () => {
                             <RememberMeSpan> Remember me</RememberMeSpan>
                         </RememberMeWrapper>
 
-                        <ForgotPasswordButton to="password-reset">Forgot your password?</ForgotPasswordButton>
+                        <ForgotPasswordButton to="/password-reset">Forgot your password?</ForgotPasswordButton>
                     </PasswordFunctionWrapper>
                     <Button>Sign In</Button>
                 </Form>

@@ -94,7 +94,6 @@ export const JobOffers = () => {
                                                 <ListCheckbox
                                                     type='checkbox'
                                                 />
-
                                                 <ListItem>{item.text}</ListItem>
                                                 <FilterCountSpan>(12)</FilterCountSpan>
                                             </ListItemWrapper>
@@ -104,7 +103,6 @@ export const JobOffers = () => {
                             </FilterCategory>
                         ))}
                     </FiltersWrapper>
-
                 </div>
 
                 <div>
@@ -138,7 +136,6 @@ export const JobOffers = () => {
                     </OfferTile>
                 </div>
             </OffersContainer>
-
         </Wrapper >
     );
 };
