@@ -113,11 +113,21 @@ export const RememberMeInput = styled.input`
 
 export const RememberMeSpan = styled.span`
     color: ${({ theme }) => theme.color.fontMainHover};
+    transition: 0.3s;
+
+    &:hover {
+        color: ${({ theme }) => theme.color.fontMainActive};
+    }
 `;
 
 export const ForgotPasswordButton = styled(Link)`
     color: ${({ theme }) => theme.color.fontMainHover};
     text-decoration: none;
+    transition: 0.3s;
+
+    &:hover {
+        color: ${({ theme }) => theme.color.fontMainActive};
+    }
 `;
 
 export const Input = styled.input`
