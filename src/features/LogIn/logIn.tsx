@@ -55,8 +55,8 @@ export const LogIn = () => {
                     <Label>Password</Label>
 
                     <PasswordLabel>
-                        <PasswordInput placeholder='Enter Password' type={password ? 'text' : 'password'}/>
-                        <ShowHideButton src={show} onClick={handleShowPassword} />
+                        <PasswordInput placeholder='Enter Password' type={password ? 'text' : 'password'} />
+                        <ShowHideButton src={password ? hide : show} onClick={handleShowPassword} />
                     </PasswordLabel>
                     <Button>Sign In</Button>
                 </Form>

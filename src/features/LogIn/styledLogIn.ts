@@ -139,6 +139,7 @@ export const PasswordInput = styled.input`
 export const ShowHideButton = styled.img`
     padding-right: 20px;
     cursor: pointer;
+    max-width: 60px;
 `;
 
 
