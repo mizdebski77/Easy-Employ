@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import {
     Button,
+    ForgotPasswordButton,
     Form,
     Icon,
     IconsWrapper,
@@ -9,12 +10,16 @@ import {
     LoginSpan,
     LoginTitle,
     LoginWrapper,
+    PasswordFunctionWrapper,
     PasswordInput,
     PasswordLabel,
     RegisterButton,
     RegisterCaption,
     RegisterTitle,
     RegisterWrapper,
+    RememberMeInput,
+    RememberMeSpan,
+    RememberMeWrapper,
     ShowHideButton,
     Wrapper
 } from './styledLogIn';
@@ -56,6 +61,15 @@ export const LogIn = () => {
                         <PasswordInput placeholder='Enter Password' type={password ? 'text' : 'password'} />
                         <ShowHideButton src={password ? hide : show} onClick={handleShowPassword} />
                     </PasswordLabel>
+
+                    <PasswordFunctionWrapper>
+                        <RememberMeWrapper>
+                            <RememberMeInput type='checkbox' />
+                            <RememberMeSpan> Remember me</RememberMeSpan>
+                        </RememberMeWrapper>
+
+                        <ForgotPasswordButton to="password-reset">Forgot your password?</ForgotPasswordButton>
+                    </PasswordFunctionWrapper>
                     <Button>Sign In</Button>
                 </Form>
             </LoginWrapper>

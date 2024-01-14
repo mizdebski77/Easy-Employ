@@ -97,6 +97,29 @@ export const PasswordLabel = styled.div`
     border: 2px solid ${({ theme }) => theme.color.thirdColor};
 `;
 
+export const PasswordFunctionWrapper = styled.div`
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+`;
+
+export const RememberMeWrapper = styled.div`
+
+`;
+
+export const RememberMeInput = styled.input`
+    cursor: pointer;
+`;
+
+export const RememberMeSpan = styled.span`
+    color: ${({ theme }) => theme.color.fontMainHover};
+`;
+
+export const ForgotPasswordButton = styled(Link)`
+    color: ${({ theme }) => theme.color.fontMainHover};
+    text-decoration: none;
+`;
+
 export const Input = styled.input`
     padding:  12px;
     border-radius: 20px;
