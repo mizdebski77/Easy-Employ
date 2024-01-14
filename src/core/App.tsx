@@ -8,6 +8,7 @@ import { Carrer } from "../features/Carrer/carrer";
 import { Creator } from "../features/Creator/creator";
 import { Footer } from "../common/Footer/footer";
 import { Register } from "../features/Register/register";
+import { ResetPassword } from "../features/LogIn/ResetPassword/resetPassword";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/Offers" element={<JobOffers />} />
         <Route path="/CV-Creator" element={<Creator />} />
         <Route path="/Register" element={<Register />} />
+        <Route path="reset-password" element={<ResetPassword />}/>
       </Routes>
       <Footer />
     </BrowserRouter>
