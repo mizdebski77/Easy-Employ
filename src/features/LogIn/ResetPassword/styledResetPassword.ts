@@ -11,10 +11,21 @@ export const ResetSection = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
 `;
 
-export const ResetTitleWrapper = styled.h1`
+export const ResetTitleWrapper = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+`;
 
+export const ResetTitle = styled.h1`
+    font-weight: normal;
+    color: ${({ theme }) => theme.color.fontSecond};
 `;
 
 export const ResetTitleButton = styled(Link)`

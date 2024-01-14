@@ -1,5 +1,5 @@
 import React from 'react';
-import { ResetSection, ResetTitleButton, ResetTitleWrapper, Wrapper } from './styledResetPassword';
+import { ResetSection, ResetTitle, ResetTitleButton, ResetTitleWrapper, Wrapper } from './styledResetPassword';
 import { RegisterWrapper, RegisterTitle, RegisterCaption, RegisterButton } from '../styledLogIn';
 
 export const ResetPassword = () => {
@@ -8,6 +8,7 @@ export const ResetPassword = () => {
             <ResetSection>
                 <ResetTitleWrapper>
                     <ResetTitleButton to="/Log-In">🡨</ResetTitleButton>
+                    <ResetTitle>Password assistance</ResetTitle>
                 </ResetTitleWrapper>
             </ResetSection>
 
