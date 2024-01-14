@@ -65,7 +65,7 @@ export const ResetForm = styled.form`
 `;
 
 export const ResetLabel = styled.label`
-    padding: 0 10px;
+    padding: 4px 10px 0;
     margin-bottom: 8px;
 `;
 
@@ -81,7 +81,12 @@ export const ResetInput = styled.input`
 `;
 
 export const ResetButton = styled.button`
-
+    background: ${({ theme }) => theme.color.fontMain};
+    margin-top: 20px;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 20px;
 `;
 
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ResetForm, ResetFormSpan, ResetFormWrapper, ResetInput, ResetLabel, ResetSection, ResetTitle, ResetTitleButton, ResetTitleWrapper, Wrapper } from './styledResetPassword';
+import { ResetButton, ResetForm, ResetFormSpan, ResetFormWrapper, ResetInput, ResetLabel, ResetSection, ResetTitle, ResetTitleButton, ResetTitleWrapper, Wrapper } from './styledResetPassword';
 import { RegisterWrapper, RegisterTitle, RegisterCaption, RegisterButton } from '../styledLogIn';
 
 export const ResetPassword = () => {
@@ -16,6 +16,7 @@ export const ResetPassword = () => {
                     <ResetForm>
                         <ResetLabel>Email adress</ResetLabel>
                         <ResetInput placeholder='name@domain.com' />
+                        <ResetButton>Reset password</ResetButton>
                     </ResetForm>
                 </ResetFormWrapper>
             </ResetSection>
