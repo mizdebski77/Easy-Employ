@@ -61,16 +61,28 @@ export const ResetFormSpan = styled.h2`
 `;
 
 export const ResetForm = styled.form`
+    display: grid;
+`;
 
+export const ResetLabel = styled.label`
+    padding: 0 10px;
+    margin-bottom: 8px;
 `;
 
 export const ResetInput = styled.input`
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background: ${({ theme }) => theme.color.thirdColor};
 
-    `;
+    &:focus {
+        outline: none;
+    }
+`;
 
 export const ResetButton = styled.button`
 
-    `;
+`;
 
 
 
