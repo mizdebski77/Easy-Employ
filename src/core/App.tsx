@@ -23,7 +23,7 @@ function App() {
         <Route path="/Offers" element={<JobOffers />} />
         <Route path="/CV-Creator" element={<Creator />} />
         <Route path="/Register" element={<Register />} />
-        <Route path="reset-password" element={<ResetPassword />}/>
+        <Route path="/password-reset" element={<ResetPassword />}/>
       </Routes>
       <Footer />
     </BrowserRouter>
