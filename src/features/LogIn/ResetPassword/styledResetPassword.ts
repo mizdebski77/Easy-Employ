@@ -8,7 +8,9 @@ export const Wrapper = styled.section`
 `;
 
 export const ResetSection = styled.div`
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `;
 
 export const ResetTitleWrapper = styled.h1`
@@ -16,7 +18,18 @@ export const ResetTitleWrapper = styled.h1`
 `;
 
 export const ResetTitleButton = styled(Link)`
-
+    background: ${({ theme }) => theme.color.secondColor};
+    padding: 10px;
+    border-radius: 50%;
+    color: ${({ theme }) => theme.color.fontMain};
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 24px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px ${({ theme }) => theme.color.fourthColor};
+    &:hover {
+        color: ${({ theme }) => theme.color.fontMainHover};
+    };
 `;
 
 
@@ -28,7 +41,7 @@ export const ResetFormSpan = styled.span`
 
 `;
 
-export const ResetForm  = styled.form`
+export const ResetForm = styled.form`
 
 `;
 
