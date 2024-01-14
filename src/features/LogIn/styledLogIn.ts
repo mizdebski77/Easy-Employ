@@ -103,12 +103,12 @@ export const PasswordFunctionWrapper = styled.div`
     justify-content: space-between;
 `;
 
-export const RememberMeWrapper = styled.div`
-
+export const RememberMeWrapper = styled.label`
+    cursor: pointer;
 `;
 
 export const RememberMeInput = styled.input`
-    cursor: pointer;
+    
 `;
 
 export const RememberMeSpan = styled.span`
