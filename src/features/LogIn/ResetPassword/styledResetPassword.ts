@@ -87,6 +87,16 @@ export const ResetButton = styled.button`
     color: white;
     border: none;
     border-radius: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+        background: ${({ theme }) => theme.color.fontMainHover};
+    };
+
+    &:active {
+        background: ${({ theme }) => theme.color.fontMainActive};
+    };
 `;
 
 
