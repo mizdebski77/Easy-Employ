@@ -44,7 +44,7 @@ export const Register = () => {
 
                         <InfoWrapper>
                             <CheckBox type='checkbox' />
-                            <InformationSpan>I agree to receive commercial correspondence regarding JustJoin.it, RocketJobs.pl and HelloHR job boards from Just Join IT sp. z o. o. with its registered office in Gdańsk at the e-mail address I have provided.more</InformationSpan>
+                            <InformationSpan>I agree to receive commercial correspondence regarding Easy Employ job boards from Easy Employ sp. z o. o. </InformationSpan>
                         </InfoWrapper>
                     </InfosWrapper>
 
