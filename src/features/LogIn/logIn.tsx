@@ -32,8 +32,6 @@ export const LogIn = () => {
         setPassword(!password);
     };
 
-    console.log(password);
-
 
     return (
         <Wrapper>
