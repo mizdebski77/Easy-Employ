@@ -1,5 +1,5 @@
 import React from 'react';
-import { ResetSection, ResetTitle, ResetTitleButton, ResetTitleWrapper, Wrapper } from './styledResetPassword';
+import { ResetFormSpan, ResetFormWrapper, ResetSection, ResetTitle, ResetTitleButton, ResetTitleWrapper, Wrapper } from './styledResetPassword';
 import { RegisterWrapper, RegisterTitle, RegisterCaption, RegisterButton } from '../styledLogIn';
 
 export const ResetPassword = () => {
@@ -10,6 +10,10 @@ export const ResetPassword = () => {
                     <ResetTitleButton to="/Log-In">🡨</ResetTitleButton>
                     <ResetTitle>Password assistance</ResetTitle>
                 </ResetTitleWrapper>
+
+                <ResetFormWrapper>
+                    <ResetFormSpan>Enter the email address associated with your EasyEmploy account.</ResetFormSpan>
+                </ResetFormWrapper>
             </ResetSection>
 
             <RegisterWrapper>

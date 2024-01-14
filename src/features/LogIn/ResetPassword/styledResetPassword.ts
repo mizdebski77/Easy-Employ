@@ -9,9 +9,10 @@ export const Wrapper = styled.section`
 
 export const ResetSection = styled.div`
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 400px;
+    max-width: 500px;
     width: 100%;
     margin: 0 auto;
 `;
@@ -19,7 +20,7 @@ export const ResetSection = styled.div`
 export const ResetTitleWrapper = styled.div`
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 `;
 
@@ -45,10 +46,17 @@ export const ResetTitleButton = styled(Link)`
 
 
 export const ResetFormWrapper = styled.div`
-
+    background: ${({ theme }) => theme.color.secondColor};
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px ${({ theme }) => theme.color.fourthColor};
+    margin-top: 10px;
 `;
 
-export const ResetFormSpan = styled.span`
+export const ResetFormSpan = styled.h2`
+    font-size: 20px;
+    text-align: center;
+    font-weight: normal;
 
 `;
 
@@ -58,11 +66,11 @@ export const ResetForm = styled.form`
 
 export const ResetInput = styled.input`
 
-`;
+    `;
 
 export const ResetButton = styled.button`
 
-`;
+    `;
 
 
 
