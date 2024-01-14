@@ -141,11 +141,6 @@ export const ShowHideButton = styled.img`
     cursor: pointer;
 `;
 
-export const PasswordWrapper = styled.div`
-    display: flex;
-    justify-content: space-between;
-`;
-
 
 export const Button = styled.button`
     max-width: 240px;

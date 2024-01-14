@@ -11,7 +11,6 @@ import {
     LoginWrapper,
     PasswordInput,
     PasswordLabel,
-    PasswordWrapper,
     RegisterButton,
     RegisterCaption,
     RegisterTitle,
@@ -28,6 +27,13 @@ import hide from '../../common/Images/ShowHide/hide.svg';
 export const LogIn = () => {
 
     const [password, setPassword] = useState(false);
+
+    const handleShowPassword = () => {
+        setPassword(!password);
+    };
+
+    console.log(password);
+
 
     return (
         <Wrapper>
@@ -49,15 +55,9 @@ export const LogIn = () => {
                     <Label>Password</Label>
 
                     <PasswordLabel>
-                        <PasswordInput placeholder='Enter Password' type='password' />
-                        <ShowHideButton src={show} />
+                        <PasswordInput placeholder='Enter Password' type={password ? 'text' : 'password'}/>
+                        <ShowHideButton src={show} onClick={handleShowPassword} />
                     </PasswordLabel>
-
-                    {/* <PasswordWrapper>
-                        <ShowHideButton> Forgot your password? </ShowHideButton>
-                        <ShowHideButton> {password ? 'Hide' : 'Show'} password </ShowHideButton>
-                    </PasswordWrapper> */}
-
                     <Button>Sign In</Button>
                 </Form>
             </LoginWrapper>
