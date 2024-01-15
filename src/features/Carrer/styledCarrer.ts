@@ -19,7 +19,7 @@ export const MainWrapper = styled.main`
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 20px 64px;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
 `;
@@ -62,6 +62,14 @@ export const LocationSpan = styled.span`
 
 `;
 
+export const TitleWrapper = styled.div`
+
+`;
+
+export const TitleSpan = styled.span`
+
+`;
+
 export const ButtonWrapper = styled.div`
     display: flex;
     align-items: center;
@@ -74,6 +82,16 @@ export const EditButton = styled.button`
     padding: 8px 40px;
     border: none;
     border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        background: ${({ theme }) => theme.color.fontMainHover};
+    };
+
+    &:active {
+        background: ${({ theme }) => theme.color.fontMainActive};
+    };
 `;
 
 
