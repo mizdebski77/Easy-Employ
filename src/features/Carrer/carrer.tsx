@@ -1,5 +1,5 @@
 import React from 'react';
-import { MainWrapper, Photo, PhotoSection, Title, Wrapper } from './styledCarrer';
+import { ContentWrapper, MainWrapper, Name, Photo, PhotoSection, Title, Wrapper } from './styledCarrer';
 import profile from '../../common/Images/profileStack.png';
 
 export const Carrer = () => {
@@ -11,6 +11,11 @@ export const Carrer = () => {
                 <PhotoSection>
                     <Photo src={profile} />
                 </PhotoSection>
+
+                <ContentWrapper>
+                    <Name>Name & Surname </Name>
+
+                </ContentWrapper>
             </MainWrapper>
         </Wrapper>
     );

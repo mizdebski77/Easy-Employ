@@ -20,6 +20,8 @@ export const MainWrapper = styled.main`
     width: 100%;
     margin: 0 auto;
     padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 `;
 
 export const PhotoSection = styled.div`
@@ -29,9 +31,19 @@ export const PhotoSection = styled.div`
     align-items: center;
     max-width: 200px;
     padding: 80px;
+    margin: 0 auto;
     box-shadow: 0 0 10px ${({ theme }) => theme.color.fontMain};
 `;
 
 export const Photo = styled.img`
     max-width: 120px;
+`;
+
+export const ContentWrapper = styled.div`
+    display: flex;
+    justify-content: start;
+`;
+
+export const Name = styled.h1`
+
 `;
