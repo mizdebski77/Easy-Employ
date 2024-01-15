@@ -21,7 +21,7 @@ export const MainWrapper = styled.main`
     margin: 0 auto;
     padding: 20px;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 2fr 1fr;
 `;
 
 export const PhotoSection = styled.div`
@@ -31,7 +31,6 @@ export const PhotoSection = styled.div`
     align-items: center;
     max-width: 200px;
     padding: 80px;
-    margin: 0 auto;
     box-shadow: 0 0 10px ${({ theme }) => theme.color.fontMain};
 `;
 
@@ -39,11 +38,42 @@ export const Photo = styled.img`
     max-width: 120px;
 `;
 
+export const Name = styled.h1`
+    font-size: 32px;
+    font-weight: normal;
+
+`;
+
+
 export const ContentWrapper = styled.div`
     display: flex;
     justify-content: start;
 `;
 
-export const Name = styled.h1`
+export const LocationWrapper = styled.div`
 
 `;
+
+export const LocationImg = styled.img`
+
+`;
+
+export const LocationSpan = styled.span`
+
+`;
+
+export const ButtonWrapper = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: end;
+`;
+
+export const EditButton = styled.button`
+    color: ${({ theme }) => theme.color.secondColor};
+    background: ${({ theme }) => theme.color.fontMain};
+    padding: 8px 40px;
+    border: none;
+    border-radius: 20px;
+`;
+
+

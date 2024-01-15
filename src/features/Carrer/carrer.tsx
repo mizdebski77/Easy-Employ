@@ -1,5 +1,5 @@
 import React from 'react';
-import { ContentWrapper, MainWrapper, Name, Photo, PhotoSection, Title, Wrapper } from './styledCarrer';
+import { ButtonWrapper, ContentWrapper, EditButton, MainWrapper, Name, Photo, PhotoSection, Title, Wrapper } from './styledCarrer';
 import profile from '../../common/Images/profileStack.png';
 
 export const Carrer = () => {
@@ -16,6 +16,11 @@ export const Carrer = () => {
                     <Name>Name & Surname </Name>
 
                 </ContentWrapper>
+
+                <ButtonWrapper>
+                    <EditButton>✎ Edit</EditButton>
+
+                </ButtonWrapper>
             </MainWrapper>
         </Wrapper>
     );
