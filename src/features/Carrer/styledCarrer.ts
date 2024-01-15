@@ -22,6 +22,8 @@ export const MainWrapper = styled.main`
     padding: 20px 64px;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
+    box-shadow: 0 0 10px ${({ theme }) => theme.color.fourthColor};
+    border-radius: 20px;
 `;
 
 export const PhotoSection = styled.div`
@@ -43,7 +45,6 @@ export const Name = styled.h1`
     font-weight: normal;
 
 `;
-
 
 export const ContentWrapper = styled.div`
     display: grid;
