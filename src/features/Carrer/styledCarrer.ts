@@ -43,7 +43,7 @@ export const Photo = styled.img`
 export const Name = styled.h1`
     font-size: 32px;
     font-weight: normal;
-
+    margin: 0;
 `;
 
 export const ContentWrapper = styled.div`
@@ -67,12 +67,8 @@ export const LocationSpan = styled.span`
     color: ${({ theme }) => theme.color.fontSecond};
 `;
 
-export const TitleWrapper = styled.div`
-
-`;
-
 export const TitleSpan = styled.span`
-
+    font-size: 20px;
 `;
 
 export const ButtonWrapper = styled.div`
