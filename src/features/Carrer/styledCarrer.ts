@@ -14,7 +14,7 @@ export const Title = styled.h1`
     text-align: center;
 `;
 
-export const MainWrapper = styled.main`
+export const InformationWrapper = styled.main`
     background: ${({ theme }) => theme.color.secondColor};
     max-width: 1200px;
     width: 100%;

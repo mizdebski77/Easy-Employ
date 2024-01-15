@@ -1,5 +1,5 @@
 import React from 'react';
-import { ButtonWrapper, ContentWrapper, EditButton, LocationImg, LocationSpan, LocationWrapper, MainWrapper, Name, Photo, PhotoSection, Title, TitleSpan, Wrapper } from './styledCarrer';
+import { ButtonWrapper, ContentWrapper, EditButton, LocationImg, LocationSpan, LocationWrapper, InformationWrapper, Name, Photo, PhotoSection, Title, TitleSpan, Wrapper } from './styledCarrer';
 import profile from '../../common/Images/profileStack.png';
 import location from '../../common/Images/location.png';
 
@@ -8,13 +8,13 @@ export const Carrer = () => {
         <Wrapper>
             <Title> My Career</Title>
 
-            <MainWrapper>
+            <InformationWrapper>
                 <PhotoSection>
                     <Photo src={profile} />
                 </PhotoSection>
 
                 <ContentWrapper>
-                    <Name>Name & Surname </Name>
+                    <Name>Marcin Izdebski </Name>
 
                     <LocationWrapper>
                         <LocationImg src={location} />
@@ -28,7 +28,7 @@ export const Carrer = () => {
                     <EditButton>✎ Edit</EditButton>
 
                 </ButtonWrapper>
-            </MainWrapper>
+            </InformationWrapper>
         </Wrapper>
     );
 };
