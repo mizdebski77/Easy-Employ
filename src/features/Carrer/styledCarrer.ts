@@ -5,11 +5,26 @@ export const Wrapper = styled.section`
     margin: 0 auto;
     padding: 20px;
     min-height: 100vh;
-`;  
+`;
 
 export const Title = styled.h1`
     font-size: 54px;
     font-weight: normal;
-    color: ${({theme}) => theme.color.fontMain};
+    color: ${({ theme }) => theme.color.fontMain};
     text-align: center;
+`;
+
+export const MainWrapper = styled.main`
+    background: ${({ theme }) => theme.color.secondColor};
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+`;
+
+export const PhotoSection = styled.div`
+
+`;
+
+export const Photo = styled.img`
+
 `;
