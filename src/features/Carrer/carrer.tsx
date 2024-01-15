@@ -1,6 +1,7 @@
 import React from 'react';
-import { ButtonWrapper, ContentWrapper, EditButton, MainWrapper, Name, Photo, PhotoSection, Title, Wrapper } from './styledCarrer';
+import { ButtonWrapper, ContentWrapper, EditButton, LocationImg, LocationSpan, LocationWrapper, MainWrapper, Name, Photo, PhotoSection, Title, Wrapper } from './styledCarrer';
 import profile from '../../common/Images/profileStack.png';
+import location from '../../common/Images/location.png';
 
 export const Carrer = () => {
     return (
@@ -14,6 +15,11 @@ export const Carrer = () => {
 
                 <ContentWrapper>
                     <Name>Name & Surname </Name>
+
+                    <LocationWrapper>
+                        <LocationImg src={location} />
+                        <LocationSpan> Olkusz, Małopolskie</LocationSpan>
+                    </LocationWrapper>
 
                 </ContentWrapper>
 

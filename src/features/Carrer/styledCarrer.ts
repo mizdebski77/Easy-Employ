@@ -46,20 +46,24 @@ export const Name = styled.h1`
 
 
 export const ContentWrapper = styled.div`
-    display: flex;
+    display: grid;
     justify-content: start;
+    align-items: center;
 `;
 
 export const LocationWrapper = styled.div`
-
+    display: flex;
+    align-items: center;
+    gap: 10px;
 `;
 
 export const LocationImg = styled.img`
-
+    max-width: 28px;
 `;
 
 export const LocationSpan = styled.span`
-
+    font-size: 24px;
+    color: ${({ theme }) => theme.color.fontSecond};
 `;
 
 export const TitleWrapper = styled.div`
