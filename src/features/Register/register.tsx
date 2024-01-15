@@ -1,11 +1,25 @@
-import React from 'react';
-import { CheckBox, CreateAccountButton, Form, Icon, IconContainer, IconSpan, IconsWrapper, InfoWrapper, InformationSpan, InfosWrapper, Input, Label, RegisterTitle, SignUpPanel, Span, SpanColor, Wrapper } from './styledRegister';
+import React, { useState } from 'react';
+import { CheckBox, CreateAccountButton, Form, Icon, IconContainer, IconSpan, IconsWrapper, InfoWrapper, InformationSpan, InfosWrapper, Input, Label, PasswordInput, PasswordLabel, RegisterTitle, ShowHideButton, SignUpPanel, Span, SpanColor, Wrapper } from './styledRegister';
 import fb from '../../common/Images/SocialMedia/fb.png';
 import link from '../../common/Images/SocialMedia/link.png';
 import google from '../../common/Images/SocialMedia/google.png';
-
+import show from '../../common/Images/ShowHide/show.svg';
+import hide from '../../common/Images/ShowHide/hide.svg';
 
 export const Register = () => {
+
+    const [showPassword1, setShowPassword1] = useState(false);
+    const [showPassword2, setShowPassword2] = useState(false);
+
+    const handleShowPassword1 = () => {
+        setShowPassword1(!showPassword1);
+    };
+
+    const handleShowPassword2 = () => {
+        setShowPassword2(!showPassword2);
+    };
+
+
     return (
         <Wrapper>
             <SignUpPanel>
@@ -31,9 +45,18 @@ export const Register = () => {
                     <Label>Email address <SpanColor>*</SpanColor></Label>
                     <Input placeholder='name@domain.com' />
                     <Label>Password <SpanColor>*</SpanColor></Label>
-                    <Input placeholder='At least 8 characters' />
+
+
+                    <PasswordLabel>
+                        <PasswordInput placeholder='At least 8 characters' type={showPassword1 ? 'text' : 'password'} />
+                        <ShowHideButton src={showPassword1 ? hide : show} onClick={handleShowPassword1} />
+                    </PasswordLabel>
+
                     <Label>Repeat password <SpanColor>*</SpanColor></Label>
-                    <Input placeholder='Same password as above' />
+                    <PasswordLabel>
+                        <PasswordInput placeholder='Same password as above' type={showPassword2 ? 'text' : 'password'} />
+                        <ShowHideButton src={showPassword2 ? hide : show} onClick={handleShowPassword2} />
+                    </PasswordLabel>
 
 
                     <InfosWrapper>

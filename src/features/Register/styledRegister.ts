@@ -98,6 +98,36 @@ export const Form = styled.form`
 export const Label = styled.label`
     margin: 20px 20px 10px 12px;
 `;
+
+export const PasswordLabel = styled.div`
+    display: flex;
+    background: white;
+    border-radius: 20px;
+    border: 2px solid ${({ theme }) => theme.color.thirdColor};
+    max-width: 400px;
+    width: 100%;
+`;
+
+export const PasswordInput = styled.input`
+    padding:  12px;
+    border-radius: 20px;
+    border: none;
+    color: black;
+    transition: 0.3s;
+    max-width: 400px;
+    width: 100%;
+
+    &:focus {
+        outline: none;
+    };
+`;
+
+export const ShowHideButton = styled.img`
+    padding-right: 20px;
+    cursor: pointer;
+    max-width: 60px;
+`;
+
 export const Input = styled.input`
     padding:  12px;
     border-radius: 20px;
