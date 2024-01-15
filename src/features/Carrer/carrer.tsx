@@ -1,6 +1,6 @@
 import React from 'react';
 import { MainWrapper, Photo, PhotoSection, Title, Wrapper } from './styledCarrer';
-import profile from '../../common/Images/profile.png';
+import profile from '../../common/Images/profileStack.png';
 
 export const Carrer = () => {
     return (
