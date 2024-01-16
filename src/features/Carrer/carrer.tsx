@@ -53,6 +53,8 @@ export const Carrer = () => {
                     <Icon src={linkedin} />
                     <Icon src={gh} />
                 </IconsWrapper>
+
+                <EditButton>✎ Edit</EditButton>
             </ContactWrapper>
         </Wrapper>
     );
