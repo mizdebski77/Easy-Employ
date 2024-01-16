@@ -157,12 +157,16 @@ export const ExperienceWrapper = styled.section`
     padding: 20px 64px;
     box-shadow: 0 0 10px ${({ theme }) => theme.color.fourthColor};
     border-radius: 20px;
+    display: grid;
+    gap: 40px;
 `;
 
 export const ExperienceTile = styled.div`
     display: flex;
     gap: 20px;
     justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid red;
 `;
 
 export const ExperienceTitle = styled.span`
