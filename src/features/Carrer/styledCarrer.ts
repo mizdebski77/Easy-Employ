@@ -106,15 +106,26 @@ export const SectionTitle = styled.h2`
 `;
 
 export const ContactWrapper = styled.div`
-
+    background: ${({ theme }) => theme.color.secondColor};
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 64px;
+    display:  flex;
+    justify-content: space-around;
+    box-shadow: 0 0 10px ${({ theme }) => theme.color.fourthColor};
+    border-radius: 20px;
 `;
 
 export const ContactItems = styled.div`
-
+    display: flex;
+    align-items: center;
+    gap: 10px;
 `;
 
 export const ContactSpan = styled.span`
-
+    color: ${({ theme }) => theme.color.fontMain};
+    font-size: 20px;
 `;
 
 export const ContactInformation = styled.span`
