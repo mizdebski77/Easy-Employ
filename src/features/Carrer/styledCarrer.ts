@@ -97,4 +97,28 @@ export const EditButton = styled.button`
     };
 `;
 
+export const ContactWrapper = styled.div`
+
+`;
+
+export const ContactItems = styled.div`
+
+`;
+
+export const ContactSpan = styled.span`
+
+`;
+
+export const ContactInformation = styled.span`
+
+`;
+
+export const IconsWrapper =styled.div`
+
+`;
+
+export const Icon = styled.img`
+
+`;
+
 
