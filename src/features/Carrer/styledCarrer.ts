@@ -189,9 +189,24 @@ export const ExpDescription = styled.span`
 export const ButtonsWrapper = styled.div`
     display: flex;
     flex-direction: column;
+    gap: 20px;
 `;
 
 export const DeleteButton = styled.button`
+    color: ${({ theme }) => theme.color.secondColor};
+    background: #ca0000;
+    padding: 8px 40px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
 
+    &:hover {
+        background: #f40000;
+    };
+
+    &:active {
+        background: #ff2f2f;
+    };
 `;
 
