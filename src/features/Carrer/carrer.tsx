@@ -146,6 +146,26 @@ export const Carrer = () => {
                 </Tile>
             </EducationWrapper>
 
+            <SectionTitle>
+                Languages
+            </SectionTitle>
+
+            
+            <SectionTitle>
+                Skillset
+            </SectionTitle>
+
+            <SectionTitle>
+                Courses
+            </SectionTitle>
+
+            <SectionTitle>
+                Hobby
+            </SectionTitle>
+            
+            <SectionTitle>
+                Links
+            </SectionTitle>
         </Wrapper>
     );
 };
