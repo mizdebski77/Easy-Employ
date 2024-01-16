@@ -137,9 +137,6 @@ export const Carrer = () => {
                         <TileTitle>The Silesian Technical University / <ExperienceDate>02.12 - 04.12</ExperienceDate></TileTitle>
                         <TileSecondTitle>Electronic and Telecomuniation</TileSecondTitle>
                         <Degree>Engineer</Degree>
-                        <TileDescription>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur non, consectetur sint libero magni dolorum, eius nam quaerat distinctio ullam molestiae cum sit excepturi dolorem dolores architecto iusto inventore hic.
-                        </TileDescription>
                     </ContentWrapper>
                     <ButtonsWrapper>
                         <EditButton>✎ Edit</EditButton>
