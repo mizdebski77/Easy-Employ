@@ -21,11 +21,11 @@ import {
     IconsWrapper,
     Icon,
     ExperienceWrapper,
-    ExperienceTitle,
-    ExperienceTile,
+    TileTitle,
+    Tile,
     ExperienceDate,
-    ExperienceCompany,
-    ExpDescription,
+    TileSecondTitle,
+    TileDescription,
     ButtonsWrapper,
     DeleteButton
 } from './styledCarrer';
@@ -91,40 +91,43 @@ export const Carrer = () => {
             </SectionTitle>
 
             <ExperienceWrapper>
-                <ExperienceTile>
+                <Tile>
                     <ContentWrapper>
-                        <ExperienceTitle>Frontend Developer / <ExperienceDate>02.12 - 04.12</ExperienceDate></ExperienceTitle>
-                        <ExperienceCompany>Freelance</ExperienceCompany>
+                        <TileTitle>Frontend Developer / <ExperienceDate>02.12 - 04.12</ExperienceDate></TileTitle>
+                        <TileSecondTitle>Freelance</TileSecondTitle>
 
-                        <ExpDescription>
+                        <TileDescription>
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur non, consectetur sint libero magni dolorum, eius nam quaerat distinctio ullam molestiae cum sit excepturi dolorem dolores architecto iusto inventore hic.
-                        </ExpDescription>
+                        </TileDescription>
                     </ContentWrapper>
                     <ButtonsWrapper>
                         <EditButton>✎ Edit</EditButton>
                         <DeleteButton>Delete</DeleteButton>
                     </ButtonsWrapper>
 
-                </ExperienceTile>
+                </Tile>
 
-                <ExperienceTile>
+                <Tile>
                     <ContentWrapper>
-                        <ExperienceTitle>Frontend Developer / <ExperienceDate>02.12 - 04.12</ExperienceDate></ExperienceTitle>
-                        <ExperienceCompany>Freelance</ExperienceCompany>
+                        <TileTitle>Frontend Developer / <ExperienceDate>02.12 - 04.12</ExperienceDate></TileTitle>
+                        <TileSecondTitle>Freelance</TileSecondTitle>
 
-                        <ExpDescription>
+                        <TileDescription>
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur non, consectetur sint libero magni dolorum, eius nam quaerat distinctio ullam molestiae cum sit excepturi dolorem dolores architecto iusto inventore hic.
-                        </ExpDescription>
+                        </TileDescription>
                     </ContentWrapper>
                     <ButtonsWrapper>
                         <EditButton>✎ Edit</EditButton>
                         <DeleteButton>Delete</DeleteButton>
                     </ButtonsWrapper>
 
-                </ExperienceTile>
+                </Tile>
 
             </ExperienceWrapper>
 
+            <SectionTitle>
+                Education
+            </SectionTitle>
 
 
 

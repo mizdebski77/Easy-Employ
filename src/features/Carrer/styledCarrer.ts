@@ -99,7 +99,7 @@ export const EditButton = styled.button`
 `;
 
 export const SectionTitle = styled.h2`
-    margin-top: 40px;
+    margin-top: 64px;
     text-align: center;
     font-size: 32px;
     color: ${({ theme }) => theme.color.fontSecond};
@@ -161,7 +161,7 @@ export const ExperienceWrapper = styled.section`
     gap: 40px;
 `;
 
-export const ExperienceTile = styled.div`
+export const Tile = styled.div`
     display: flex;
     gap: 20px;
     justify-content: space-between;
@@ -169,7 +169,7 @@ export const ExperienceTile = styled.div`
     border-bottom: 1px solid ${({ theme }) => theme.color.fourthColor};
 `;
 
-export const ExperienceTitle = styled.span`
+export const TileTitle = styled.span`
     font-size: 24px;
     color: ${({ theme }) => theme.color.fontMain};
 `;
@@ -179,13 +179,13 @@ export const ExperienceDate = styled.span`
     color: ${({ theme }) => theme.color.fontSecond};
 `;
 
-export const ExperienceCompany = styled.span`
+export const TileSecondTitle = styled.span`
     font-size: 20px;
     color: ${({ theme }) => theme.color.fontSecond};
 `;
 
 
-export const ExpDescription = styled.span`
+export const TileDescription = styled.span`
     max-width: 500px;
     text-align: justify;
 `;
@@ -212,5 +212,13 @@ export const DeleteButton = styled.button`
     &:active {
         background: #ff2f2f;
     };
+`;
+
+export const EducationWrapper = styled.section`
+
+`;
+
+export const EducationTitle  = styled.span`
+
 `;
 
