@@ -140,6 +140,12 @@ export const IconsWrapper = styled.div`
 
 export const Icon = styled.img`
     max-width: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        transform: scale(1.05);
+    }
 `;
 
 
