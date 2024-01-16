@@ -52,6 +52,7 @@ export const ContentWrapper = styled.div`
     display: grid;
     justify-content: start;
     align-items: center;
+    gap: 20px;
 `;
 
 export const LocationWrapper = styled.div`
@@ -154,28 +155,43 @@ export const ExperienceWrapper = styled.section`
     width: 100%;
     margin: 0 auto;
     padding: 20px 64px;
-    display: grid;
     box-shadow: 0 0 10px ${({ theme }) => theme.color.fourthColor};
     border-radius: 20px;
 `;
 
 export const ExperienceTile = styled.div`
-
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
 `;
 
 export const ExperienceTitle = styled.span`
-
-`;
-
-export const ExperienceTitleSpan = styled.span`
-
+    font-size: 24px;
+    color: ${({ theme }) => theme.color.fontMain};
 `;
 
 export const ExperienceDate = styled.span`
-
+    font-size: 16px;
+    color: ${({ theme }) => theme.color.fontSecond};
 `;
 
-export const ExperienceDescription = styled.span`
+export const ExperienceCompany = styled.span`
+    font-size: 20px;
+    color: ${({ theme }) => theme.color.fontSecond};
+`;
+
+
+export const ExpDescription = styled.span`
+    max-width: 500px;
+    text-align: justify;
+`;
+
+export const ButtonsWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+`;
+
+export const DeleteButton = styled.button`
 
 `;
 

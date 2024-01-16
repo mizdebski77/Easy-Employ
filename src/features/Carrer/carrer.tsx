@@ -23,8 +23,11 @@ import {
     ExperienceWrapper,
     ExperienceTitle,
     ExperienceTile,
-    ExperienceTitleSpan,
-    ExperienceDate
+    ExperienceDate,
+    ExperienceCompany,
+    ExpDescription,
+    ButtonsWrapper,
+    DeleteButton
 } from './styledCarrer';
 import profile from '../../common/Images/profileStack.png';
 import location from '../../common/Images/location.png';
@@ -89,7 +92,18 @@ export const Carrer = () => {
 
             <ExperienceWrapper>
                 <ExperienceTile>
-                    <ExperienceTitle>Frontend Developer / <ExperienceDate>02.12 - 04.12</ExperienceDate></ExperienceTitle>
+                    <ContentWrapper>
+                        <ExperienceTitle>Frontend Developer / <ExperienceDate>02.12 - 04.12</ExperienceDate></ExperienceTitle>
+                        <ExperienceCompany>Freelance</ExperienceCompany>
+
+                        <ExpDescription>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur non, consectetur sint libero magni dolorum, eius nam quaerat distinctio ullam molestiae cum sit excepturi dolorem dolores architecto iusto inventore hic.
+                        </ExpDescription>
+                    </ContentWrapper>
+                    <ButtonsWrapper>
+                        <EditButton>✎ Edit</EditButton>
+                        <DeleteButton>Delete</DeleteButton>
+                    </ButtonsWrapper>
 
                 </ExperienceTile>
 
