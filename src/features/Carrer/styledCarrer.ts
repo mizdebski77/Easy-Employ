@@ -97,6 +97,14 @@ export const EditButton = styled.button`
     };
 `;
 
+export const SectionTitle = styled.h2`
+    margin-top: 40px;
+    text-align: center;
+    font-size: 32px;
+    color: ${({ theme }) => theme.color.fontSecond};
+    font-weight: normal;
+`;
+
 export const ContactWrapper = styled.div`
 
 `;
@@ -113,7 +121,7 @@ export const ContactInformation = styled.span`
 
 `;
 
-export const IconsWrapper =styled.div`
+export const IconsWrapper = styled.div`
 
 `;
 
