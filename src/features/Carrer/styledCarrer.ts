@@ -112,7 +112,7 @@ export const ContactWrapper = styled.div`
     margin: 0 auto;
     padding: 20px 64px;
     display:  flex;
-    justify-content: space-around;
+    justify-content: space-between;
     box-shadow: 0 0 10px ${({ theme }) => theme.color.fourthColor};
     border-radius: 20px;
 `;
@@ -133,11 +133,13 @@ export const ContactInformation = styled.span`
 `;
 
 export const IconsWrapper = styled.div`
-
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
 `;
 
 export const Icon = styled.img`
-
+    max-width: 40px;
 `;
 
 

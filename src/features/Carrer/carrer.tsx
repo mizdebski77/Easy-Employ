@@ -1,7 +1,10 @@
 import React from 'react';
-import { ButtonWrapper, ContentWrapper, EditButton, LocationImg, LocationSpan, LocationWrapper, InformationWrapper, Name, Photo, PhotoSection, Title, TitleSpan, Wrapper, ContactWrapper, SectionTitle, ContactItems, ContactSpan, ContactInformation } from './styledCarrer';
+import { ButtonWrapper, ContentWrapper, EditButton, LocationImg, LocationSpan, LocationWrapper, InformationWrapper, Name, Photo, PhotoSection, Title, TitleSpan, Wrapper, ContactWrapper, SectionTitle, ContactItems, ContactSpan, ContactInformation, IconsWrapper, Icon } from './styledCarrer';
 import profile from '../../common/Images/profileStack.png';
 import location from '../../common/Images/location.png';
+import facebook from '../../common/Images/SocialMedia/fb.png';
+import linkedin from '../../common/Images/SocialMedia/link.png';
+import gh from '../../common/Images/SocialMedia/gh.png';
 
 export const Carrer = () => {
     return (
@@ -44,6 +47,12 @@ export const Carrer = () => {
                     <ContactSpan> Phone </ContactSpan>
                     <ContactInformation>501375604</ContactInformation>
                 </ContactItems>
+
+                <IconsWrapper>
+                    <Icon src={facebook} />
+                    <Icon src={linkedin} />
+                    <Icon src={gh} />
+                </IconsWrapper>
             </ContactWrapper>
         </Wrapper>
     );
