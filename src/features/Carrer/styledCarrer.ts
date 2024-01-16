@@ -148,4 +148,34 @@ export const Icon = styled.img`
     }
 `;
 
+export const ExperienceWrapper = styled.section`
+    background: ${({ theme }) => theme.color.secondColor};
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 64px;
+    display: grid;
+    box-shadow: 0 0 10px ${({ theme }) => theme.color.fourthColor};
+    border-radius: 20px;
+`;
+
+export const ExperienceItemWrapper = styled.div`
+
+`;
+
+export const ExperienceTitle = styled.span`
+
+`;
+
+export const ExperienceTitleSpan = styled.span`
+
+`;
+
+export const ExperienceDate = styled.span`
+
+`;
+
+export const ExperienceDescription = styled.span`
+
+`;
 

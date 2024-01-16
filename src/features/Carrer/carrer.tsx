@@ -54,8 +54,14 @@ export const Carrer = () => {
                     <Icon src={gh} />
                 </IconsWrapper>
 
-                <EditButton>✎ Edit</EditButton>
+                <EditButton>✎  Edit</EditButton>
             </ContactWrapper>
+
+            <SectionTitle>
+                Work Experience
+            </SectionTitle>
+
+            
         </Wrapper>
     );
 };
