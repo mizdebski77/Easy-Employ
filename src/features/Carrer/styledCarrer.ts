@@ -166,7 +166,7 @@ export const ExperienceTile = styled.div`
     gap: 20px;
     justify-content: space-between;
     padding: 20px;
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid ${({ theme }) => theme.color.fourthColor};
 `;
 
 export const ExperienceTitle = styled.span`
