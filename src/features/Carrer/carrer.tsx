@@ -1,5 +1,31 @@
 import React from 'react';
-import { ButtonWrapper, ContentWrapper, EditButton, LocationImg, LocationSpan, LocationWrapper, InformationWrapper, Name, Photo, PhotoSection, Title, TitleSpan, Wrapper, ContactWrapper, SectionTitle, ContactItems, ContactSpan, ContactInformation, IconsWrapper, Icon } from './styledCarrer';
+import {
+    ButtonWrapper,
+    ContentWrapper,
+    EditButton,
+    LocationImg,
+    LocationSpan,
+    LocationWrapper,
+    InformationWrapper,
+    Name,
+    Photo,
+    PhotoSection,
+    Title,
+    TitleSpan,
+    Wrapper,
+    ContactWrapper,
+    SectionTitle,
+    ContactItems,
+    ContactSpan,
+    ContactInformation,
+    IconsWrapper,
+    Icon,
+    ExperienceWrapper,
+    ExperienceTitle,
+    ExperienceTile,
+    ExperienceTitleSpan,
+    ExperienceDate
+} from './styledCarrer';
 import profile from '../../common/Images/profileStack.png';
 import location from '../../common/Images/location.png';
 import facebook from '../../common/Images/SocialMedia/fb.png';
@@ -61,7 +87,15 @@ export const Carrer = () => {
                 Work Experience
             </SectionTitle>
 
-            
+            <ExperienceWrapper>
+                <ExperienceTile>
+                    <ExperienceTitle>Frontend Developer / <ExperienceDate>02.12 - 04.12</ExperienceDate></ExperienceTitle>
+
+                </ExperienceTile>
+
+            </ExperienceWrapper>
+
+
         </Wrapper>
     );
 };

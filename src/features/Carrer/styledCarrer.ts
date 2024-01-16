@@ -159,7 +159,7 @@ export const ExperienceWrapper = styled.section`
     border-radius: 20px;
 `;
 
-export const ExperienceItemWrapper = styled.div`
+export const ExperienceTile = styled.div`
 
 `;
 
