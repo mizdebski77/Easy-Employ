@@ -233,7 +233,11 @@ export const Input = styled.input`
 `;
 
 export const AddButton = styled.button`
-
+    padding: 0 80px;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    background: ${({ theme }) => theme.color.fontMain};
+    color: ${({ theme }) => theme.color.secondColor};
 `;
 
 export const SkillsWrapper = styled.div`
