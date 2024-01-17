@@ -250,16 +250,57 @@ export const AddButton = styled.button`
     };
 `;
 
-export const SkillsWrapper = styled.div`
+export const SkillsWrapper = styled.fieldset`
+    padding: 20px;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 2px solid ${({ theme }) => theme.color.fontMainActive};
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
 
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        justify-content: center;
+    };
 `;
 
-export const Skill = styled.span`
+export const Legend = styled.legend`
+    font-size: 24px;
+    padding: 0 10px;
 
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 20px;
+    };
+`;
+
+export const SkillsContainer = styled.div`
+    position: relative;
+`;
+
+
+export const Skill = styled.span`
+    background: ${({ theme }) => theme.color.fontMainActive};
+    padding: 8px 10px;
+    border-radius: 20px;
+    color: ${({ theme }) => theme.color.mainColor};
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 12px;
+    };
 `;
 
 export const RemoveSkillButton = styled.button`
-
+    position: absolute;
+    border-radius: 50%;
+    font-size: 12px;
+    background: #ff2d32;
+    color: white;
+    border: none;
+    right: 2px;
+    bottom: 20px;
+    cursor: pointer;
 `;
 
 export const Degree = styled.span`

@@ -35,6 +35,11 @@ import {
     SkillsForm,
     Input,
     AddButton,
+    SkillsWrapper,
+    Legend,
+    SkillsContainer,
+    RemoveSkillButton,
+    Skill,
 } from './styledCarrer';
 import profile from '../../common/Images/profileStack.png';
 import location from '../../common/Images/location.png';
@@ -176,6 +181,14 @@ export const Carrer = () => {
                     <Input placeholder='Daj tu skila' />
                     <AddButton>Add</AddButton>
                 </SkillsForm>
+                <SkillsWrapper>
+                    <Legend>Skills</Legend>
+                    <SkillsContainer>
+                        <Skill>React</Skill>
+                        <RemoveSkillButton>x</RemoveSkillButton>
+                    </SkillsContainer>
+
+                </SkillsWrapper>
             </ElementWrapper>
 
             <SectionTitle>
