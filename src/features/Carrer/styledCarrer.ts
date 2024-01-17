@@ -192,8 +192,8 @@ export const TileDescription = styled.span`
 
 export const ButtonsWrapper = styled.div`
     display: flex;
-    flex-direction: column;
     gap: 20px;
+    align-items: center;
 `;
 
 export const DeleteButton = styled.button`
@@ -227,5 +227,21 @@ export const EducationWrapper = styled.section`
 `;
 
 export const Degree = styled.span`
+    color: ${({ theme }) => theme.color.fontSecond};
+`;
+
+export const LanguagesSection = styled.div`
+    background: ${({ theme }) => theme.color.secondColor};
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 64px;
+    box-shadow: 0 0 10px ${({ theme }) => theme.color.fourthColor};
+    border-radius: 20px;
+    display: grid;
+    gap: 40px;
+`;
+
+export const EnglishLevel = styled.span`
     color: ${({ theme }) => theme.color.fontSecond};
 `;

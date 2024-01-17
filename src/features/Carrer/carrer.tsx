@@ -29,13 +29,15 @@ import {
     ButtonsWrapper,
     DeleteButton,
     EducationWrapper,
-    Degree
+    Degree,
+    EnglishLevel
 } from './styledCarrer';
 import profile from '../../common/Images/profileStack.png';
 import location from '../../common/Images/location.png';
 import facebook from '../../common/Images/SocialMedia/fb.png';
 import linkedin from '../../common/Images/SocialMedia/link.png';
 import gh from '../../common/Images/SocialMedia/gh.png';
+import { LanguagesWrapper } from '../../common/Navigation/styledNavigation';
 
 export const Carrer = () => {
     return (
@@ -150,7 +152,19 @@ export const Carrer = () => {
                 Languages
             </SectionTitle>
 
-            
+            <LanguagesWrapper>
+                <Tile>
+                    <ContentWrapper>
+                        <TileTitle>English -<EnglishLevel> B2</EnglishLevel></TileTitle>
+                    </ContentWrapper>
+                    <ButtonsWrapper>
+                        <EditButton>✎ Edit</EditButton>
+                        <DeleteButton>Delete</DeleteButton>
+                    </ButtonsWrapper>
+                </Tile>
+            </LanguagesWrapper>
+
+
             <SectionTitle>
                 Skillset
             </SectionTitle>
@@ -162,7 +176,7 @@ export const Carrer = () => {
             <SectionTitle>
                 Hobby
             </SectionTitle>
-            
+
             <SectionTitle>
                 Links
             </SectionTitle>
