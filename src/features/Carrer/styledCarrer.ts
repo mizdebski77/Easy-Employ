@@ -185,7 +185,6 @@ export const TileSecondTitle = styled.span`
     color: ${({ theme }) => theme.color.fontSecond};
 `;
 
-
 export const TileDescription = styled.span`
     max-width: 500px;
     text-align: justify;
@@ -213,6 +212,30 @@ export const DeleteButton = styled.button`
     &:active {
         background: #ff2f2f;
     };
+`;
+
+export const SkillsForm = styled.form`
+
+`;
+
+export const Input = styled.input`
+
+`;
+
+export const AddButton = styled.button`
+
+`;
+
+export const SkillsWrapper = styled.div`
+
+`;
+
+export const Skill = styled.span`
+
+`;
+
+export const RemoveSkillButton = styled.button`
+
 `;
 
 export const Degree = styled.span`
