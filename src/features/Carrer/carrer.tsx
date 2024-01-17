@@ -20,7 +20,7 @@ import {
     ContactInformation,
     IconsWrapper,
     Icon,
-    ExperienceWrapper,
+    ElementWrapper,
     TileTitle,
     Tile,
     ExperienceDate,
@@ -30,7 +30,8 @@ import {
     DeleteButton,
     EducationWrapper,
     Degree,
-    EnglishLevel
+    EnglishLevel,
+    HobbySection
 } from './styledCarrer';
 import profile from '../../common/Images/profileStack.png';
 import location from '../../common/Images/location.png';
@@ -94,7 +95,7 @@ export const Carrer = () => {
                 Work Experience
             </SectionTitle>
 
-            <ExperienceWrapper>
+            <ElementWrapper>
                 <Tile>
                     <ContentWrapper>
                         <TileTitle>Frontend Developer / <ExperienceDate>02.12 - 04.12</ExperienceDate></TileTitle>
@@ -127,13 +128,13 @@ export const Carrer = () => {
 
                 </Tile>
 
-            </ExperienceWrapper>
+            </ElementWrapper>
 
             <SectionTitle>
                 Education
             </SectionTitle>
 
-            <EducationWrapper>
+            <ElementWrapper>
                 <Tile>
                     <ContentWrapper>
                         <TileTitle>The Silesian Technical University / <ExperienceDate>02.12 - 04.12</ExperienceDate></TileTitle>
@@ -145,13 +146,13 @@ export const Carrer = () => {
                         <DeleteButton>Delete</DeleteButton>
                     </ButtonsWrapper>
                 </Tile>
-            </EducationWrapper>
+            </ElementWrapper>
 
             <SectionTitle>
                 Languages
             </SectionTitle>
 
-            <LanguagesWrapper>
+            <ElementWrapper>
                 <Tile>
                     <ContentWrapper>
                         <TileTitle>English -<EnglishLevel> B2</EnglishLevel></TileTitle>
@@ -161,7 +162,7 @@ export const Carrer = () => {
                         <DeleteButton>Delete</DeleteButton>
                     </ButtonsWrapper>
                 </Tile>
-            </LanguagesWrapper>
+            </ElementWrapper>
 
 
             <SectionTitle>
@@ -172,7 +173,7 @@ export const Carrer = () => {
                 Courses
             </SectionTitle>
 
-            <CoursesWrapper>
+            <ElementWrapper>
                 <Tile>
                     <ContentWrapper>
                         <TileTitle>Frontend Developer Course / <ExperienceDate>02.12 - 04.12</ExperienceDate></TileTitle>
@@ -183,11 +184,24 @@ export const Carrer = () => {
                         <DeleteButton>Delete</DeleteButton>
                     </ButtonsWrapper>
                 </Tile>
-            </CoursesWrapper>
+            </ElementWrapper>
 
             <SectionTitle>
                 Hobby
             </SectionTitle>
+
+            <ElementWrapper>
+                <Tile>
+                    <ContentWrapper>
+                        <TileTitle>Frontend Developer Course / <ExperienceDate>02.12 - 04.12</ExperienceDate></TileTitle>
+                        <TileSecondTitle>YouCode</TileSecondTitle>
+                    </ContentWrapper>
+                    <ButtonsWrapper>
+                        <EditButton>✎ Edit</EditButton>
+                        <DeleteButton>Delete</DeleteButton>
+                    </ButtonsWrapper>
+                </Tile>
+            </ElementWrapper>
 
             <SectionTitle>
                 Links
