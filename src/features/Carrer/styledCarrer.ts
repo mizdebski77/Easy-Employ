@@ -215,11 +215,21 @@ export const DeleteButton = styled.button`
 `;
 
 export const SkillsForm = styled.form`
-
+    display:flex;
+    justify-content: center;
 `;
 
 export const Input = styled.input`
+    padding:  12px;
+    max-width: 640px;
+    width: 100%;
+    border-radius: 20px 0 0 20px;
+    border: none;
+    background: ${({ theme }) => theme.color.thirdColor};
 
+    &:focus {
+        outline: none;
+    }
 `;
 
 export const AddButton = styled.button`

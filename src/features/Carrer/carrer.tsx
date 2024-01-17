@@ -32,6 +32,9 @@ import {
     EnglishLevel,
     Hobbies,
     LinkToWebsite,
+    SkillsForm,
+    Input,
+    AddButton,
 } from './styledCarrer';
 import profile from '../../common/Images/profileStack.png';
 import location from '../../common/Images/location.png';
@@ -166,6 +169,14 @@ export const Carrer = () => {
             <SectionTitle>
                 Skillset
             </SectionTitle>
+
+
+            <ElementWrapper>
+                <SkillsForm>
+                    <Input placeholder='Daj tu skila' />
+                    <AddButton>Add</AddButton>
+                </SkillsForm>
+            </ElementWrapper>
 
             <SectionTitle>
                 Courses
