@@ -177,3 +177,15 @@ export const LanguagesWrapper = styled.div`
     gap: 40px;
 `;
 
+export const CoursesWrapper = styled.section`
+    background: ${({ theme }) => theme.color.secondColor};
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 64px;
+    box-shadow: 0 0 10px ${({ theme }) => theme.color.fourthColor};
+    border-radius: 20px;
+    display: grid;
+    gap: 40px;
+`;
+

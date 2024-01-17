@@ -37,7 +37,7 @@ import location from '../../common/Images/location.png';
 import facebook from '../../common/Images/SocialMedia/fb.png';
 import linkedin from '../../common/Images/SocialMedia/link.png';
 import gh from '../../common/Images/SocialMedia/gh.png';
-import { LanguagesWrapper } from '../../common/Navigation/styledNavigation';
+import { CoursesWrapper, LanguagesWrapper } from '../../common/Navigation/styledNavigation';
 
 export const Carrer = () => {
     return (
@@ -144,7 +144,6 @@ export const Carrer = () => {
                         <EditButton>✎ Edit</EditButton>
                         <DeleteButton>Delete</DeleteButton>
                     </ButtonsWrapper>
-
                 </Tile>
             </EducationWrapper>
 
@@ -172,6 +171,19 @@ export const Carrer = () => {
             <SectionTitle>
                 Courses
             </SectionTitle>
+
+            <CoursesWrapper>
+                <Tile>
+                    <ContentWrapper>
+                        <TileTitle>Frontend Developer Course / <ExperienceDate>02.12 - 04.12</ExperienceDate></TileTitle>
+                        <TileSecondTitle>YouCode</TileSecondTitle>
+                    </ContentWrapper>
+                    <ButtonsWrapper>
+                        <EditButton>✎ Edit</EditButton>
+                        <DeleteButton>Delete</DeleteButton>
+                    </ButtonsWrapper>
+                </Tile>
+            </CoursesWrapper>
 
             <SectionTitle>
                 Hobby
