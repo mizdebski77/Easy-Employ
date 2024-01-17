@@ -165,6 +165,7 @@ export const Tile = styled.div`
     display: flex;
     gap: 20px;
     justify-content: space-between;
+    align-items: center;
     padding: 20px;
     border-bottom: 1px solid ${({ theme }) => theme.color.fourthColor};
 `;
@@ -220,5 +221,9 @@ export const Degree = styled.span`
 
 export const EnglishLevel = styled.span`
     color: ${({ theme }) => theme.color.fontSecond};
+`;
+
+export const Hobbies = styled.span`
+    max-width: 600px;
 `;
 

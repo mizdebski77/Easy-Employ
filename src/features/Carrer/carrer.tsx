@@ -28,17 +28,15 @@ import {
     TileDescription,
     ButtonsWrapper,
     DeleteButton,
-    EducationWrapper,
     Degree,
     EnglishLevel,
-    HobbySection
+    Hobbies,
 } from './styledCarrer';
 import profile from '../../common/Images/profileStack.png';
 import location from '../../common/Images/location.png';
 import facebook from '../../common/Images/SocialMedia/fb.png';
 import linkedin from '../../common/Images/SocialMedia/link.png';
 import gh from '../../common/Images/SocialMedia/gh.png';
-import { CoursesWrapper, LanguagesWrapper } from '../../common/Navigation/styledNavigation';
 
 export const Carrer = () => {
     return (
@@ -164,7 +162,6 @@ export const Carrer = () => {
                 </Tile>
             </ElementWrapper>
 
-
             <SectionTitle>
                 Skillset
             </SectionTitle>
@@ -192,10 +189,8 @@ export const Carrer = () => {
 
             <ElementWrapper>
                 <Tile>
-                    <ContentWrapper>
-                        <TileTitle>Frontend Developer Course / <ExperienceDate>02.12 - 04.12</ExperienceDate></TileTitle>
-                        <TileSecondTitle>YouCode</TileSecondTitle>
-                    </ContentWrapper>
+                    <Hobbies>Learning new technologies, learning foreign languages, hiking, graphic design,  </Hobbies>
+
                     <ButtonsWrapper>
                         <EditButton>✎ Edit</EditButton>
                         <DeleteButton>Delete</DeleteButton>
