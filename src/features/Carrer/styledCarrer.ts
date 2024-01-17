@@ -227,3 +227,7 @@ export const Hobbies = styled.span`
     max-width: 600px;
 `;
 
+export const LinkToWebsite = styled.a`
+
+`;
+

@@ -31,6 +31,7 @@ import {
     Degree,
     EnglishLevel,
     Hobbies,
+    LinkToWebsite,
 } from './styledCarrer';
 import profile from '../../common/Images/profileStack.png';
 import location from '../../common/Images/location.png';
@@ -201,6 +202,19 @@ export const Carrer = () => {
             <SectionTitle>
                 Links
             </SectionTitle>
+
+            <ElementWrapper>
+                <Tile>
+                    <ContentWrapper>
+                        <TileTitle>Personal HomePage</TileTitle>
+                        <LinkToWebsite>https://mizdebski77.github.io/Homepage/</LinkToWebsite>
+                    </ContentWrapper>
+                    <ButtonsWrapper>
+                        <EditButton>✎ Edit</EditButton>
+                        <DeleteButton>Delete</DeleteButton>
+                    </ButtonsWrapper>
+                </Tile>
+            </ElementWrapper>
         </Wrapper>
     );
 };
