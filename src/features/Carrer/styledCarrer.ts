@@ -158,7 +158,7 @@ export const ElementWrapper = styled.section`
     box-shadow: 0 0 10px ${({ theme }) => theme.color.fourthColor};
     border-radius: 20px;
     display: grid;
-    gap: 40px;
+    gap: 20px;
 `;
 
 export const Tile = styled.div`
@@ -217,6 +217,7 @@ export const DeleteButton = styled.button`
 export const SkillsForm = styled.form`
     display:flex;
     justify-content: center;
+    margin-top: 20px;
 `;
 
 export const Input = styled.input`
@@ -301,6 +302,11 @@ export const RemoveSkillButton = styled.button`
     right: 2px;
     bottom: 20px;
     cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        background: #ff6f72;
+    }
 `;
 
 export const Degree = styled.span`
