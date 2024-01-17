@@ -238,6 +238,16 @@ export const AddButton = styled.button`
     border-radius: 0 20px 20px 0;
     background: ${({ theme }) => theme.color.fontMain};
     color: ${({ theme }) => theme.color.secondColor};
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+        background: ${({ theme }) => theme.color.fontMainHover};
+    };
+
+    &:active {
+        background: ${({ theme }) => theme.color.fontMainActive};
+    };
 `;
 
 export const SkillsWrapper = styled.div`
