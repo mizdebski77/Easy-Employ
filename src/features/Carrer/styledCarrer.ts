@@ -227,6 +227,10 @@ export const ElementWrapper = styled.section`
     border-radius: 20px;
     display: grid;
     gap: 20px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        padding: 20px;
+    };
 `;
 
 export const Tile = styled.div`
