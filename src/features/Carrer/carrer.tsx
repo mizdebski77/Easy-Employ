@@ -96,7 +96,7 @@ export const Carrer = () => {
 
                 <EditButton>✎  Edit</EditButton>
             </ContactWrapper>
-{/* 
+
             <SectionTitle>
                 Work Experience
             </SectionTitle>
@@ -134,9 +134,9 @@ export const Carrer = () => {
 
                 </Tile>
 
-            </ElementWrapper> */}
+            </ElementWrapper> 
 
-            {/* <SectionTitle>
+             {/* <SectionTitle>
                 Education
             </SectionTitle>
 

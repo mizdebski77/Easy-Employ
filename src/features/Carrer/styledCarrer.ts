@@ -262,6 +262,10 @@ export const ButtonsWrapper = styled.div`
     display: flex;
     gap: 20px;
     align-items: center;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
+        flex-direction: column;
+    };
 `;
 
 export const DeleteButton = styled.button`
