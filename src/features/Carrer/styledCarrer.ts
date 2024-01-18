@@ -120,6 +120,11 @@ export const EditButton = styled.button`
     &:active {
         background: ${({ theme }) => theme.color.fontMainActive};
     };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 14px;
+        padding: 8px 20px;
+    };
 `;
 
 export const SectionTitle = styled.h2`

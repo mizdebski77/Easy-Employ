@@ -70,7 +70,6 @@ export const Carrer = () => {
 
                 <ButtonWrapper>
                     <EditButton>✎ Edit</EditButton>
-
                 </ButtonWrapper>
             </InformationWrapper>
 
