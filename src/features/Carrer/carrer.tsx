@@ -153,7 +153,7 @@ export const Carrer = () => {
                     </ButtonsWrapper>
                 </Tile>
             </ElementWrapper>
-{/* 
+
             <SectionTitle>
                 Languages
             </SectionTitle>
@@ -237,7 +237,7 @@ export const Carrer = () => {
                         <DeleteButton>Delete</DeleteButton>
                     </ButtonsWrapper>
                 </Tile>
-            </ElementWrapper> */}
+            </ElementWrapper>
         </Wrapper>
     );
 };

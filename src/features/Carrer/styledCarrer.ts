@@ -151,6 +151,7 @@ export const SectionTitle = styled.h2`
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         font-size: 24px;
+        margin-top: 36px;
     };
 `;
 
