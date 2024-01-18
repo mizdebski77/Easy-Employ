@@ -241,6 +241,10 @@ export const Tile = styled.div`
 export const TileTitle = styled.span`
     font-size: 24px;
     color: ${({ theme }) => theme.color.fontMain};
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 20px;
+    };
 `;
 
 export const ExperienceDate = styled.span`
