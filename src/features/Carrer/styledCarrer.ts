@@ -5,6 +5,10 @@ export const Wrapper = styled.section`
     margin: 0 auto;
     padding: 20px;
     min-height: 100vh;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        padding: 12px;
+    };
 `;
 
 export const Title = styled.h1`
@@ -122,6 +126,7 @@ export const EditButton = styled.button`
     border-radius: 20px;
     cursor: pointer;
     transition: 0.3s;
+    max-width: 160px;
     
     &:hover {
         background: ${({ theme }) => theme.color.fontMainHover};
@@ -166,6 +171,7 @@ export const ContactWrapper = styled.div`
         gap: 20px;
         max-width: 500px;
         padding: 20px;
+        align-items: center;
     };
     
 `;
