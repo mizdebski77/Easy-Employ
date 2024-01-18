@@ -256,6 +256,14 @@ export const TileSecondTitle = styled.span`
 export const TileDescription = styled.span`
     max-width: 500px;
     text-align: justify;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
+        max-width: 320px;
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 14px;
+    };
 `;
 
 export const ButtonsWrapper = styled.div`
@@ -283,6 +291,11 @@ export const DeleteButton = styled.button`
 
     &:active {
         background: #ff2f2f;
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 14px;
+        padding: 8px 20px;
     };
 `;
 
