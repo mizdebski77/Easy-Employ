@@ -383,6 +383,7 @@ export const SkillsWrapper = styled.fieldset`
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         justify-content: center;
+        padding: 20px 10px;
     };
 `;
 
