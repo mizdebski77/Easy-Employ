@@ -179,6 +179,10 @@ export const ContactItems = styled.div`
 export const ContactSpan = styled.span`
     color: ${({ theme }) => theme.color.fontMain};
     font-size: 20px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 16px;
+    };
 `;
 
 export const ContactInformation = styled.span`
