@@ -177,7 +177,7 @@ export const Carrer = () => {
 
             <ElementWrapper>
                 <SkillsForm>
-                    <Input placeholder='Daj tu skila' />
+                    <Input placeholder='Skill' />
                     <AddButton>Add</AddButton>
                 </SkillsForm>
                 <SkillsWrapper>
