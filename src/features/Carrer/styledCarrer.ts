@@ -122,7 +122,7 @@ export const EditButton = styled.button`
     border-radius: 20px;
     cursor: pointer;
     transition: 0.3s;
-
+    
     &:hover {
         background: ${({ theme }) => theme.color.fontMainHover};
     };
@@ -159,6 +159,15 @@ export const ContactWrapper = styled.div`
     justify-content: space-between;
     box-shadow: 0 0 10px ${({ theme }) => theme.color.fourthColor};
     border-radius: 20px;
+    flex-wrap: wrap;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
+        flex-direction: column;
+        gap: 20px;
+        max-width: 500px;
+        padding: 20px;
+    };
+    
 `;
 
 export const ContactItems = styled.div`
@@ -180,6 +189,10 @@ export const IconsWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     gap: 20px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
+        justify-content: space-evenly;
+    };
 `;
 
 export const Icon = styled.img`
