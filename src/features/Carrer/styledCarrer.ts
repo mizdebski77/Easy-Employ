@@ -386,7 +386,6 @@ export const SkillsWrapper = styled.fieldset`
     flex-wrap: wrap;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
-        justify-content: center;
         padding: 20px 10px;
     };
 `;
