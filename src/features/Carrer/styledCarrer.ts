@@ -76,6 +76,10 @@ export const LocationImg = styled.img`
 export const LocationSpan = styled.span`
     font-size: 24px;
     color: ${({ theme }) => theme.color.fontSecond};
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 18px;    
+    };
 `;
 
 export const TitleSpan = styled.span`
