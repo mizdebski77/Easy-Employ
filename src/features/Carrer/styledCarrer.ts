@@ -33,6 +33,9 @@ export const InformationWrapper = styled.main`
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         gap: 20px;
         padding: 20px 28px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     };
 `;
 
@@ -69,6 +72,7 @@ export const ContentWrapper = styled.div`
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         gap: 10px;
+        justify-content: center;
     };
 `;
 
@@ -100,6 +104,7 @@ export const TitleSpan = styled.span`
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
        font-size: 16px;
+       text-align: center;
     };
 `;
 
@@ -138,6 +143,10 @@ export const SectionTitle = styled.h2`
     font-size: 32px;
     color: ${({ theme }) => theme.color.fontSecond};
     font-weight: normal;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 24px;
+    };
 `;
 
 export const ContactWrapper = styled.div`
