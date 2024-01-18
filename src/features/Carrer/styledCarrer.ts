@@ -206,7 +206,11 @@ export const Icon = styled.img`
 
     &:hover {
         transform: scale(1.05);
-    }
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
+        max-width: 32px;
+    };
 `;
 
 export const ElementWrapper = styled.section`
