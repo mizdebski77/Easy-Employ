@@ -74,7 +74,7 @@ export const Carrer = () => {
                 </ButtonWrapper>
             </InformationWrapper>
 
-            <SectionTitle>
+            {/* <SectionTitle>
                 Contact details
             </SectionTitle>
 
@@ -135,9 +135,9 @@ export const Carrer = () => {
 
                 </Tile>
 
-            </ElementWrapper>
+            </ElementWrapper> */}
 
-            <SectionTitle>
+            {/* <SectionTitle>
                 Education
             </SectionTitle>
 
@@ -238,7 +238,7 @@ export const Carrer = () => {
                         <DeleteButton>Delete</DeleteButton>
                     </ButtonsWrapper>
                 </Tile>
-            </ElementWrapper>
+            </ElementWrapper> */}
         </Wrapper>
     );
 };

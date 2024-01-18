@@ -22,8 +22,13 @@ export const InformationWrapper = styled.main`
     padding: 20px 64px;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
     box-shadow: 0 0 10px ${({ theme }) => theme.color.fourthColor};
     border-radius: 20px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+
+    };
 `;
 
 export const PhotoSection = styled.div`
@@ -31,9 +36,8 @@ export const PhotoSection = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 200px;
+    max-width: 240px;
     box-shadow: 0 0 10px ${({ theme }) => theme.color.fontMain};
-    height: 280px;
 `;
 
 export const Photo = styled.img`
@@ -46,6 +50,10 @@ export const Name = styled.h1`
     font-size: 32px;
     font-weight: normal;
     margin: 0;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 28px;    
+    };
 `;
 
 export const ContentWrapper = styled.div`
