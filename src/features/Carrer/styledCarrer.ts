@@ -253,6 +253,7 @@ export const Tile = styled.div`
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         flex-direction: column;
+        padding: 20px 0px;
     };
 `;
 

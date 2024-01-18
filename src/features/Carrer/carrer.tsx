@@ -136,7 +136,7 @@ export const Carrer = () => {
 
             </ElementWrapper> 
 
-             {/* <SectionTitle>
+             <SectionTitle>
                 Education
             </SectionTitle>
 
@@ -153,7 +153,7 @@ export const Carrer = () => {
                     </ButtonsWrapper>
                 </Tile>
             </ElementWrapper>
-
+{/* 
             <SectionTitle>
                 Languages
             </SectionTitle>
