@@ -174,6 +174,10 @@ export const ContactItems = styled.div`
     display: flex;
     align-items: center;
     gap: 10px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        justify-content: center;
+    };
 `;
 
 export const ContactSpan = styled.span`
