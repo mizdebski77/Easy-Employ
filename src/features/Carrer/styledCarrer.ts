@@ -71,6 +71,10 @@ export const LocationWrapper = styled.div`
 
 export const LocationImg = styled.img`
     max-width: 28px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        max-width: 20px;
+    };
 `;
 
 export const LocationSpan = styled.span`
