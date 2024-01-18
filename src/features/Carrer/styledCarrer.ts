@@ -61,6 +61,10 @@ export const ContentWrapper = styled.div`
     justify-content: start;
     align-items: center;
     gap: 20px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        gap: 10px;
+    };
 `;
 
 export const LocationWrapper = styled.div`
