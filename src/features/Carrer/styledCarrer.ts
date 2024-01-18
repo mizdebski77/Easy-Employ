@@ -354,6 +354,7 @@ export const AddButton = styled.button`
     color: ${({ theme }) => theme.color.secondColor};
     transition: 0.3s;
     cursor: pointer;
+    min-width: 80px;
 
     &:hover {
         background: ${({ theme }) => theme.color.fontMainHover};
@@ -361,6 +362,11 @@ export const AddButton = styled.button`
 
     &:active {
         background: ${({ theme }) => theme.color.fontMainActive};
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        padding: 0 20px;
+        font-size: 14px;
     };
 `;
 
