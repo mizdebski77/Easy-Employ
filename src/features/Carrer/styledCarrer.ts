@@ -343,7 +343,11 @@ export const Input = styled.input`
 
     &:focus {
         outline: none;
-    }
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 14px;
+    };
 `;
 
 export const AddButton = styled.button`
