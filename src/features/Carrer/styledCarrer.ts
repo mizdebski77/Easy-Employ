@@ -27,7 +27,7 @@ export const InformationWrapper = styled.main`
     border-radius: 20px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
-
+        gap: 20px;
     };
 `;
 
