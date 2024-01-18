@@ -88,6 +88,10 @@ export const LocationSpan = styled.span`
 
 export const TitleSpan = styled.span`
     font-size: 20px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+       font-size: 16px;
+    };
 `;
 
 export const ButtonWrapper = styled.div`
