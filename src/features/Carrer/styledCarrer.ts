@@ -228,6 +228,10 @@ export const ElementWrapper = styled.section`
     display: grid;
     gap: 20px;
 
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
+        padding: 20px 40px;
+    };
+
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         padding: 20px;
     };
@@ -240,6 +244,10 @@ export const Tile = styled.div`
     align-items: center;
     padding: 20px;
     border-bottom: 1px solid ${({ theme }) => theme.color.fourthColor};
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        flex-direction: column;
+    };
 `;
 
 export const TileTitle = styled.span`
@@ -286,10 +294,6 @@ export const ButtonsWrapper = styled.div`
     display: flex;
     gap: 20px;
     align-items: center;
-
-    @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
-        flex-direction: column;
-    };
 `;
 
 export const DeleteButton = styled.button`
