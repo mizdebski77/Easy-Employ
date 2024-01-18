@@ -12,6 +12,10 @@ export const Title = styled.h1`
     font-weight: normal;
     color: ${({ theme }) => theme.color.fontMain};
     text-align: center;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 36px;
+    };
 `;
 
 export const InformationWrapper = styled.main`
@@ -28,6 +32,7 @@ export const InformationWrapper = styled.main`
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         gap: 20px;
+        padding: 20px 28px;
     };
 `;
 
