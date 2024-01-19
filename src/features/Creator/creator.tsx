@@ -16,6 +16,15 @@ export const Creator = () => {
                         <TitleSpan>E-Mail:</TitleSpan>
                         <ContentSpan>mizdebski123@gmail.com</ContentSpan>
                     </SpanWrapper>
+                    <SpanWrapper>
+                        <TitleSpan>Phone:</TitleSpan>
+                        <ContentSpan>501375604</ContentSpan>
+                    </SpanWrapper>
+
+                    <SpanWrapper>
+                        <TitleSpan>Location:</TitleSpan>
+                        <ContentSpan>Olkusz</ContentSpan>
+                    </SpanWrapper>
                 </CVPreview>
             </ContentWrapper>
         </Wrapper>

@@ -49,7 +49,10 @@ export const CVName = styled.span`
 `;
 
 export const SpanWrapper = styled.div`
-
+    font-size: 12px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
 `;
 
 export const TitleSpan = styled.span`
@@ -57,6 +60,6 @@ export const TitleSpan = styled.span`
 `;
 
 export const ContentSpan = styled.span`
-
+    font-weight: 600;
 `;
 
