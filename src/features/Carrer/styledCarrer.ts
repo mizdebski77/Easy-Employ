@@ -44,7 +44,6 @@ export const InformationWrapper = styled.main`
 `;
 
 export const PhotoSection = styled.div`
-    border: 2px solid ${({ theme }) => theme.color.fontMain};
     display: flex;
     justify-content: center;
     align-items: center;
