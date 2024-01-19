@@ -56,10 +56,27 @@ export const SpanWrapper = styled.div`
 `;
 
 export const TitleSpan = styled.span`
-
+    font-weight: 600;
+    color: ${({ theme }) => theme.color.fontSecond};
 `;
 
 export const ContentSpan = styled.span`
-    font-weight: 600;
+    font-weight: normal;
+`;
+
+export const ExpWrapper = styled.div`
+
+`;
+
+export const ExpDuration = styled.span`
+
+`;
+
+export const ExpTitle = styled.span`
+
+`;
+
+export const ExpCompany = styled.span`
+
 `;
 
