@@ -8,6 +8,8 @@ import {
     DataForm,
     DataInput,
     DataTitle,
+    ElementsWrapper,
+    FormWrapper,
     FormsWrapper,
     SaveButton,
     SpanWrapper,
@@ -23,13 +25,33 @@ export const Creator = () => {
 
             <ContentWrapper>
                 <FormsWrapper>
-                    <DataTitle>Basic information</DataTitle>
-                    <DataForm>
-                        <DataInput placeholder='Name' />
-                        <DataInput placeholder='Surname ' />
-                        <DataInput placeholder='Date of birthd' />
-                        <SaveButton>+ Save</SaveButton>
-                    </DataForm>
+                    <FormWrapper>
+                        <DataTitle>Basic information</DataTitle>
+                        <DataForm>
+                            <DataInput placeholder='Name' />
+                            <DataInput placeholder='Surname ' />
+                            <DataInput placeholder='Date of birthd' />
+                            <SaveButton>+ Save</SaveButton>
+                        </DataForm>
+                    </FormWrapper>
+
+                    <FormWrapper>
+                        <DataTitle>Location</DataTitle>
+                        <DataForm>
+                            <DataInput placeholder='Country' />
+                            <DataInput placeholder='City ' />
+                            <SaveButton>+ Save</SaveButton>
+                        </DataForm>
+                    </FormWrapper>
+
+                    <FormWrapper>
+                        <DataTitle>Contact Informations</DataTitle>
+                        <DataForm>
+                            <DataInput placeholder='Phone' />
+                            <DataInput placeholder='E-Mail ' />
+                            <SaveButton>+ Save</SaveButton>
+                        </DataForm>
+                    </FormWrapper>
                 </FormsWrapper>
 
                 <div>
@@ -37,23 +59,26 @@ export const Creator = () => {
                         <CVTitle>-- CV --</CVTitle>
                         <CVName>Marcin Izdebski</CVName>
 
-                        <SpanWrapper>
-                            <TitleSpan>E-Mail:</TitleSpan>
-                            <ContentSpan>mizdebski123@gmail.com</ContentSpan>
-                        </SpanWrapper>
-                        <SpanWrapper>
-                            <TitleSpan>Date of Birthd:</TitleSpan>
-                            <ContentSpan>16.11.1999</ContentSpan>
-                        </SpanWrapper>
-                        <SpanWrapper>
-                            <TitleSpan>Phone:</TitleSpan>
-                            <ContentSpan>501375604</ContentSpan>
-                        </SpanWrapper>
+                        <ElementsWrapper>
+                            <SpanWrapper>
+                                <TitleSpan>E-Mail:</TitleSpan>
+                                <ContentSpan>mizdebski123@gmail.com</ContentSpan>
+                            </SpanWrapper>
+                            <SpanWrapper>
+                                <TitleSpan>Date of Birthd:</TitleSpan>
+                                <ContentSpan>16.11.1999</ContentSpan>
+                            </SpanWrapper>
+                            <SpanWrapper>
+                                <TitleSpan>Phone:</TitleSpan>
+                                <ContentSpan>501375604</ContentSpan>
+                            </SpanWrapper>
 
-                        <SpanWrapper>
-                            <TitleSpan>Location:</TitleSpan>
-                            <ContentSpan>Olkusz</ContentSpan>
-                        </SpanWrapper>
+                            <SpanWrapper>
+                                <TitleSpan>Location:</TitleSpan>
+                                <ContentSpan>Olkusz</ContentSpan>
+                            </SpanWrapper>
+                        </ElementsWrapper>
+
                     </CVPreview>
                 </div>
 

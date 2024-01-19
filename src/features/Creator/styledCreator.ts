@@ -29,6 +29,11 @@ export const FormsWrapper = styled.div`
     border-radius: 10px;
 `;
 
+export const FormWrapper = styled.div`
+    padding: 20px 0 ;
+    border-bottom: 1px solid ${({ theme }) => theme.color.fourthColor};
+`;
+
 export const DataTitle = styled.h2`
     font-weight: normal;
     font-size: 28px;
@@ -52,7 +57,7 @@ export const SaveButton = styled.button`
     border-radius: 20px;
     transition: 0.3s;
     cursor: pointer;
-    
+
     &:hover {
         background: ${({ theme }) => theme.color.fontMainHover}
     };
@@ -92,6 +97,13 @@ export const CVPreview = styled.div`
 export const CVName = styled.span`
     font-size: 24px;
     margin-bottom: 20px;
+`;
+
+export const ElementsWrapper = styled.div`
+    display: grid;
+    gap: 10px;
+    border-bottom: 1px solid ${({ theme }) => theme.color.fourthColor};
+    padding-bottom: 20px;
 `;
 
 export const SpanWrapper = styled.div`
