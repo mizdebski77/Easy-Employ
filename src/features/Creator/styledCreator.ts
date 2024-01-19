@@ -50,5 +50,13 @@ export const CVName = styled.span`
 
 export const SpanWrapper = styled.div`
 
-;`
+`;
+
+export const TitleSpan = styled.span`
+
+`;
+
+export const ContentSpan = styled.span`
+
+`;
 

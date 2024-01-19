@@ -1,5 +1,5 @@
 import React from 'react';
-import { CVName, CVPreview, CVTitle, ContentWrapper, FormsWrapper, Title, Wrapper } from './styledCreator';
+import { CVName, CVPreview, CVTitle, ContentSpan, ContentWrapper, FormsWrapper, SpanWrapper, Title, TitleSpan, Wrapper } from './styledCreator';
 
 export const Creator = () => {
     return (
@@ -11,6 +11,11 @@ export const Creator = () => {
                 <CVPreview>
                     <CVTitle>-- CV --</CVTitle>
                     <CVName>Marcin Izdebski</CVName>
+
+                    <SpanWrapper>
+                        <TitleSpan>E-Mail:</TitleSpan>
+                        <ContentSpan>mizdebski123@gmail.com</ContentSpan>
+                    </SpanWrapper>
                 </CVPreview>
             </ContentWrapper>
         </Wrapper>
