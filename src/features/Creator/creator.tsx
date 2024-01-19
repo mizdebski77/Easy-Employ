@@ -1,5 +1,20 @@
 import React from 'react';
-import { CVName, CVPreview, CVTitle, ContentSpan, ContentWrapper, DataForm, DataInput, DataTitle, FormsWrapper, SpanWrapper, Title, TitleSpan, Wrapper } from './styledCreator';
+import {
+    CVName,
+    CVPreview,
+    CVTitle,
+    ContentSpan,
+    ContentWrapper,
+    DataForm,
+    DataInput,
+    DataTitle,
+    FormsWrapper,
+    SaveButton,
+    SpanWrapper,
+    Title,
+    TitleSpan,
+    Wrapper
+} from './styledCreator';
 
 export const Creator = () => {
     return (
@@ -10,9 +25,10 @@ export const Creator = () => {
                 <FormsWrapper>
                     <DataTitle>Dane podstawowe</DataTitle>
                     <DataForm>
-                        <DataInput placeholder='Name '/>
-                        <DataInput placeholder='Name '/>
-
+                        <DataInput placeholder='Name' />
+                        <DataInput placeholder='Surname ' />
+                        <DataInput placeholder='Date of birthd' />
+                        <SaveButton>+ Save</SaveButton>
                     </DataForm>
                 </FormsWrapper>
 

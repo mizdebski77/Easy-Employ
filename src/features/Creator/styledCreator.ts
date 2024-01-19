@@ -44,6 +44,10 @@ export const DataForm = styled.form`
     justify-content: center;
 `;
 
+export const SaveButton  = styled.button`
+    
+`;
+
 export const DataInput = styled.input`
     width: 80%;
     border-radius: 20px;
