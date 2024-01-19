@@ -24,7 +24,7 @@ export const ContentWrapper = styled.div`
 
 export const FormsWrapper = styled.div`
     background: ${({ theme }) => theme.color.secondColor};
-    padding: 40px 20px;
+    padding: 20px;
     box-shadow: 0 0 10px ${({ theme }) => theme.color.fourthColor};
     border-radius: 10px;
 `;
