@@ -30,7 +30,10 @@ export const FormsWrapper = styled.div`
 `;
 
 export const DataTitle = styled.h2`
-
+    font-weight: normal;
+    font-size: 28px;
+    color: ${({ theme }) => theme.color.fontMain};
+    text-align: center;
 `;
 
 export const DataForm = styled.form`
