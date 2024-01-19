@@ -23,7 +23,7 @@ export const Creator = () => {
 
             <ContentWrapper>
                 <FormsWrapper>
-                    <DataTitle>Dane podstawowe</DataTitle>
+                    <DataTitle>Basic information</DataTitle>
                     <DataForm>
                         <DataInput placeholder='Name' />
                         <DataInput placeholder='Surname ' />

@@ -44,8 +44,12 @@ export const DataForm = styled.form`
     justify-content: center;
 `;
 
-export const SaveButton  = styled.button`
-    
+export const SaveButton = styled.button`
+    background: ${({ theme }) => theme.color.fontMain};
+    color: ${({ theme }) => theme.color.secondColor};
+    padding: 10px 80px;
+    border: none;
+    border-radius: 20px;
 `;
 
 export const DataInput = styled.input`
