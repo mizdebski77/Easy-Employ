@@ -2,6 +2,7 @@ import React from 'react';
 import {
     CVName,
     CVPreview,
+    CVSectionTitle,
     CVTitle,
     ContentSpan,
     ContentWrapper,
@@ -77,6 +78,10 @@ export const Creator = () => {
                                 <TitleSpan>Location:</TitleSpan>
                                 <ContentSpan>Olkusz</ContentSpan>
                             </SpanWrapper>
+                        </ElementsWrapper>
+
+                        <ElementsWrapper>
+                            <CVSectionTitle>Work experience</CVSectionTitle>
                         </ElementsWrapper>
 
                     </CVPreview>

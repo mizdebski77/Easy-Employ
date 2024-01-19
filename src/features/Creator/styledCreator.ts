@@ -99,6 +99,12 @@ export const CVName = styled.span`
     margin-bottom: 20px;
 `;
 
+export const CVSectionTitle = styled.h3`
+    font-size: 20px;
+    font-weight: normal;
+    padding-bottom: 10px;
+`;
+
 export const ElementsWrapper = styled.div`
     display: grid;
     gap: 10px;
