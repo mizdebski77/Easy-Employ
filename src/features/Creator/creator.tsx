@@ -1,5 +1,5 @@
 import React from 'react';
-import { CVName, CVPreview, CVTitle, ContentSpan, ContentWrapper, DataTitle, FormsWrapper, SpanWrapper, Title, TitleSpan, Wrapper } from './styledCreator';
+import { CVName, CVPreview, CVTitle, ContentSpan, ContentWrapper, DataForm, DataInput, DataTitle, FormsWrapper, SpanWrapper, Title, TitleSpan, Wrapper } from './styledCreator';
 
 export const Creator = () => {
     return (
@@ -9,6 +9,11 @@ export const Creator = () => {
             <ContentWrapper>
                 <FormsWrapper>
                     <DataTitle>Dane podstawowe</DataTitle>
+                    <DataForm>
+                        <DataInput placeholder='Name '/>
+                        <DataInput placeholder='Name '/>
+
+                    </DataForm>
                 </FormsWrapper>
 
                 <CVPreview>

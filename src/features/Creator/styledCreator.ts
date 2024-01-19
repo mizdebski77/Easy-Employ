@@ -37,11 +37,23 @@ export const DataTitle = styled.h2`
 `;
 
 export const DataForm = styled.form`
-
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
 `;
 
 export const DataInput = styled.input`
+    width: 80%;
+    border-radius: 20px;
+    padding: 16px;
+    background: ${({ theme }) => theme.color.thirdColor};
+    border: none;
 
+    &:focus {
+        outline: none;
+    }
 `;
 
 export const CVTitle = styled.span`
