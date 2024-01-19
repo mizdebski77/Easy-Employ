@@ -18,7 +18,7 @@ export const ContentWrapper = styled.div`
     max-width: 1500px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
 `;
 
@@ -27,6 +27,18 @@ export const FormsWrapper = styled.div`
     padding: 40px 20px;
     box-shadow: 0 0 10px ${({ theme }) => theme.color.fourthColor};
     border-radius: 10px;
+`;
+
+export const DataTitle = styled.h2`
+
+`;
+
+export const DataForm = styled.form`
+
+`;
+
+export const DataInput = styled.input`
+
 `;
 
 export const CVTitle = styled.span`
@@ -45,11 +57,12 @@ export const CVPreview = styled.div`
 `;
 
 export const CVName = styled.span`
-
+    font-size: 24px;
+    margin-bottom: 20px;
 `;
 
 export const SpanWrapper = styled.div`
-    font-size: 12px;
+    font-size: 16px;
     display: flex;
     gap: 10px;
     justify-content: center;

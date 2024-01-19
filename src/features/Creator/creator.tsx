@@ -8,6 +8,7 @@ export const Creator = () => {
 
             <ContentWrapper>
                 <FormsWrapper>xd</FormsWrapper>
+                
                 <CVPreview>
                     <CVTitle>-- CV --</CVTitle>
                     <CVName>Marcin Izdebski</CVName>
