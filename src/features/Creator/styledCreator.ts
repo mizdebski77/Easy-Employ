@@ -51,7 +51,8 @@ export const SaveButton = styled.button`
     border: none;
     border-radius: 20px;
     transition: 0.3s;
-
+    cursor: pointer;
+    
     &:hover {
         background: ${({ theme }) => theme.color.fontMainHover}
     };

@@ -32,24 +32,31 @@ export const Creator = () => {
                     </DataForm>
                 </FormsWrapper>
 
-                <CVPreview>
-                    <CVTitle>-- CV --</CVTitle>
-                    <CVName>Marcin Izdebski</CVName>
+                <div>
+                    <CVPreview>
+                        <CVTitle>-- CV --</CVTitle>
+                        <CVName>Marcin Izdebski</CVName>
 
-                    <SpanWrapper>
-                        <TitleSpan>E-Mail:</TitleSpan>
-                        <ContentSpan>mizdebski123@gmail.com</ContentSpan>
-                    </SpanWrapper>
-                    <SpanWrapper>
-                        <TitleSpan>Phone:</TitleSpan>
-                        <ContentSpan>501375604</ContentSpan>
-                    </SpanWrapper>
+                        <SpanWrapper>
+                            <TitleSpan>E-Mail:</TitleSpan>
+                            <ContentSpan>mizdebski123@gmail.com</ContentSpan>
+                        </SpanWrapper>
+                        <SpanWrapper>
+                            <TitleSpan>Date of Birthd:</TitleSpan>
+                            <ContentSpan>16.11.1999</ContentSpan>
+                        </SpanWrapper>
+                        <SpanWrapper>
+                            <TitleSpan>Phone:</TitleSpan>
+                            <ContentSpan>501375604</ContentSpan>
+                        </SpanWrapper>
 
-                    <SpanWrapper>
-                        <TitleSpan>Location:</TitleSpan>
-                        <ContentSpan>Olkusz</ContentSpan>
-                    </SpanWrapper>
-                </CVPreview>
+                        <SpanWrapper>
+                            <TitleSpan>Location:</TitleSpan>
+                            <ContentSpan>Olkusz</ContentSpan>
+                        </SpanWrapper>
+                    </CVPreview>
+                </div>
+
             </ContentWrapper>
         </Wrapper>
     );
