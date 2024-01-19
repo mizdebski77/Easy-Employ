@@ -50,6 +50,15 @@ export const SaveButton = styled.button`
     padding: 10px 80px;
     border: none;
     border-radius: 20px;
+    transition: 0.3s;
+
+    &:hover {
+        background: ${({ theme }) => theme.color.fontMainHover}
+    };
+
+    &:active {
+        background: ${({ theme }) => theme.color.fontMainActive}
+    };
 `;
 
 export const DataInput = styled.input`
