@@ -122,6 +122,7 @@ export const SpanWrapper = styled.div`
 export const TitleSpan = styled.span`
     font-weight: 600;
     color: ${({ theme }) => theme.color.fontSecond};
+    justify-self: start;
 `;
 
 export const ContentSpan = styled.span`

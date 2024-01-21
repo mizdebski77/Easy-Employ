@@ -82,6 +82,7 @@ export const Creator = () => {
 
                         <ElementsWrapper>
                             <CVSectionTitle>Work experience</CVSectionTitle>
+                            <TitleSpan>Frontend developer</TitleSpan>
                         </ElementsWrapper>
 
                     </CVPreview>
