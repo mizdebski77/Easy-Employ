@@ -26,6 +26,7 @@ import {
     Link,
     ClausuleWrapper,
     Clausule,
+    TextArea,
 } from './styledCreator';
 
 export const Creator = () => {
@@ -59,6 +60,20 @@ export const Creator = () => {
                         <DataForm>
                             <DataInput placeholder='Phone' />
                             <DataInput placeholder='E-Mail ' />
+                            <SaveButton>+ Save</SaveButton>
+                        </DataForm>
+                    </FormWrapper>
+
+                    <FormWrapper>
+                        <DataTitle>Work experience</DataTitle>
+                        <DataForm>
+                            <DataInput placeholder='Position' />
+                            <DataInput placeholder='Company Name ' />
+                            <DataInput placeholder='Location' />
+                            <DataInput placeholder='Start date' />
+                            <DataInput placeholder='End date' />
+                            <DataInput placeholder='Still working' />
+                            <TextArea placeholder='Description'></TextArea>
                             <SaveButton>+ Save</SaveButton>
                         </DataForm>
                     </FormWrapper>

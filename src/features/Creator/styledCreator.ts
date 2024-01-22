@@ -79,6 +79,20 @@ export const DataInput = styled.input`
     }
 `;
 
+export const TextArea = styled.textarea`
+    width: 80%;
+    border-radius: 20px;
+    padding: 16px;
+    background: ${({ theme }) => theme.color.thirdColor};
+    border: none;
+    resize: none;
+    min-height: 200px;
+
+    &:focus {
+        outline: none;
+    }
+`;
+
 export const CVTitle = styled.span`
     font-size: 14px;
     margin-bottom: 20px;
