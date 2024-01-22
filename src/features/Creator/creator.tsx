@@ -27,6 +27,10 @@ import {
     ClausuleWrapper,
     Clausule,
     TextArea,
+    SkillsWrapper,
+    Skill,
+    SkillsContainer,
+    RemoveSkillButton,
 } from './styledCreator';
 
 export const Creator = () => {
@@ -76,6 +80,26 @@ export const Creator = () => {
                             <DataInput placeholder='Still working' />
                             <TextArea placeholder='Description'></TextArea>
                             <SaveButton>+ Save</SaveButton>
+                        </DataForm>
+                    </FormWrapper>
+
+                    <FormWrapper>
+                        <DataTitle>Skillset</DataTitle>
+                        <DataForm>
+                            <DataInput placeholder='Skill' />
+                            <SaveButton>+ Add skill</SaveButton>
+
+                            <SkillsWrapper>
+                                <SkillsContainer>
+                                    <Skill>React</Skill>
+                                    <RemoveSkillButton>x</RemoveSkillButton>
+                                </SkillsContainer>
+
+                                <SkillsContainer>
+                                    <Skill>React</Skill>
+                                    <RemoveSkillButton>x</RemoveSkillButton>
+                                </SkillsContainer>
+                            </SkillsWrapper>
                         </DataForm>
                     </FormWrapper>
 
@@ -180,7 +204,7 @@ export const Creator = () => {
                         <ElementsWrapper>
                             <CVSectionTitle>Skills</CVSectionTitle>
                             <TextsWrapper>
-                                React, TypeScript, CSS, HTML 
+                                React, TypeScript, CSS, HTML
                             </TextsWrapper>
                         </ElementsWrapper>
 
