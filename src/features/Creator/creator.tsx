@@ -11,7 +11,9 @@ import {
     DataTitle,
     ElementsWrapper,
     ExpCompany,
+    ExpContent,
     ExpDuration,
+    ExpWrapper,
     FormWrapper,
     FormsWrapper,
     SaveButton,
@@ -84,9 +86,21 @@ export const Creator = () => {
 
                         <ElementsWrapper>
                             <CVSectionTitle>Work experience</CVSectionTitle>
-                            <TitleSpan>Frontend developer /  <ExpDuration>02.2022 - 02.2023</ExpDuration></TitleSpan>
-                            <ExpCompany>Freelance</ExpCompany>
-                            <ContentSpan>XD</ContentSpan>
+                            <ExpWrapper>
+                                <TitleSpan>Frontend developer /  <ExpDuration>02.2022 - 02.2023</ExpDuration></TitleSpan>
+                                <ExpCompany>Freelance</ExpCompany>
+                                <ExpContent>
+                                    Main responsibilities:
+                                    •   Designing responsive websites using Figma.
+                                    •   Comprehensive analysis of customer needs.
+                                    •   Translating interactive Figma designs into a
+                                    functional website using React, TypeScript,
+                                    HTML & CSS.
+                                    •   Expertise in deploying websites on servers
+                                    along with performance-optimized solutions.
+                                </ExpContent>
+                            </ExpWrapper>
+
                         </ElementsWrapper>
 
                     </CVPreview>

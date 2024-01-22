@@ -130,7 +130,9 @@ export const ContentSpan = styled.span`
 `;
 
 export const ExpWrapper = styled.div`
-
+    display: grid;
+    gap: 12px;
+    justify-content
 `;
 
 export const ExpDuration = styled.span`
@@ -139,8 +141,11 @@ export const ExpDuration = styled.span`
     color: ${({ theme }) => theme.color.fontSecond};
 `;
 
-export const ExpTitle = styled.span`
-
+export const ExpContent = styled.span`
+    font-size: 18px;
+    font-weight: normal;
+    max-width: 440px;
+    text-align: justify;
 `;
 
 export const ExpCompany = styled.span`
