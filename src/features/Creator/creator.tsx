@@ -44,23 +44,9 @@ export const Creator = () => {
                 <CvPreview />
                 {/* 
 
-                    <FormWrapper>
-                        <DataTitle>Location</DataTitle>
-                        <DataForm>
-                            <DataInput placeholder='Country' />
-                            <DataInput placeholder='City ' />
-                            <SaveButton>+ Save</SaveButton>
-                        </DataForm>
-                    </FormWrapper>
 
-                    <FormWrapper>
-                        <DataTitle>Contact Informations</DataTitle>
-                        <DataForm>
-                            <DataInput placeholder='Phone' />
-                            <DataInput placeholder='E-Mail ' />
-                            <SaveButton>+ Save</SaveButton>
-                        </DataForm>
-                    </FormWrapper>
+
+
 
                     <FormWrapper>
 
