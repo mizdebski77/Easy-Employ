@@ -32,6 +32,7 @@ import {
     SkillsContainer,
     RemoveSkillButton,
 } from './styledCreator';
+import { CvPreview } from './CvPreviev/cvPreview';
 
 export const Creator = () => {
     return (
@@ -39,16 +40,9 @@ export const Creator = () => {
             <Title>CV Creator</Title>
 
             <ContentWrapper>
-                <FormsWrapper>
-                    <FormWrapper>
-                        <DataTitle>Basic information</DataTitle>
-                        <DataForm>
-                            <DataInput placeholder='Name' />
-                            <DataInput placeholder='Surname ' />
-                            <DataInput placeholder='Date of birthd' />
-                            <SaveButton>+ Save</SaveButton>
-                        </DataForm>
-                    </FormWrapper>
+
+                <CvPreview />
+                {/* 
 
                     <FormWrapper>
                         <DataTitle>Location</DataTitle>
@@ -153,7 +147,7 @@ export const Creator = () => {
                             <SaveButton>+ Save</SaveButton>
                         </DataForm>
                     </FormWrapper>
-                </FormsWrapper>
+                </FormsWrapper> */}
 
                 <div>
                     <CVPreview>
