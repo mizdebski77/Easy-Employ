@@ -171,3 +171,7 @@ export const InterestsWrapper = styled.div`
     justify-self: start;
     text-align: left;
 `;
+
+export const Link = styled.a`
+
+`;

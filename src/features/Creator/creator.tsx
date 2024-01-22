@@ -23,6 +23,7 @@ import {
     TitleSpan,
     Wrapper,
     InterestsWrapper,
+    Link,
 } from './styledCreator';
 
 export const Creator = () => {
@@ -123,8 +124,14 @@ export const Creator = () => {
                         <ElementsWrapper>
                             <CVSectionTitle>Interests</CVSectionTitle>
                             <InterestsWrapper>
-                                Music
+                                Learning new technologies, learning foreign languages, hiking, graphic design
                             </InterestsWrapper>
+                        </ElementsWrapper>
+
+                        <ElementsWrapper>
+                            <CVSectionTitle>Links</CVSectionTitle>
+                            <TitleSpan>Portfolio</TitleSpan>
+                            <Link>https://mizdebski77.github.io/Homepage/</Link>
                         </ElementsWrapper>
 
 
