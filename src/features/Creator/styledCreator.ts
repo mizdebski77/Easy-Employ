@@ -123,6 +123,7 @@ export const TitleSpan = styled.span`
     font-weight: 600;
     color: ${({ theme }) => theme.color.fontSecond};
     justify-self: start;
+    
 `;
 
 export const ContentSpan = styled.span`
@@ -135,6 +136,12 @@ export const ExpWrapper = styled.div`
     justify-content
 `;
 
+export const ExpTilesWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+`;
+
 export const ExpDuration = styled.span`
     font-size: 16px;
     font-weight: normal;
@@ -142,16 +149,16 @@ export const ExpDuration = styled.span`
 `;
 
 export const ExpContent = styled.span`
-    font-size: 18px;
+    font-size: 16px;
     font-weight: normal;
     max-width: 440px;
-    text-align: justify;
+    text-align: left;
 `;
 
 export const ExpCompany = styled.span`
     justify-self: start;
     margin-left: 20px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: normal;
 `;
 

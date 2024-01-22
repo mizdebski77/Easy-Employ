@@ -13,6 +13,7 @@ import {
     ExpCompany,
     ExpContent,
     ExpDuration,
+    ExpTilesWrapper,
     ExpWrapper,
     FormWrapper,
     FormsWrapper,
@@ -86,21 +87,23 @@ export const Creator = () => {
 
                         <ElementsWrapper>
                             <CVSectionTitle>Work experience</CVSectionTitle>
-                            <ExpWrapper>
-                                <TitleSpan>Frontend developer /  <ExpDuration>02.2022 - 02.2023</ExpDuration></TitleSpan>
-                                <ExpCompany>Freelance</ExpCompany>
-                                <ExpContent>
-                                    Main responsibilities:
-                                    •   Designing responsive websites using Figma.
-                                    •   Comprehensive analysis of customer needs.
-                                    •   Translating interactive Figma designs into a
-                                    functional website using React, TypeScript,
-                                    HTML & CSS.
-                                    •   Expertise in deploying websites on servers
-                                    along with performance-optimized solutions.
-                                </ExpContent>
-                            </ExpWrapper>
+                            <ExpTilesWrapper>
+                                <ExpWrapper>
+                                    <TitleSpan>Frontend developer /  <ExpDuration>02.2022 - 02.2023</ExpDuration></TitleSpan>
+                                    <ExpCompany>Freelance</ExpCompany>
+                                    <ExpContent>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum vel veritatis quia ipsum explicabo sint ullam beatae obcaecati debitis, molestiae adipisci eligendi? Quam doloremque fugiat at. Repudiandae quas porro sapiente!
+                                    </ExpContent>
+                                </ExpWrapper>
 
+                                <ExpWrapper>
+                                    <TitleSpan>Frontend developer /  <ExpDuration>02.2022 - 02.2023</ExpDuration></TitleSpan>
+                                    <ExpCompany>Freelance</ExpCompany>
+                                    <ExpContent>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum vel veritatis quia ipsum explicabo sint ullam beatae obcaecati debitis, molestiae adipisci eligendi? Quam doloremque fugiat at. Repudiandae quas porro sapiente!
+                                    </ExpContent>
+                                </ExpWrapper>
+                            </ExpTilesWrapper>
                         </ElementsWrapper>
 
                     </CVPreview>
