@@ -24,6 +24,8 @@ import {
     Wrapper,
     InterestsWrapper,
     Link,
+    ClausuleWrapper,
+    Clausule,
 } from './styledCreator';
 
 export const Creator = () => {
@@ -136,6 +138,15 @@ export const Creator = () => {
                             <TitleSpan>Portfolio</TitleSpan>
                             <Link>https://mizdebski77.github.io/Homepage/</Link>
                         </ElementsWrapper>
+
+                        <ClausuleWrapper>
+                            <CVSectionTitle>Clause</CVSectionTitle>
+                            <Clausule> I agree to the processing of personal data provided in this document for realising the recruitment process pursuant to thePersonal Data Protection Act of 10 May
+                                2018 (Journal of Laws 2018, item 1000) and in agreement with Regulation (EU)2016/679 of the European Parliament and of the Council of 27 April 2016 on the
+                                protection of natural persons with regard tothe processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General
+                                Data Protection Regulation)
+                            </Clausule>
+                        </ClausuleWrapper>
 
 
                     </CVPreview>

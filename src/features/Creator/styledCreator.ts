@@ -176,3 +176,13 @@ export const Link = styled.a`
     font-size: 16px;
     margin-bottom: 12px;
 `;
+
+export const ClausuleWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+`;
+
+export const Clausule = styled.span`
+    font-size: 14px;
+    text-align: left;
+`;
