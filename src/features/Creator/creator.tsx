@@ -94,6 +94,17 @@ export const Creator = () => {
                     </FormWrapper>
 
                     <FormWrapper>
+                        <DataTitle>Courses</DataTitle>
+                        <DataForm>
+                            <DataInput placeholder='Course Name' />
+                            <DataInput placeholder='Organizer' />
+                            <DataInput placeholder='Start date' />
+                            <DataInput placeholder='End date' />
+                            <SaveButton>+ Save</SaveButton>
+                        </DataForm>
+                    </FormWrapper>
+
+                    <FormWrapper>
                         <DataTitle>Languages</DataTitle>
                         <DataForm>
                             <DataInput placeholder='Languagesn' />
