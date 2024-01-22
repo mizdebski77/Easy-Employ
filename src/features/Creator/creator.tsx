@@ -22,7 +22,7 @@ import {
     Title,
     TitleSpan,
     Wrapper,
-    InterestsWrapper,
+    TextsWrapper,
     Link,
     ClausuleWrapper,
     Clausule,
@@ -124,8 +124,8 @@ export const Creator = () => {
                     <FormWrapper>
                         <DataTitle>Links</DataTitle>
                         <DataForm>
-                            <DataInput placeholder='Adress'/>
-                            <DataInput placeholder='Description'/>
+                            <DataInput placeholder='Adress' />
+                            <DataInput placeholder='Description' />
                             <SaveButton>+ Save</SaveButton>
                         </DataForm>
                     </FormWrapper>
@@ -177,6 +177,13 @@ export const Creator = () => {
                             </TilesWrapper>
                         </ElementsWrapper>
 
+                        <ElementsWrapper>
+                            <CVSectionTitle>Skills</CVSectionTitle>
+                            <TextsWrapper>
+                                React, TypeScript, CSS, HTML 
+                            </TextsWrapper>
+                        </ElementsWrapper>
+
 
                         <ElementsWrapper>
                             <CVSectionTitle>Education</CVSectionTitle>
@@ -192,9 +199,9 @@ export const Creator = () => {
 
                         <ElementsWrapper>
                             <CVSectionTitle>Interests</CVSectionTitle>
-                            <InterestsWrapper>
+                            <TextsWrapper>
                                 Learning new technologies, learning foreign languages, hiking, graphic design
-                            </InterestsWrapper>
+                            </TextsWrapper>
                         </ElementsWrapper>
 
                         <ElementsWrapper>

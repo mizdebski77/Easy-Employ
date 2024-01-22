@@ -175,7 +175,7 @@ export const ExpSecondTitle = styled.span`
     font-weight: normal;
 `;
 
-export const InterestsWrapper = styled.div`
+export const TextsWrapper = styled.div`
     display: flex;
     justify-content: start;
     padding: 0 20px;
