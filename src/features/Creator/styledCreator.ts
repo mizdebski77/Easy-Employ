@@ -102,7 +102,6 @@ export const CVName = styled.span`
 export const CVSectionTitle = styled.h3`
     font-size: 20px;
     font-weight: normal;
-    padding-bottom: 10px;
 `;
 
 export const ElementsWrapper = styled.div`
@@ -123,7 +122,7 @@ export const TitleSpan = styled.span`
     font-weight: 600;
     color: ${({ theme }) => theme.color.fontSecond};
     justify-self: start;
-    
+    font-size: 18px;
 `;
 
 export const ContentSpan = styled.span`
@@ -173,5 +172,7 @@ export const InterestsWrapper = styled.div`
 `;
 
 export const Link = styled.a`
-
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 12px;
 `;

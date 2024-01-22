@@ -132,6 +132,9 @@ export const Creator = () => {
                             <CVSectionTitle>Links</CVSectionTitle>
                             <TitleSpan>Portfolio</TitleSpan>
                             <Link>https://mizdebski77.github.io/Homepage/</Link>
+
+                            <TitleSpan>Portfolio</TitleSpan>
+                            <Link>https://mizdebski77.github.io/Homepage/</Link>
                         </ElementsWrapper>
 
 
