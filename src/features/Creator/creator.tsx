@@ -120,6 +120,15 @@ export const Creator = () => {
                             <SaveButton>+ Save</SaveButton>
                         </DataForm>
                     </FormWrapper>
+
+                    <FormWrapper>
+                        <DataTitle>Links</DataTitle>
+                        <DataForm>
+                            <DataInput placeholder='Adress'/>
+                            <DataInput placeholder='Description'/>
+                            <SaveButton>+ Save</SaveButton>
+                        </DataForm>
+                    </FormWrapper>
                 </FormsWrapper>
 
                 <div>
