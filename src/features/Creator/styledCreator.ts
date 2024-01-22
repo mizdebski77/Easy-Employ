@@ -136,7 +136,7 @@ export const ExpWrapper = styled.div`
     justify-content
 `;
 
-export const ExpTilesWrapper = styled.div`
+export const TilesWrapper = styled.div`
     display: flex;
     flex-direction: column;
     gap: 44px;
@@ -155,9 +155,19 @@ export const ExpContent = styled.span`
     text-align: left;
 `;
 
-export const ExpCompany = styled.span`
+export const ExpSecondTitle = styled.span`
     justify-self: start;
     margin-left: 20px;
     font-size: 18px;
     font-weight: normal;
+`;
+
+export const InterestsWrapper = styled.div`
+    display: flex;
+    justify-content: start;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: normal;
+    justify-self: start;
+    text-align: left;
 `;

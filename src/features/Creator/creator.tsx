@@ -10,10 +10,10 @@ import {
     DataInput,
     DataTitle,
     ElementsWrapper,
-    ExpCompany,
+    ExpSecondTitle,
     ExpContent,
     ExpDuration,
-    ExpTilesWrapper,
+    TilesWrapper,
     ExpWrapper,
     FormWrapper,
     FormsWrapper,
@@ -21,8 +21,9 @@ import {
     SpanWrapper,
     Title,
     TitleSpan,
-    Wrapper
-} from './styledCreator';
+    Wrapper,
+    InterestsWrapper,
+    } from './styledCreator';
 
 export const Creator = () => {
     return (
@@ -87,10 +88,10 @@ export const Creator = () => {
 
                         <ElementsWrapper>
                             <CVSectionTitle>Work experience</CVSectionTitle>
-                            <ExpTilesWrapper>
+                            <TilesWrapper>
                                 <ExpWrapper>
                                     <TitleSpan>Frontend developer /  <ExpDuration>02.2022 - 02.2023</ExpDuration></TitleSpan>
-                                    <ExpCompany>Freelance</ExpCompany>
+                                    <ExpSecondTitle>Freelance</ExpSecondTitle>
                                     <ExpContent>
                                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum vel veritatis quia ipsum explicabo sint ullam beatae obcaecati debitis, molestiae adipisci eligendi? Quam doloremque fugiat at. Repudiandae quas porro sapiente!
                                     </ExpContent>
@@ -98,24 +99,35 @@ export const Creator = () => {
 
                                 <ExpWrapper>
                                     <TitleSpan>Frontend developer /  <ExpDuration>02.2022 - 02.2023</ExpDuration></TitleSpan>
-                                    <ExpCompany>Freelance</ExpCompany>
+                                    <ExpSecondTitle>Freelance</ExpSecondTitle>
                                     <ExpContent>
                                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum vel veritatis quia ipsum explicabo sint ullam beatae obcaecati debitis, molestiae adipisci eligendi? Quam doloremque fugiat at. Repudiandae quas porro sapiente!
                                     </ExpContent>
                                 </ExpWrapper>
-                            </ExpTilesWrapper>
+                            </TilesWrapper>
                         </ElementsWrapper>
 
 
                         <ElementsWrapper>
                             <CVSectionTitle>Education</CVSectionTitle>
-                            <ExpTilesWrapper>
-                                <ExpWrapper>
-                                    <TitleSpan>The Silesian Technical University /  <ExpDuration>02.2022 - 02.2023</ExpDuration></TitleSpan>
-                                    <ExpCompany><TitleSpan>Enginerr:</TitleSpan> Electronic & Telecomunication</ExpCompany>
-                                </ExpWrapper>
-                            </ExpTilesWrapper>
+                            <TitleSpan>The Silesian Technical University /  <ExpDuration>02.2022 - 02.2023</ExpDuration></TitleSpan>
+                            <ExpSecondTitle><TitleSpan>Enginerr:</TitleSpan> Electronic & Telecomunication</ExpSecondTitle>
                         </ElementsWrapper>
+
+                        <ElementsWrapper>
+                            <CVSectionTitle>Courses</CVSectionTitle>
+                            <TitleSpan>Frontend Developer Course /  <ExpDuration>02.2022 - 02.2023</ExpDuration></TitleSpan>
+                            <ExpSecondTitle>YouCode</ExpSecondTitle>
+                        </ElementsWrapper>
+
+                        <ElementsWrapper>
+                            <CVSectionTitle>Interests</CVSectionTitle>
+                            <InterestsWrapper>
+                            Music
+                                <Interest></Interest>
+                            </InterestsWrapper>
+                        </ElementsWrapper>
+
 
                     </CVPreview>
                 </div>
