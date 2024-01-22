@@ -23,7 +23,7 @@ import {
     TitleSpan,
     Wrapper,
     InterestsWrapper,
-    } from './styledCreator';
+} from './styledCreator';
 
 export const Creator = () => {
     return (
@@ -123,8 +123,7 @@ export const Creator = () => {
                         <ElementsWrapper>
                             <CVSectionTitle>Interests</CVSectionTitle>
                             <InterestsWrapper>
-                            Music
-                                <Interest></Interest>
+                                Music
                             </InterestsWrapper>
                         </ElementsWrapper>
 
