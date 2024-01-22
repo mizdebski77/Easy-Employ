@@ -106,6 +106,17 @@ export const Creator = () => {
                             </ExpTilesWrapper>
                         </ElementsWrapper>
 
+
+                        <ElementsWrapper>
+                            <CVSectionTitle>Education</CVSectionTitle>
+                            <ExpTilesWrapper>
+                                <ExpWrapper>
+                                    <TitleSpan>The Silesian Technical University /  <ExpDuration>02.2022 - 02.2023</ExpDuration></TitleSpan>
+                                    <ExpCompany><TitleSpan>Enginerr:</TitleSpan> Electronic & Telecomunication</ExpCompany>
+                                </ExpWrapper>
+                            </ExpTilesWrapper>
+                        </ElementsWrapper>
+
                     </CVPreview>
                 </div>
 

@@ -161,4 +161,3 @@ export const ExpCompany = styled.span`
     font-size: 18px;
     font-weight: normal;
 `;
-
