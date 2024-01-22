@@ -112,6 +112,14 @@ export const Creator = () => {
                             <SaveButton>+ Save</SaveButton>
                         </DataForm>
                     </FormWrapper>
+
+                    <FormWrapper>
+                        <DataTitle>Interests</DataTitle>
+                        <DataForm>
+                            <TextArea placeholder='Description'></TextArea>
+                            <SaveButton>+ Save</SaveButton>
+                        </DataForm>
+                    </FormWrapper>
                 </FormsWrapper>
 
                 <div>
