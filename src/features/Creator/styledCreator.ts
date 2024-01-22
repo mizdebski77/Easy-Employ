@@ -134,7 +134,9 @@ export const ExpWrapper = styled.div`
 `;
 
 export const ExpDuration = styled.span`
-
+    font-size: 16px;
+    font-weight: normal;
+    color: ${({ theme }) => theme.color.fontSecond};
 `;
 
 export const ExpTitle = styled.span`
@@ -142,6 +144,9 @@ export const ExpTitle = styled.span`
 `;
 
 export const ExpCompany = styled.span`
-
+    justify-self: start;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: normal;
 `;
 

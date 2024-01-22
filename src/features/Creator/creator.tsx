@@ -10,6 +10,8 @@ import {
     DataInput,
     DataTitle,
     ElementsWrapper,
+    ExpCompany,
+    ExpDuration,
     FormWrapper,
     FormsWrapper,
     SaveButton,
@@ -82,7 +84,9 @@ export const Creator = () => {
 
                         <ElementsWrapper>
                             <CVSectionTitle>Work experience</CVSectionTitle>
-                            <TitleSpan>Frontend developer</TitleSpan>
+                            <TitleSpan>Frontend developer /  <ExpDuration>02.2022 - 02.2023</ExpDuration></TitleSpan>
+                            <ExpCompany>Freelance</ExpCompany>
+                            <ContentSpan>XD</ContentSpan>
                         </ElementsWrapper>
 
                     </CVPreview>
