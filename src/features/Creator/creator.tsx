@@ -80,7 +80,6 @@ export const Creator = () => {
                     </FormWrapper>
 
                     <FormWrapper>
-
                         <DataTitle>Education</DataTitle>
                         <DataForm>
                             <DataInput placeholder='Level of education' />
@@ -90,6 +89,15 @@ export const Creator = () => {
                             <DataInput placeholder='End date' />
                             <DataInput placeholder='Still Learning' />
                             <TextArea placeholder='Description'></TextArea>
+                            <SaveButton>+ Save</SaveButton>
+                        </DataForm>
+                    </FormWrapper>
+
+                    <FormWrapper>
+                        <DataTitle>Languages</DataTitle>
+                        <DataForm>
+                            <DataInput placeholder='Languagesn' />
+                            <DataInput placeholder='Level' />
                             <SaveButton>+ Save</SaveButton>
                         </DataForm>
                     </FormWrapper>
