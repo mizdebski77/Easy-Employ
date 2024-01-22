@@ -1,10 +1,13 @@
 import { styled } from "styled-components";
 
 export const Wrapper = styled.section`
+`;
+
+export const FormsWrapper = styled.div`
     background: ${({ theme }) => theme.color.secondColor};
-    padding: 20px;
     box-shadow: 0 0 10px ${({ theme }) => theme.color.fourthColor};
     border-radius: 10px;
+    padding: 20px;
 `;
 
 export const FormWrapper = styled.div`
