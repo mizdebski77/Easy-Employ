@@ -62,6 +62,7 @@ export const Label = styled.label`
     display: flex;
     gap: 10px;
     font-size: 20px;
+    cursor: pointer;
 `;
 
 export const CheckBox = styled.input`
