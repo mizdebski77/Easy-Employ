@@ -47,3 +47,7 @@ export const SaveButton = styled.button`
         background: ${({ theme }) => theme.color.fontMainActive}
     };
 `;
+
+export const NextButton = styled.button`
+
+`;
