@@ -15,16 +15,6 @@ export const FormWrapper = styled.div`
     border-bottom: 1px solid ${({ theme }) => theme.color.fourthColor};
 `;
 
-export const TitleWrapper = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-`;
-
-export const CloseButton = styled.button`
-`;
-
 export const DataTitle = styled.h2`
     font-weight: normal;
     font-size: 28px;
@@ -58,6 +48,3 @@ export const SaveButton = styled.button`
     };
 `;
 
-export const NextButton = styled.button`
-
-`;

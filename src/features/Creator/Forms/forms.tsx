@@ -1,5 +1,5 @@
 import React from 'react';
-import { CloseButton, DataForm, DataTitle, FormWrapper, FormsWrapper, NextButton, SaveButton, TitleWrapper, Wrapper } from './styledForms';
+import {  DataForm, DataTitle, FormWrapper, FormsWrapper,  SaveButton,  Wrapper } from './styledForms';
 import { DataInput } from '../styledCreator';
 
 export const Forms = () => {
@@ -37,11 +37,6 @@ export const Forms = () => {
                     </DataForm>
                 </FormWrapper>
             </FormsWrapper>
-
-            <NextButton>
-                Next
-            </NextButton>
-
 
         </Wrapper>
     );
