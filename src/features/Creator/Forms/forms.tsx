@@ -70,7 +70,7 @@ export const Forms = () => {
                 <FormWrapper>
                     <DataTitle>Skillset</DataTitle>
                     <DataForm>
-                        <DataInput placeholder='Skill' />
+                        <DataInput placeholder='Skill' type='text' />
                         <SaveButton>+ Add skill</SaveButton>
 
                         <SkillsWrapper>
