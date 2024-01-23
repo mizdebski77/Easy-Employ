@@ -42,6 +42,20 @@ export const DataInput = styled.input`
     }
 `;
 
+export const CurrentWrapper = styled.label`
+    display: flex;
+    gap: 10px;   
+    cursor: pointer; 
+`;
+
+export const CurrentSpan = styled.span`
+
+`;
+
+export const CurrentInput = styled.input`
+
+`;
+
 export const SaveButton = styled.button`
     background: ${({ theme }) => theme.color.fontMain};
     color: ${({ theme }) => theme.color.secondColor};

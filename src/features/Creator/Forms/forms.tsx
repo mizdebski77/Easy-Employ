@@ -1,5 +1,21 @@
 import React from 'react';
-import { DataForm, DataInput, DataTitle, FormWrapper, FormsWrapper, RemoveSkillButton, SaveButton, Skill, SkillsContainer, SkillsWrapper, TextArea, Wrapper } from './styledForms';
+import {
+    CurrentInput,
+    CurrentSpan,
+    CurrentWrapper,
+    DataForm,
+    DataInput,
+    DataTitle,
+    FormWrapper,
+    FormsWrapper,
+    RemoveSkillButton,
+    SaveButton,
+    Skill,
+    SkillsContainer,
+    SkillsWrapper,
+    TextArea,
+    Wrapper
+} from './styledForms';
 
 export const Forms = () => {
     return (
@@ -37,12 +53,15 @@ export const Forms = () => {
 
                     <DataTitle>Work experience</DataTitle>
                     <DataForm>
-                        <DataInput placeholder='Position' />
-                        <DataInput placeholder='Company Name ' />
-                        <DataInput placeholder='Location' />
-                        <DataInput placeholder='Start date' />
-                        <DataInput placeholder='End date' />
-                        <DataInput placeholder='Still working' />
+                        <DataInput placeholder='Position' type='text' />
+                        <DataInput placeholder='Company Name ' type='text' />
+                        <DataInput placeholder='Location' type='text' />
+                        <DataInput placeholder='Start date' type='date' />
+                        <DataInput placeholder='End date' type='date' />
+                        <CurrentWrapper>
+                            <CurrentInput placeholder='Still working' type='checkbox' />
+                            <CurrentSpan>Still working</CurrentSpan>
+                        </CurrentWrapper>
                         <TextArea placeholder='Description'></TextArea>
                         <SaveButton>+ Save</SaveButton>
                     </DataForm>
