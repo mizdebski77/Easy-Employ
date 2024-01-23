@@ -91,11 +91,14 @@ export const Forms = () => {
                     <DataTitle>Education</DataTitle>
                     <DataForm>
                         <DataInput placeholder='Level of education' />
-                        <DataInput placeholder='School Name' />
+                        <DataInput placeholder='School Name' type='text' />
                         <DataInput placeholder='Field ' />
-                        <DataInput placeholder='Start date' />
-                        <DataInput placeholder='End date' />
-                        <DataInput placeholder='Still Learning' />
+                        <DataInput placeholder='Start date' type='date' />
+                        <DataInput placeholder='End date' type='date' />
+                        <CurrentWrapper>
+                            <CurrentInput placeholder='Still working' type='checkbox' />
+                            <CurrentSpan>Still learning</CurrentSpan>
+                        </CurrentWrapper>
                         <TextArea placeholder='Description'></TextArea>
                         <SaveButton>+ Save</SaveButton>
                     </DataForm>
@@ -104,10 +107,14 @@ export const Forms = () => {
                 <FormWrapper>
                     <DataTitle>Courses</DataTitle>
                     <DataForm>
-                        <DataInput placeholder='Course Name' />
-                        <DataInput placeholder='Organizer' />
-                        <DataInput placeholder='Start date' />
-                        <DataInput placeholder='End date' />
+                        <DataInput placeholder='Course Name' type='text' />
+                        <DataInput placeholder='Organizer' type='text' />
+                        <DataInput placeholder='Start date' type='date' />
+                        <DataInput placeholder='End date' type='date' />
+                        <CurrentWrapper>
+                            <CurrentInput placeholder='Still working' type='checkbox' />
+                            <CurrentSpan>Still learning</CurrentSpan>
+                        </CurrentWrapper>
                         <SaveButton>+ Save</SaveButton>
                     </DataForm>
                 </FormWrapper>
@@ -115,8 +122,8 @@ export const Forms = () => {
                 <FormWrapper>
                     <DataTitle>Languages</DataTitle>
                     <DataForm>
-                        <DataInput placeholder='Languagesn' />
-                        <DataInput placeholder='Level' />
+                        <DataInput placeholder='Languages' type='text' />
+                        <DataInput placeholder='Level'  />
                         <SaveButton>+ Save</SaveButton>
                     </DataForm>
                 </FormWrapper>
