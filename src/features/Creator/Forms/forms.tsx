@@ -1,6 +1,5 @@
 import React from 'react';
-import { DataForm, DataTitle, FormWrapper, FormsWrapper, SaveButton, Wrapper } from './styledForms';
-import { DataInput } from '../styledCreator';
+import { DataForm, DataInput, DataTitle, FormWrapper, FormsWrapper, RemoveSkillButton, SaveButton, Skill, SkillsContainer, SkillsWrapper, TextArea, Wrapper } from './styledForms';
 
 export const Forms = () => {
     return (
@@ -33,9 +32,95 @@ export const Forms = () => {
                         <SaveButton>+ Save</SaveButton>
                     </DataForm>
                 </FormWrapper>
+
+                <FormWrapper>
+
+                    <DataTitle>Work experience</DataTitle>
+                    <DataForm>
+                        <DataInput placeholder='Position' />
+                        <DataInput placeholder='Company Name ' />
+                        <DataInput placeholder='Location' />
+                        <DataInput placeholder='Start date' />
+                        <DataInput placeholder='End date' />
+                        <DataInput placeholder='Still working' />
+                        <TextArea placeholder='Description'></TextArea>
+                        <SaveButton>+ Save</SaveButton>
+                    </DataForm>
+                </FormWrapper>
+
+                <FormWrapper>
+                    <DataTitle>Skillset</DataTitle>
+                    <DataForm>
+                        <DataInput placeholder='Skill' />
+                        <SaveButton>+ Add skill</SaveButton>
+
+                        <SkillsWrapper>
+                            <SkillsContainer>
+                                <Skill>React</Skill>
+                                <RemoveSkillButton>x</RemoveSkillButton>
+                            </SkillsContainer>
+
+                            <SkillsContainer>
+                                <Skill>React</Skill>
+                                <RemoveSkillButton>x</RemoveSkillButton>
+                            </SkillsContainer>
+                        </SkillsWrapper>
+                    </DataForm>
+                </FormWrapper>
+
+                <FormWrapper>
+                    <DataTitle>Education</DataTitle>
+                    <DataForm>
+                        <DataInput placeholder='Level of education' />
+                        <DataInput placeholder='School Name' />
+                        <DataInput placeholder='Field ' />
+                        <DataInput placeholder='Start date' />
+                        <DataInput placeholder='End date' />
+                        <DataInput placeholder='Still Learning' />
+                        <TextArea placeholder='Description'></TextArea>
+                        <SaveButton>+ Save</SaveButton>
+                    </DataForm>
+                </FormWrapper>
+
+                <FormWrapper>
+                    <DataTitle>Courses</DataTitle>
+                    <DataForm>
+                        <DataInput placeholder='Course Name' />
+                        <DataInput placeholder='Organizer' />
+                        <DataInput placeholder='Start date' />
+                        <DataInput placeholder='End date' />
+                        <SaveButton>+ Save</SaveButton>
+                    </DataForm>
+                </FormWrapper>
+
+                <FormWrapper>
+                    <DataTitle>Languages</DataTitle>
+                    <DataForm>
+                        <DataInput placeholder='Languagesn' />
+                        <DataInput placeholder='Level' />
+                        <SaveButton>+ Save</SaveButton>
+                    </DataForm>
+                </FormWrapper>
+
+                <FormWrapper>
+                    <DataTitle>Interests</DataTitle>
+                    <DataForm>
+                        <TextArea placeholder='Description'></TextArea>
+                        <SaveButton>+ Save</SaveButton>
+                    </DataForm>
+                </FormWrapper>
+
+                <FormWrapper>
+                    <DataTitle>Links</DataTitle>
+                    <DataForm>
+                        <DataInput placeholder='Adress' />
+                        <DataInput placeholder='Description' />
+                        <SaveButton>+ Save</SaveButton>
+                    </DataForm>
+                </FormWrapper>
             </FormsWrapper>
 
-        </Wrapper>
+        </Wrapper >
     );
 };
 

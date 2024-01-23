@@ -30,6 +30,18 @@ export const DataForm = styled.form`
     justify-content: center;
 `;
 
+export const DataInput = styled.input`
+    width: 80%;
+    border-radius: 20px;
+    padding: 16px;
+    background: ${({ theme }) => theme.color.thirdColor};
+    border: none;
+
+    &:focus {
+        outline: none;
+    }
+`;
+
 export const SaveButton = styled.button`
     background: ${({ theme }) => theme.color.fontMain};
     color: ${({ theme }) => theme.color.secondColor};
@@ -47,4 +59,61 @@ export const SaveButton = styled.button`
         background: ${({ theme }) => theme.color.fontMainActive}
     };
 `;
+
+
+export const TextArea = styled.textarea`
+    width: 80%;
+    border-radius: 20px;
+    padding: 16px;
+    background: ${({ theme }) => theme.color.thirdColor};
+    border: none;
+    resize: none;
+    min-height: 200px;
+
+    &:focus {
+        outline: none;
+    }
+`;
+
+export const SkillsWrapper = styled.div`
+    padding: 10px;
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+`;
+
+export const SkillsContainer = styled.div`
+    position: relative;
+`;
+
+
+export const Skill = styled.span`
+    background: ${({ theme }) => theme.color.fontMainActive};
+    padding: 8px 10px;
+    border-radius: 20px;
+    color: ${({ theme }) => theme.color.mainColor};
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 12px;
+    };
+`;
+
+export const RemoveSkillButton = styled.button`
+    position: absolute;
+    border-radius: 50%;
+    font-size: 12px;
+    background: #ff2d32;
+    color: white;
+    border: none;
+    right: 2px;
+    bottom: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        background: #ff6f72;
+    }
+`;
+
+
 
