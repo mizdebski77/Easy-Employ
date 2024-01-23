@@ -1,5 +1,5 @@
 import React from 'react';
-import {  DataForm, DataTitle, FormWrapper, FormsWrapper,  SaveButton,  Wrapper } from './styledForms';
+import { DataForm, DataTitle, FormWrapper, FormsWrapper, SaveButton, Wrapper } from './styledForms';
 import { DataInput } from '../styledCreator';
 
 export const Forms = () => {
@@ -7,10 +7,7 @@ export const Forms = () => {
         <Wrapper>
             <FormsWrapper>
                 <FormWrapper>
-                    <TitleWrapper>
-                        <DataTitle>Basic information</DataTitle>
-                        <CloseButton>close</CloseButton>
-                    </TitleWrapper>
+                    <DataTitle>Basic information</DataTitle>
                     <DataForm>
                         <DataInput placeholder='Name' type='text' />
                         <DataInput placeholder='Surname' type='text' />
