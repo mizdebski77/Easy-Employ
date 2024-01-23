@@ -139,8 +139,8 @@ export const Forms = () => {
                 <FormWrapper>
                     <DataTitle>Links</DataTitle>
                     <DataForm>
-                        <DataInput placeholder='Adress' />
-                        <DataInput placeholder='Description' />
+                        <DataInput placeholder='Adress' type='text' />
+                        <DataInput placeholder='Description' type='text' />
                         <SaveButton>+ Save</SaveButton>
                     </DataForm>
                 </FormWrapper>
