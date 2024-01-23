@@ -32,7 +32,7 @@ import {
     SkillsContainer,
     RemoveSkillButton,
 } from './styledCreator';
-import { CvPreview } from './CvPreviev/cvPreview';
+import { Forms } from './Forms/forms';
 
 export const Creator = () => {
     return (
@@ -41,7 +41,7 @@ export const Creator = () => {
 
             <ContentWrapper>
 
-                <CvPreview />
+                <Forms />
                 {/* 
 
 
