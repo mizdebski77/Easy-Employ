@@ -34,6 +34,9 @@ import {
     CategoryWrapper,
     FilterCountSpan,
     FilterTitle,
+    InputWrapper,
+    AddKeyWordButton,
+    KeyWordInput,
 } from './styledJobOffers';
 import logo from '../../common/Images/logo.png';
 import { useState } from 'react';
@@ -56,7 +59,10 @@ export const JobOffers = () => {
 
             <FormWrapper>
                 <Form>
-                    <Input placeholder='Key Words' />
+                    <InputWrapper>
+                        <KeyWordInput placeholder='Key Words' />
+                        <AddKeyWordButton>+</AddKeyWordButton>
+                    </InputWrapper>
                     <Input placeholder='Location' />
                     <Select>
                         <Option selected disabled value='Distance'>Distance</Option>

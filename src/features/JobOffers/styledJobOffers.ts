@@ -37,6 +37,38 @@ export const Form = styled.form`
     };
 `;
 
+export const InputWrapper = styled.div`
+    border-radius: 8px;
+    border: 1px solid ${({ theme }) => theme.color.fontMain};
+    max-width: 280px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+`;
+
+export const AddKeyWordButton = styled.button`
+    border-radius: 0 8px 8px 0;
+    border: none;
+    padding: 0 20px;
+    background: ${({ theme }) => theme.color.fontMain};
+    color: white;
+    cursor: pointer;
+    transition:0.3s;
+    
+    &:hover {
+        background: ${({ theme }) => theme.color.fontMainHover};
+    }
+`;
+
+export const KeyWordInput = styled.input`
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    max-width: 280px;
+    width: 100%;
+`;
+
 export const Input = styled.input`
     padding: 8px 12px;
     font-size: 16px;
@@ -195,7 +227,7 @@ export const FilterTitle = styled.h3`
     color: ${({ theme }) => theme.color.fontMain};
     text-align: center;
     padding: 20px;
-    border-bottom: 2px solid ${({theme}) => theme.color.thirdColor};
+    border-bottom: 2px solid ${({ theme }) => theme.color.thirdColor};
     margin: 0;
 `;
 
