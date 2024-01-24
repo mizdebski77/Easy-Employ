@@ -43,7 +43,7 @@ import { useState } from 'react';
 import { Categories } from './listItems';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../../core/store';
-import { addKeyWord } from './jobOffersSlice';
+import { addKeyWord, removeKeyWord } from './jobOffersSlice';
 
 export const JobOffers = () => {
 
@@ -57,11 +57,6 @@ export const JobOffers = () => {
     };
 
     const keyWords = useSelector((state: RootState) => state.keyWords.keyWords)
-
-    const handleAddKeyWord = () => {
-        dispatch(addKeyWord({ newKeyWord }));
-    };
-
 
 
 
@@ -79,8 +74,13 @@ export const JobOffers = () => {
                             value={newKeyWord}
                             onChange={({ target }) => setNewKeyWord(target.value)}
                         />
-                        <AddKeyWordButton type='button' onClick={handleAddKeyWord}>+</AddKeyWordButton>
+                        <AddKeyWordButton
+                            type='button'
+                            onClick={() => dispatch(addKeyWord({ newKeyWord }))}>
+                            +
+                        </AddKeyWordButton>
                     </InputWrapper>
+                    
                     <Input placeholder='Location' />
                     <Select defaultValue='Distance'>
                         <Option disabled value='Distance'>Distance</Option>
@@ -97,7 +97,9 @@ export const JobOffers = () => {
                     {keyWords.map((keyWord, index) => (
                         <KeyWordContainer key={index}>
                             <KeyWord>{keyWord.newKeyWord} </KeyWord>
-                            <RemoveButton>x</RemoveButton>
+                            <RemoveButton
+                                onClick={() => dispatch(removeKeyWord(keyWord.id))}
+                            >x</RemoveButton>
                         </KeyWordContainer>
                     ))}
 

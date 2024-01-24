@@ -27,6 +27,6 @@ const keyWordsSlice = createSlice({
 export const selectKeyWordsState = (state: KeyWordsState) => state;
 export const SelectKeyWords = (state: KeyWordsState) => state.keyWords;
 
-export const { addKeyWord } = keyWordsSlice.actions;
+export const { addKeyWord, removeKeyWord } = keyWordsSlice.actions;
 
 export default keyWordsSlice.reducer;
