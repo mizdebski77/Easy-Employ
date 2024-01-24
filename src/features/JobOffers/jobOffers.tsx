@@ -1,13 +1,6 @@
 import {
-    Arrow,
     CaptionsContainer,
-    Category,
     ContentWrapper,
-    FilterCategory,
-    FiltersWrapper,
-    List,
-    ListCheckbox,
-    ListItem,
     Logo,
     MainSection,
     OfferCaptionTContent,
@@ -17,25 +10,16 @@ import {
     OfferTitle,
     OffersContainer,
     OffersTitle,
-    ListItemWrapper,
     Title,
     Wrapper,
-    CategoryWrapper,
-    FilterCountSpan,
-    FilterTitle,
+
 } from './styledJobOffers';
 import logo from '../../common/Images/logo.png';
-import { useState } from 'react';
-import { Categories } from './listItems';
 import { FormElement } from './FormElement/formElement';
+import { Filters } from './Filters/filters';
 
 export const JobOffers = () => {
 
-    const [showMore, setShowMore] = useState(false);
-
-    const handleShowMore = () => {
-        setShowMore(!showMore);
-    };
 
     return (
         <Wrapper>
@@ -47,32 +31,7 @@ export const JobOffers = () => {
 
 
             <OffersContainer>
-                <div>
-                    <FiltersWrapper>
-                        <FilterTitle>Filters</FilterTitle>
-                        {Categories.map((category) => (
-                            <FilterCategory key={category.id}>
-                                <CategoryWrapper>
-                                    <Category>{category.title}</Category>
-                                    <Arrow onClick={handleShowMore}>{showMore === false ? '🡣' : "🡡"}</Arrow>
-                                </CategoryWrapper>
-                                {showMore && (
-                                    <List>
-                                        {category.items.map((item, index) => (
-                                            <ListItemWrapper key={index}>
-                                                <ListCheckbox
-                                                    type='checkbox'
-                                                />
-                                                <ListItem>{item.text}</ListItem>
-                                                <FilterCountSpan>(12)</FilterCountSpan>
-                                            </ListItemWrapper>
-                                        ))}
-                                    </List>
-                                )}
-                            </FilterCategory>
-                        ))}
-                    </FiltersWrapper>
-                </div>
+                <Filters />
 
                 <div>
                     <OffersTitle>Offers recommended for you </OffersTitle>
