@@ -8,7 +8,9 @@ interface KeyWordsState {
 const keyWordsSlice = createSlice({
     name: "keyWords",
     initialState: {
-        keyWords: [],
+        keyWords: [
+            { keyWord: "siema" }
+        ],
     } as KeyWordsState,
 
     reducers: {

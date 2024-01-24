@@ -82,10 +82,13 @@ export const JobOffers = () => {
 
                 <KeyWordsWrapper>
                     <Legend>Key words</Legend>
-                    <KeyWordContainer>
-                        <KeyWord>Frontend </KeyWord>
-                        <RemoveButton>x</RemoveButton>
-                    </KeyWordContainer>
+                    {keyWords.map((keyWord, index) => (
+                        <KeyWordContainer key={index}>
+                            <KeyWord>{keyWord.keyWord} </KeyWord>
+                            <RemoveButton>x</RemoveButton>
+                        </KeyWordContainer>
+                    ))}
+
                 </KeyWordsWrapper>
             </FormWrapper>
 
