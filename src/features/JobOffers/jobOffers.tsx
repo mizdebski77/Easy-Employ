@@ -63,6 +63,9 @@ export const JobOffers = () => {
         dispatch(addKeyWord(newKeyWord))
     };
 
+    console.log(keyWords);
+
+
 
     return (
         <Wrapper>
