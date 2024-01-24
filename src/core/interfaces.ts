@@ -1,4 +1,5 @@
 export interface KeyWords {
     newKeyWord: string
-    id: number
+    id: string
+    content: string
 }
