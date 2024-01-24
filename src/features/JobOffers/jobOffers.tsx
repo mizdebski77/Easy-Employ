@@ -47,6 +47,8 @@ import { addKeyWord } from './jobOffersSlice';
 
 export const JobOffers = () => {
 
+    const dispatch = useDispatch();
+
     const [showMore, setShowMore] = useState(false);
     const [newKeyWord, setNewKeyWord] = useState("");
 
@@ -54,16 +56,12 @@ export const JobOffers = () => {
         setShowMore(!showMore);
     };
 
-    const dispatch = useDispatch();
-
-
     const keyWords = useSelector((state: RootState) => state.keyWords.keyWords)
 
     const handleAddKeyWord = () => {
         dispatch(addKeyWord({ newKeyWord }));
     };
 
-    console.log(keyWords);
 
 
 

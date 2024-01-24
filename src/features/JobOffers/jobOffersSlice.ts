@@ -16,6 +16,11 @@ const keyWordsSlice = createSlice({
             keyWords.push(keyWord)
         },
 
+        removeKeyWord: ({ keyWords }, { payload: keyWordID }) => {
+            const index = keyWords.findIndex((({ id }) => id === keyWordID));
+            keyWords.splice(index, 1);
+        }
+
     }
 });
 
