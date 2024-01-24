@@ -9,7 +9,6 @@ const keyWordsSlice = createSlice({
     name: "keyWords",
     initialState: {
         keyWords: [],
-
     } as KeyWordsState,
 
     reducers: {
@@ -19,3 +18,10 @@ const keyWordsSlice = createSlice({
 
     }
 });
+
+export const selectKeyWordsState = (state: KeyWordsState) => state;
+export const SelectKeyWords = (state: KeyWordsState) => state.keyWords;
+
+export const { addKeyWord } = keyWordsSlice.actions;
+
+export default keyWordsSlice.reducer;
