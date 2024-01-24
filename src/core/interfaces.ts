@@ -1,3 +1,3 @@
 export interface KeyWords {
-    keyWord: string
+    newKeyWord: string
 }

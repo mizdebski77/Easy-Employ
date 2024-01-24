@@ -60,7 +60,7 @@ export const JobOffers = () => {
     const keyWords = useSelector((state: RootState) => state.keyWords.keyWords)
 
     const handleAddKeyWord = () => {
-        dispatch(addKeyWord(newKeyWord))
+        dispatch(addKeyWord({ newKeyWord }));
     };
 
     console.log(keyWords);
@@ -98,7 +98,7 @@ export const JobOffers = () => {
                     <Legend>Key words</Legend>
                     {keyWords.map((keyWord, index) => (
                         <KeyWordContainer key={index}>
-                            <KeyWord>{keyWord.keyWord} </KeyWord>
+                            <KeyWord>{keyWord.newKeyWord} </KeyWord>
                             <RemoveButton>x</RemoveButton>
                         </KeyWordContainer>
                     ))}
