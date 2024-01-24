@@ -53,7 +53,16 @@ export const AddKeyWordButton = styled.button`
     
     &:hover {
         background: ${({ theme }) => theme.color.fontMainHover};
-    }
+    };
+
+    &:disabled {
+        opacity: 0.3;
+        cursor: no-drop;
+
+        &:hover {
+            background: ${({ theme }) => theme.color.fontMain};
+        }
+    };
 `;
 
 export const Input = styled.input`

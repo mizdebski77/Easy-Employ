@@ -13,12 +13,15 @@ export const FormElement = () => {
     const [newKeyWord, setNewKeyWord] = useState("");
 
     const handleAddNewKeyWord = () => {
-        dispatch(addKeyWord({
-            content: newKeyWord,
-            id: nanoid(),
-        }))
-        setNewKeyWord("")
+        if (newKeyWord.length > 0) {
+            dispatch(addKeyWord({
+                content: newKeyWord,
+                id: nanoid(),
+            }));
+            setNewKeyWord("");
+        }
     };
+
 
     return (
         <Wrapper>
@@ -31,7 +34,9 @@ export const FormElement = () => {
                     />
                     <AddKeyWordButton
                         type='button'
-                        onClick={handleAddNewKeyWord}>
+                        onClick={handleAddNewKeyWord}
+                        disabled={newKeyWord.length === 0}
+                    >
                         +
                     </AddKeyWordButton>
                 </InputWrapper>
@@ -55,7 +60,9 @@ export const FormElement = () => {
                             <KeyWord>{keyWord.content} </KeyWord>
                             <RemoveButton
                                 onClick={() => dispatch(removeKeyWord(keyWord.id))}
-                            >x</RemoveButton>
+                            >
+                                x
+                            </RemoveButton>
                         </KeyWordContainer>
                     ))}
                 </KeyWordsWrapper>
