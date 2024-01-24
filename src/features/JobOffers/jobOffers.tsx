@@ -41,20 +41,33 @@ import {
 import logo from '../../common/Images/logo.png';
 import { useState } from 'react';
 import { Categories } from './listItems';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../../core/store';
+import { addKeyWord } from './jobOffersSlice';
+import React, { FormEvent } from 'react';
 
 export const JobOffers = () => {
 
     const [showMore, setShowMore] = useState(false);
+    const [newKeyWord, setNewKeyWord] = useState("");
 
     const handleShowMore = () => {
         setShowMore(!showMore);
     };
 
+    const dispatch = useDispatch();
+
+    const onFormSubmit = (event: FormEvent) => {
+        event.preventDefault();
+    };
+
+
     const keyWords = useSelector((state: RootState) => state.keyWords.keyWords)
 
-    console.log(keyWords);
+    const handleAddKeyWord = () => {
+        dispatch(addKeyWord(newKeyWord))
+    }
+
 
 
     return (
@@ -66,8 +79,12 @@ export const JobOffers = () => {
             <FormWrapper>
                 <Form>
                     <InputWrapper>
-                        <KeyWordInput placeholder='Key Words' />
-                        <AddKeyWordButton>+</AddKeyWordButton>
+                        <KeyWordInput
+                            placeholder='Key Words'
+                            value={newKeyWord}
+                            onChange={({ target }) => setNewKeyWord(target.value)}
+                        />
+                        <AddKeyWordButton onClick={handleAddKeyWord}>+</AddKeyWordButton>
                     </InputWrapper>
                     <Input placeholder='Location' />
                     <Select defaultValue='Distance'>
