@@ -5,6 +5,7 @@ export const Wrapper = styled.section`
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    border-radius: 10px;
 `;
 
 export const Form = styled.form`
