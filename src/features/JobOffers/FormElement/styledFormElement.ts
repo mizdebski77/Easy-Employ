@@ -56,7 +56,7 @@ export const AddKeyWordButton = styled.button`
     };
 
     &:disabled {
-        opacity: 0.3;
+        opacity: 0.2;
         cursor: no-drop;
 
         &:hover {

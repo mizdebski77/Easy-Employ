@@ -60,9 +60,7 @@ export const FormElement = () => {
                             <KeyWord>{keyWord.content} </KeyWord>
                             <RemoveButton
                                 onClick={() => dispatch(removeKeyWord(keyWord.id))}
-                            >
-                                x
-                            </RemoveButton>
+                            > x </RemoveButton>
                         </KeyWordContainer>
                     ))}
                 </KeyWordsWrapper>
@@ -70,4 +68,3 @@ export const FormElement = () => {
         </Wrapper>
     );
 };
-
