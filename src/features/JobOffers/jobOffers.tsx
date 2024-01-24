@@ -41,6 +41,8 @@ import {
 import logo from '../../common/Images/logo.png';
 import { useState } from 'react';
 import { Categories } from './listItems';
+import { useSelector } from 'react-redux';
+import { RootState } from '../../core/store';
 
 export const JobOffers = () => {
 
@@ -49,6 +51,10 @@ export const JobOffers = () => {
     const handleShowMore = () => {
         setShowMore(!showMore);
     };
+
+    const keyWords = useSelector((state: RootState) => state.keyWords.keyWords)
+
+    console.log(keyWords);
 
 
     return (
@@ -64,8 +70,8 @@ export const JobOffers = () => {
                         <AddKeyWordButton>+</AddKeyWordButton>
                     </InputWrapper>
                     <Input placeholder='Location' />
-                    <Select>
-                        <Option selected disabled value='Distance'>Distance</Option>
+                    <Select defaultValue='Distance'>
+                        <Option disabled value='Distance'>Distance</Option>
                         <Option value=''>+ 30 km</Option>
                         <Option value=''>+ 50 km</Option>
                         <Option value=''>+ 70 km</Option>
@@ -88,7 +94,7 @@ export const JobOffers = () => {
                     <FiltersWrapper>
                         <FilterTitle>Filters</FilterTitle>
                         {Categories.map((category) => (
-                            <FilterCategory>
+                            <FilterCategory key={category.id}>
                                 <CategoryWrapper>
                                     <Category>{category.title}</Category>
                                     <Arrow onClick={handleShowMore}>{showMore === false ? '🡣' : "🡡"}</Arrow>
