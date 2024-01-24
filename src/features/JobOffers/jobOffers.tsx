@@ -51,7 +51,7 @@ export const JobOffers = () => {
     const dispatch = useDispatch();
 
     const [showMore, setShowMore] = useState(false);
-    const [newKeyWord, setNewKeyWord] = useState("xd");
+    const [newKeyWord, setNewKeyWord] = useState("");
 
     const handleShowMore = () => {
         setShowMore(!showMore);
