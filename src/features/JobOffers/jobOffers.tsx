@@ -51,7 +51,7 @@ export const JobOffers = () => {
     const dispatch = useDispatch();
 
     const [showMore, setShowMore] = useState(false);
-    const [newKeyWord, setNewKeyWord] = useState("");
+    const [newKeyWord, setNewKeyWord] = useState("xd");
 
     const handleShowMore = () => {
         setShowMore(!showMore);
@@ -62,6 +62,7 @@ export const JobOffers = () => {
             content: newKeyWord,
             id: nanoid(),
         }))
+        setNewKeyWord("")
     };
 
     const keyWords = useSelector((state: RootState) => state.keyWords.keyWords)
