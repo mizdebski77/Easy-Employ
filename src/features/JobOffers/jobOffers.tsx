@@ -100,18 +100,19 @@ export const JobOffers = () => {
                     <SearchButton>Search</SearchButton>
                 </Form>
 
-                <KeyWordsWrapper>
-                    <Legend>Key words</Legend>
-                    {keyWords.map((keyWord, index) => (
-                        <KeyWordContainer key={index}>
-                            <KeyWord>{keyWord.content} </KeyWord>
-                            <RemoveButton
-                                onClick={() => dispatch(removeKeyWord(keyWord.id))}
-                            >x</RemoveButton>
-                        </KeyWordContainer>
-                    ))}
-
-                </KeyWordsWrapper>
+                {keyWords.length > 0 && (
+                    <KeyWordsWrapper>
+                        <Legend>Key words</Legend>
+                        {keyWords.map((keyWord, index) => (
+                            <KeyWordContainer key={index}>
+                                <KeyWord>{keyWord.content} </KeyWord>
+                                <RemoveButton
+                                    onClick={() => dispatch(removeKeyWord(keyWord.id))}
+                                >x</RemoveButton>
+                            </KeyWordContainer>
+                        ))}
+                    </KeyWordsWrapper>
+                )}
             </FormWrapper>
 
             <OffersContainer>
