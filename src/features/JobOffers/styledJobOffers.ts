@@ -67,6 +67,10 @@ export const KeyWordInput = styled.input`
     border: none;
     max-width: 280px;
     width: 100%;
+
+    &:focus {
+        outline:none;
+    }
 `;
 
 export const Input = styled.input`
