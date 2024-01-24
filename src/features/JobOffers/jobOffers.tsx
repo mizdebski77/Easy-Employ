@@ -44,7 +44,6 @@ import { Categories } from './listItems';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../../core/store';
 import { addKeyWord } from './jobOffersSlice';
-import React, { FormEvent } from 'react';
 
 export const JobOffers = () => {
 
@@ -57,17 +56,12 @@ export const JobOffers = () => {
 
     const dispatch = useDispatch();
 
-    const onFormSubmit = (event: FormEvent) => {
-        event.preventDefault();
-    };
-
 
     const keyWords = useSelector((state: RootState) => state.keyWords.keyWords)
 
     const handleAddKeyWord = () => {
         dispatch(addKeyWord(newKeyWord))
-    }
-
+    };
 
 
     return (
@@ -84,7 +78,7 @@ export const JobOffers = () => {
                             value={newKeyWord}
                             onChange={({ target }) => setNewKeyWord(target.value)}
                         />
-                        <AddKeyWordButton onClick={handleAddKeyWord}>+</AddKeyWordButton>
+                        <AddKeyWordButton type='button' onClick={handleAddKeyWord}>+</AddKeyWordButton>
                     </InputWrapper>
                     <Input placeholder='Location' />
                     <Select defaultValue='Distance'>
