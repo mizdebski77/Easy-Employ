@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import keyWordsReducer from '../features/JobOffers/jobOffersSlice';
+import keyWordsReducer from '../features/JobOffers/FormElement/keyWordsSlice';
 
 const store = configureStore({
     reducer: {

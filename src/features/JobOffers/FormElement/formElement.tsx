@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { AddKeyWordButton, Form, Input, InputWrapper, KeyWord, KeyWordContainer, KeyWordInput, KeyWordsWrapper, Legend, Option, RemoveButton, SearchButton, Select, Wrapper } from './styledFormElement';
 import { nanoid } from '@reduxjs/toolkit';
 import { useDispatch, useSelector } from 'react-redux';
-import { addKeyWord, removeKeyWord } from '../jobOffersSlice';
+import { addKeyWord, removeKeyWord } from './keyWordsSlice';
 import { RootState } from '../../../core/store';
 
 export const FormElement = () => {

@@ -1,8 +1,12 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { KeyWords } from "../../core/interfaces";
+import { Filters, KeyWords } from "../../../core/interfaces";
 
 interface KeyWordsState {
     keyWords: KeyWords[];
+}
+
+interface FiltersState {
+    numberOfFilters: number;
 }
 
 const keyWordsSlice = createSlice({
@@ -24,9 +28,21 @@ const keyWordsSlice = createSlice({
     }
 });
 
+const filterSlice = createSlice({
+    name: "filters",
+    initialState: {
+        numberOfFilters: 0
+    } as FiltersState,
+
+    reducers: {
+
+    }
+});
+
 export const selectKeyWordsState = (state: KeyWordsState) => state;
 export const SelectKeyWords = (state: KeyWordsState) => state.keyWords;
 
 export const { addKeyWord, removeKeyWord } = keyWordsSlice.actions;
 
 export default keyWordsSlice.reducer;
+
