@@ -9,8 +9,6 @@ export const Filters = () => {
     const filters = useSelector((state: RootState) => state.filters.filters)
     const dispatch = useDispatch();
 
-    console.log(filters);
-
     return (
         <FiltersWrapper>
             <FilterTitle>Filters</FilterTitle>
@@ -18,8 +16,22 @@ export const Filters = () => {
                 <FilterCategory key={filter.id}>
                     <CategoryWrapper>
                         <div>{filter.title}</div>
-                        <Arrow onClick={() => dispatch(toggleFilter(filter.id))}>remove</Arrow>
+                        <Arrow onClick={() => dispatch(toggleFilter(filter.id))}>{filter.isExpand ? '🡡' : "🡣"}</Arrow>
                     </CategoryWrapper>
+
+                    {filter.isExpand && (
+                        <List>
+                            {filter.items.map((item, index) => (
+                                <ListItemWrapper key={index}>
+                                    <input
+                                        type='checkbox'
+                                    />
+                                    <span>{item.text}</span>
+                                    <FilterCountSpan>(12)</FilterCountSpan>
+                                </ListItemWrapper>
+                            ))}
+                        </List>
+                    )}
                 </FilterCategory>
             ))
             }
