@@ -8,6 +8,10 @@ export interface Filters {
     numberOfFilters: number
     id: number
     isExpand: boolean
+    title: string
+    items: [
+        { id: number, text: string },
+    ],
 };
 
 export interface Article {

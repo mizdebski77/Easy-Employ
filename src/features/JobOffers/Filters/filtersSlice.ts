@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { Filters } from "../../../core/interface";
+import { Categories } from "./listItems";
 
 interface FiltersState {
     filters: Filters[];
@@ -9,21 +10,21 @@ interface FiltersState {
 const filterSlice = createSlice({
     name: "filters",
     initialState: {
-        filters: []
+        filters: Categories,
     } as FiltersState,
 
     reducers: {
-        toggleFilter: ({ filters }, { payload: filterID }) => {
-            const index = filters.findIndex(({ id }) => id === filterID);
-            filters[index].isExpand = !filters[index].isExpand
-        },
+        // toggleFilter: ({ filters }, { payload: filterID }) => {
+        //     const index = filters.findIndex(({ id }) => id === filterID);
+        //     filters[index].isExpand = !filters[index].isExpand
+        // },
     }
 });
 
 export const selectFiltersState = (state: FiltersState) => state;
 export const SelectFilters = (state: FiltersState) => state.filters;
 
-export const { toggleFilter } = filterSlice.actions;
+export const { } = filterSlice.actions;
 
 export default filterSlice.reducer;
 
