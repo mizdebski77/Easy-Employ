@@ -1,4 +1,4 @@
-import { Arrow, CategoryWrapper, FilterCategory, FilterCountSpan, FilterTitle, FiltersWrapper, List, ListItemWrapper } from './styledFilters';
+import { Arrow, CategoryWrapper, FilterCategory, FilterCountSpan, FilterTitle, FiltersWrapper, List, ListItemWrapper, TitleSpan, TitleWrapper } from './styledFilters';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../../../core/store';
 import { toggleFilterList, incrementFiltersList, decrementFiltersList } from './filtersSlice';
@@ -21,7 +21,10 @@ export const Filters = () => {
 
     return (
         <FiltersWrapper>
-            <FilterTitle>Filters</FilterTitle>
+            <TitleWrapper>
+                <FilterTitle>Filters</FilterTitle>
+                <TitleSpan>({filterList})</TitleSpan>
+            </TitleWrapper>
             {filters.map((filter) => (
                 <FilterCategory key={filter.id}>
                     <CategoryWrapper>

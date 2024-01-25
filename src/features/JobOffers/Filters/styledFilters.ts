@@ -10,14 +10,24 @@ export const FiltersWrapper = styled.div`
     border-radius: 10px;
 `;
 
+export const TitleWrapper = styled.div`
+    display: flex;
+    border-bottom: 2px solid ${({ theme }) => theme.color.thirdColor};
+    justify-content: center;
+    align-items: center;
+`;
+
 export const FilterTitle = styled.h3`
     font-size: 28px;
     font-weight: normal;
     color: ${({ theme }) => theme.color.fontMain};
     text-align: center;
     padding: 20px;
-    border-bottom: 2px solid ${({ theme }) => theme.color.thirdColor};
     margin: 0;
+`;
+
+export const TitleSpan = styled.span`
+    color: ${({ theme }) => theme.color.fontSecond};
 `;
 
 export const FilterCategory = styled.div`
