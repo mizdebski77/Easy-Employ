@@ -6,4 +6,6 @@ export interface KeyWords {
 
 export interface Filters {
     numberOfFilters: number
+    id: number
+    isExpand: boolean
 }

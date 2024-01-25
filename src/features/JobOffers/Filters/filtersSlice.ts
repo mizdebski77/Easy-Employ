@@ -1,25 +1,29 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { Filters } from "../../../core/interfaces";
 
 interface FiltersState {
-    numberOfFilters: number;
+    filters: Filters[];
 }
 
 
 const filterSlice = createSlice({
     name: "filters",
     initialState: {
-        numberOfFilters: 0
+        filters: []
     } as FiltersState,
 
     reducers: {
-
+        toggleFilter: ({ filters }, { payload: filterID }) => {
+            const index = filters.findIndex(({ id }) => id === filterID);
+            filters[index].isExpand = !filters[index].isExpand
+        },
     }
 });
 
-// export const selectKeyWordsState = (state: KeyWordsState) => state;
-// export const SelectKeyWords = (state: KeyWordsState) => state.keyWords;
+export const selectKeyWordsState = (state: FiltersState) => state;
+export const SelectKeyWords = (state: FiltersState) => state.filters;
 
-// export const { addKeyWord, removeKeyWord } = filterSlice.actions;
+export const { toggleFilter } = filterSlice.actions;
 
 export default filterSlice.reducer;
 
