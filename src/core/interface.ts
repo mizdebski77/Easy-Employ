@@ -10,7 +10,11 @@ export interface Filters {
     isExpand: boolean
     title: string
     items: [
-        { id: number, text: string },
+        {
+            id: number,
+            text: string,
+            checked: boolean,
+        },
     ],
 };
 
