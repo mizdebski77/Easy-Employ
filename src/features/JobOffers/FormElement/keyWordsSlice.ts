@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import {  KeyWords } from "../../../core/interfaces";
+import {  KeyWords } from "../../../core/interface";
 
 interface KeyWordsState {
     keyWords: KeyWords[];
