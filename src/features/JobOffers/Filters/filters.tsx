@@ -1,5 +1,4 @@
 import { Arrow, CategoryWrapper, FilterCategory, FilterCountSpan, FilterTitle, FiltersWrapper, List, ListItemWrapper } from './styledFilters';
-import { Categories } from './listItems';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../../../core/store';
 import { toggleFilter } from './filtersSlice';
