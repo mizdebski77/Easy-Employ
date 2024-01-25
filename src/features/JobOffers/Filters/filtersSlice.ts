@@ -14,17 +14,17 @@ const filterSlice = createSlice({
     } as FiltersState,
 
     reducers: {
-        // toggleFilter: ({ filters }, { payload: filterID }) => {
-        //     const index = filters.findIndex(({ id }) => id === filterID);
-        //     filters[index].isExpand = !filters[index].isExpand
-        // },
+        toggleFilter: ({ filters }, { payload: filtersID }) => {
+            const index = filters.findIndex((({ id }) => id === filtersID));
+            filters[index].isExpand = !filters[index].isExpand;
+        },
     }
 });
 
 export const selectFiltersState = (state: FiltersState) => state;
 export const SelectFilters = (state: FiltersState) => state.filters;
 
-export const { } = filterSlice.actions;
+export const { toggleFilter } = filterSlice.actions;
 
 export default filterSlice.reducer;
 

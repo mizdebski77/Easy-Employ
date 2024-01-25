@@ -1,39 +1,28 @@
-import React, { useState } from 'react';
 import { Arrow, CategoryWrapper, FilterCategory, FilterCountSpan, FilterTitle, FiltersWrapper, List, ListItemWrapper } from './styledFilters';
 import { Categories } from './listItems';
+import { useDispatch, useSelector } from 'react-redux';
+import { RootState } from '../../../core/store';
+import { toggleFilter } from './filtersSlice';
 
 export const Filters = () => {
 
-    const [showMore, setShowMore] = useState(false);
+    const filters = useSelector((state: RootState) => state.filters.filters)
+    const dispatch = useDispatch();
 
-    const handleShowMore = () => {
-        setShowMore(!showMore);
-    };
+    console.log(filters);
 
     return (
         <FiltersWrapper>
             <FilterTitle>Filters</FilterTitle>
-            {Categories.map((category) => (
-                <FilterCategory key={category.id}>
+            {filters.map((filter) => (
+                <FilterCategory key={filter.id}>
                     <CategoryWrapper>
-                        <div>{category.title}</div>
-                        <Arrow onClick={handleShowMore}>{showMore === false ? '🡣' : "🡡"}</Arrow>
+                        <div>{filter.title}</div>
+                        <Arrow onClick={() => dispatch(toggleFilter(filter.id))}>remove</Arrow>
                     </CategoryWrapper>
-                    {showMore && (
-                        <List>
-                            {category.items.map((item, index) => (
-                                <ListItemWrapper key={index}>
-                                    <input
-                                        type='checkbox'
-                                    />
-                                    <span>{item.text}</span>
-                                    <FilterCountSpan>(12)</FilterCountSpan>
-                                </ListItemWrapper>
-                            ))}
-                        </List>
-                    )}
                 </FilterCategory>
-            ))}
-        </FiltersWrapper>
+            ))
+            }
+        </FiltersWrapper >
     );
 };
