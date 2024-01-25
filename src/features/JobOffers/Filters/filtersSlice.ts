@@ -20,8 +20,8 @@ const filterSlice = createSlice({
     }
 });
 
-export const selectKeyWordsState = (state: FiltersState) => state;
-export const SelectKeyWords = (state: FiltersState) => state.filters;
+export const selectFiltersState = (state: FiltersState) => state;
+export const SelectFilters = (state: FiltersState) => state.filters;
 
 export const { toggleFilter } = filterSlice.actions;
 
