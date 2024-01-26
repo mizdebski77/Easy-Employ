@@ -17,8 +17,6 @@ export const Filters = () => {
         }
     };
 
-
-
     return (
         <FiltersWrapper>
             <TitleWrapper>
