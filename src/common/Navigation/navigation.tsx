@@ -7,6 +7,7 @@ import languageImg from '../Images/language.svg';
 import { Divide as Hamburger } from 'hamburger-react';
 import { MobileNavbar } from './MobileNavbar/mobileNavbar';
 import { Language } from './Language/language';
+import { scrollTop } from '../../core/scrollTop';
 
 export const Navigation = () => {
 
@@ -38,7 +39,7 @@ export const Navigation = () => {
 
                 <LinksWrapper>
                     {links.map((link, index) => (
-                        <NavbarLink key={index} to={link.link}>
+                        <NavbarLink key={index} to={link.link} onClick={() => scrollTop()}>
                             {link.text}
                         </NavbarLink>
                     ))}
