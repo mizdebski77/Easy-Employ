@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { styled } from "styled-components";
 
 export const Wrapper = styled.section`
@@ -12,7 +13,7 @@ export const OffersTitle = styled.h2`
     margin-bottom: 40px;
 `;
 
-export const OfferTile = styled.div`
+export const OfferTile = styled(Link)`
     background: ${({ theme }) => theme.color.secondColor};
     padding: 20px 40px;
     border-radius: 10px;

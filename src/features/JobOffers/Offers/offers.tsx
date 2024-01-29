@@ -7,7 +7,7 @@ export const Offers = () => {
     return (
         <Wrapper>
             <OffersTitle>Offers recommended for you </OffersTitle>
-            <OfferTile>
+            <OfferTile to={`/${Offers}/${offer.id}`}>
                 <MainSection>
                     <Logo src={logo} />
                     <OfferTitle>Junior Frontend Developer</OfferTitle>
