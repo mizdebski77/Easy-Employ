@@ -27,3 +27,12 @@ export interface Article {
     url: string;
     urlToImage: string;
 };
+
+export interface Offers {
+    id: string;
+    position: string;
+    gross_salary: string;
+    work_type: string;
+    company_name: string;
+    location: string;
+};
