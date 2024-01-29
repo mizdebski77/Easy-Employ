@@ -16,8 +16,8 @@ export const Offers = () => {
                 <ContentWrapper>
                     <CaptionsContainer>
                         <OfferCaptionWrapper>
-                            <OfferCaptionTitle>Sallary:</OfferCaptionTitle>
-                            <OfferCaptionTContent>10 000 - 12 000 zł / brutto</OfferCaptionTContent>
+                            <OfferCaptionTitle>Gross Sallary:</OfferCaptionTitle>
+                            <OfferCaptionTContent>10 000 - 12 000 zł</OfferCaptionTContent>
                         </OfferCaptionWrapper>
 
                         <OfferCaptionWrapper>

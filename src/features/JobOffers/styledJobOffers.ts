@@ -5,6 +5,7 @@ export const Wrapper = styled.section`
     max-width: 1500px;
     margin: 0 auto;
     min-height: 100vh;
+    width: 100%;
 `;
 
 export const Title = styled.h1`
@@ -24,7 +25,7 @@ export const OffersContainer = styled.div`
     max-width: 1200px;
     margin: 40px auto;
     justify-content: center;
-    gap: 40px;
+    gap: 20px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         grid-template-columns: 1fr;

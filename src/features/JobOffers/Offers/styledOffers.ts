@@ -15,16 +15,16 @@ export const OffersTitle = styled.h2`
 
 export const OfferTile = styled(Link)`
     background: ${({ theme }) => theme.color.secondColor};
-    padding: 20px 40px;
+    padding: 20px ;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
-    gap: 32px;
+    gap: 20px;
     cursor: pointer;
     transition: 0.3s;
     box-shadow: 0 0 6px ${({ theme }) => theme.color.thirdColor};
     margin-bottom: 20px;
-    text-decoration: none;\
+    text-decoration: none;
     color: ${({theme}) => theme.color.fontSecond};
 
     &:hover {
@@ -95,7 +95,7 @@ export const OfferCaptionWrapper = styled.div`
 `;
 
 export const OfferCaptionTitle = styled.span`
-    font-size: 18px; 
+    font-size: 16px; 
     color: ${({ theme }) => theme.color.fontMain};
     min-width: 120px;
     text-align: right;
