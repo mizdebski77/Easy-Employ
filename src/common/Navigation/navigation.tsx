@@ -30,7 +30,7 @@ export const Navigation = () => {
         <>
             <Wrapper>
                 <LogoLink to='/Home'>
-                    <LogoImg src={logo} />
+                    <LogoImg src={logo} onClick={() => scrollTop()} />
                     <LogoText>
                         <LogoFirstLetters>E</LogoFirstLetters>asy
                         <LogoFirstLetters> E</LogoFirstLetters>mploy
