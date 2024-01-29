@@ -24,7 +24,7 @@ export const Offers = () => {
 
                 (data.map((offer: OfferArray) => (
 
-                    <OfferTile to={`/Offer${offer.id}`} key={offer.id}>
+                    <OfferTile to={`/Offer/${offer.id}`} key={offer.id}>
                         <MainSection>
                             <Logo src={logo} />
                             <OfferTitle>{offer.company_name}</OfferTitle>

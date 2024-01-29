@@ -22,7 +22,7 @@ function App() {
         <Route path="/Carrer" element={<Carrer />} />
         <Route path="/Calculator" element={<Calculator />} />
         <Route path="/Offers" element={<JobOffers />} />
-        <Route path="/Offer:id" element={<Offer />} />
+        <Route path="/Offer/:id" element={<Offer />} />
         <Route path="/CV-Creator" element={<Creator />} />
         <Route path="/Register" element={<Register />} />
         <Route path="/password-reset" element={<ResetPassword />} />
