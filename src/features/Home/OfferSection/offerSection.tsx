@@ -25,7 +25,7 @@ export const OfferSection = () => {
                         <OfferTile key={offer.id}>
                             <OfferTitle >{offer.position}</OfferTitle>
                             <OfferArticle>
-                                <OfferLogo src={logo} />
+                                <OfferLogo src={offer.logo} />
                                 <OfferDetails>{offer.company_name}</OfferDetails>
                             </OfferArticle>
                         </OfferTile>

@@ -35,4 +35,5 @@ export interface OfferArray {
     work_type: string;
     company_name: string;
     location: string;
+    logo: string;
 };
