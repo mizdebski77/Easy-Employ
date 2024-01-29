@@ -1,6 +1,7 @@
 import React from 'react';
 import { Wrapper, OffersTitle, OfferWrapper, OfferTile, OfferTitle, OfferArticle, OfferLogo, OfferDetails, AllOffersButton } from './styledOfferSection';
 import logo from '../../../common/Images/logo.png';
+import { scrollTop } from '../../../core/scrollTop';
 
 export const OfferSection = () => {
     return (
@@ -81,7 +82,7 @@ export const OfferSection = () => {
                 </OfferTile>
 
             </OfferWrapper>
-            <AllOffersButton to='/Offers'>All offers</AllOffersButton>
+            <AllOffersButton to='/Offers' onClick={() => scrollTop()}>All offers</AllOffersButton>
         </Wrapper>
     );
 };
