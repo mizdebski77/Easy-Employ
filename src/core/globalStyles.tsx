@@ -14,6 +14,6 @@ html {
 body {
   background: ${({ theme }) => theme.color.mainColor};
   word-break: break-word;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open sans', sans-serif;
     margin: 0;
 }`;

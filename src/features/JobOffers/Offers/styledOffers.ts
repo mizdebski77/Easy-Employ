@@ -24,6 +24,8 @@ export const OfferTile = styled(Link)`
     transition: 0.3s;
     box-shadow: 0 0 6px ${({ theme }) => theme.color.thirdColor};
     margin-bottom: 20px;
+    text-decoration: none;\
+    color: ${({theme}) => theme.color.fontSecond};
 
     &:hover {
         transform: scale(1.01);
