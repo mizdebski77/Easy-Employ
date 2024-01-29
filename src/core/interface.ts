@@ -28,7 +28,7 @@ export interface Article {
     urlToImage: string;
 };
 
-export interface Offers {
+export interface OfferArray {
     id: string;
     position: string;
     gross_salary: string;

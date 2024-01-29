@@ -5,7 +5,7 @@ import { scrollTop } from '../../../core/scrollTop';
 import { useQuery } from '@tanstack/react-query';
 import { Loader } from '../../../common/Loader/loader';
 import { Error } from '../../../common/Error/error';
-import { Offers } from '../../../core/interface';
+import { OfferArray } from '../../../core/interface';
 
 export const OfferSection = () => {
 
@@ -21,7 +21,7 @@ export const OfferSection = () => {
 
             {isLoading ? <Loader /> : error ? <Error /> : (
                 <OfferWrapper>
-                    {data.map((offer: Offers) => (
+                    {data.map((offer: OfferArray) => (
                         <OfferTile key={offer.id}>
                             <OfferTitle >{offer.position}</OfferTitle>
                             <OfferArticle>
