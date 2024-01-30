@@ -21,7 +21,6 @@ export const Offer = () => {
     return (
         <Wrapper>
             {isLoading ? <Loader /> : error ? <Error /> : (
-
                 <BasicsInformation>
                     <Title>
                         You are applying for the position:
@@ -58,8 +57,7 @@ export const Offer = () => {
                         </InformationContainer>
                     </InformationsWrapper>
                 </BasicsInformation>
-            )};
-
+            )}
             <DetailsWrapper>
                 <DetailsContainer>
 
@@ -67,7 +65,6 @@ export const Offer = () => {
 
                 <MapWrapper>
                     <Map src={map} alt='map' />
-
                 </MapWrapper>
             </DetailsWrapper>
         </Wrapper>

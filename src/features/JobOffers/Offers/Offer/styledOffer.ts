@@ -2,6 +2,7 @@ import { styled } from "styled-components";
 
 export const Wrapper = styled.section`
     min-height: 100vh;
+    gap: 40px;
 `;
 
 export const ContenWrapper = styled.div`
@@ -14,6 +15,7 @@ export const BasicsInformation = styled.div`
     box-shadow: 0 0 10px ${({ theme }) => theme.color.fontSecond};
     max-width: 1920px;
     margin: 0 auto;
+    margin-bottom: 64px;
 `;
 
 
@@ -63,21 +65,22 @@ export const DetailsWrapper = styled.div`
     max-width: 1500px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 `;
 
 export const MapWrapper = styled.div`
     border-radius: 20px;
-    border: 1px solid ${({ theme }) => theme.color.fontMain};
     overflow: hidden;
+    box-shadow: 0 0 10px ${({ theme }) => theme.color.fontSecond};
 `;
 
 export const Map = styled.img`
     height: 100%;
     width: 100%;
-
 `;
 
 export const DetailsContainer = styled.div`
-
+    box-shadow: 0 0 10px ${({ theme }) => theme.color.fontSecond};
+    border-radius: 20px;
 `;
