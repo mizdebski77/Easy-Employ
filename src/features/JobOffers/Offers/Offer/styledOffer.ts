@@ -21,14 +21,16 @@ export const Title = styled.h1`
     font-size: 52px;
     font-weight: normal;
     color: ${({ theme }) => theme.color.fontMain};
-    margin-top: 0;
+    margin: 10px;
+    padding: 0 0 20px ;
     text-align: center;
 `;
 
 export const TitleSpan = styled.p`
     color: ${({ theme }) => theme.color.fontSecond};
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     font-size: 48px;
+    text-align: center;
 `;
 
 export const InformationsWrapper = styled.div`

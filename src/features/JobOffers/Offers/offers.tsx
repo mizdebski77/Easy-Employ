@@ -5,6 +5,7 @@ import { useQuery } from '@tanstack/react-query';
 import { Loader } from '../../../common/Loader/loader';
 import { Error } from '../../../common/Error/error';
 import { OfferArray } from '../../../core/interface';
+import { scrollTop } from '../../../core/scrollTop';
 
 export const Offers = () => {
 
@@ -23,7 +24,7 @@ export const Offers = () => {
 
                 (data.map((offer: OfferArray) => (
 
-                    <OfferTile to={`/Offer/${offer.id}`} key={offer.id}>
+                    <OfferTile to={`/Offer/${offer.id}`} key={offer.id} onClick={() => scrollTop()}>
                         <MainSection>
                             <Logo src={offer.logo} />
                             <OfferTitle>{offer.position}</OfferTitle>

@@ -10,16 +10,11 @@ export const Offer = () => {
 
     const { id } = useParams();
 
-    console.log(id);
-
-
     const { data, isLoading, error } = useQuery({
         queryKey: ['offer'],
         queryFn: () => fetch(`http://localhost:5000/offer/${id}`)
             .then((response: Response) => response.json())
     });
-
-    console.log(data, id);
 
 
     return (
@@ -29,8 +24,10 @@ export const Offer = () => {
                 <BasicsInformation>
                     <Title>
                         You are applying for the position:
-                        <TitleSpan>{data.position}</TitleSpan>
                     </Title>
+
+                    <TitleSpan>{data.position}</TitleSpan>
+
 
                     <InformationsWrapper>
                         <InformationContainer>
