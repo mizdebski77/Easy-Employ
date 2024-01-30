@@ -61,7 +61,7 @@ export const InformationSpan = styled.span`
     color: ${({ theme }) => theme.color.fontSecond};
 `;
 
-export const DetailsWrapper = styled.div`
+export const Details = styled.div`
     max-width: 1500px;
     margin: 0 auto;
     display: grid;
@@ -81,6 +81,19 @@ export const Map = styled.img`
 `;
 
 export const DetailsContainer = styled.div`
+
+`;
+
+export const DetailsSection = styled.div`
     box-shadow: 0 0 10px ${({ theme }) => theme.color.fontSecond};
     border-radius: 20px;
+`;
+
+export const DetailTitle = styled.h2`
+    padding: 40px;
+    margin: 0;
+`;
+
+export const DetailsSpan = styled.span`
+
 `;

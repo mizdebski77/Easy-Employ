@@ -1,7 +1,6 @@
 import React from 'react';
-import { BasicsInformation, InformationContainer, InformationSpan, InformationTitle, InformationsWrapper, Title, TitleSpan, SpanWrapper, Wrapper, DetailsWrapper, DetailsContainer, Map, MapWrapper } from './styledOffer';
+import { BasicsInformation, InformationContainer, InformationSpan, InformationTitle, InformationsWrapper, Title, TitleSpan, SpanWrapper, Wrapper, Details, DetailsContainer, Map, MapWrapper, DetailsSection, DetailTitle } from './styledOffer';
 import { useQuery } from '@tanstack/react-query';
-import { OfferArray } from '../../../../core/interface';
 import { useParams } from 'react-router-dom';
 import { Loader } from '../../../../common/Loader/loader';
 import { Error } from '../../../../common/Error/error';
@@ -59,14 +58,19 @@ export const Offer = () => {
             )}
 
 
-            <DetailsWrapper>
+            <Details>
                 <DetailsContainer>
+                    <DetailsSection>
+                        <DetailTitle>
+                            Tech stack
+                        </DetailTitle>
+                    </DetailsSection>
 
                 </DetailsContainer>
                 <MapWrapper>
                     <Map src={map} alt='map' />
                 </MapWrapper>
-            </DetailsWrapper>
+            </Details>
         </Wrapper>
     );
 };
