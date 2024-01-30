@@ -21,7 +21,7 @@ export const OfferSection = () => {
             {isLoading ? <Loader /> : error ? <Error /> : (
                 <OfferWrapper>
                     {data.map((offer: OfferArray) => (
-                        <OfferTile key={offer.id}>
+                        <OfferTile to={`/Offer/${offer.id}`} key={offer.id}>
                             <OfferTitle >{offer.position}</OfferTitle>
                             <OfferArticle>
                                 <OfferLogo src={offer.logo} />
@@ -31,7 +31,6 @@ export const OfferSection = () => {
                     ))}
                 </OfferWrapper>
             )}
-
             <AllOffersButton to='/Offers' onClick={() => scrollTop()}>All offers</AllOffersButton>
         </Wrapper>
     );

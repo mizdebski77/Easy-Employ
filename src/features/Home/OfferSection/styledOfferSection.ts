@@ -37,7 +37,7 @@ export const OfferWrapper = styled.div`
     };
 `;
 
-export const OfferTile = styled.div`
+export const OfferTile = styled(Link)`
     background: ${({ theme }) => theme.color.secondColor};
     padding: 20px;
     border-radius: 10px;
@@ -46,6 +46,8 @@ export const OfferTile = styled.div`
     gap: 20px;
     transition: 0.3s;
     cursor: pointer;
+    text-decoration: none;
+    color: ${({ theme }) => theme.color.fontSecond};
 
     &:hover {
         box-shadow: 0 0 10px ${({ theme }) => theme.color.fontMain};
