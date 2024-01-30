@@ -58,3 +58,26 @@ export const InformationSpan = styled.span`
     font-size: 24px;
     color: ${({ theme }) => theme.color.fontSecond};
 `;
+
+export const DetailsWrapper = styled.div`
+    max-width: 1500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+`;
+
+export const MapWrapper = styled.div`
+    border-radius: 20px;
+    border: 1px solid ${({ theme }) => theme.color.fontMain};
+    overflow: hidden;
+`;
+
+export const Map = styled.img`
+    height: 100%;
+    width: 100%;
+
+`;
+
+export const DetailsContainer = styled.div`
+
+`;

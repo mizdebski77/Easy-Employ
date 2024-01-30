@@ -1,10 +1,11 @@
 import React from 'react';
-import { BasicsInformation, InformationContainer, InformationSpan, InformationTitle, InformationsWrapper, Title, TitleSpan, SpanWrapper, Wrapper } from './styledOffer';
+import { BasicsInformation, InformationContainer, InformationSpan, InformationTitle, InformationsWrapper, Title, TitleSpan, SpanWrapper, Wrapper, DetailsWrapper, DetailsContainer, Map, MapWrapper } from './styledOffer';
 import { useQuery } from '@tanstack/react-query';
 import { OfferArray } from '../../../../core/interface';
 import { useParams } from 'react-router-dom';
 import { Loader } from '../../../../common/Loader/loader';
 import { Error } from '../../../../common/Error/error';
+import map from '../../../../common/Images/map.png';
 
 export const Offer = () => {
 
@@ -25,9 +26,7 @@ export const Offer = () => {
                     <Title>
                         You are applying for the position:
                     </Title>
-
                     <TitleSpan>{data.position}</TitleSpan>
-
 
                     <InformationsWrapper>
                         <InformationContainer>
@@ -58,9 +57,19 @@ export const Offer = () => {
                             </SpanWrapper>
                         </InformationContainer>
                     </InformationsWrapper>
-
                 </BasicsInformation>
             )};
+
+            <DetailsWrapper>
+                <DetailsContainer>
+
+                </DetailsContainer>
+
+                <MapWrapper>
+                    <Map src={map} alt='map' />
+
+                </MapWrapper>
+            </DetailsWrapper>
         </Wrapper>
 
 
