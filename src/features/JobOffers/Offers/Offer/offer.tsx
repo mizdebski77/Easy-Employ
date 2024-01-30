@@ -34,7 +34,7 @@ export const Offer = () => {
                     <InformationsWrapper>
                         <InformationContainer>
                             <InformationTitle>Gross salary</InformationTitle>
-                            <InformationSpan>{data.gross_sallary}</InformationSpan>
+                            <InformationSpan>{data.gross_salary}</InformationSpan>
                         </InformationContainer>
 
                         <InformationContainer>
@@ -43,13 +43,13 @@ export const Offer = () => {
                         </InformationContainer>
 
                         <InformationContainer>
-                            <InformationTitle>Type of work</InformationTitle>
-                            <InformationSpan>{data.work_type}</InformationSpan>
+                            <InformationTitle>Location</InformationTitle>
+                            <InformationSpan>{data.location}</InformationSpan>
                         </InformationContainer>
 
                         <InformationContainer>
-                            <InformationTitle>Type of work</InformationTitle>
-                            <InformationSpan>{data.work_type}</InformationSpan>
+                            <InformationTitle>Company</InformationTitle>
+                            <InformationSpan>{data.company_name}</InformationSpan>
                         </InformationContainer>
                     </InformationsWrapper>
 
