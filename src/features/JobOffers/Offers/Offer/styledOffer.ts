@@ -12,6 +12,8 @@ export const BasicsInformation = styled.div`
     margin-top: 0;
     padding: 40px 0;
     box-shadow: 0 0 10px ${({ theme }) => theme.color.fontSecond};
+    max-width: 1920px;
+    margin: 0 auto;
 `;
 
 export const JobTitle = styled.h1`
