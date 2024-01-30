@@ -1,7 +1,6 @@
 import React from 'react';
 import { Wrapper } from '../styledJobOffers';
 import { CaptionsContainer, ContentWrapper, Logo, MainSection, OfferCaptionTContent, OfferCaptionTitle, OfferCaptionWrapper, OfferTile, OfferTitle, OffersTitle } from './styledOffers';
-import logo from '../../../common/Images/logo.png';
 import { useQuery } from '@tanstack/react-query';
 import { Loader } from '../../../common/Loader/loader';
 import { Error } from '../../../common/Error/error';
