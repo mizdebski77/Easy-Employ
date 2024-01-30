@@ -1,5 +1,5 @@
 import React from 'react';
-import { BasicsInformation, CompanyName, InformationContainer, InformationSpan, InformationTitle, InformationsWrapper, Title, TitleSpan, SpanWrapper, Wrapper } from './styledOffer';
+import { BasicsInformation, InformationContainer, InformationSpan, InformationTitle, InformationsWrapper, Title, TitleSpan, SpanWrapper, Wrapper } from './styledOffer';
 import { useQuery } from '@tanstack/react-query';
 import { OfferArray } from '../../../../core/interface';
 import { useParams } from 'react-router-dom';

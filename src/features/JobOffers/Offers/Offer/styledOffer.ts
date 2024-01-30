@@ -44,10 +44,6 @@ export const InformationContainer = styled.div`
     gap: 10px;
 `;
 
-export const InformationImage = styled.img`
-
-`;
-
 export const SpanWrapper = styled.div`
     display: grid;
     gap: 10px;
@@ -61,15 +57,4 @@ export const InformationTitle = styled.span`
 export const InformationSpan = styled.span`
     font-size: 24px;
     color: ${({ theme }) => theme.color.fontSecond};
-
-`;
-
-
-
-export const CompanyName = styled.span`
-
-`;
-
-export const MapWrapper = styled.div`
-
 `;
