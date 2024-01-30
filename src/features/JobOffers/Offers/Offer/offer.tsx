@@ -1,5 +1,5 @@
 import React from 'react';
-import { BasicsInformation, CompanyName, InformationContainer, InformationSpan, InformationTitle, InformationsWrapper, JobTitle, JobTitleSpan, SpanWrapper, Wrapper } from './styledOffer';
+import { BasicsInformation, CompanyName, InformationContainer, InformationSpan, InformationTitle, InformationsWrapper, Title, TitleSpan, SpanWrapper, Wrapper } from './styledOffer';
 import { useQuery } from '@tanstack/react-query';
 import { OfferArray } from '../../../../core/interface';
 import { useParams } from 'react-router-dom';
@@ -27,11 +27,11 @@ export const Offer = () => {
             {isLoading ? <Loader /> : error ? <Error /> : (
 
                 <BasicsInformation>
-                    <JobTitle>
+                    <Title>
                         You are applying for the position:
-                        <JobTitleSpan>{data.position}</JobTitleSpan>
-                    </JobTitle>
-                    
+                        <TitleSpan>{data.position}</TitleSpan>
+                    </Title>
+
                     <InformationsWrapper>
                         <InformationContainer>
                             <SpanWrapper>

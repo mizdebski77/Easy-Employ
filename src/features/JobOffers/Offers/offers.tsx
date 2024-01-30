@@ -26,7 +26,7 @@ export const Offers = () => {
                     <OfferTile to={`/Offer/${offer.id}`} key={offer.id}>
                         <MainSection>
                             <Logo src={offer.logo} />
-                            <OfferTitle>{offer.company_name}</OfferTitle>
+                            <OfferTitle>{offer.position}</OfferTitle>
                         </MainSection>
 
                         <ContentWrapper>

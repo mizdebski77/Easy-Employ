@@ -16,7 +16,8 @@ export const BasicsInformation = styled.div`
     margin: 0 auto;
 `;
 
-export const JobTitle = styled.h1`
+
+export const Title = styled.h1`
     font-size: 52px;
     font-weight: normal;
     color: ${({ theme }) => theme.color.fontMain};
@@ -24,7 +25,7 @@ export const JobTitle = styled.h1`
     text-align: center;
 `;
 
-export const JobTitleSpan = styled.p`
+export const TitleSpan = styled.p`
     color: ${({ theme }) => theme.color.fontSecond};
     margin-bottom: 20px;
     font-size: 48px;
