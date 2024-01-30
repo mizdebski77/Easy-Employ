@@ -58,6 +58,26 @@ export const Register = () => {
                         <ShowHideButton src={showPassword2 ? hide : show} onClick={handleShowPassword2} />
                     </PasswordLabel>
 
+                    <Label>
+                        <CheckBox
+                            type="radio"
+                            name="calculationOption"
+                            value="gross"
+                            required
+                        />
+                        Registration as an employer
+                    </Label>
+
+                    <Label>
+                        <CheckBox
+                            type="radio"
+                            name="calculationOption"
+                            value="net"
+                            required
+                        />
+                         Registration as an employee
+                    </Label>
+
 
                     <InfosWrapper>
                         <InfoWrapper>

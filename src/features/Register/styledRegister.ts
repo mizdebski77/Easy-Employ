@@ -97,6 +97,7 @@ export const Form = styled.form`
 
 export const Label = styled.label`
     margin: 20px 20px 10px 12px;
+    cursor: pointer;
 `;
 
 export const PasswordLabel = styled.div`
@@ -139,7 +140,6 @@ export const Input = styled.input`
 
     &:focus {
         outline: none;
-        filter: drop-shadow(6px 4px 4px ${({ theme }) => theme.color.fontMain});
     };
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
@@ -150,6 +150,7 @@ export const Input = styled.input`
 
 export const CheckBox = styled.input`
     cursor: pointer;
+    margin-right: 10px;
 `;
 
 export const InfosWrapper = styled.div`
@@ -161,7 +162,7 @@ export const InfosWrapper = styled.div`
 
 export const InfoWrapper = styled.div`
     display: flex;
-    gap: 20px;
+    gap: 10px;
 `;
 
 export const InformationSpan = styled.span`
