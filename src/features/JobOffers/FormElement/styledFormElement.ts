@@ -32,7 +32,7 @@ export const InputWrapper = styled.div`
 export const KeyWordInput = styled.input`
     padding: 8px 12px;
     font-size: 16px;
-    border-radius: 8px;
+    border-radius: 8px 0 0 8px;
     border: none;
     max-width: 280px;
     width: 100%;
