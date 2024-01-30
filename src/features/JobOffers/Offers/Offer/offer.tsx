@@ -1,8 +1,10 @@
 import React from 'react';
-import { BasicsInformation, CompanyName, JobTitle, JobTitleSpan, Wrapper } from './styledOffer';
+import { BasicsInformation, CompanyName, InformationContainer, InformationSpan, InformationTitle, InformationsWrapper, JobTitle, JobTitleSpan, Wrapper } from './styledOffer';
 import { useQuery } from '@tanstack/react-query';
 import { OfferArray } from '../../../../core/interface';
 import { useParams } from 'react-router-dom';
+import { Loader } from '../../../../common/Loader/loader';
+import { Error } from '../../../../common/Error/error';
 
 export const Offer = () => {
 
@@ -22,16 +24,40 @@ export const Offer = () => {
 
     return (
         <Wrapper>
-            <BasicsInformation>
-                <JobTitle>
-                    You are applying for the position: 
-                    <JobTitleSpan>{data.position}</JobTitleSpan>
-                </JobTitle>
-                <CompanyName></CompanyName>
+            {isLoading ? <Loader /> : error ? <Error /> : (
 
-            </BasicsInformation>
+                <BasicsInformation>
+                    <JobTitle>
+                        You are applying for the position:
+                        <JobTitleSpan>{data.position}</JobTitleSpan>
+                    </JobTitle>
+                    <InformationsWrapper>
+                        <InformationContainer>
+                            <InformationTitle>Gross salary</InformationTitle>
+                            <InformationSpan>{data.gross_sallary}</InformationSpan>
+                        </InformationContainer>
 
+                        <InformationContainer>
+                            <InformationTitle>Type of work</InformationTitle>
+                            <InformationSpan>{data.work_type}</InformationSpan>
+                        </InformationContainer>
+
+                        <InformationContainer>
+                            <InformationTitle>Type of work</InformationTitle>
+                            <InformationSpan>{data.work_type}</InformationSpan>
+                        </InformationContainer>
+
+                        <InformationContainer>
+                            <InformationTitle>Type of work</InformationTitle>
+                            <InformationSpan>{data.work_type}</InformationSpan>
+                        </InformationContainer>
+                    </InformationsWrapper>
+
+                </BasicsInformation>
+            )};
         </Wrapper>
+
+
     );
 };
 

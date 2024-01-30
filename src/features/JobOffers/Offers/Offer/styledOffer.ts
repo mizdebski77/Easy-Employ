@@ -9,9 +9,9 @@ export const ContenWrapper = styled.div`
 `;
 
 export const BasicsInformation = styled.div`
-    background-color: red;
     margin-top: 0;
     padding: 40px 0;
+    box-shadow: 0 0 10px ${({ theme }) => theme.color.fontSecond};
 `;
 
 export const JobTitle = styled.h1`
@@ -25,6 +25,34 @@ export const JobTitle = styled.h1`
 export const JobTitleSpan = styled.p`
     color: ${({ theme }) => theme.color.fontSecond};
 `;
+
+export const InformationsWrapper = styled.div`
+    display: flex;
+    justify-content: space-evenly;
+`;
+
+export const InformationContainer = styled.div`
+    display: grid;
+    text-align: center;
+    gap: 10px;
+`;
+
+export const InformationImage = styled.img`
+
+`;
+
+export const InformationTitle = styled.span`
+    font-size: 28px;
+    color: ${({ theme }) => theme.color.fontMain};
+`;
+
+export const InformationSpan = styled.span`
+    font-size: 24px;
+    color: ${({ theme }) => theme.color.fontSecond};
+
+`;
+
+
 
 export const CompanyName = styled.span`
 
