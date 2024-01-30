@@ -15,7 +15,7 @@ export const BasicsInformation = styled.div`
 `;
 
 export const JobTitle = styled.h1`
-    font-size: 54px;
+    font-size: 52px;
     font-weight: normal;
     color: ${({ theme }) => theme.color.fontMain};
     margin-top: 0;
@@ -24,6 +24,8 @@ export const JobTitle = styled.h1`
 
 export const JobTitleSpan = styled.p`
     color: ${({ theme }) => theme.color.fontSecond};
+    margin-bottom: 20px;
+    font-size: 48px;
 `;
 
 export const InformationsWrapper = styled.div`
@@ -39,6 +41,11 @@ export const InformationContainer = styled.div`
 
 export const InformationImage = styled.img`
 
+`;
+
+export const SpanWrapper = styled.div`
+    display: grid;
+    gap: 10px;
 `;
 
 export const InformationTitle = styled.span`

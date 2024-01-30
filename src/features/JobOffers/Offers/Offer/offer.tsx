@@ -1,5 +1,5 @@
 import React from 'react';
-import { BasicsInformation, CompanyName, InformationContainer, InformationSpan, InformationTitle, InformationsWrapper, JobTitle, JobTitleSpan, Wrapper } from './styledOffer';
+import { BasicsInformation, CompanyName, InformationContainer, InformationSpan, InformationTitle, InformationsWrapper, JobTitle, JobTitleSpan, SpanWrapper, Wrapper } from './styledOffer';
 import { useQuery } from '@tanstack/react-query';
 import { OfferArray } from '../../../../core/interface';
 import { useParams } from 'react-router-dom';
@@ -31,25 +31,34 @@ export const Offer = () => {
                         You are applying for the position:
                         <JobTitleSpan>{data.position}</JobTitleSpan>
                     </JobTitle>
+                    
                     <InformationsWrapper>
                         <InformationContainer>
-                            <InformationTitle>Gross salary</InformationTitle>
-                            <InformationSpan>{data.gross_salary}</InformationSpan>
+                            <SpanWrapper>
+                                <InformationTitle>Gross salary</InformationTitle>
+                                <InformationSpan>{data.gross_salary}</InformationSpan>
+                            </SpanWrapper>
                         </InformationContainer>
 
                         <InformationContainer>
-                            <InformationTitle>Type of work</InformationTitle>
-                            <InformationSpan>{data.work_type}</InformationSpan>
+                            <SpanWrapper>
+                                <InformationTitle>Type of work</InformationTitle>
+                                <InformationSpan>{data.work_type}</InformationSpan>
+                            </SpanWrapper>
                         </InformationContainer>
 
                         <InformationContainer>
-                            <InformationTitle>Location</InformationTitle>
-                            <InformationSpan>{data.location}</InformationSpan>
+                            <SpanWrapper>
+                                <InformationTitle>Location</InformationTitle>
+                                <InformationSpan>{data.location}</InformationSpan>
+                            </SpanWrapper>
                         </InformationContainer>
 
                         <InformationContainer>
-                            <InformationTitle>Company</InformationTitle>
-                            <InformationSpan>{data.company_name}</InformationSpan>
+                            <SpanWrapper>
+                                <InformationTitle>Company</InformationTitle>
+                                <InformationSpan>{data.company_name}</InformationSpan>
+                            </SpanWrapper>
                         </InformationContainer>
                     </InformationsWrapper>
 
