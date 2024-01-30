@@ -101,6 +101,13 @@ export const PasswordFunctionWrapper = styled.div`
     padding: 0 16px;
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+    };
 `;
 
 export const RememberMeWrapper = styled.label`
