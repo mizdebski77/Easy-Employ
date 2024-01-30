@@ -17,7 +17,6 @@ export const Offer = () => {
             .then((response: Response) => response.json())
     });
 
-
     return (
         <Wrapper>
             {isLoading ? <Loader /> : error ? <Error /> : (
@@ -58,18 +57,17 @@ export const Offer = () => {
                     </InformationsWrapper>
                 </BasicsInformation>
             )}
+
+
             <DetailsWrapper>
                 <DetailsContainer>
 
                 </DetailsContainer>
-
                 <MapWrapper>
                     <Map src={map} alt='map' />
                 </MapWrapper>
             </DetailsWrapper>
         </Wrapper>
-
-
     );
 };
 
