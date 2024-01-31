@@ -48,6 +48,8 @@ export const InformationsWrapper = styled.div`
 export const InfoWrapper = styled.div`
     display: flex;
     gap: 20px;
+    width: 100%;
+    justify-content: center;
 `;
 
 export const InfoImg = styled.img`
@@ -61,11 +63,11 @@ export const InfoTextWrapper = styled.div`
 
 export const InfoSpanTitle = styled.span`
     font-size: 24px;
-    color: ${({ theme }) => theme.color.fontMain};
+    color: ${({theme}) => theme.color.fontMain};
 `;
 
 export const InfoSpan = styled.span`
-
+    font-size: 20px;
 `;
 
 export const SpanWrapper = styled.div`

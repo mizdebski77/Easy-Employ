@@ -5,7 +5,11 @@ import { useParams } from 'react-router-dom';
 import { Loader } from '../../../../common/Loader/loader';
 import { Error } from '../../../../common/Error/error';
 import map from '../../../../common/Images/map.png';
-import { Informations } from './Infomations';
+import money from '../../../../common/Images/SVG/money.svg';
+import location from '../../../../common/Images/SVG/location.svg';
+import tof from '../../../../common/Images/SVG/tof.svg';
+
+
 
 export const Offer = () => {
 
@@ -16,6 +20,17 @@ export const Offer = () => {
         queryFn: () => fetch(`http://localhost:5000/offer/${id}`)
             .then((response: Response) => response.json())
     });
+
+    if (!data) {
+        return null; 
+    }
+
+    const Informations = [
+        { text: `${data.gross_salary}`, src: money, title: 'Gross Sallary' },
+        { text: `${data.location}`, src: location, title: 'Location' },
+        { text: `${data.work_type}`, src: tof, title: 'Type Of Work' },
+    ];
+
 
     return (
         <Wrapper>
