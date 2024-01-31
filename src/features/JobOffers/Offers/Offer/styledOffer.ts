@@ -41,23 +41,26 @@ export const TitleSpan = styled.span`
 
 export const InformationsWrapper = styled.div`
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    padding: 20px;
 `;
 
 export const InfoWrapper = styled.div`
     display: flex;
+    gap: 20px;
 `;
 
 export const InfoImg = styled.img`
     max-width: 64px;
+    width: 100%;
 `;
 
 export const InfoTextWrapper = styled.div`
-
+    display: grid;
 `;
 
 export const InfoSpanTitle = styled.span`
-
+    font-size: 24px;
 `;
 
 export const InfoSpan = styled.span`
