@@ -1,10 +1,11 @@
 import React from 'react';
-import {  InformationSpan, InformationTitle, InformationsWrapper, Title, TitleSpan, SpanWrapper, Wrapper, Details, DetailsContainer, Map, MapWrapper, DetailsSection, DetailTitle, TitleWrapper, TitleImg, BasicInformations, InfoWrapper, InfoImg } from './styledOffer';
+import { InformationSpan, InformationTitle, InformationsWrapper, Title, TitleSpan, SpanWrapper, Wrapper, Details, DetailsContainer, Map, MapWrapper, DetailsSection, DetailTitle, TitleWrapper, TitleImg, BasicInformations, InfoWrapper, InfoImg, InfoTextWrapper, InfoSpanTitle, InfoSpan } from './styledOffer';
 import { useQuery } from '@tanstack/react-query';
 import { useParams } from 'react-router-dom';
 import { Loader } from '../../../../common/Loader/loader';
 import { Error } from '../../../../common/Error/error';
 import map from '../../../../common/Images/map.png';
+import { Informations } from './Infomations';
 
 export const Offer = () => {
 
@@ -28,29 +29,24 @@ export const Offer = () => {
                         </div>
                     </TitleWrapper>
 
-                    {/* <InformationsWrapper>
-                        <InfoWrapper>
-                            <InfoImg src
-                        </InfoWrapper>
+                    <InformationsWrapper >
+                        {Informations.map((information, index) => (
+                            <InfoWrapper key={index}>
+                                <InfoImg src={information.src} />
+                                <InfoTextWrapper>
+                                    <InfoSpanTitle>{information.title}</InfoSpanTitle>
+                                    <InfoSpan>{information.text}</InfoSpan>
+                                </InfoTextWrapper>
+                            </InfoWrapper>
+                        ))}
                     </InformationsWrapper>
-                </BasicInformations> */}
+
+                </BasicInformations>
+
+
+
 
             )}
-
-
-            {/* <Details>
-                <DetailsContainer>
-                    <DetailsSection>
-                        <DetailTitle>
-                            Tech stack
-                        </DetailTitle>
-                    </DetailsSection>
-
-                </DetailsContainer>
-                <MapWrapper>
-                    <Map src={map} alt='map' />
-                </MapWrapper>
-            </Details> */}
         </Wrapper>
     );
 };

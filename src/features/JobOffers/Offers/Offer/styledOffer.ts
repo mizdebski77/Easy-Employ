@@ -6,21 +6,21 @@ export const Wrapper = styled.section`
 `;
 
 export const BasicInformations = styled.div`
-
-`;
-
-export const TitleWrapper = styled.div`
     max-width: 1200px;
     margin: 0 auto;
     background: ${({ theme }) => theme.color.secondColor};
     padding: 40px;
+    box-shadow: 0 0 10px ${({ theme }) => theme.color.fourthColor};
+    border-radius: 20px;
+`;
+
+export const TitleWrapper = styled.div`
+    border-bottom: 2px solid ${({ theme }) => theme.color.fourthColor};
+    padding: 0 0 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 40px;
-    box-shadow: 0 0 10px ${({ theme }) => theme.color.fourthColor};
-    border-radius: 20px;
-    border-bottom: 2px solid ${({ theme }) => theme.color.fontSecond};
 `;
 
 export const TitleImg = styled.img`
@@ -45,11 +45,11 @@ export const InformationsWrapper = styled.div`
 `;
 
 export const InfoWrapper = styled.div`
-
+    display: flex;
 `;
 
 export const InfoImg = styled.img`
-
+    max-width: 64px;
 `;
 
 export const InfoTextWrapper = styled.div`
