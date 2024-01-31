@@ -61,6 +61,7 @@ export const InfoTextWrapper = styled.div`
 
 export const InfoSpanTitle = styled.span`
     font-size: 24px;
+    color: ${({ theme }) => theme.color.fontMain};
 `;
 
 export const InfoSpan = styled.span`
