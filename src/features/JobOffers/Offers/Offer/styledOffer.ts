@@ -16,12 +16,13 @@ export const BasicsInformation = styled.div`
     max-width: 1920px;
     margin: 0 auto;
     margin-bottom: 64px;
+    background: ${({ theme }) => theme.color.thirdColor};
 `;
 
 
 export const Title = styled.h1`
     font-size: 52px;
-    font-weight: normal;
+    font-weight: 600;
     color: ${({ theme }) => theme.color.fontMain};
     margin: 10px;
     padding: 0 0 20px ;
@@ -81,17 +82,19 @@ export const Map = styled.img`
 `;
 
 export const DetailsContainer = styled.div`
-
 `;
 
 export const DetailsSection = styled.div`
     box-shadow: 0 0 10px ${({ theme }) => theme.color.fontSecond};
     border-radius: 20px;
+    background: ${({ theme }) => theme.color.secondColor};
 `;
 
 export const DetailTitle = styled.h2`
     padding: 40px;
     margin: 0;
+    font-weight: normal;
+    color: ${({ theme }) => theme.color.fontMain};
 `;
 
 export const DetailsSpan = styled.span`
