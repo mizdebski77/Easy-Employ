@@ -1,5 +1,5 @@
 import React from 'react';
-import { BasicsInformation, InformationContainer, InformationSpan, InformationTitle, InformationsWrapper, Title, TitleSpan, SpanWrapper, Wrapper, Details, DetailsContainer, Map, MapWrapper, DetailsSection, DetailTitle } from './styledOffer';
+import {  InformationContainer, InformationSpan, InformationTitle, InformationsWrapper, Title, TitleSpan, SpanWrapper, Wrapper, Details, DetailsContainer, Map, MapWrapper, DetailsSection, DetailTitle, TitleWrapper, TitleImg } from './styledOffer';
 import { useQuery } from '@tanstack/react-query';
 import { useParams } from 'react-router-dom';
 import { Loader } from '../../../../common/Loader/loader';
@@ -19,46 +19,17 @@ export const Offer = () => {
     return (
         <Wrapper>
             {isLoading ? <Loader /> : error ? <Error /> : (
-                <BasicsInformation>
-                    <Title>
-                        You are applying for the position:
-                    </Title>
-                    <TitleSpan>{data.position}</TitleSpan>
-
-                    <InformationsWrapper>
-                        <InformationContainer>
-                            <SpanWrapper>
-                                <InformationTitle>Gross salary</InformationTitle>
-                                <InformationSpan>{data.gross_salary}</InformationSpan>
-                            </SpanWrapper>
-                        </InformationContainer>
-
-                        <InformationContainer>
-                            <SpanWrapper>
-                                <InformationTitle>Type of work</InformationTitle>
-                                <InformationSpan>{data.work_type}</InformationSpan>
-                            </SpanWrapper>
-                        </InformationContainer>
-
-                        <InformationContainer>
-                            <SpanWrapper>
-                                <InformationTitle>Location</InformationTitle>
-                                <InformationSpan>{data.location}</InformationSpan>
-                            </SpanWrapper>
-                        </InformationContainer>
-
-                        <InformationContainer>
-                            <SpanWrapper>
-                                <InformationTitle>Company</InformationTitle>
-                                <InformationSpan>{data.company_name}</InformationSpan>
-                            </SpanWrapper>
-                        </InformationContainer>
-                    </InformationsWrapper>
-                </BasicsInformation>
+                <TitleWrapper>
+                    <TitleImg src={data.logo} alt='logo' />
+                    <div>
+                        <Title>{data.position}</Title>
+                        <TitleSpan>{data.company_name}</TitleSpan>
+                    </div>
+                </TitleWrapper>
             )}
 
 
-            <Details>
+            {/* <Details>
                 <DetailsContainer>
                     <DetailsSection>
                         <DetailTitle>
@@ -70,7 +41,7 @@ export const Offer = () => {
                 <MapWrapper>
                     <Map src={map} alt='map' />
                 </MapWrapper>
-            </Details>
+            </Details> */}
         </Wrapper>
     );
 };

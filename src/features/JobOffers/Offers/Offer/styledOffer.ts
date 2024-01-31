@@ -2,38 +2,36 @@ import { styled } from "styled-components";
 
 export const Wrapper = styled.section`
     min-height: 100vh;
-    gap: 40px;
+    padding: 40px;
 `;
 
-export const ContenWrapper = styled.div`
-
-`;
-
-export const BasicsInformation = styled.div`
-    margin-top: 0;
-    padding: 40px 0;
-    box-shadow: 0 0 10px ${({ theme }) => theme.color.fontSecond};
-    max-width: 1920px;
+export const TitleWrapper = styled.div`
+    max-width: 1200px;
     margin: 0 auto;
-    margin-bottom: 64px;
-    background: ${({ theme }) => theme.color.thirdColor};
+    background: ${({ theme }) => theme.color.secondColor};
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    box-shadow: 0 0 10px ${({ theme }) => theme.color.fourthColor};
+    border-radius: 20px;
 `;
 
+export const TitleImg = styled.img`
+    max-width: 120px;
+`;
 
 export const Title = styled.h1`
     font-size: 52px;
     font-weight: 600;
     color: ${({ theme }) => theme.color.fontMain};
-    margin: 10px;
-    padding: 0 0 20px ;
-    text-align: center;
+    margin: 0px;
 `;
 
-export const TitleSpan = styled.p`
+export const TitleSpan = styled.span`
     color: ${({ theme }) => theme.color.fontSecond};
-    margin-bottom: 40px;
-    font-size: 48px;
-    text-align: center;
+    font-size: 24px;
 `;
 
 export const InformationsWrapper = styled.div`
@@ -95,6 +93,7 @@ export const DetailTitle = styled.h2`
     margin: 0;
     font-weight: normal;
     color: ${({ theme }) => theme.color.fontMain};
+    font-size: 32px;
 `;
 
 export const DetailsSpan = styled.span`
