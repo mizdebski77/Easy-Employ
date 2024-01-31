@@ -28,12 +28,12 @@ export const Offer = () => {
                         </div>
                     </TitleWrapper>
 
-                    <InformationsWrapper>
+                    {/* <InformationsWrapper>
                         <InfoWrapper>
-                            <InfoImg 
+                            <InfoImg src
                         </InfoWrapper>
                     </InformationsWrapper>
-                </BasicInformations>
+                </BasicInformations> */}
 
             )}
 
