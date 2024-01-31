@@ -5,9 +5,10 @@ export const Wrapper = styled.section`
     padding: 40px;
 `;
 
-export const BasicInformations = styled.div`
+export const InformationTile = styled.div`
     max-width: 1200px;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0 auto 80px;
     background: ${({ theme }) => theme.color.secondColor};
     padding: 40px;
     box-shadow: 0 0 10px ${({ theme }) => theme.color.fourthColor};
@@ -61,9 +62,14 @@ export const InfoTextWrapper = styled.div`
     display: grid;
 `;
 
-export const InfoSpanTitle = styled.span`
+export const SectionTitle = styled.span`
+    font-size: 32px;
+    color: ${({ theme }) => theme.color.fontMain};
+`;
+
+export const SpanTitle = styled.span`
     font-size: 24px;
-    color: ${({theme}) => theme.color.fontMain};
+    color: ${({ theme }) => theme.color.fontMain};
 `;
 
 export const InfoSpan = styled.span`
@@ -96,7 +102,7 @@ export const Details = styled.div`
 export const MapWrapper = styled.div`
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 0 10px ${({ theme }) => theme.color.fontSecond};
+    box-shadow: 0 0 10px ${({ theme }) => theme.color.fourthColor};
 `;
 
 export const Map = styled.img`
@@ -105,6 +111,11 @@ export const Map = styled.img`
 `;
 
 export const DetailsContainer = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
 `;
 
 export const DetailsSection = styled.div`

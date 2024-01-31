@@ -1,5 +1,5 @@
 import React from 'react';
-import { InformationSpan, InformationTitle, InformationsWrapper, Title, TitleSpan, SpanWrapper, Wrapper, Details, DetailsContainer, Map, MapWrapper, DetailsSection, DetailTitle, TitleWrapper, TitleImg, BasicInformations, InfoWrapper, InfoImg, InfoTextWrapper, InfoSpanTitle, InfoSpan } from './styledOffer';
+import { InformationSpan, InformationTitle, InformationsWrapper, Title, TitleSpan, SpanWrapper, Wrapper, Details, DetailsContainer, Map, MapWrapper, DetailsSection, DetailTitle, TitleWrapper, TitleImg, InformationTile, InfoWrapper, InfoImg, InfoTextWrapper, SpanTitle, InfoSpan, SectionTitle } from './styledOffer';
 import { useQuery } from '@tanstack/react-query';
 import { useParams } from 'react-router-dom';
 import { Loader } from '../../../../common/Loader/loader';
@@ -20,7 +20,7 @@ export const Offer = () => {
     });
 
     if (!data) {
-        return null; 
+        return null;
     }
 
     const Informations = [
@@ -33,28 +33,44 @@ export const Offer = () => {
     return (
         <Wrapper>
             {isLoading ? <Loader /> : error ? <Error /> : (
-                <BasicInformations>
-                    <TitleWrapper>
-                        <TitleImg src={data.logo} alt='logo' />
+                <>
+
+                    <InformationTile>
+                        <TitleWrapper>
+                            <TitleImg src={data.logo} alt='logo' />
+                            <div>
+                                <Title>{data.position}</Title>
+                                <TitleSpan>{data.company_name}</TitleSpan>
+                            </div>
+                        </TitleWrapper>
+
+                        <InformationsWrapper >
+                            {Informations.map((information, index) => (
+                                <InfoWrapper key={index}>
+                                    <InfoImg src={information.src} />
+                                    <InfoTextWrapper>
+                                        <SpanTitle>{information.title}</SpanTitle>
+                                        <InfoSpan>{information.text}</InfoSpan>
+                                    </InfoTextWrapper>
+                                </InfoWrapper>
+                            ))}
+                        </InformationsWrapper>
+                    </InformationTile>
+
+                    <DetailsContainer>
                         <div>
-                            <Title>{data.position}</Title>
-                            <TitleSpan>{data.company_name}</TitleSpan>
+                            <InformationTile>
+                                <SectionTitle>Tech stack</SectionTitle>
+
+                            </InformationTile>
                         </div>
-                    </TitleWrapper>
 
-                    <InformationsWrapper >
-                        {Informations.map((information, index) => (
-                            <InfoWrapper key={index}>
-                                <InfoImg src={information.src} />
-                                <InfoTextWrapper>
-                                    <InfoSpanTitle>{information.title}</InfoSpanTitle>
-                                    <InfoSpan>{information.text}</InfoSpan>
-                                </InfoTextWrapper>
-                            </InfoWrapper>
-                        ))}
-                    </InformationsWrapper>
+                        <MapWrapper>
+                            <Map src={map} />
+                        </MapWrapper>
 
-                </BasicInformations>
+                    </DetailsContainer>
+                </>
             )}
         </Wrapper>
     );
