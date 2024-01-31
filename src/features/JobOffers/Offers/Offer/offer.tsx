@@ -9,8 +9,6 @@ import money from '../../../../common/Images/SVG/money.svg';
 import location from '../../../../common/Images/SVG/location.svg';
 import tof from '../../../../common/Images/SVG/tof.svg';
 
-
-
 export const Offer = () => {
 
     const { id } = useParams();
@@ -57,10 +55,6 @@ export const Offer = () => {
                     </InformationsWrapper>
 
                 </BasicInformations>
-
-
-
-
             )}
         </Wrapper>
     );
