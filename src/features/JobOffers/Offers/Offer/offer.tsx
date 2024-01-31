@@ -1,5 +1,5 @@
 import React from 'react';
-import {  InformationContainer, InformationSpan, InformationTitle, InformationsWrapper, Title, TitleSpan, SpanWrapper, Wrapper, Details, DetailsContainer, Map, MapWrapper, DetailsSection, DetailTitle, TitleWrapper, TitleImg } from './styledOffer';
+import {  InformationSpan, InformationTitle, InformationsWrapper, Title, TitleSpan, SpanWrapper, Wrapper, Details, DetailsContainer, Map, MapWrapper, DetailsSection, DetailTitle, TitleWrapper, TitleImg, BasicInformations, InfoWrapper, InfoImg } from './styledOffer';
 import { useQuery } from '@tanstack/react-query';
 import { useParams } from 'react-router-dom';
 import { Loader } from '../../../../common/Loader/loader';
@@ -19,13 +19,22 @@ export const Offer = () => {
     return (
         <Wrapper>
             {isLoading ? <Loader /> : error ? <Error /> : (
-                <TitleWrapper>
-                    <TitleImg src={data.logo} alt='logo' />
-                    <div>
-                        <Title>{data.position}</Title>
-                        <TitleSpan>{data.company_name}</TitleSpan>
-                    </div>
-                </TitleWrapper>
+                <BasicInformations>
+                    <TitleWrapper>
+                        <TitleImg src={data.logo} alt='logo' />
+                        <div>
+                            <Title>{data.position}</Title>
+                            <TitleSpan>{data.company_name}</TitleSpan>
+                        </div>
+                    </TitleWrapper>
+
+                    <InformationsWrapper>
+                        <InfoWrapper>
+                            <InfoImg 
+                        </InfoWrapper>
+                    </InformationsWrapper>
+                </BasicInformations>
+
             )}
 
 

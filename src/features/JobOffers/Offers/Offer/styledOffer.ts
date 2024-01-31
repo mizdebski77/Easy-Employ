@@ -5,6 +5,10 @@ export const Wrapper = styled.section`
     padding: 40px;
 `;
 
+export const BasicInformations = styled.div`
+
+`;
+
 export const TitleWrapper = styled.div`
     max-width: 1200px;
     margin: 0 auto;
@@ -16,6 +20,7 @@ export const TitleWrapper = styled.div`
     gap: 40px;
     box-shadow: 0 0 10px ${({ theme }) => theme.color.fourthColor};
     border-radius: 20px;
+    border-bottom: 2px solid ${({ theme }) => theme.color.fontSecond};
 `;
 
 export const TitleImg = styled.img`
@@ -39,10 +44,24 @@ export const InformationsWrapper = styled.div`
     justify-content: space-evenly;
 `;
 
-export const InformationContainer = styled.div`
-    display: grid;
-    text-align: center;
-    gap: 10px;
+export const InfoWrapper = styled.div`
+
+`;
+
+export const InfoImg = styled.img`
+
+`;
+
+export const InfoTextWrapper = styled.div`
+
+`;
+
+export const InfoSpanTitle = styled.span`
+
+`;
+
+export const InfoSpan = styled.span`
+
 `;
 
 export const SpanWrapper = styled.div`
