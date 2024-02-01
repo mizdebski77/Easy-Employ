@@ -4,9 +4,6 @@ import { useQuery } from '@tanstack/react-query';
 import { useParams } from 'react-router-dom';
 import { Loader } from '../../../../common/Loader/loader';
 import { Error } from '../../../../common/Error/error';
-import money from '../../../../common/Images/SVG/money.svg';
-import location from '../../../../common/Images/SVG/location.svg';
-import tof from '../../../../common/Images/SVG/tof.svg';
 import { BasicInfo } from './BasicInformations/basicsInfo';
 import { Details } from './DetailsSection/details';
 

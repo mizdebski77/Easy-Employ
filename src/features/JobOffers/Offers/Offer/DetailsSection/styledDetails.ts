@@ -9,7 +9,7 @@ export const Wrapper = styled.section`
 `;
 
 export const Tile = styled.div`
-    margin: 0 auto 80px;
+    margin: 0 auto 52px;
     background: ${({ theme }) => theme.color.secondColor};
     padding: 40px 20px;
     box-shadow: 0 0 10px ${({ theme }) => theme.color.fourthColor};
@@ -30,17 +30,20 @@ export const TileTitle = styled.h2`
 export const SkillsWrapper = styled.div`
     margin-top: 20px;
     display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
 `;
 
 export const TextWrapper = styled.div`
     display: grid;
     box-shadow: 0 0 10px ${({ theme }) => theme.color.fourthColor};
-    padding: 10px 20px;
+    padding: 6px 20px;
     border-radius: 20px;
     gap: 4px;
+    min-width: 120px;
+    justify-content: center;
+    text-align: center;
 `;
 
 export const Skill = styled.span`
@@ -51,6 +54,10 @@ export const SkillLevel = styled.span`
     color: ${({ theme }) => theme.color.fontMain};
     text-align: center;
     font-size: 16px;
+`;
+
+export const TextSection = styled.div`
+    padding:20px;
 `;
 
 export const MapSection = styled.div`
