@@ -59,21 +59,6 @@ export const Offer = () => {
                 <>
                     <BasicInfo data={data} />
 
-
-                    <InformationTile>
-                        <InformationsWrapper >
-                            {Informations.map((information, index) => (
-                                <InfoWrapper key={index}>
-                                    <InfoImg src={information.src} />
-                                    <InfoTextWrapper>
-                                        <SpanTitle>{information.title}</SpanTitle>
-                                        <InfoSpan>{information.text}</InfoSpan>
-                                    </InfoTextWrapper>
-                                </InfoWrapper>
-                            ))}
-                        </InformationsWrapper>
-                    </InformationTile>
-
                     <DetailsContainer>
                         <div>
                             <InformationTile>
