@@ -2,18 +2,15 @@ import { styled } from "styled-components";
 
 export const Wrapper = styled.section`
     display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 20px;
+    gap: 40px;
 `;
 
 export const Tile = styled.div`
-    margin: 0 auto 52px;
     background: ${({ theme }) => theme.color.secondColor};
     padding: 40px 20px;
     box-shadow: 0 0 10px ${({ theme }) => theme.color.fourthColor};
     border-radius: 20px;
+    width: 100%;
 `;
 
 export const TileTitle = styled.h2`
@@ -41,7 +38,7 @@ export const TextWrapper = styled.div`
     padding: 6px 20px;
     border-radius: 20px;
     gap: 4px;
-    min-width: 120px;
+    min-width: 200px;
     justify-content: center;
     text-align: center;
 `;
@@ -59,14 +56,3 @@ export const SkillLevel = styled.span`
 export const TextSection = styled.div`
     padding:20px;
 `;
-
-export const MapSection = styled.div`
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 0 10px ${({ theme }) => theme.color.fourthColor};
-`;
-
-export const Map = styled.img`
-    width: 100%;
-`;
-

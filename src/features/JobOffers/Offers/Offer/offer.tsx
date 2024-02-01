@@ -1,11 +1,12 @@
 import React from 'react';
-import { Wrapper } from './styledOffer';
+import { Map, MapSection, TilesWrapper, Wrapper } from './styledOffer';
 import { useQuery } from '@tanstack/react-query';
 import { useParams } from 'react-router-dom';
 import { Loader } from '../../../../common/Loader/loader';
 import { Error } from '../../../../common/Error/error';
 import { BasicInfo } from './BasicInformations/basicsInfo';
 import { Details } from './DetailsSection/details';
+import map from '../../../../common/Images/map.png';
 
 export const Offer = () => {
 
@@ -25,8 +26,14 @@ export const Offer = () => {
         <Wrapper>
             {isLoading ? <Loader /> : error ? <Error /> : (
                 <>
-                    <BasicInfo data={data} />
-                    <Details data={data} />
+                    <TilesWrapper>
+                        <BasicInfo data={data} />
+                        <Details data={data} />
+                    </TilesWrapper>
+
+                    <MapSection>
+                        <Map src={map} />
+                    </MapSection>
                 </>
             )}
         </Wrapper>
