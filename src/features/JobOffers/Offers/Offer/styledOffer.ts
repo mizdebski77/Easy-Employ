@@ -6,13 +6,7 @@ export const Wrapper = styled.section`
 `;
 
 export const InformationTile = styled.div`
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto 80px;
-    background: ${({ theme }) => theme.color.secondColor};
-    padding: 40px;
-    box-shadow: 0 0 10px ${({ theme }) => theme.color.fourthColor};
-    border-radius: 20px;
+
 `;
 
 export const TitleWrapper = styled.div`

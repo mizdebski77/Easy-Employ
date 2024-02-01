@@ -6,21 +6,21 @@ import {
     Title,
     TitleSpan,
     SpanWrapper,
-    Wrapper, 
-    Details, 
-    DetailsContainer, 
-    Map, 
-    MapWrapper, 
-    DetailsSection, 
-    DetailTitle, 
-    TitleWrapper, 
-    TitleImg, 
-    InformationTile, 
-    InfoWrapper, 
-    InfoImg, 
-    InfoTextWrapper, 
-    SpanTitle, 
-    InfoSpan, 
+    Wrapper,
+    Details,
+    DetailsContainer,
+    Map,
+    MapWrapper,
+    DetailsSection,
+    DetailTitle,
+    TitleWrapper,
+    TitleImg,
+    InformationTile,
+    InfoWrapper,
+    InfoImg,
+    InfoTextWrapper,
+    SpanTitle,
+    InfoSpan,
     SectionTitle
 } from './styledOffer';
 import { useQuery } from '@tanstack/react-query';
@@ -31,6 +31,7 @@ import map from '../../../../common/Images/map.png';
 import money from '../../../../common/Images/SVG/money.svg';
 import location from '../../../../common/Images/SVG/location.svg';
 import tof from '../../../../common/Images/SVG/tof.svg';
+import { BasicInfo } from './BasicInformations/basicsInfo';
 
 export const Offer = () => {
 
@@ -52,20 +53,14 @@ export const Offer = () => {
         { text: `${data.work_type}`, src: tof, title: 'Type Of Work' },
     ];
 
-
     return (
         <Wrapper>
             {isLoading ? <Loader /> : error ? <Error /> : (
                 <>
-                    <InformationTile>
-                        <TitleWrapper>
-                            <TitleImg src={data.logo} alt='logo' />
-                            <div>
-                                <Title>{data.position}</Title>
-                                <TitleSpan>{data.company_name}</TitleSpan>
-                            </div>
-                        </TitleWrapper>
+                    <BasicInfo data={data} />
 
+
+                    <InformationTile>
                         <InformationsWrapper >
                             {Informations.map((information, index) => (
                                 <InfoWrapper key={index}>
