@@ -1,27 +1,6 @@
 import React from 'react';
 import {
-    InformationSpan,
-    InformationTitle,
-    InformationsWrapper,
-    Title,
-    TitleSpan,
-    SpanWrapper,
     Wrapper,
-    Details,
-    DetailsContainer,
-    Map,
-    MapWrapper,
-    DetailsSection,
-    DetailTitle,
-    TitleWrapper,
-    TitleImg,
-    InformationTile,
-    InfoWrapper,
-    InfoImg,
-    InfoTextWrapper,
-    SpanTitle,
-    InfoSpan,
-    SectionTitle
 } from './styledOffer';
 import { useQuery } from '@tanstack/react-query';
 import { useParams } from 'react-router-dom';
@@ -58,7 +37,7 @@ export const Offer = () => {
             {isLoading ? <Loader /> : error ? <Error /> : (
                 <>
                     <BasicInfo data={data} />
-
+{/* 
                     <DetailsContainer>
                         <div>
                             <InformationTile>
@@ -71,7 +50,7 @@ export const Offer = () => {
                             <Map src={map} />
                         </MapWrapper>
 
-                    </DetailsContainer>
+                    </DetailsContainer> */}
                 </>
             )}
         </Wrapper>
