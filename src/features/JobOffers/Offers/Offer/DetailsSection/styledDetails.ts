@@ -5,6 +5,7 @@ export const Wrapper = styled.section`
     grid-template-columns: 1fr 1fr;
     max-width: 1200px;
     margin: 0 auto;
+    gap: 20px;
 `;
 
 export const Tile = styled.div`
@@ -16,10 +17,12 @@ export const Tile = styled.div`
 `;
 
 export const MapSection = styled.div`
-
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px ${({ theme }) => theme.color.fourthColor};
 `;
 
 export const Map = styled.img`
-
+    width: 100%;
 `;
 
