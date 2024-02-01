@@ -16,6 +16,30 @@ export const Tile = styled.div`
     border-radius: 20px;
 `;
 
+export const TileTitle = styled.span`
+    color: ${({ theme }) => theme.color.fontMain};
+    font-size: 28px;
+`;
+
+export const SkillsWrapper = styled.div`
+    margin-top: 20px;
+    display: flex;
+`;
+
+export const TextWrapper = styled.div`
+    display: grid;
+
+`;
+
+export const Skill = styled.span`
+    font-size: 24px;
+`;
+
+export const SkillLevel = styled.span`
+    color: ${({ theme }) => theme.color.fontMain};
+    text-align: center;
+`;
+
 export const MapSection = styled.div`
     border-radius: 20px;
     overflow: hidden;

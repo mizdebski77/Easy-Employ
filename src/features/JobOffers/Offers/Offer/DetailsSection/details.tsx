@@ -1,5 +1,5 @@
 import React from 'react';
-import { Wrapper, MapSection, Tile, Map } from './styledDetails';
+import { Wrapper, MapSection, Tile, Map, TileTitle, SkillsWrapper, Skill, TextWrapper, SkillLevel } from './styledDetails';
 import map from '../../../../../common/Images/map.png';
 
 export const Details = () => {
@@ -7,7 +7,13 @@ export const Details = () => {
         <Wrapper>
             <div>
                 <Tile>
-
+                    <TileTitle>Tech Stack</TileTitle>
+                    <SkillsWrapper>
+                        <TextWrapper>
+                            <Skill>React</Skill>
+                            <SkillLevel>Mid</SkillLevel>
+                        </TextWrapper>
+                    </SkillsWrapper>
                 </Tile>
             </div>
 
