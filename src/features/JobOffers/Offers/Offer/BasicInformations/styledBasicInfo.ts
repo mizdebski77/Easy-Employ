@@ -34,3 +34,34 @@ export const CompanyName = styled.span`
     color: ${({ theme }) => theme.color.fontSecond};
     font-size: 24px;
 `;
+
+export const InformationsWrapper = styled.div`
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+`;
+
+export const InfomrationsContainer = styled.div`
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+`;
+
+export const InformationImg = styled.img`
+    max-width: 64px;
+    width: 100%;
+`;
+
+export const TextWrapper = styled.div`
+    display: grid;
+`;
+
+export const InformationTitle = styled.span`
+    font-size: 32px;
+    color: ${({ theme }) => theme.color.fontMain};
+`;
+
+export const InformationSpan = styled.span`
+    font-size: 20px;
+`;
