@@ -57,7 +57,6 @@ export const Offer = () => {
         <Wrapper>
             {isLoading ? <Loader /> : error ? <Error /> : (
                 <>
-
                     <InformationTile>
                         <TitleWrapper>
                             <TitleImg src={data.logo} alt='logo' />
