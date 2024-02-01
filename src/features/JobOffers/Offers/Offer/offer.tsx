@@ -11,6 +11,7 @@ import money from '../../../../common/Images/SVG/money.svg';
 import location from '../../../../common/Images/SVG/location.svg';
 import tof from '../../../../common/Images/SVG/tof.svg';
 import { BasicInfo } from './BasicInformations/basicsInfo';
+import { Details } from './DetailsSection/details';
 
 export const Offer = () => {
 
@@ -37,7 +38,8 @@ export const Offer = () => {
             {isLoading ? <Loader /> : error ? <Error /> : (
                 <>
                     <BasicInfo data={data} />
-{/* 
+                    <Details />
+                    {/* 
                     <DetailsContainer>
                         <div>
                             <InformationTile>
