@@ -29,7 +29,7 @@ export const Offer = () => {
             {isLoading ? <Loader /> : error ? <Error /> : (
                 <>
                     <BasicInfo data={data} />
-                    <Details />
+                    <Details data={data} />
                 </>
             )}
         </Wrapper>

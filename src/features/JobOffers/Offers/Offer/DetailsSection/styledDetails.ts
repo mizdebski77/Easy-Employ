@@ -18,30 +18,34 @@ export const Tile = styled.div`
 
 export const TileTitle = styled.span`
     color: ${({ theme }) => theme.color.fontMain};
-    font-size: 28px;
+    font-size: 32px;
     width: 100%;
 `;
 
 export const SkillsWrapper = styled.div`
     margin-top: 20px;
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 `;
 
 export const TextWrapper = styled.div`
     display: grid;
     box-shadow: 0 0 10px ${({ theme }) => theme.color.fourthColor};
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 20px;
+    gap: 4px;
 `;
 
 export const Skill = styled.span`
-    font-size: 24px;
+    font-size: 18px;
 `;
 
 export const SkillLevel = styled.span`
     color: ${({ theme }) => theme.color.fontMain};
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
 `;
 
 export const MapSection = styled.div`

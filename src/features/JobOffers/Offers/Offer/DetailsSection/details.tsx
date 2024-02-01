@@ -1,18 +1,29 @@
 import React from 'react';
 import { Wrapper, MapSection, Tile, Map, TileTitle, SkillsWrapper, Skill, TextWrapper, SkillLevel } from './styledDetails';
 import map from '../../../../../common/Images/map.png';
+import { OfferArray } from '../../../../../core/interface';
+interface BasicInfoProps {
+    data: OfferArray
+}
+export const Details: React.FC<BasicInfoProps> = ({ data }) => {
 
-export const Details = () => {
+    const skills = data.skills
+
+
+
     return (
         <Wrapper>
             <div>
                 <Tile>
                     <TileTitle>Tech Stack</TileTitle>
                     <SkillsWrapper>
-                        <TextWrapper>
-                            <Skill>React</Skill>
-                            <SkillLevel>Mid</SkillLevel>
-                        </TextWrapper>
+                        {skills.map((skill, index) => (
+                            <TextWrapper key={index}>
+                                <Skill>{skill.skill}</Skill>
+                                <SkillLevel>{skill.level}</SkillLevel>
+                            </TextWrapper>
+                        ))}
+
                     </SkillsWrapper>
                 </Tile>
             </div>

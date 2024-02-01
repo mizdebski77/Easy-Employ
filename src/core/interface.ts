@@ -36,4 +36,8 @@ export interface OfferArray {
     company_name: string;
     location: string;
     logo: string;
+    skills: Array<{
+        skill: string;
+        level: string;
+    }>;
 };
