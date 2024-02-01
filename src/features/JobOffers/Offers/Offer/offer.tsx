@@ -1,5 +1,28 @@
 import React from 'react';
-import { InformationSpan, InformationTitle, InformationsWrapper, Title, TitleSpan, SpanWrapper, Wrapper, Details, DetailsContainer, Map, MapWrapper, DetailsSection, DetailTitle, TitleWrapper, TitleImg, InformationTile, InfoWrapper, InfoImg, InfoTextWrapper, SpanTitle, InfoSpan, SectionTitle } from './styledOffer';
+import {
+    InformationSpan,
+    InformationTitle,
+    InformationsWrapper,
+    Title,
+    TitleSpan,
+    SpanWrapper,
+    Wrapper, 
+    Details, 
+    DetailsContainer, 
+    Map, 
+    MapWrapper, 
+    DetailsSection, 
+    DetailTitle, 
+    TitleWrapper, 
+    TitleImg, 
+    InformationTile, 
+    InfoWrapper, 
+    InfoImg, 
+    InfoTextWrapper, 
+    SpanTitle, 
+    InfoSpan, 
+    SectionTitle
+} from './styledOffer';
 import { useQuery } from '@tanstack/react-query';
 import { useParams } from 'react-router-dom';
 import { Loader } from '../../../../common/Loader/loader';
