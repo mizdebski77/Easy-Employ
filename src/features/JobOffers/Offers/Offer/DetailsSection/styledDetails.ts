@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 
 export const Wrapper = styled.section`
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.2fr 1fr;
     max-width: 1200px;
     margin: 0 auto;
     gap: 20px;
@@ -11,15 +11,20 @@ export const Wrapper = styled.section`
 export const Tile = styled.div`
     margin: 0 auto 80px;
     background: ${({ theme }) => theme.color.secondColor};
-    padding: 40px;
+    padding: 40px 20px;
     box-shadow: 0 0 10px ${({ theme }) => theme.color.fourthColor};
     border-radius: 20px;
 `;
 
-export const TileTitle = styled.span`
+export const TileTitle = styled.h2`
     color: ${({ theme }) => theme.color.fontMain};
     font-size: 32px;
     width: 100%;
+    text-align: center;
+    margin: 0;
+    font-weight: normal;
+    padding: 0 0 20px 0;
+    border-bottom: 2px solid ${({ theme }) => theme.color.thirdColor};
 `;
 
 export const SkillsWrapper = styled.div`
