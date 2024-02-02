@@ -2,10 +2,10 @@ import { styled } from "styled-components";
 
 export const Wrapper = styled.section`
     min-height: 100vh;
-    padding: 40px 80px;
+    padding: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    gap: 40px;
 `;
 
 export const TilesWrapper = styled.div`

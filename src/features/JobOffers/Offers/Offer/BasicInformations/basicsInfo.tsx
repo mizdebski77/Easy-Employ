@@ -36,16 +36,12 @@ export const BasicInfo: React.FC<BasicInfoProps> = ({ data }) => {
                 {informations.map((information, index,) => (
                     <InfomrationsContainer key={index}>
                         <InformationImg src={information.src} />
-
                         <TextWrapper>
                             <InformationTitle>{information.title}</InformationTitle>
                             <InformationSpan>{information.text}</InformationSpan>
                         </TextWrapper>
-
-
                     </InfomrationsContainer>
                 ))}
-
             </InformationsWrapper>
         </Wrapper>
     );
