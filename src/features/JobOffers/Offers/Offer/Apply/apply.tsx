@@ -1,5 +1,5 @@
 import React from 'react';
-import { ApplyButton, ApplyTitle, Form, Input, InputContainer, LabelWrapper, Label, Wrapper } from './styledApply';
+import { ApplyButton, ApplyTitle, Form, Input, InputContainer, LabelWrapper, Label, Wrapper, LabelSpan } from './styledApply';
 
 export const Apply = () => {
     return (
@@ -9,31 +9,31 @@ export const Apply = () => {
             <Form>
                 <LabelWrapper>
                     <InputContainer>
-                        <Label>Name & Surname</Label>
+                        <Label>Name & Surname <LabelSpan> *</LabelSpan></Label>
                         <Input />
                     </InputContainer>
 
                     <InputContainer>
-                        <Label>E-Mail</Label>
-                        <Input />
-                    </InputContainer>
-                </LabelWrapper>
-
-                <LabelWrapper>
-                    <InputContainer>
-                        <Label>GitHub / Porfolio Link</Label>
-                        <Input />
-                    </InputContainer>
-
-                    <InputContainer>
-                        <Label>Linkedin</Label>
+                        <Label>E-Mail <LabelSpan> *</LabelSpan></Label>
                         <Input />
                     </InputContainer>
                 </LabelWrapper>
 
                 <LabelWrapper>
                     <InputContainer>
-                        <Label>File Upload</Label>
+                        <Label>GitHub / Porfolio Link <LabelSpan> *</LabelSpan></Label>
+                        <Input />
+                    </InputContainer>
+
+                    <InputContainer>
+                        <Label>Linkedin </Label>
+                        <Input />
+                    </InputContainer>
+                </LabelWrapper>
+
+                <LabelWrapper>
+                    <InputContainer>
+                        <Label>File Upload <LabelSpan> *</LabelSpan></Label>
                         <Input type='file' />
                     </InputContainer>
                 </LabelWrapper>

@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 
 export const Wrapper = styled.section`
     background: ${({ theme }) => theme.color.secondColor};
-    padding: 40px 20px;
+    padding: 20px;
     box-shadow: 0 0 10px ${({ theme }) => theme.color.fourthColor};
     border-radius: 20px;
     width: 100%;
@@ -39,6 +39,10 @@ export const InputContainer = styled.div`
 
 export const Label = styled.label`
     padding: 0 12px;
+`;
+
+export const LabelSpan = styled.label`
+    color:red;
 `;
 
 export const Input = styled.input`
