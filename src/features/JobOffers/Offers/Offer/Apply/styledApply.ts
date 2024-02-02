@@ -20,6 +20,8 @@ export const Form = styled.form`
     border-radius: 20px;
     border: 2px dashed ${({ theme }) => theme.color.fontMain};
     padding: 40px;
+    display: grid;
+    gap: 40px;
 `;
 
 export const InputsWrapper = styled.div`
@@ -28,8 +30,23 @@ export const InputsWrapper = styled.div`
     gap: 20px;
 `;
 
-export const Input = styled.input`
+export const InputContainer = styled.div`
     width: 100%;
-    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+`;
+
+export const Label = styled.label`
+    padding: 0 12px;
+`;
+
+export const Input = styled.input`
+    border-radius: 10px;
     padding: 10px 20px;
+    border: 1px solid ${({ theme }) => theme.color.fontSecond};
+
+    &:focus {
+        outline-color: ${({ theme }) => theme.color.fontMain};
+    }
 `;
