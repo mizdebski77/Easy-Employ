@@ -7,6 +7,7 @@ import { Error } from '../../../../common/Error/error';
 import { BasicInfo } from './BasicInformations/basicsInfo';
 import { Details } from './DetailsSection/details';
 import map from '../../../../common/Images/map.png';
+import { Apply } from './Apply/apply';
 
 export const Offer = () => {
 
@@ -38,6 +39,8 @@ export const Offer = () => {
                             <Map src={map} />
                         </MapWrapper>
                     </div>
+
+                    <Apply />
                 </>
             )}
         </Wrapper>
