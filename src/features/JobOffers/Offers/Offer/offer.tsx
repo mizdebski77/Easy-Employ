@@ -33,12 +33,11 @@ export const Offer = () => {
                         </TilesWrapper>
                     </div>
 
-
-                    <MapSection>
+                    <div>
                         <MapWrapper>
                             <Map src={map} />
                         </MapWrapper>
-                    </MapSection>
+                    </div>
                 </>
             )}
         </Wrapper>

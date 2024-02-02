@@ -13,27 +13,13 @@ export const TilesWrapper = styled.div`
     gap: 40px;
 `;
 
-
-export const MapSection = styled.div`
-
-`;
-
 export const MapWrapper =styled.div`
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 0 10px ${({ theme }) => theme.color.fourthColor};
+    max-height: 800px;
 `;
 
 export const Map = styled.img`
     width: 100%;
 `;
-
-export const Offerswrapper =styled.div`
-
-`;
-
-export const OffersTitle = styled.h3`
-
-`;
-
-
