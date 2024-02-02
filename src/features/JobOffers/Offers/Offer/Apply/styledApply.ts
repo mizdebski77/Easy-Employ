@@ -12,6 +12,24 @@ export const ApplyTitle = styled.h3`
     font-size: 32px;
     text-align: center;
     font-weight: normal;
-    padding: 0 0 20px 0;
     color: ${({ theme }) => theme.color.fontSecond};
+`;
+
+export const Form = styled.form`
+    width: 100%;
+    border-radius: 20px;
+    border: 2px dashed ${({ theme }) => theme.color.fontMain};
+    padding: 40px;
+`;
+
+export const InputsWrapper = styled.div`
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+`;
+
+export const Input = styled.input`
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px 20px;
 `;
