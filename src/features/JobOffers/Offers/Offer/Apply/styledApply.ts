@@ -54,9 +54,19 @@ export const Input = styled.input`
 export const ApplyButton = styled.button`
     width: 32%;
     margin: 0 auto;
-    padding: 10px;
+    padding: 16px;
     border-radius: 20px;
     border: none;
     background: ${({ theme }) => theme.color.fontMain};
     color: ${({ theme }) => theme.color.mainColor};
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        background: ${({ theme }) => theme.color.fontMainHover};
+    };
+
+    &:active {
+        background: ${({ theme }) => theme.color.fontMainActive};
+    };
 `;
