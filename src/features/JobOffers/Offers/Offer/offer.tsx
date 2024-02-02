@@ -1,5 +1,5 @@
 import React from 'react';
-import { Map, MapSection, TilesWrapper, Wrapper } from './styledOffer';
+import { Map, MapSection, MapWrapper, TilesWrapper, Wrapper } from './styledOffer';
 import { useQuery } from '@tanstack/react-query';
 import { useParams } from 'react-router-dom';
 import { Loader } from '../../../../common/Loader/loader';
@@ -26,13 +26,18 @@ export const Offer = () => {
         <Wrapper>
             {isLoading ? <Loader /> : error ? <Error /> : (
                 <>
-                    <TilesWrapper>
-                        <BasicInfo data={data} />
-                        <Details data={data} />
-                    </TilesWrapper>
+                    <div>
+                        <TilesWrapper>
+                            <BasicInfo data={data} />
+                            <Details data={data} />
+                        </TilesWrapper>
+                    </div>
+
 
                     <MapSection>
-                        <Map src={map} />
+                        <MapWrapper>
+                            <Map src={map} />
+                        </MapWrapper>
                     </MapSection>
                 </>
             )}
