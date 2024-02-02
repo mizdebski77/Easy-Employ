@@ -7,6 +7,7 @@ import google from '../Images/appSection/google.png';
 import link from '../Images/SocialMedia/link.png';
 import fb from '../Images/SocialMedia/fb.png';
 import insta from '../Images/SocialMedia/ig.png';
+import { scrollTop } from '../../core/scrollTop';
 
 
 export const Footer = () => {
@@ -25,7 +26,7 @@ export const Footer = () => {
                     <ToolsTitle>Tools</ToolsTitle>
                     <ToolsLinksWrapper>
                         {links.map((link, index) => (
-                            <ToolsLink key={index} to={link.link}>{link.text}</ToolsLink>
+                            <ToolsLink key={index} to={link.link} onClick={() => scrollTop()}>{link.text}</ToolsLink>
                         ))}
                     </ToolsLinksWrapper>
                 </ToolsWrapper>
@@ -46,9 +47,9 @@ export const Footer = () => {
                 </InformationsLinksWrapper>
 
                 <InformationAppWrapper>
-                    <SocialLink src={link}/>
-                    <SocialLink src={fb}/>
-                    <SocialLink src={insta}/>
+                    <SocialLink src={link} />
+                    <SocialLink src={fb} />
+                    <SocialLink src={insta} />
                 </InformationAppWrapper>
             </IformationsWrapper>
         </Wrapper>
