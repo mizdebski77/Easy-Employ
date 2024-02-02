@@ -1,5 +1,5 @@
 import React from 'react';
-import { Map, MapSection, MapWrapper, TilesWrapper, Wrapper } from './styledOffer';
+import { Map, MapWrapper, TilesWrapper, Wrapper } from './styledOffer';
 import { useQuery } from '@tanstack/react-query';
 import { useParams } from 'react-router-dom';
 import { Loader } from '../../../../common/Loader/loader';
