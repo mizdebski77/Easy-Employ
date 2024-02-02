@@ -1,5 +1,5 @@
 import React from 'react';
-import { ApplyTitle, Form, Input, InputContainer, InputsWrapper, Label, Wrapper } from './styledApply';
+import { ApplyButton, ApplyTitle, Form, Input, InputContainer, LabelWrapper, Label, Wrapper } from './styledApply';
 
 export const Apply = () => {
     return (
@@ -7,7 +7,7 @@ export const Apply = () => {
             <ApplyTitle>Apply for this position</ApplyTitle>
 
             <Form>
-                <InputsWrapper>
+                <LabelWrapper>
                     <InputContainer>
                         <Label>Name & Surname</Label>
                         <Input />
@@ -17,9 +17,9 @@ export const Apply = () => {
                         <Label>E-Mail</Label>
                         <Input />
                     </InputContainer>
-                </InputsWrapper>
+                </LabelWrapper>
 
-                <InputsWrapper>
+                <LabelWrapper>
                     <InputContainer>
                         <Label>GitHub / Porfolio Link</Label>
                         <Input />
@@ -29,7 +29,16 @@ export const Apply = () => {
                         <Label>Linkedin</Label>
                         <Input />
                     </InputContainer>
-                </InputsWrapper>
+                </LabelWrapper>
+
+                <LabelWrapper>
+                    <InputContainer>
+                        <Label>File Upload</Label>
+                        <Input type='file' />
+                    </InputContainer>
+                </LabelWrapper>
+
+                <ApplyButton>Apply</ApplyButton>
 
             </Form>
         </Wrapper>

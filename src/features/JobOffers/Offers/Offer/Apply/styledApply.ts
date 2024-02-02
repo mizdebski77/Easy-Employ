@@ -24,7 +24,7 @@ export const Form = styled.form`
     gap: 40px;
 `;
 
-export const InputsWrapper = styled.div`
+export const LabelWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -49,4 +49,14 @@ export const Input = styled.input`
     &:focus {
         outline-color: ${({ theme }) => theme.color.fontMain};
     }
+`;
+
+export const ApplyButton = styled.button`
+    width: 32%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background: ${({ theme }) => theme.color.fontMain};
+    color: ${({ theme }) => theme.color.mainColor};
 `;
