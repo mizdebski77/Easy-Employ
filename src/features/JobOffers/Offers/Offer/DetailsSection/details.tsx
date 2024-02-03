@@ -35,25 +35,10 @@ export const Details: React.FC<BasicInfoProps> = ({ data }) => {
                 <TileTitle>Job description</TileTitle>
                 <TextSection>
                     <p>
-                        Zadania:
+                        Tasks:
                     </p>
-                    Maksymalizacja wartości dostarczanych przez zespół poprzez zwiększenie zgodności dostarczanych rozwiązań z potrzebami klientów oraz kluczowych interesariuszy
-                    Minimalizacja czasu spędzanego przez development nad identyfikacją i adresacją zagadnień procesowych
-                    Wypracowywanie przejrzystych celów dla developmentów
-                    Tworzenie specyfikacji /definition of done
-                    Tworzenie kryteriów akceptacyjnych
-                    Współtworzenie scenariuszy testowych
-                    Ustalanie priorytetów
-                    Ocena wpływu zmian na procesy klienta
-                    Upewnienie się, że development skupia prace na osiągnięciu wskazanego celu minimalizując nakłady
-                    Upewnienie się, że każde działanie techniczne jest skorelowane ze wskazanymi celami biznesowymi
-                    Podejowanie codzienny decyzji o wydaniu oprogramowania w celu poprawy procesów u klienta
-                    Zarządzanie problemami i brakami z zapewnieniem płynności procesów u klienta z perspektywy całości procesów (end-2-end)
-                    Upewniania się, że wyniki prac developmentu są rozpropagowane wewnątrz organizacji
-                    Implementacja wizji i kierunków w postaci wykonywanych przez development zdań
-                    Zarządzanie backlogiem obszaru produktu
-                    Ocena wpływu na procesy klienta wdrożonych rozwiązań technicznych
-                    Analiza procesów u klienta oraz wariantowanie ich implementacji w produkcie, włącznie z przypadkami brzegowymi
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos culpa quaerat dicta optio earum ex vitae consectetur, quo quae at voluptate, saepe ducimus vel alias in doloremque dignissimos iste soluta.
+
                 </TextSection>
             </Tile>
         </Wrapper>
