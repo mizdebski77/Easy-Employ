@@ -1,27 +1,19 @@
 import { Arrow, CategoryWrapper, FilterCategory, FilterCountSpan, FilterTitle, FiltersWrapper, List, ListItemWrapper, TitleSpan, TitleWrapper } from './styledFilters';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../../../core/store';
-import { toggleFilterList, incrementFiltersList, decrementFiltersList } from './filtersSlice';
+import { toggleFilterList } from './filtersSlice';
 
 export const Filters = () => {
 
     const filters = useSelector((state: RootState) => state.filters.filters)
-    const filterList = useSelector((state: RootState) => state.filters.filtersList)
     const dispatch = useDispatch();
 
-    const handleCheckboxChange = (filterId: number, itemIndex: number, isChecked: boolean) => {
-        if (isChecked) {
-            dispatch(incrementFiltersList());
-        } else {
-            dispatch(decrementFiltersList());
-        }
-    };
 
     return (
         <FiltersWrapper>
             <TitleWrapper>
                 <FilterTitle>Filters</FilterTitle>
-                <TitleSpan>({filterList})</TitleSpan>
+                <TitleSpan>(siema)</TitleSpan>
             </TitleWrapper>
             {filters.map((filter) => (
                 <FilterCategory key={filter.id}>
@@ -36,7 +28,6 @@ export const Filters = () => {
                                 <ListItemWrapper key={index}>
                                     <input
                                         type='checkbox'
-                                        onChange={(e) => handleCheckboxChange(filter.id, index, e.target.checked)}
                                     />
                                     <span>{item.text}</span>
                                     <FilterCountSpan>(12)</FilterCountSpan>

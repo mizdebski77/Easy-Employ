@@ -5,10 +5,13 @@ export interface KeyWords {
 };
 
 export interface Filters {
-    numberOfFilters: number
-    id: number
+    id: number,
+    title: string,
     isExpand: boolean
-    title: string
+    items: { id: number; text: string; checked: boolean }[];
+};
+
+export interface FiltersItems {
     items: [
         {
             id: number,
