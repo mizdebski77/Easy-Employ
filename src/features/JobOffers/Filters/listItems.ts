@@ -46,7 +46,6 @@ export const Categories = [
             { id: 22, text: "Contract of mandate" },
             { id: 23, text: "B2b contract" },
             { id: 24, text: "Internship" },
-            { id: 25, text: "Internship / apprenticeship contract" },
         ],
     },
 

@@ -13,7 +13,10 @@ const offers = [
             { "skill": "JavaScript", "level": "junior" },
             { "skill": "React", "level": "junior" },
             { "skill": "Version Control (Git)", "level": "junior" }
-        ]
+        ],
+        "specialization": "frontend",
+        "employment_type": "Employment contract",
+        "work_dimension": "Full-Time"
     },
     {
         "id": "g8a2s1df",
@@ -29,7 +32,10 @@ const offers = [
             { "skill": "Python", "level": "junior" },
             { "skill": "Data Visualization", "level": "junior" },
             { "skill": "Statistical Analysis", "level": "junior" }
-        ]
+        ],
+        "specialization": "data",
+        "employment_type": "Work contract",
+        "work_dimension": "Part-Time"
     },
     {
         "id": "k3l2j4h5",
@@ -45,7 +51,10 @@ const offers = [
             { "skill": "RESTful API", "level": "mid" },
             { "skill": "Database Design", "level": "mid" },
             { "skill": "Unit Testing", "level": "mid" }
-        ]
+        ],
+        "specialization": "backend",
+        "employment_type": "Contract of mandate",
+        "work_dimension": "Full-Time"
     },
     {
         "id": "o9t7y6a5",
@@ -61,7 +70,10 @@ const offers = [
             { "skill": "Adobe Creative Suite", "level": "junior" },
             { "skill": "Prototyping", "level": "junior" },
             { "skill": "User Testing", "level": "junior" }
-        ]
+        ],
+        "specialization": "design",
+        "employment_type": "B2b contract",
+        "work_dimension": "Part-Time"
     },
     {
         "id": "p1q2r3z4",
@@ -77,7 +89,10 @@ const offers = [
             { "skill": "Penetration Testing", "level": "mid" },
             { "skill": "Security Auditing", "level": "mid" },
             { "skill": "Cyber Threat Intelligence", "level": "mid" }
-        ]
+        ],
+        "specialization": "security",
+        "employment_type": "Internship",
+        "work_dimension": "Full-Time"
     },
     {
         "id": "x5y6z7a8",
@@ -93,7 +108,10 @@ const offers = [
             { "skill": "Natural Language Processing", "level": "mid" },
             { "skill": "Machine Learning Algorithms", "level": "mid" },
             { "skill": "Data Preprocessing", "level": "mid" }
-        ]
+        ],
+        "specialization": "machine-learning",
+        "employment_type": "Contract of mandate",
+        "work_dimension": "Full-Time"
     },
     {
         "id": "b2c3d4e5",
@@ -109,7 +127,10 @@ const offers = [
             { "skill": "Kubernetes", "level": "mid" },
             { "skill": "Continuous Integration/Continuous Deployment (CI/CD)", "level": "mid" },
             { "skill": "Infrastructure as Code (IaC)", "level": "mid" }
-        ]
+        ],
+        "specialization": "devops",
+        "employment_type": "B2b contract",
+        "work_dimension": "Part-Time"
     },
     {
         "id": "f6g7h8i9",
@@ -125,7 +146,10 @@ const offers = [
             { "skill": "React", "level": "mid" },
             { "skill": "MongoDB", "level": "mid" },
             { "skill": "RESTful API Development", "level": "mid" }
-        ]
+        ],
+        "specialization": "full-stack",
+        "employment_type": "Employment contract",
+        "work_dimension": "Temporary"
     },
     {
         "id": "j1k2l3m4",
@@ -141,7 +165,10 @@ const offers = [
             { "skill": "Stakeholder Management", "level": "senior" },
             { "skill": "Budgeting and Financial Management", "level": "senior" },
             { "skill": "Risk Management", "level": "senior" }
-        ]
+        ],
+        "specialization": "project-management",
+        "employment_type": "Internship",
+        "work_dimension": "Temporary"
     }
 ];
 
