@@ -3,24 +3,18 @@ export interface KeyWords {
     id: string
     content: string
 };
+export interface FilterItem {
+    id: number;
+    text: string;
+    checked: boolean;
+}
 
 export interface Filters {
-    id: number,
-    title: string,
-    isExpand: boolean
-    items: { id: number; text: string; checked: boolean }[];
-};
-
-export interface FiltersItems {
-    items: [
-        {
-            id: number,
-            text: string,
-            checked: boolean,
-        },
-    ],
-};
-
+    id: number;
+    title: string;
+    isExpand: boolean;
+    items: FilterItem[];
+}
 export interface Article {
     author: string;
     content: string;

@@ -1,10 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { Filters } from "../../../core/interface";
+import { FilterItem, Filters } from "../../../core/interface";
 import { Categories } from "./listItems";
 
 interface FiltersState {
     filters: Filters[];
-    checkedFilters: Filters[];
+    checkedFilters: FilterItem[];
 }
 
 const filterSlice = createSlice({
@@ -20,6 +20,10 @@ const filterSlice = createSlice({
             filters[index].isExpand = !filters[index].isExpand;
         },
 
+        toggleFilterChecked: ({ checkedFilters }, { payload: filterID }) => {
+            const index = checkedFilters.findIndex(({ id }) => id === filterID);
+            checkedFilters[index].checked = !checkedFilters[index].checked;
+        },
 
 
     }
