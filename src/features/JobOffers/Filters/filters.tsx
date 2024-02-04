@@ -10,15 +10,12 @@ export const Filters = () => {
     const dispatch = useDispatch();
 
     const filters = useSelector((state: RootState) => state.filters.filters)
-    const xd = useSelector((state: RootState) => state.filters)
-    console.log(xd);
-
 
     return (
         <FiltersWrapper>
             <TitleWrapper>
                 <FilterTitle>Filters</FilterTitle>
-                <TitleSpan>(siema)</TitleSpan>
+                <TitleSpan>()</TitleSpan>
             </TitleWrapper>
             {filters.map((filter) => (
                 <FilterCategory key={filter.id}>
