@@ -1,7 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { FilterItem, Filters } from "../../../core/interface";
 import { Categories } from "./listItems";
-import { Items } from "./items";
 
 interface FiltersState {
     filters: Filters[];

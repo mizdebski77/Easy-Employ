@@ -12,6 +12,7 @@ export const Filters = () => {
     const checkedCount = checkedFilters.filter(item => item.checked).length;
 
 
+
     return (
         <FiltersWrapper>
             <TitleWrapper>
@@ -29,7 +30,9 @@ export const Filters = () => {
                         <List>
                             {filter.items.map((item) => (
                                 <ListItemWrapper key={item.id} onClick={() => dispatch(switchFilterCheck(item.id))}>
-                                    <SpanCheckBox />
+                                    <SpanCheckBox
+                                        checked={checkedFilters.some(checkedItem => checkedItem.id === item.id && checkedItem.checked)}
+                                    />
                                     <span>{item.text}</span>
                                     <FilterCountSpan>(12)</FilterCountSpan>
                                 </ListItemWrapper>

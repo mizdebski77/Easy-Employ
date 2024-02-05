@@ -1,4 +1,4 @@
-import { styled } from "styled-components";
+import { css, styled } from "styled-components";
 
 export const Wrapper = styled.section`
 
@@ -64,9 +64,13 @@ export const ListItemWrapper = styled.div`
     }
 `;
 
-export const SpanCheckBox = styled.div`
+export const SpanCheckBox = styled.div<{ checked?: boolean; }>`
     border: 1px solid ${({ theme }) => theme.color.fontMain};
     padding: 6px;
+    
+    ${({ checked }) => checked && css`
+        background: ${({ theme }) => theme.color.fontMain};
+    `};
 `;
 
 export const FilterCountSpan = styled.span`
