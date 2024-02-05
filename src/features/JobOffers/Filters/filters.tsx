@@ -8,7 +8,10 @@ export const Filters = () => {
     const dispatch = useDispatch();
 
     const filters = useSelector((state: RootState) => state.filters.filters)
+    const xd = useSelector((state: RootState) => state.filters)
 
+    console.log(xd);
+    
     return (
         <FiltersWrapper>
             <TitleWrapper>

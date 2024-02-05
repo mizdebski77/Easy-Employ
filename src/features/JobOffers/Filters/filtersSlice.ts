@@ -12,7 +12,7 @@ const filterSlice = createSlice({
     name: "filters",
     initialState: {
         filters: Categories,
-        checkedFilters: Items,
+        checkedFilters: Categories.flatMap(category => category.items),
     } as FiltersState,
 
     reducers: {
