@@ -1,22 +1,22 @@
 import { Arrow, CategoryWrapper, FilterCategory, FilterCountSpan, FilterTitle, FiltersWrapper, List, ListItemWrapper, TitleSpan, TitleWrapper } from './styledFilters';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../../../core/store';
-import { addFilter, toggleFilterList } from './filtersSlice';
+import { switchFilterCheck, toggleFilterList } from './filtersSlice';
 
 export const Filters = () => {
 
     const dispatch = useDispatch();
 
     const filters = useSelector((state: RootState) => state.filters.filters)
-    const xd = useSelector((state: RootState) => state.filters)
+    const checkedFilters = useSelector((state: RootState) => state.filters.checkedFilters)
+    const checkedCount = checkedFilters.filter(item => item.checked).length;
 
-    console.log(xd);
-    
+
     return (
         <FiltersWrapper>
             <TitleWrapper>
                 <FilterTitle>Filters</FilterTitle>
-                <TitleSpan>()</TitleSpan>
+                <TitleSpan>{checkedCount > 0 ? `(${checkedCount})` : ''}</TitleSpan>
             </TitleWrapper>
             {filters.map((filter) => (
                 <FilterCategory key={filter.id}>
@@ -29,7 +29,7 @@ export const Filters = () => {
                         <List>
                             {filter.items.map((item) => (
                                 <ListItemWrapper key={item.id}>
-                                    <button onClick={() => dispatch(addFilter(item.id))}>{item.text}</button>
+                                    <button onClick={() => dispatch(switchFilterCheck(item.id))}>{item.text}</button>
                                     <FilterCountSpan>(12)</FilterCountSpan>
                                 </ListItemWrapper>
                             ))}

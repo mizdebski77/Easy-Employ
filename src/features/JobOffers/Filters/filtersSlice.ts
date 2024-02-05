@@ -21,7 +21,7 @@ const filterSlice = createSlice({
             filters[index].isExpand = !filters[index].isExpand;
         },
 
-        addFilter: ({ checkedFilters }, { payload: filterID }) => {
+        switchFilterCheck: ({ checkedFilters }, { payload: filterID }) => {
             const index = checkedFilters.findIndex((({ id }) => id === filterID));
             checkedFilters[index].checked = !checkedFilters[index].checked;
         },
@@ -32,7 +32,7 @@ const filterSlice = createSlice({
 export const selectFiltersState = (state: FiltersState) => state;
 export const SelectFilters = (state: FiltersState) => state.filters;
 
-export const { toggleFilterList, addFilter } = filterSlice.actions;
+export const { toggleFilterList, switchFilterCheck } = filterSlice.actions;
 
 export default filterSlice.reducer;
 
