@@ -29,7 +29,11 @@ export const Filters = () => {
                     {filter.isExpand && (
                         <List>
                             {filter.items.map((item) => (
-                                <ListItemWrapper key={item.id} onClick={() => dispatch(switchFilterCheck(item.id))}>
+                                <ListItemWrapper
+                                    key={item.id}
+                                    onClick={() => dispatch(switchFilterCheck(item.id))}
+                                    checked={checkedFilters.some(checkedItem => checkedItem.id === item.id && checkedItem.checked)}
+                                >
                                     <SpanCheckBox
                                         checked={checkedFilters.some(checkedItem => checkedItem.id === item.id && checkedItem.checked)}
                                     />

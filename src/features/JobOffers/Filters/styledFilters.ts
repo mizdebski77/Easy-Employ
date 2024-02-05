@@ -49,9 +49,12 @@ export const Arrow = styled.button`
 
 export const List = styled.div`
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 `;
 
-export const ListItemWrapper = styled.div`
+export const ListItemWrapper = styled.div<{ checked?: boolean; }>`
     display: flex;
     align-items: center;
     gap: 10px;
@@ -61,7 +64,11 @@ export const ListItemWrapper = styled.div`
 
     &:hover {
         background: ${({ theme }) => theme.color.mainColor};
-    }
+    };
+
+    ${({ checked }) => checked && css`
+        background: ${({ theme }) => theme.color.thirdColor};
+    `};
 `;
 
 export const SpanCheckBox = styled.div<{ checked?: boolean; }>`
