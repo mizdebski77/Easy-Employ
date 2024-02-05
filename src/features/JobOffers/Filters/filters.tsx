@@ -1,4 +1,4 @@
-import { Arrow, CategoryWrapper, FilterCategory, FilterCountSpan, FilterTitle, FiltersWrapper, List, ListItemWrapper, TitleSpan, TitleWrapper } from './styledFilters';
+import { Arrow, CategoryWrapper, FilterCategory, FilterCountSpan, FilterTitle, FiltersWrapper, List, ListItemWrapper, SpanCheckBox, TitleSpan, TitleWrapper } from './styledFilters';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../../../core/store';
 import { switchFilterCheck, toggleFilterList } from './filtersSlice';
@@ -28,8 +28,9 @@ export const Filters = () => {
                     {filter.isExpand && (
                         <List>
                             {filter.items.map((item) => (
-                                <ListItemWrapper key={item.id}>
-                                    <button onClick={() => dispatch(switchFilterCheck(item.id))}>{item.text}</button>
+                                <ListItemWrapper key={item.id} onClick={() => dispatch(switchFilterCheck(item.id))}>
+                                    <SpanCheckBox />
+                                    <span>{item.text}</span>
                                     <FilterCountSpan>(12)</FilterCountSpan>
                                 </ListItemWrapper>
                             ))}

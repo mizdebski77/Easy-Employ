@@ -51,7 +51,7 @@ export const List = styled.div`
     margin-top: 20px;
 `;
 
-export const ListItemWrapper = styled.label`
+export const ListItemWrapper = styled.div`
     display: flex;
     align-items: center;
     gap: 10px;
@@ -62,6 +62,11 @@ export const ListItemWrapper = styled.label`
     &:hover {
         background: ${({ theme }) => theme.color.mainColor};
     }
+`;
+
+export const SpanCheckBox = styled.div`
+    border: 1px solid ${({ theme }) => theme.color.fontMain};
+    padding: 6px;
 `;
 
 export const FilterCountSpan = styled.span`
