@@ -10,7 +10,7 @@ export const OfferSection = () => {
 
     const { data, isLoading, error } = useQuery({
         queryKey: ['news'],
-        queryFn: () => fetch("http://localhost:5000/")
+        queryFn: () => fetch("https://esay-employ-database-wfsz.onrender.com")
             .then((response: Response) => response.json())
     });
 

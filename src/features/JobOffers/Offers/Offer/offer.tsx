@@ -15,13 +15,9 @@ export const Offer = () => {
 
     const { data, isLoading, error } = useQuery({
         queryKey: ['offer'],
-        queryFn: () => fetch(`http://localhost:5000/offer/${id}`)
+        queryFn: () => fetch(`https://esay-employ-database-wfsz.onrender.com/Offer/${id}`)
             .then((response: Response) => response.json())
     });
-
-    if (!data) {
-        return null;
-    }
 
     return (
         <Wrapper>
