@@ -13,6 +13,7 @@ export const Categories = [
     {
         id: 2,
         title: "Specializations",
+        isExpand: false,
         items: [
             { id: 5, text: "Backend", checked: false },
             { id: 6, text: "Frontend", checked: false },
@@ -27,6 +28,7 @@ export const Categories = [
     {
         id: 3,
         title: "Position Level",
+        isExpand: false,
         items: [
             { id: 13, text: "Trainee", checked: false },
             { id: 14, text: "Junior", checked: false },
@@ -40,6 +42,7 @@ export const Categories = [
     {
         id: 4,
         title: "Employment Type",
+        isExpand: false,
         items: [
             { id: 20, text: "Employment contract", checked: false },
             { id: 21, text: "Work contract", checked: false },
@@ -51,6 +54,7 @@ export const Categories = [
     {
         id: 5,
         title: "Working dimension",
+        isExpand: false,
         items: [
             { id: 26, text: "Full-Time", checked: false },
             { id: 27, text: "Part-Time", checked: false },

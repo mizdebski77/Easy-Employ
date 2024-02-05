@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { FilterItem, Filters } from "../../../core/interface";
 import { Categories } from "./listItems";
+import { Items } from "./items";
 
 interface FiltersState {
     filters: Filters[];
@@ -11,7 +12,7 @@ const filterSlice = createSlice({
     name: "filters",
     initialState: {
         filters: Categories,
-        checkedFilters: [],
+        checkedFilters: Items,
     } as FiltersState,
 
     reducers: {
@@ -20,9 +21,10 @@ const filterSlice = createSlice({
             filters[index].isExpand = !filters[index].isExpand;
         },
 
-        addFilter: ({ checkedFilters }, { payload: checkedFilter }) => {
-            checkedFilters.push(checkedFilter)
-        }
+        addFilter: ({ checkedFilters }, { payload: filterID }) => {
+            const index = checkedFilters.findIndex((({ id }) => id === filterID));
+            checkedFilters[index].checked = !checkedFilters[index].checked;
+        },
 
     }
 })

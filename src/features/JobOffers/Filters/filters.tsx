@@ -26,7 +26,7 @@ export const Filters = () => {
                         <List>
                             {filter.items.map((item) => (
                                 <ListItemWrapper key={item.id}>
-                                    <button onClick={() => dispatch(addFilter(item))}>{item.text}</button>
+                                    <button onClick={() => dispatch(addFilter(item.id))}>{item.text}</button>
                                     <FilterCountSpan>(12)</FilterCountSpan>
                                 </ListItemWrapper>
                             ))}
