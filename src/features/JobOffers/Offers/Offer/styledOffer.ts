@@ -3,6 +3,9 @@ import { styled } from "styled-components";
 export const Wrapper = styled.section`
     min-height: 100vh;
     padding: 40px;
+`;
+
+export const ContentWrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
