@@ -67,7 +67,7 @@ export const ListItemWrapper = styled.div<{ checked?: boolean; }>`
     };
 
     ${({ checked }) => checked && css`
-        background: ${({ theme }) => theme.color.thirdColor};
+        background: ${({ theme }) => theme.color.mainColor};
     `};
 `;
 
