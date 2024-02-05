@@ -2,8 +2,6 @@ import { Arrow, CategoryWrapper, FilterCategory, FilterCountSpan, FilterTitle, F
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../../../core/store';
 import { addFilter, toggleFilterList } from './filtersSlice';
-import { useState } from 'react';
-import { nanoid } from '@reduxjs/toolkit';
 
 export const Filters = () => {
 
