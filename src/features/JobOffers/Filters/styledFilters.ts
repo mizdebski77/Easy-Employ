@@ -73,8 +73,14 @@ export const ListItemWrapper = styled.div<{ checked?: boolean; }>`
 
 export const SpanCheckBox = styled.div<{ checked?: boolean; }>`
     border: 1px solid ${({ theme }) => theme.color.fontMain};
-    padding: 6px;
-    
+    color: ${({ theme }) => theme.color.secondColor};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    height: 18px;
+    width: 18px;
+
     ${({ checked }) => checked && css`
         background: ${({ theme }) => theme.color.fontMain};
     `};

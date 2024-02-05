@@ -36,7 +36,10 @@ export const Filters = () => {
                                 >
                                     <SpanCheckBox
                                         checked={checkedFilters.some(checkedItem => checkedItem.id === item.id && checkedItem.checked)}
-                                    />
+                                    >
+                                        {checkedFilters.some(checkedItem => checkedItem.id === item.id && checkedItem.checked)
+                                            ? '✔' : ''}
+                                    </SpanCheckBox>
                                     <span>{item.text}</span>
                                     <FilterCountSpan>(12)</FilterCountSpan>
                                 </ListItemWrapper>
