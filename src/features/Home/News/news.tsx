@@ -27,57 +27,26 @@ export const News = () => {
             .then((response: Response) => response.json())
     });
 
+    console.log(data);
+    
+
     return (
         <Wrapper>
             <Title>The most important news from the business world in one place</Title>
             {isLoading ? <Loader /> : error ? <Error /> : (
-                <CustomSwiper
-                    breakpoints={{
-                        900: {
-                            slidesPerView: 2,
-                            spaceBetween: 40,
-                        },
-                        1200: {
-                            slidesPerView: 3,
-                        },
-                    }}
-                    grabCursor
-                    effect={'coverflow'}
-                    centeredSlides={true}
-                    slidesPerView={1}
-                    modules={[Navigation, Scrollbar, EffectCoverflow, Pagination]}
-                    spaceBetween={20}
-                    loop={true}
-                    navigation
-                    pagination={{
-                        clickable: true
-                    }}
-                    coverflowEffect={{
-                        rotate: 50,
-                        stretch: 0,
-                        depth: 100,
-                        modifier: 1,
-                        slideShadows: true,
-                    }}
-                >
-                    <TilesWrapper>
-                        {data && data.articles
-                            ? data.articles
-                                .filter((article: Article) => article.urlToImage && article.content)
-                                .map((article: Article, index: number) => (
-                                    <Tile key={index}>
-                                        <TileImage src={article.urlToImage} />
-                                        <TileContent>
-                                            <TileTitle>{article.title}</TileTitle>
-                                            <TileArticle>{article.content}</TileArticle>
-                                            <ReadMore href={article.url} target='_blank'> Read more 🡢 </ReadMore>
-                                        </TileContent>
-                                    </Tile>
-                                ))
-                            : <Error />
-                        }
-                    </TilesWrapper>
-                </CustomSwiper>
+
+                <TilesWrapper>
+                    {data.map((article: Article, index: number) => (
+                        <Tile key={index}>
+                            <TileImage src={article.urlToImage} />
+                            <TileContent>
+                                <TileTitle>{article.title}</TileTitle>
+                                <TileArticle>{article.content}</TileArticle>
+                                <ReadMore href={article.url} target='_blank'> Read more 🡢 </ReadMore>
+                            </TileContent>
+                        </Tile>
+                    ))}
+                </TilesWrapper>
             )}
         </Wrapper >
     );
