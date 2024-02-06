@@ -19,11 +19,8 @@ export const Offers = () => {
     return (
         <Wrapper>
             <OffersTitle>Offers recommended for you </OffersTitle>
-
             {isLoading ? <Loader /> : error ? <Error /> : (
-
                 (data.map((offer: OfferArray) => (
-
                     <OfferTile to={`/Offer/${offer.id}`} key={offer.id} onClick={() => scrollTop()}>
                         <MainSection>
                             <Logo src={offer.logo} />
@@ -47,13 +44,9 @@ export const Offers = () => {
                                     <OfferCaptionTContent>{offer.work_type}</OfferCaptionTContent>
                                 </OfferCaptionWrapper>
                             </CaptionsContainer>
-
                         </ContentWrapper>
-
                     </OfferTile>
-                ))
-                )
-            )}
+                ))))}
         </Wrapper>
     );
 };
