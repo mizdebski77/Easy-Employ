@@ -71,7 +71,7 @@ export const News = () => {
                                         <TileImage src={article.urlToImage} />
                                         <TileContent>
                                             <TileTitle>{article.title}</TileTitle>
-                                            <TileArticle>{article.content}</TileArticle>
+                                            <TileArticle>{article.description}</TileArticle>
                                             <ReadMore href={article.url} target='_blank'> Read more 🡢 </ReadMore>
                                         </TileContent>
                                     </Tile>

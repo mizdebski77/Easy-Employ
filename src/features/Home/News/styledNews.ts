@@ -53,7 +53,7 @@ export const Tile = styled(SwiperSlide)`
     box-shadow: 0 0 10px ${({ theme }) => theme.color.fontSecond};
     border-radius: 20px;
     transition: 0.3s;
-    min-height: 320px;
+    min-height: 520px;
 
     &:hover {
         box-shadow: 0 0 10px ${({ theme }) => theme.color.fontMainActive};
@@ -78,10 +78,11 @@ export const TileContent = styled.div`
 `;
 
 export const TileTitle = styled.h2`
-    font-size: 32px;
+    font-size: 24px;
     font-weight: normal;
     color: ${({ theme }) => theme.color.fontMain};
     text-align: center;
+    margin: 0 0 10px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         font-size: 28px;
@@ -90,10 +91,9 @@ export const TileTitle = styled.h2`
 `;
 
 export const TileArticle = styled.article`
-    font-size: 20px;
+    font-size: 16px;
     text-align: justify;
-    max-height: 160px;
-    overflow: auto;
+    letter-spacing: 1px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         font-size: 16px;
@@ -107,6 +107,9 @@ export const ReadMore = styled.a`
     float: right;
     padding: 20px 0 20px 20px;
     transition: 0.3s;
+    position: fixed;
+    bottom: 0;
+    right: 20px;
 
     &:hover {
         transform: scale(1.05);
