@@ -1,4 +1,3 @@
-import React from 'react';
 import { ContentWrapper, Map, MapWrapper, TilesWrapper, Wrapper } from './styledOffer';
 import { useQuery } from '@tanstack/react-query';
 import { useParams } from 'react-router-dom';
@@ -37,7 +36,6 @@ export const Offer = () => {
                     </div>
                     
                     <Apply />
-
                 </ContentWrapper>
             )}
         </Wrapper>
