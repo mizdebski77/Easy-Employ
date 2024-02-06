@@ -27,6 +27,9 @@ export const News = () => {
             .then((response: Response) => response.json())
     });
 
+    console.log(data);
+    
+
     return (
         <Wrapper>
             <Title>The most important news from the business world in one place</Title>
@@ -47,7 +50,6 @@ export const News = () => {
                     slidesPerView={1}
                     modules={[Navigation, Scrollbar, EffectCoverflow, Pagination]}
                     spaceBetween={20}
-                    loop={true}
                     navigation
                     pagination={{
                         clickable: true

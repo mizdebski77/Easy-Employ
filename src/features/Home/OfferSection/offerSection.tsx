@@ -9,7 +9,7 @@ import { OfferArray } from '../../../core/interface';
 export const OfferSection = () => {
 
     const { data, isLoading, error } = useQuery({
-        queryKey: ['news'],
+        queryKey: ['offers'],
         queryFn: () => fetch("https://esay-employ-database-wfsz.onrender.com")
             .then((response: Response) => response.json())
     });
