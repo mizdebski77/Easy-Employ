@@ -20,8 +20,6 @@ export const Offers = () => {
     const checkedFilters = useSelector((state: RootState) => state.filters.checkedFilters);
     const filtersList = checkedFilters.filter(item => item.checked);
 
-    console.log(filtersList);
-
 
     const isOfferMatchingFilters = (offer: OfferArray): boolean => {
         return filtersList.some(filter => offer.keywords.includes(filter.text));

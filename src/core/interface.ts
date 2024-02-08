@@ -29,6 +29,7 @@ export interface Article {
 export interface OfferArray {
     id: string;
     position: string;
+    specialization: string;
     gross_salary: string;
     work_type: string;
     company_name: string;
