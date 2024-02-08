@@ -13,7 +13,7 @@ export const Offers = () => {
 
     const { data, isLoading, error } = useQuery({
         queryKey: ['news'],
-        queryFn: () => fetch("https://esay-employ-database-wfsz.onrender.com/")
+        queryFn: () => fetch("http://localhost:5000/")
             .then((response: Response) => response.json())
     });
 
@@ -21,8 +21,7 @@ export const Offers = () => {
     const filtersList = checkedFilters.filter(item => item.checked);
 
     const isOfferMatchingFilters = (offer: OfferArray): boolean => {
-        const offerTexts = Object.values(offer).map(value => String(value));
-        return filtersList.some(filter => offerTexts.some(text => text.includes(filter.text)));
+        return filtersList.some(filter => offer.keywords.includes(filter.text));
     };
 
 

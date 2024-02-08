@@ -37,4 +37,5 @@ export interface OfferArray {
         skill: string;
         level: string;
     }>;
+    keywords: string[]; 
 };
