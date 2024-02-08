@@ -10,19 +10,21 @@ import { useSelector } from 'react-redux';
 import { RootState } from '../../../core/store';
 
 export const Offers = () => {
+
     const { data, isLoading, error } = useQuery({
         queryKey: ['news'],
         queryFn: () => fetch("https://esay-employ-database-wfsz.onrender.com/")
             .then((response: Response) => response.json())
     });
+
     const checkedFilters = useSelector((state: RootState) => state.filters.checkedFilters);
     const filtersList = checkedFilters.filter(item => item.checked);
 
-    console.log(filtersList);
-
     const isOfferMatchingFilters = (offer: OfferArray): boolean => {
-        return filtersList.some(filter => offer.work_type.includes(filter.text));
+        const offerTexts = Object.values(offer).map(value => String(value));
+        return filtersList.some(filter => offerTexts.some(text => text.includes(filter.text)));
     };
+
 
     const filtersApplied = filtersList.length > 0;
 
