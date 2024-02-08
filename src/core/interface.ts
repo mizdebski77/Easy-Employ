@@ -7,6 +7,7 @@ export interface FilterItem {
     id: number;
     text: string;
     checked: boolean;
+    category: string;
 }
 
 export interface Filters {
@@ -37,5 +38,5 @@ export interface OfferArray {
         skill: string;
         level: string;
     }>;
-    keywords: string[]; 
+    keywords: string[];
 };
