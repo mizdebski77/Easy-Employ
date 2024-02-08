@@ -10,52 +10,60 @@ import { useSelector } from 'react-redux';
 import { RootState } from '../../../core/store';
 
 export const Offers = () => {
-
     const { data, isLoading, error } = useQuery({
         queryKey: ['news'],
         queryFn: () => fetch("https://esay-employ-database-wfsz.onrender.com/")
             .then((response: Response) => response.json())
     });
-    const checkedFilters = useSelector((state: RootState) => state.filters.checkedFilters)
+    const checkedFilters = useSelector((state: RootState) => state.filters.checkedFilters);
     const filtersList = checkedFilters.filter(item => item.checked);
 
     console.log(filtersList);
+
+    const isOfferMatchingFilters = (offer: OfferArray): boolean => {
+        return filtersList.some(filter => offer.work_type.includes(filter.text));
+    };
+
+    const filtersApplied = filtersList.length > 0;
 
     return (
         <Wrapper>
             <OffersTitle>Offers recommended for you </OffersTitle>
             {isLoading ? <Loader /> : error ? <Error /> : (
-                (data.map((offer: OfferArray) => (
-                    <OfferTile
-                        to={`/Offer/${offer.id}`}
-                        key={offer.id}
-                        onClick={() => scrollTop()}
-                    >
-                        <MainSection>
-                            <Logo src={offer.logo} />
-                            <OfferTitle>{offer.position}</OfferTitle>
-                        </MainSection>
+                (data
+                    .filter((offer: OfferArray) => (filtersApplied ? isOfferMatchingFilters(offer) : true))
+                    .map((offer: OfferArray) => (
+                        <OfferTile
+                            to={`/Offer/${offer.id}`}
+                            key={offer.id}
+                            onClick={() => scrollTop()}
+                        >
+                            <MainSection>
+                                <Logo src={offer.logo} />
+                                <OfferTitle>{offer.position}</OfferTitle>
+                            </MainSection>
 
-                        <ContentWrapper>
-                            <CaptionsContainer>
-                                <OfferCaptionWrapper>
-                                    <OfferCaptionTitle>Gross Sallary:</OfferCaptionTitle>
-                                    <OfferCaptionTContent>{offer.gross_salary}</OfferCaptionTContent>
-                                </OfferCaptionWrapper>
+                            <ContentWrapper>
+                                <CaptionsContainer>
+                                    <OfferCaptionWrapper>
+                                        <OfferCaptionTitle>Gross Sallary:</OfferCaptionTitle>
+                                        <OfferCaptionTContent>{offer.gross_salary}</OfferCaptionTContent>
+                                    </OfferCaptionWrapper>
 
-                                <OfferCaptionWrapper>
-                                    <OfferCaptionTitle>Location:</OfferCaptionTitle>
-                                    <OfferCaptionTContent>{offer.location}</OfferCaptionTContent>
-                                </OfferCaptionWrapper>
+                                    <OfferCaptionWrapper>
+                                        <OfferCaptionTitle>Location:</OfferCaptionTitle>
+                                        <OfferCaptionTContent>{offer.location}</OfferCaptionTContent>
+                                    </OfferCaptionWrapper>
 
-                                <OfferCaptionWrapper>
-                                    <OfferCaptionTitle>Type of work:</OfferCaptionTitle>
-                                    <OfferCaptionTContent>{offer.work_type}</OfferCaptionTContent>
-                                </OfferCaptionWrapper>
-                            </CaptionsContainer>
-                        </ContentWrapper>
-                    </OfferTile>
-                ))))}
+                                    <OfferCaptionWrapper>
+                                        <OfferCaptionTitle>Type of work:</OfferCaptionTitle>
+                                        <OfferCaptionTContent>{offer.work_type}</OfferCaptionTContent>
+                                    </OfferCaptionWrapper>
+                                </CaptionsContainer>
+                            </ContentWrapper>
+                        </OfferTile>
+                    ))
+                ))}
         </Wrapper>
     );
 };
