@@ -22,7 +22,7 @@ export const Offers = () => {
 
 
     const isOfferMatchingFilters = (offer: OfferArray): boolean => {
-        return filtersList.some(filter => offer.keywords.includes(filter.text));
+        return filtersList.every(filter => offer.keywords.includes(filter.text));
     };
 
 
