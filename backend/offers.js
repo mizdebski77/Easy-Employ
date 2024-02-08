@@ -16,7 +16,8 @@ const offers = [
         ],
         "specialization": "frontend",
         "employment_type": "Employment contract",
-        "work_dimension": "Full-Time"
+        "work_dimension": "Full-Time",
+        "keywords": ["HTML", "CSS", "JavaScript", "React", "Version Control (Git)", "Hybrid", "B2B", "Full-Time", "Junior"]
     },
     {
         "id": "g8a2s1df",
@@ -35,7 +36,8 @@ const offers = [
         ],
         "specialization": "data",
         "employment_type": "Work contract",
-        "work_dimension": "Part-Time"
+        "work_dimension": "Part-Time",
+        "keywords": ["SQL", "Data Analysis", "Junior", "Python", "Data Visualization", "Statistical Analysis", "Remote", "Work contract", "Part-Time"]
     },
     {
         "id": "k3l2j4h5",
@@ -54,7 +56,8 @@ const offers = [
         ],
         "specialization": "backend",
         "employment_type": "Contract of mandate",
-        "work_dimension": "Full-Time"
+        "work_dimension": "Full-Time",
+        "keywords": ["Java", "Spring Boot", "Mid-Level", "RESTful API", "Database Design", "Unit Testing", "On-site", "Contract of mandate", "Full-Time"]
     },
     {
         "id": "o9t7y6a5",
@@ -73,7 +76,8 @@ const offers = [
         ],
         "specialization": "design",
         "employment_type": "B2b contract",
-        "work_dimension": "Part-Time"
+        "work_dimension": "Part-Time",
+        "keywords": ["UI Design", "UX Research", "Junior", "Adobe Creative Suite", "Prototyping", "User Testing", "Hybrid", "B2B", "Part-Time"]
     },
     {
         "id": "p1q2r3z4",
@@ -92,7 +96,8 @@ const offers = [
         ],
         "specialization": "security",
         "employment_type": "Internship",
-        "work_dimension": "Full-Time"
+        "work_dimension": "Full-Time",
+        "keywords": ["Network Security", "Mid-Level", "Incident Response", "Penetration Testing", "Security Auditing", "Cyber Threat Intelligence", "Remote", "Internship", "Full-Time"]
     },
     {
         "id": "x5y6z7a8",
@@ -111,7 +116,8 @@ const offers = [
         ],
         "specialization": "machine-learning",
         "employment_type": "Contract of mandate",
-        "work_dimension": "Full-Time"
+        "work_dimension": "Full-Time",
+        "keywords": ["Python", "TensorFlow", "Mid-Level", "Natural Language Processing", "Machine Learning Algorithms", "Data Preprocessing", "On-site", "Contract of mandate", "Full-Time"]
     },
     {
         "id": "b2c3d4e5",
@@ -130,7 +136,8 @@ const offers = [
         ],
         "specialization": "devops",
         "employment_type": "B2b contract",
-        "work_dimension": "Part-Time"
+        "work_dimension": "Part-Time",
+        "keywords": ["Linux System Administration", "Mid-Level", "Docker", "Kubernetes", "Continuous Integration/Continuous Deployment (CI/CD)", "Infrastructure as Code (IaC)", "Hybrid", "B2B", "Part-Time"]
     },
     {
         "id": "f6g7h8i9",
@@ -149,7 +156,8 @@ const offers = [
         ],
         "specialization": "full-stack",
         "employment_type": "Employment contract",
-        "work_dimension": "Temporary"
+        "work_dimension": "Temporary",
+        "keywords": ["JavaScript (Node.js)", "Express.js", "Mid-Level", "React", "MongoDB", "RESTful API Development", "Remote", "Employment contract", "Temporary"]
     },
     {
         "id": "j1k2l3m4",
@@ -168,7 +176,8 @@ const offers = [
         ],
         "specialization": "project-management",
         "employment_type": "Internship",
-        "work_dimension": "Temporary"
+        "work_dimension": "Temporary",
+        "keywords": ["Project Management", "Agile Methodologies", "Senior", "Stakeholder Management", "Budgeting and Financial Management", "Risk Management", "On-site", "Internship", "Temporary"]
     }
 ];
 
