@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import keyWordsReducer from '../features/JobOffers/FormElement/keyWordsSlice';
+import keyWordsReducer from '../features/JobOffers/FormElement/formSlice';
 import filtersReducer from '../features/JobOffers/Filters/filtersSlice';
 
 const store = configureStore({

@@ -19,7 +19,13 @@ export const Offers = () => {
 
     const checkedFilters = useSelector((state: RootState) => state.filters.checkedFilters);
     const filtersList = checkedFilters.filter(item => item.checked);
+    const keyWords = useSelector((state: RootState) => state.keyWords.keyWords);
 
+    console.log(keyWords);
+
+    const isOfferMatchingKeywords = (offer: OfferArray) => {
+        return keyWords.every(keyWord => offer.keywords.includes(keyWord.content))
+    }
 
     const isOfferMatchingFilters = (offer: OfferArray): boolean => {
         return filtersList.every(filter => offer.keywords.includes(filter.text));

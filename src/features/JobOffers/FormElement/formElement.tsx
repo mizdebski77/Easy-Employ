@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { AddKeyWordButton, Form, Input, InputWrapper, KeyWord, KeyWordContainer, KeyWordInput, KeyWordsWrapper, Legend, Option, RemoveButton, SearchButton, Select, Wrapper } from './styledFormElement';
 import { nanoid } from '@reduxjs/toolkit';
 import { useDispatch, useSelector } from 'react-redux';
-import { addKeyWord, removeKeyWord } from './keyWordsSlice';
+import { addKeyWord, removeKeyWord } from './formSlice';
 import { RootState } from '../../../core/store';
 
 export const FormElement = () => {
@@ -11,6 +11,10 @@ export const FormElement = () => {
     const keyWords = useSelector((state: RootState) => state.keyWords.keyWords)
 
     const [newKeyWord, setNewKeyWord] = useState("");
+
+    const onFormSubmit = (event: React.FormEvent) => {
+        event.preventDefault();
+    }
 
     const handleAddNewKeyWord = () => {
         if (newKeyWord.length > 0) {
@@ -25,7 +29,9 @@ export const FormElement = () => {
 
     return (
         <Wrapper>
-            <Form>
+            <Form
+                onSubmit={onFormSubmit}
+            >
                 <InputWrapper>
                     <KeyWordInput
                         placeholder='Key Words'
