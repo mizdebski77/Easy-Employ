@@ -24,7 +24,6 @@ export const Offers = () => {
         return filtersList.every(filter => offer.keywords.includes(filter.text));
     };
 
-
     const filtersApplied = filtersList.length > 0;
 
     return (
