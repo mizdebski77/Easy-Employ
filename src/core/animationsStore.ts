@@ -1,5 +1,3 @@
-
-
 export const openWrapper = {
     opacity: 1,
 };
