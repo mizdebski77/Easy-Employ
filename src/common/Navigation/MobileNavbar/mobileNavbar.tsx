@@ -1,6 +1,6 @@
 import React from 'react';
 import { ImgWrapper, NavbarLink, Wrapper, Img, LinkImg } from './styledMobileNavbar';
-import { links } from '../../links';
+import { links } from '../links';
 import accountImg from '../../Images/account.svg';
 import languageImg from '../../Images/language.svg';
 import { AnimatePresence, motion } from 'framer-motion';

@@ -1,7 +1,7 @@
 import React from 'react';
 import { AppImg, AppTitle, AppWrapper, IformationsWrapper, InformationAppWrapper, InformationLink, InformationsLinksWrapper, Logo, LogoFirstLetters, LogoText, LogoWrapper, MainSection, SocialLink, ToolsLink, ToolsLinksWrapper, ToolsTitle, ToolsWrapper, Wrapper } from './styledFooter';
 import logo from '../Images/logo.png';
-import { links } from '../links';
+import { links } from '../Navigation/links';
 import app from '../Images/appSection/app.png';
 import google from '../Images/appSection/google.png';
 import link from '../Images/SocialMedia/link.png';
