@@ -3,7 +3,6 @@ import { styled } from "styled-components";
 export const Wrapper = styled.div`
     margin-top: 240px;
     padding: 20px 80px;
-    border-radius: 20px;
     background: ${({ theme }) => theme.color.secondColor};
     display: grid;
     grid-template-columns:2fr 1.5fr;
@@ -15,6 +14,7 @@ export const Wrapper = styled.div`
         flex-direction: column-reverse;
         gap: 20px;
         margin-top: 40px;
+        padding: 20px 10px;
     };
 `;
 
@@ -62,12 +62,8 @@ export const DownloadInformation = styled.h2`
     text-align: center;
     margin-bottom: 0px;
 
-    @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
-        font-size: 28px;
-    };
-
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
-        font-size: 24px;
+        font-size: 20px;
     };
 `;
 
