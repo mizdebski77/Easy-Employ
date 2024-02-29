@@ -2,12 +2,11 @@ import { styled } from "styled-components";
 
 export const Wrapper = styled.div`
     margin-top: 240px;
-    padding: 20px;
+    padding: 20px 80px;
     border-radius: 20px;
     background: ${({ theme }) => theme.color.secondColor};
     display: grid;
-    grid-template-columns: 2fr 1.5fr;
-    gap: 40px;
+    grid-template-columns:2fr 1.5fr;
     position: relative;
     margin-bottom: 80px;
 
@@ -17,10 +16,6 @@ export const Wrapper = styled.div`
         gap: 20px;
         margin-top: 40px;
     };
-`;
-
-export const TextWrapper = styled.div`
-
 `;
 
 export const ImagesWrapper = styled.div`
@@ -62,7 +57,7 @@ export const Title = styled.h1`
 
 export const DownloadInformation = styled.h2`
     color: ${({ theme }) => theme.color.fontMain};
-    font-size: 32px;
+    font-size: 28px;
     font-weight: normal;
     text-align: center;
     margin-bottom: 0px;

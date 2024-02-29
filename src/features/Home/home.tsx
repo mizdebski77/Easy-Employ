@@ -14,7 +14,7 @@ export const Home = () => {
             </TitleWrapper>
             <OfferSection />
             <CarrerSection />
-            <AppSection />
+            {/* <AppSection /> */}
         </Wrapper>
     );
 };

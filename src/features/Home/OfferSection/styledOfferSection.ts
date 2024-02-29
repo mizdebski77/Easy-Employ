@@ -9,6 +9,7 @@ export const Wrapper = styled.div`
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         margin: 0px auto;
+        padding: 20px 10px;
     };
 `;
 
@@ -35,6 +36,7 @@ export const OfferWrapper = styled.div`
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         grid-template-columns: 1fr;
+        gap: 20px;
     };
 `;
 
@@ -58,6 +60,7 @@ export const OfferTile = styled(Link)`
     };
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        padding: 20px 8px;
         &:hover {
             box-shadow: 0 0 10px ${({ theme }) => theme.color.fontSecond};
             transform: scale(1);
@@ -72,7 +75,7 @@ export const OfferTitle = styled.span`
     color:${({ theme }) => theme.color.fontMain};
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
-        font-size: 20px;
+        font-size: 16px;
     };
 `;
 

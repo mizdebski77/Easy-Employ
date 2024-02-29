@@ -1,5 +1,5 @@
 import React from 'react';
-import { Captions, DownloadInformation, ImagesWrapper, MobileImg, StoreIcon, StoresIconsWrapper, TextWrapper, Title, Wrapper } from './styledAppSection';
+import { Captions, DownloadInformation, ImagesWrapper, MobileImg, StoreIcon, StoresIconsWrapper, Title, Wrapper } from './styledAppSection';
 import appStore from '../../../common/Images/appSection/app.png';
 import googlePlay from '../../../common/Images/appSection/google.png';
 import smartphone from '../../../common/Images/smartphone.png';
@@ -11,7 +11,7 @@ export const AppSection = () => {
                 <MobileImg src={smartphone} />
             </ImagesWrapper>
 
-            <TextWrapper>
+            <div>
                 <Title>Mobile application on your phone</Title>
                 <Captions>- Notifications about recruitment progress </Captions>
                 <Captions>- Latest job offers </Captions>
@@ -22,7 +22,7 @@ export const AppSection = () => {
                     <StoreIcon src={appStore} />
                     <StoreIcon src={googlePlay} />
                 </StoresIconsWrapper>
-            </TextWrapper>
+            </div>
         </Wrapper>
     );
 };
