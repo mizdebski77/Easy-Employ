@@ -1,6 +1,6 @@
-import calculator from '../common/Images/Carrer/sallarycalculaor.jpg';
-import offers from '../common/Images/Carrer/joboffers.jpg';
-import cv from '../common/Images/Carrer/CVCreator.jpg';
+import calculator from '../common/Images/Home/sallarycalculaor.jpg';
+import offers from '../common/Images/Home/joboffers.jpg';
+import cv from '../common/Images/Home/CVCreator.jpg';
 
 export const tiles = [
     {

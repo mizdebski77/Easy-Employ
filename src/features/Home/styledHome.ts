@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import bg from '../../common/Images/header.jpg';
+import bg from '../../common/Images/Home/header.jpg';
 
 export const Wrapper = styled.section`
     margin: 0 auto;

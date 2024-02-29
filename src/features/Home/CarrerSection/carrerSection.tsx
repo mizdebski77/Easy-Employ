@@ -1,6 +1,6 @@
 import React from 'react';
 import { CarrerImg, CarrerTile, Container, ContentWrapper, ProfileImg, ProfileLink, ProfileSpan, ProfileTitle, ProfileWrapper, TextContainer, TextWrapper, TileLink, TileSpan, TileTitle, TilesWrapper, Title, Wrapper } from './styledCarrerSection';
-import profile from '../../../common/Images/profile.png';
+import profile from '../../../common/Images/Home/profile.png';
 import { scrollTop } from '../../../core/scrollTop';
 import { tiles } from '../../../core/arrays';
 

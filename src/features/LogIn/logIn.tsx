@@ -26,8 +26,8 @@ import {
 import fb from '../../common/Images/SocialMedia/fb.png';
 import lk from '../../common/Images/SocialMedia/link.png';
 import gg from '../../common/Images/SocialMedia/google.png';
-import show from '../../common/Images/ShowHide/show.svg';
-import hide from '../../common/Images/ShowHide/hide.svg';
+import show from '../../common/Images/SVG/show.svg';
+import hide from '../../common/Images/SVG/hide.svg';
 
 export const LogIn = () => {
 

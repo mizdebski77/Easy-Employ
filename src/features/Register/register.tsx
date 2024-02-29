@@ -3,8 +3,8 @@ import { CheckBox, CreateAccountButton, Form, Icon, IconContainer, IconSpan, Ico
 import fb from '../../common/Images/SocialMedia/fb.png';
 import link from '../../common/Images/SocialMedia/link.png';
 import google from '../../common/Images/SocialMedia/google.png';
-import show from '../../common/Images/ShowHide/show.svg';
-import hide from '../../common/Images/ShowHide/hide.svg';
+import show from '../../common/Images/SVG/show.svg';
+import hide from '../../common/Images/SVG/hide.svg';
 
 export const Register = () => {
 
@@ -75,7 +75,7 @@ export const Register = () => {
                             value="net"
                             required
                         />
-                         Registration as an employee
+                        Registration as an employee
                     </Label>
 
 
