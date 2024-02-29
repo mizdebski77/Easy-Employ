@@ -3,17 +3,22 @@ import { styled } from "styled-components";
 
 export const Wrapper = styled.section`
     background: ${({ theme }) => theme.color.fontMain};
-    padding: 20px;
+    padding: 40px;
     margin-top: 120px;
-    border-radius: 20px;
+`;
+
+export const Container = styled.div`
+    max-width: 1500px;
+    margin: 0 auto;
 `;
 
 export const Title = styled.h1`
     text-align: center;
-    font-size: 54px;
+    font-size: 52px;
+    letter-spacing: 4px;
     color: white;
     font-weight: normal;
-    margin-bottom: 80px;
+    margin: 0 0 80px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         font-size: 32px;
@@ -43,7 +48,7 @@ export const ProfileWrapper = styled.div`
     align-items: center;
     background: white;
     padding: 20px 80px ;
-    border-radius: 20px;
+    border-radius: 10px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.firstBp}px){
         padding: 20px 40px;
@@ -106,7 +111,7 @@ export const ProfileLink = styled(Link)`
     color: ${({ theme }) => theme.color.secondColor};
     text-decoration: none;
     font-size: 18px;
-    border-radius: 20px;
+    border-radius: 4px;
     transition:0.3s;
 
     &:hover {

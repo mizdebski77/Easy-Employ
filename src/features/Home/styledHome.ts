@@ -3,7 +3,6 @@ import bg from '../../common/Images/header.jpg';
 
 export const Wrapper = styled.section`
     margin: 0 auto;
-    padding: 0 20px 0 ;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         padding: 0 12px 0;
