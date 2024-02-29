@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { styled } from "styled-components";
 
 export const Wrapper = styled.div`
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 40px auto;
     padding: 20px;
     border-radius: 20px;
@@ -14,7 +14,8 @@ export const Wrapper = styled.div`
 
 export const OffersTitle = styled.h3`
     text-align: center;
-    font-size: 44px;
+    font-size: 52px;
+    letter-spacing: 4px;
     font-weight: normal;
     color: ${({ theme }) => theme.color.fontMain};
 
@@ -40,9 +41,11 @@ export const OfferWrapper = styled.div`
 export const OfferTile = styled(Link)`
     background: ${({ theme }) => theme.color.secondColor};
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px ${({ theme }) => theme.color.fontSecond};
+    border-radius: 4px;
+    box-shadow: 0 0 2px ${({ theme }) => theme.color.fontSecond};
     display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
     gap: 20px;
     transition: 0.3s;
     cursor: pointer;
@@ -50,7 +53,7 @@ export const OfferTile = styled(Link)`
     color: ${({ theme }) => theme.color.fontSecond};
 
     &:hover {
-        box-shadow: 0 0 10px ${({ theme }) => theme.color.fontMain};
+        box-shadow: 0 0 2px ${({ theme }) => theme.color.fontMain};
         transform: scale(1.03);
     };
 
@@ -66,7 +69,6 @@ export const OfferTile = styled(Link)`
 
 export const OfferTitle = styled.span`
     font-size: 24px;
-    text-align: center;
     color:${({ theme }) => theme.color.fontMain};
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
@@ -75,10 +77,10 @@ export const OfferTitle = styled.span`
 `;
 
 export const OfferArticle = styled.div`
-    display: flex;
+    display: grid;
     align-items: center;
-    justify-content: center;
-    gap: 20px ;
+    justify-content: start;
+    gap: 10px ;
 `;
 
 export const OfferLogo = styled.img`
@@ -105,7 +107,7 @@ export const AllOffersButton = styled(Link)`
     margin-top: 40px;
     max-width: 200px;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 4px;
     color: white;
     font-size: 20px;
     text-decoration: none;

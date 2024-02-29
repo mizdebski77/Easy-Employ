@@ -22,9 +22,9 @@ export const OfferSection = () => {
                 <OfferWrapper>
                     {data.map((offer: OfferArray) => (
                         <OfferTile to={`/Offer/${offer.id}`} key={offer.id}>
-                            <OfferTitle >{offer.position}</OfferTitle>
+                            <OfferLogo src={offer.logo} />
                             <OfferArticle>
-                                <OfferLogo src={offer.logo} />
+                                <OfferTitle >{offer.position}</OfferTitle>
                                 <OfferDetails>{offer.company_name}</OfferDetails>
                             </OfferArticle>
                         </OfferTile>
