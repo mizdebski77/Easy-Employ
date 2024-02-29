@@ -150,13 +150,12 @@ export const TilesWrapper = styled.div`
 
 export const CarrerTile = styled.div`
     background: white;
-    border-radius: 20px;
-    box-shadow: 0 0 10px white;
+    border-radius: 8px;
 `;
 
 export const CarrerImg = styled.img`
     width: 100%;
-    border-radius: 20px;
+    border-radius: 8px 8px 0 0 ;
 `;
 
 export const TextContainer = styled.div`
@@ -165,10 +164,12 @@ export const TextContainer = styled.div`
 
 export const TileTitle = styled.h3`
     font-size: 28px;
+    padding: 0 0 20px;
     text-align: center;
     margin: 0 0 20px 0;
     font-weight: normal;
     color:${({ theme }) => theme.color.fontMain};
+    border-bottom: 1px solid ${({ theme }) => theme.color.fourthColor};
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         font-size: 24px;
@@ -190,12 +191,11 @@ export const TileLink = styled(Link)`
     padding: 8px 20px;
     color: ${({ theme }) => theme.color.secondColor};
     text-decoration: none;
-    border-radius: 20px;
+    border-radius: 8px;
     transition: 0.3s;
 
     &:hover {
-        transform: scale(1.02);
-        box-shadow: 0 0 4px ${({ theme }) => theme.color.fontMain};
+        background: ${({ theme }) => theme.color.fontMainHover};
     };
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
