@@ -2,7 +2,6 @@ import { styled } from "styled-components";
 import bg from '../../common/Images/header.jpg';
 
 export const Wrapper = styled.section`
-    max-width: 1500px;
     margin: 0 auto;
     padding: 0 20px 0 ;
 
@@ -28,7 +27,7 @@ export const TitleWrapper = styled.div`
 `;
 
 export const Title = styled.h1`
-    font-size: 80px;
+    font-size: 88px;
     font-weight: normal;
     text-align: center;
     color: ${({ theme }) => theme.color.fontMain};
