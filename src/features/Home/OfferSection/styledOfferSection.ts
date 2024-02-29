@@ -43,8 +43,8 @@ export const OfferWrapper = styled.div`
 export const OfferTile = styled(Link)`
     background: ${({ theme }) => theme.color.secondColor};
     padding: 20px;
-    border-radius: 4px;
-    box-shadow: 0 0 2px ${({ theme }) => theme.color.fontSecond};
+    border-radius: 8px;
+    border: 1px solid ${({ theme }) => theme.color.thirdColor};
     display: grid;
     grid-template-columns: 1fr 4fr;
     align-items: center;
@@ -61,11 +61,11 @@ export const OfferTile = styled(Link)`
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         padding: 20px 8px;
+
         &:hover {
             box-shadow: 0 0 10px ${({ theme }) => theme.color.fontSecond};
             transform: scale(1);
         };  
-        border-radius: 10px;
 
     };
 `;
@@ -98,7 +98,7 @@ export const OfferDetails = styled.span`
     font-size: 20px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
-        font-size: 16px;
+        font-size: 14px;
     };
 `;
 

@@ -5,6 +5,10 @@ export const Wrapper = styled.section`
     background: ${({ theme }) => theme.color.fontMain};
     padding: 40px;
     margin-top: 120px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        padding: 20px 10px;
+    };
 `;
 
 export const Container = styled.div`
@@ -60,6 +64,7 @@ export const ProfileWrapper = styled.div`
     
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         gap: 20px;
+        padding: 20px;
     };
 `;
 
@@ -78,13 +83,14 @@ export const ProfileTitle = styled.h2`
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         text-align: center;
-        font-size:28px;
+        font-size:24px;
         margin:0;
     };
 `;
 
 export const ProfileSpan = styled.p`
-    color: ${({ theme }) => theme.color.fontMain};;
+    color: ${({ theme }) => theme.color.fontSecond};
+    text-align: center;
 `;
 
 export const ProfileImg = styled.img`
