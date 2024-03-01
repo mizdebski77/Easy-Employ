@@ -10,7 +10,8 @@ export const Wrapper = styled.section`
 
 export const Title = styled.h1`
     text-align: center;
-    font-size: 54px;
+    font-size: 64px;
+    letter-spacing: 4px;
     color: ${({ theme }) => theme.color.fontMain};
     font-weight: normal;
 

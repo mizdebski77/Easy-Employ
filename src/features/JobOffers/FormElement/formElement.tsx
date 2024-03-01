@@ -14,7 +14,7 @@ export const FormElement = () => {
 
     const onFormSubmit = (event: React.FormEvent) => {
         event.preventDefault();
-    }
+    };
 
     const handleAddNewKeyWord = () => {
         if (newKeyWord.length > 0) {
@@ -25,7 +25,6 @@ export const FormElement = () => {
             setNewKeyWord("");
         }
     };
-
 
     return (
         <Wrapper>
