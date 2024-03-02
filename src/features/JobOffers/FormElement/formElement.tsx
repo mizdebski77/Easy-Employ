@@ -41,9 +41,7 @@ export const FormElement = () => {
                         type='button'
                         onClick={handleAddNewKeyWord}
                         disabled={newKeyWord.length === 0}
-                    >
-                        +
-                    </AddKeyWordButton>
+                    > + </AddKeyWordButton>
                 </InputWrapper>
 
                 <Input placeholder='Location' />
