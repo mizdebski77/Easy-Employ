@@ -92,5 +92,9 @@ export const StoreIcon = styled.img`
         transform: scale(1.05);
         cursor: pointer;
     };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        max-width: 120px;
+    };
 `;
 
