@@ -5,6 +5,12 @@ import googlePlay from '../../../common/Images/Home/google.png';
 import smartphone from '../../../common/Images/Home/smartphone.png';
 
 export const AppSection = () => {
+
+    const captions = [
+        'Notifications about recruitment progress',
+        'Latest job offers',
+        'Efficient contact with the employer'
+    ]
     return (
         <Wrapper>
             <ImagesWrapper>
@@ -13,9 +19,9 @@ export const AppSection = () => {
 
             <div>
                 <Title>Mobile application on your phone</Title>
-                <Captions>- Notifications about recruitment progress </Captions>
-                <Captions>- Latest job offers </Captions>
-                <Captions>- Efficient contact with the employer </Captions>
+                {captions.map((text) => (
+                    <Captions key={text}> - {text} </Captions>
+                ))}
                 <DownloadInformation>The application is available in all available mobile stores</DownloadInformation>
 
                 <StoresIconsWrapper>
