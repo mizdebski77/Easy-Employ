@@ -90,7 +90,7 @@ export const ProfileTitle = styled.h2`
 
 export const ProfileSpan = styled.p`
     color: ${({ theme }) => theme.color.fontSecond};
-    text-align: center;
+    text-align: left;
 `;
 
 export const ProfileImg = styled.img`

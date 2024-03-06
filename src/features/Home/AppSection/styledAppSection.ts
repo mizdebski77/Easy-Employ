@@ -70,6 +70,7 @@ export const DownloadInformation = styled.h2`
 export const Captions = styled.p`
     color: ${({ theme }) => theme.color.fontSecond};
     font-size: 20px;
+    text-align: center;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         font-size: 16px;
