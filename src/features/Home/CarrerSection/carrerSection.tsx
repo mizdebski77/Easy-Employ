@@ -6,6 +6,12 @@ import { tiles } from '../../../core/arrays';
 
 export const CarrerSection = () => {
 
+    const profileSpan = [
+        'simpler application',
+        'faster access to recruitment documents',
+        'automatic completion of questions from employers',
+    ]
+
     return (
         <Wrapper>
             <Container>
@@ -16,9 +22,9 @@ export const CarrerSection = () => {
                         <ProfileImg src={profile} />
                         <TextWrapper>
                             <ProfileTitle>My Profile</ProfileTitle>
-                            <ProfileSpan>- simpler application</ProfileSpan>
-                            <ProfileSpan>- faster access to recruitment documents</ProfileSpan>
-                            <ProfileSpan>- automatic completion of questions from employers </ProfileSpan>
+                            {profileSpan.map((span) => (
+                                <ProfileSpan key={span}>- {span} </ProfileSpan>
+                            ))}
                         </TextWrapper>
                     </ContentWrapper>
                     <ProfileLink to="/Carrer" onClick={() => scrollTop()}>Go to profile </ProfileLink>
