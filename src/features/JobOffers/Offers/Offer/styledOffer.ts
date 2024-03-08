@@ -17,7 +17,7 @@ export const TilesWrapper = styled.div`
 `;
 
 export const MapWrapper =styled.div`
-    border-radius: 20px;
+    border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 0 10px ${({ theme }) => theme.color.fourthColor};
     max-height: 800px;

@@ -1,8 +1,8 @@
-import React from 'react';
 import { Image, Title, Wrapper } from './styledError';
 import error from './error.svg';
 
 export const Error = () => {
+
     return (
         <Wrapper>
             <Image src={error} />
