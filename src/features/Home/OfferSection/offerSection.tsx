@@ -17,7 +17,6 @@ export const OfferSection = () => {
     return (
         <Wrapper>
             <OffersTitle>Offer zone</OffersTitle>
-
             {isLoading ? <Loader /> : error ? <Error /> : (
                 <OfferWrapper>
                     {data.map((offer: OfferArray) => (
