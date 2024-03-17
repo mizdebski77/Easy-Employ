@@ -16,7 +16,7 @@ export const TilesWrapper = styled.div`
     gap: 40px;
 `;
 
-export const MapWrapper =styled.div`
+export const MapWrapper = styled.div`
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 0 10px ${({ theme }) => theme.color.fourthColor};
@@ -24,5 +24,5 @@ export const MapWrapper =styled.div`
 `;
 
 export const Map = styled.img`
-    width: 100%;
+    width: 80%;
 `;
