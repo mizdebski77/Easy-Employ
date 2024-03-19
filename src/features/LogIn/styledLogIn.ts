@@ -81,7 +81,6 @@ export const Form = styled.form`
 
 export const Label = styled.label`
     font-size: 16px;
-    padding: 0 20px;
     color: ${({ theme }) => theme.color.fontSecond};
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
@@ -93,7 +92,7 @@ export const Label = styled.label`
 export const PasswordLabel = styled.div`
     display: flex;
     background: white;
-    border-radius: 20px;
+    border-radius: 8px;
     border: 2px solid ${({ theme }) => theme.color.thirdColor};
 `;
 
@@ -139,7 +138,7 @@ export const ForgotPasswordButton = styled(Link)`
 
 export const Input = styled.input`
     padding:  12px;
-    border-radius: 20px;
+    border-radius: 8px;
     border: 2px solid ${({ theme }) => theme.color.thirdColor};
     color: black;
     transition: 0.3s;
@@ -148,7 +147,6 @@ export const Input = styled.input`
 
     &:focus {
         outline: none;
-        filter: drop-shadow(6px 4px 4px ${({ theme }) => theme.color.fontMain});
     };
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
@@ -159,7 +157,6 @@ export const Input = styled.input`
 
 export const PasswordInput = styled.input`
     padding:  12px;
-    border-radius: 20px;
     border: none;
     color: black;
     transition: 0.3s;
@@ -188,7 +185,7 @@ export const Button = styled.button`
     width: 100%;
     margin: 20px auto;
     padding: 12px;
-    border-radius: 20px;
+    border-radius: 8px;
     border: none;
     background: ${({ theme }) => theme.color.fontMain};
     color: white;
@@ -235,7 +232,7 @@ export const RegisterButton = styled(Link)`
     background: ${({ theme }) => theme.color.secondColor};
     padding: 12px 80px;
     color: black;
-    border-radius: 20px;
+    border-radius: 8px;
     transition: 0.3s;
 
     &:hover {

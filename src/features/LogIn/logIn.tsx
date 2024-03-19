@@ -56,7 +56,6 @@ export const LogIn = () => {
                     <Input placeholder='Enter E-Mail' type='email' />
 
                     <Label>Password</Label>
-
                     <PasswordLabel>
                         <PasswordInput placeholder='Enter Password' type={password ? 'text' : 'password'} />
                         <ShowHideButton src={password ? hide : show} onClick={handleShowPassword} />
