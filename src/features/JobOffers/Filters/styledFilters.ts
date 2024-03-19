@@ -7,7 +7,7 @@ export const Wrapper = styled.section`
 export const FiltersWrapper = styled.div`
     background: ${({ theme }) => theme.color.secondColor};
     box-shadow: 0 0 6px ${({ theme }) => theme.color.thirdColor};
-    border-radius: 10px;
+    border-radius: 8px;
 `;
 
 export const TitleWrapper = styled.div`

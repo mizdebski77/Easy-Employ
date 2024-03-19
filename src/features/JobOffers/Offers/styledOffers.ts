@@ -16,20 +16,19 @@ export const OffersTitle = styled.h2`
 export const OfferTile = styled(Link)`
     background: ${({ theme }) => theme.color.secondColor};
     padding: 20px ;
-    border-radius: 10px;
+    border-radius: 4px;
     display: flex;
     justify-content: space-between;
     gap: 20px;
     cursor: pointer;
     transition: 0.3s;
     box-shadow: 0 0 6px ${({ theme }) => theme.color.thirdColor};
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     text-decoration: none;
     color: ${({theme}) => theme.color.fontSecond};
 
     &:hover {
         transform: scale(1.01);
-        box-shadow: 0 0 6px ${({ theme }) => theme.color.fontMainHover};
     };
 
     @media (max-width: ${({ theme }) => theme.breakPoint.firstBp}px){
