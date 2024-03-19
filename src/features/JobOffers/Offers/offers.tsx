@@ -11,21 +11,6 @@ import { RootState } from '../../../core/store';
 
 export const Offers = () => {
 
-    const captions = [
-        {
-            title: 'Gross Sallary:',
-            text: 'gross_salary'
-        },
-        {
-            title: 'Location:',
-            text: 'location'
-        },
-        {
-            title: 'Type of work:',
-            text: 'work_type'
-        }
-    ]
-
     const { data, isLoading, error } = useQuery({
         queryKey: ['offers'],
         queryFn: () => fetch("https://esay-employ-database-wfsz.onrender.com/")
