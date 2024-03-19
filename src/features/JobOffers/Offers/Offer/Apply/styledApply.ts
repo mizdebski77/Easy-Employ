@@ -100,6 +100,21 @@ export const FileName = styled.span`
 
 `;
 
+export const RemoveButton = styled.button`
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        background: red;
+    }
+`;
+
 export const FileImg = styled.img`
     opacity: 0.8;
     max-width: 40px;
