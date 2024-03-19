@@ -20,6 +20,7 @@ export const SignUpPanel = styled.div`
     padding: 40px 20px;
     display: flex;
     flex-direction: column;
+    border-radius: 8px;
     gap: 20px;
     align-items: center;
     justify-content: center;
@@ -54,7 +55,7 @@ export const IconContainer = styled.div`
     max-width: 400px;
     width: 100%;
     margin: 0 auto;
-    border-radius: 40px;
+    border-radius: 8px;
     border: 2px solid ${({ theme }) => theme.color.thirdColor};
     cursor: pointer;
     transition: 0.3s;
@@ -103,7 +104,7 @@ export const Label = styled.label`
 export const PasswordLabel = styled.div`
     display: flex;
     background: white;
-    border-radius: 20px;
+    border-radius: 8px;
     border: 2px solid ${({ theme }) => theme.color.thirdColor};
     max-width: 400px;
     width: 100%;
@@ -111,11 +112,11 @@ export const PasswordLabel = styled.div`
 
 export const PasswordInput = styled.input`
     padding:  12px;
-    border-radius: 20px;
     border: none;
     color: black;
     transition: 0.3s;
     max-width: 400px;
+    border-radius: 8px;
     width: 100%;
 
     &:focus {
@@ -131,7 +132,7 @@ export const ShowHideButton = styled.img`
 
 export const Input = styled.input`
     padding:  12px;
-    border-radius: 20px;
+    border-radius: 8px;
     border: 2px solid ${({ theme }) => theme.color.thirdColor};
     color: black;
     transition: 0.3s;
@@ -181,7 +182,7 @@ export const CreateAccountButton = styled.button`
     padding: 10px;
     max-width: 360px;
     width: 100%;
-    border-radius: 20px;
+    border-radius: 8px;
     background: ${({ theme }) => theme.color.fontMain};
     color: white;
     border: none;

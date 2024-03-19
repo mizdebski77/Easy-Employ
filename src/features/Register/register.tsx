@@ -19,24 +19,33 @@ export const Register = () => {
         setShowPassword2(!showPassword2);
     };
 
+    const iconsArray = [
+        {
+            src: fb,
+            text: 'Sign up with Facebook'
+        },
+        {
+            src: link,
+            text: 'Sign up with Linkedin'
+        },
+        {
+            src: google,
+            text: 'Sign up with Google'
+        }
+    ];
+
 
     return (
         <Wrapper>
             <SignUpPanel>
                 <RegisterTitle>Create account</RegisterTitle>
                 <IconsWrapper>
-                    <IconContainer>
-                        <Icon src={fb} />
-                        <IconSpan>Sign up witth Facebook</IconSpan>
-                    </IconContainer>
-                    <IconContainer>
-                        <Icon src={link} />
-                        <IconSpan>Sign up witth Linkedin</IconSpan>
-                    </IconContainer>
-                    <IconContainer>
-                        <Icon src={google} />
-                        <IconSpan>Sign up witth Google</IconSpan>
-                    </IconContainer>
+                    {iconsArray.map((icon, index) => (
+                        <IconContainer key={index}>
+                            <Icon src={icon.src} />
+                            <IconSpan>{icon.text}</IconSpan>
+                        </IconContainer>
+                    ))}
                 </IconsWrapper>
 
                 <Span>Or</Span>
