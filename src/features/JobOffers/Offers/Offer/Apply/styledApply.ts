@@ -17,7 +17,7 @@ export const ApplyTitle = styled.h3`
 
 export const Form = styled.form`
     width: 100%;
-    border-radius: 20px;
+    border-radius: 8px;
     border: 2px dashed ${({ theme }) => theme.color.fontMain};
     padding: 40px;
     display: grid;

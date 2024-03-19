@@ -56,11 +56,7 @@ export const Apply = () => {
                         </FileUploader>
                     </InputContainer>
                 </LabelWrapper>
-
-
-
                 <ApplyButton>Apply</ApplyButton>
-
             </Form>
         </Wrapper>
     );
