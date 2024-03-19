@@ -10,9 +10,6 @@ import { Offers } from './Offers/offers';
 
 export const JobOffers = () => {
 
-    
-
-
     return (
         <Wrapper>
             <Title>

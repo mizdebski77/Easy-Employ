@@ -9,7 +9,7 @@ export const Tile = styled.div`
     background: ${({ theme }) => theme.color.secondColor};
     padding: 40px 20px;
     box-shadow: 0 0 10px ${({ theme }) => theme.color.fourthColor};
-    border-radius: 20px;
+    border-radius: 8px;
     width: 100%;
 `;
 
@@ -36,7 +36,7 @@ export const TextWrapper = styled.div`
     display: grid;
     box-shadow: 0 0 10px ${({ theme }) => theme.color.fourthColor};
     padding: 6px 20px;
-    border-radius: 20px;
+    border-radius: 8px;
     gap: 4px;
     min-width: 200px;
     justify-content: center;

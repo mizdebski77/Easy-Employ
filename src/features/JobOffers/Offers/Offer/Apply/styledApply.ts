@@ -4,7 +4,7 @@ export const Wrapper = styled.section`
     background: ${({ theme }) => theme.color.secondColor};
     padding: 20px;
     box-shadow: 0 0 10px ${({ theme }) => theme.color.fourthColor};
-    border-radius: 20px;
+    border-radius: 8px;
     width: 100%;
 `;
 
@@ -46,20 +46,29 @@ export const LabelSpan = styled.label`
 `;
 
 export const Input = styled.input`
-    border-radius: 10px;
-    padding: 10px 20px;
-    border: 1px solid ${({ theme }) => theme.color.fontSecond};
+    padding:  12px;
+    border-radius: 8px;
+    border: 2px solid ${({ theme }) => theme.color.thirdColor};
+    color: black;
+    transition: 0.3s;
+    max-width: 480px;
+    width: 100%;
 
     &:focus {
-        outline-color: ${({ theme }) => theme.color.fontMain};
-    }
+        outline: ${({ theme }) => theme.color.fontMain};
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        padding: 8px;
+        font-size: 14px;
+    };
 `;
 
 export const ApplyButton = styled.button`
     width: 32%;
     margin: 0 auto;
-    padding: 16px;
-    border-radius: 20px;
+    padding: 12px;
+    border-radius: 8px;
     border: none;
     background: ${({ theme }) => theme.color.fontMain};
     color: ${({ theme }) => theme.color.mainColor};
@@ -73,4 +82,25 @@ export const ApplyButton = styled.button`
     &:active {
         background: ${({ theme }) => theme.color.fontMainActive};
     };
+`;
+
+export const FileWrapper = styled.div`
+    cursor: pointer;
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid ${({ theme }) => theme.color.thirdColor};
+    border-radius: 8px
+`;
+
+export const FileName = styled.span`
+
+`;
+
+export const FileImg = styled.img`
+    opacity: 0.8;
+    max-width: 40px;
 `;

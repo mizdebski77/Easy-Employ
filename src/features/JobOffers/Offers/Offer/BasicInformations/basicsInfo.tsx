@@ -24,27 +24,26 @@ export const BasicInfo: React.FC<BasicInfoProps> = ({ data }) => {
 
     return (
         <Wrapper>
-         
-                <TitleWrapper>
-                    <TitleImg src={data.logo} alt='logo' />
-                    <div>
-                        <Position>{data.position}</Position>
-                        <CompanyName>{data.company_name}</CompanyName>
-                    </div>
-                </TitleWrapper>
+            <TitleWrapper>
+                <TitleImg src={data.logo} alt='logo' />
+                <div>
+                    <Position>{data.position}</Position>
+                    <CompanyName>{data.company_name}</CompanyName>
+                </div>
+            </TitleWrapper>
 
-                <InformationsWrapper>
-                    {informations.map((information, index,) => (
-                        <InfomrationsContainer key={index}>
-                            <InformationImg src={information.src} />
-                            <TextWrapper>
-                                <InformationTitle>{information.title}</InformationTitle>
-                                <InformationSpan>{information.text}</InformationSpan>
-                            </TextWrapper>
-                        </InfomrationsContainer>
-                    ))}
-                </InformationsWrapper>
-            
+            <InformationsWrapper>
+                {informations.map((information, index,) => (
+                    <InfomrationsContainer key={index}>
+                        <InformationImg src={information.src} />
+                        <TextWrapper>
+                            <InformationTitle>{information.title}</InformationTitle>
+                            <InformationSpan>{information.text}</InformationSpan>
+                        </TextWrapper>
+                    </InfomrationsContainer>
+                ))}
+            </InformationsWrapper>
+
         </Wrapper>
     );
 };

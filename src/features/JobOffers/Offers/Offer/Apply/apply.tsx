@@ -1,7 +1,20 @@
-import React from 'react';
-import { ApplyButton, ApplyTitle, Form, Input, InputContainer, LabelWrapper, Label, Wrapper, LabelSpan } from './styledApply';
+import React, { useState } from 'react';
+import { ApplyButton, ApplyTitle, Form, Input, InputContainer, LabelWrapper, Label, Wrapper, LabelSpan, FileWrapper, FileName, FileImg } from './styledApply';
+import { styled } from 'styled-components';
+import { FileUploader } from "react-drag-drop-files";
+import dnd from '../../../../../common/Images/draganddrop.png';
 
 export const Apply = () => {
+    const [file, setFile] = useState<File | null>(null);
+    const handleChange = (file: File) => {
+        setFile(file);
+    };
+
+    const fileTypes = ["PDF",];
+
+    console.log(file);
+
+
     return (
         <Wrapper>
             <ApplyTitle>Apply for this position</ApplyTitle>
@@ -34,9 +47,17 @@ export const Apply = () => {
                 <LabelWrapper>
                     <InputContainer>
                         <Label>File Upload <LabelSpan> *</LabelSpan></Label>
-                        <Input type='file' />
+                        <FileUploader handleChange={handleChange} name="my FIle" types={fileTypes} >
+                            <FileWrapper>
+                                <FileImg src={dnd} />
+                                <FileName>{file ? file.name : 'Upload your CV'}</FileName>
+                            </FileWrapper>
+
+                        </FileUploader>
                     </InputContainer>
                 </LabelWrapper>
+
+
 
                 <ApplyButton>Apply</ApplyButton>
 

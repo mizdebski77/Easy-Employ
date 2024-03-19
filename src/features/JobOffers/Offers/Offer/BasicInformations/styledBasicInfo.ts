@@ -5,7 +5,7 @@ export const Wrapper = styled.section`
     margin: 0 auto;
     background: ${({ theme }) => theme.color.secondColor};
     box-shadow: 0 0 10px ${({ theme }) => theme.color.fourthColor};
-    border-radius: 20px;
+    border-radius: 8px;
 `;
 
 export const TitleWrapper = styled.div`
