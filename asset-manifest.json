@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/Easy-Employ/static/js/main.9a354dc1.js",
+    "main.js": "/Easy-Employ/static/js/main.fffc93b2.js",
     "static/js/787.9d8ea4c6.chunk.js": "/Easy-Employ/static/js/787.9d8ea4c6.chunk.js",
     "static/media/profileStack.png": "/Easy-Employ/static/media/profileStack.26693078494d979746fb.png",
     "static/media/CVCreator.jpg": "/Easy-Employ/static/media/CVCreator.2d7a1ce4c27b13f5b011.jpg",
@@ -18,6 +18,7 @@
     "static/media/app.png": "/Easy-Employ/static/media/app.2a8f2a38110b76832fb2.png",
     "static/media/fb.png": "/Easy-Employ/static/media/fb.6c83ee5c1bdbedbc947a.png",
     "static/media/link.png": "/Easy-Employ/static/media/link.96e24c9c277c12aa811d.png",
+    "static/media/file.svg": "/Easy-Employ/static/media/file.6086a8f0ac64621f1a50596c73f81ce5.svg",
     "static/media/account.svg": "/Easy-Employ/static/media/account.113f1ad043c4f6308b419cd102865628.svg",
     "static/media/location.svg": "/Easy-Employ/static/media/location.5a61482700f2e4fa69e862e15405c369.svg",
     "static/media/tof.svg": "/Easy-Employ/static/media/tof.9588148d039025e4ebdd52a72cf599cd.svg",
@@ -28,10 +29,10 @@
     "static/media/show.svg": "/Easy-Employ/static/media/show.c64a6d1b51d3d6dd52db131ce321d19f.svg",
     "static/media/error.svg": "/Easy-Employ/static/media/error.61aadec832bf78feb9fc7439f427ee58.svg",
     "static/media/spinner.svg": "/Easy-Employ/static/media/spinner.224f59c229647a22e13e190e5a6761ab.svg",
-    "main.9a354dc1.js.map": "/Easy-Employ/static/js/main.9a354dc1.js.map",
+    "main.fffc93b2.js.map": "/Easy-Employ/static/js/main.fffc93b2.js.map",
     "787.9d8ea4c6.chunk.js.map": "/Easy-Employ/static/js/787.9d8ea4c6.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.9a354dc1.js"
+    "static/js/main.fffc93b2.js"
   ]
 }
