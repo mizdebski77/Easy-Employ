@@ -47,8 +47,7 @@ export const Filters = () => {
                         </List>
                     )}
                 </FilterCategory>
-            ))
-            }
+            ))}
         </FiltersWrapper >
     );
 };
