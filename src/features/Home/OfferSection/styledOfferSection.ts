@@ -44,7 +44,6 @@ export const OfferTile = styled(Link)`
     background: ${({ theme }) => theme.color.secondColor};
     padding: 20px;
     border-radius: 8px;
-    border: 1px solid ${({ theme }) => theme.color.thirdColor};
     display: grid;
     grid-template-columns: 1fr 4fr;
     align-items: center;
@@ -55,7 +54,7 @@ export const OfferTile = styled(Link)`
     color: ${({ theme }) => theme.color.fontSecond};
 
     &:hover {
-        box-shadow: 0 0 2px ${({ theme }) => theme.color.fontMain};
+        box-shadow: 0 0 4px ${({ theme }) => theme.color.fourthColor};
         transform: scale(1.03);
     };
 
