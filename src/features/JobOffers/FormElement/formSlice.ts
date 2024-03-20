@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { KeyWords, SearchFilters } from "../../../core/interface";
+import { KeyWords } from "../../../core/interface";
 
 interface searchFiltersState {
     keyWords: KeyWords[];
