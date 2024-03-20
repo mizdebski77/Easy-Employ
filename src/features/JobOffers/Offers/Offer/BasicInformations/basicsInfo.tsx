@@ -32,6 +32,8 @@ export const BasicInfo: React.FC<BasicInfoProps> = ({ data }) => {
                 </div>
             </TitleWrapper>
 
+            
+
             <InformationsWrapper>
                 {informations.map((information, index,) => (
                     <InfomrationsContainer key={index}>

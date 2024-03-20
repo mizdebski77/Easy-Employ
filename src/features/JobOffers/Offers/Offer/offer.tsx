@@ -34,7 +34,8 @@ export const Offer = () => {
                             <Map src={map} />
                         </MapWrapper>
                     </div>
-                    
+
+
                     <Apply />
                 </ContentWrapper>
             )}

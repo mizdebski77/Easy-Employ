@@ -22,7 +22,7 @@ export const TitleImg = styled.img`
 `;
 
 export const Position = styled.h1`
-    font-size: 52px;
+    font-size: 44px;
     font-weight: 600;
     color: ${({ theme }) => theme.color.fontMain};
     margin: 0px;
@@ -48,7 +48,7 @@ export const InfomrationsContainer = styled.div`
 `;
 
 export const InformationImg = styled.img`
-    max-width: 40px;
+    max-width: 32px;
     width: 100%;
 `;
 
