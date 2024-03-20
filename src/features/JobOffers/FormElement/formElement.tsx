@@ -10,8 +10,8 @@ export const FormElement = () => {
     const dispatch = useDispatch();
     const searchFilters = useSelector((state: RootState) => state.searchFilters)
     const keyWords = searchFilters.keyWords
-    const [newKeyWord, setNewKeyWord] = useState("");
 
+    const [newKeyWord, setNewKeyWord] = useState("");
     const [distance, setDistance] = useState(0);
     const [location, setLocation] = useState('');
 
@@ -21,8 +21,15 @@ export const FormElement = () => {
     const onFormSubmit = (event: React.FormEvent) => {
         event.preventDefault();
 
-        dispatch(setSearchFilters({ distance, location }));
+        dispatch(setSearchFilters({
+            distance: distance,
+            location: location
+        }))
+
         console.log(searchFilters);
+
+
+
     };
 
     const handleAddNewKeyWord = () => {
