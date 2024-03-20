@@ -1,10 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import keyWordsReducer from '../features/JobOffers/FormElement/formSlice';
+import searchFiltersReducer from '../features/JobOffers/FormElement/formSlice';
 import filtersReducer from '../features/JobOffers/Filters/filtersSlice';
 
 const store = configureStore({
     reducer: {
-        keyWords: keyWordsReducer,
+        searchFilters: searchFiltersReducer,
         filters: filtersReducer,
     },
 });

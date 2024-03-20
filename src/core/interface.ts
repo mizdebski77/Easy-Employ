@@ -3,13 +3,18 @@ export interface KeyWords {
     id: string
     content: string
 };
+
+export interface SearchFilters {
+    keyWords: KeyWords[];
+    location: string;
+    distance: number;
+}
 export interface FilterItem {
     id: number;
     text: string;
     checked: boolean;
     category: string;
 }
-
 export interface Filters {
     id: number;
     title: string;

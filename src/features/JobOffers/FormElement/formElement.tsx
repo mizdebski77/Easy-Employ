@@ -2,18 +2,27 @@ import React, { useState } from 'react';
 import { AddKeyWordButton, Form, Input, InputWrapper, KeyWord, KeyWordContainer, KeyWordInput, KeyWordsWrapper, Legend, Option, RemoveButton, SearchButton, Select, Wrapper } from './styledFormElement';
 import { nanoid } from '@reduxjs/toolkit';
 import { useDispatch, useSelector } from 'react-redux';
-import { addKeyWord, removeKeyWord } from './formSlice';
+import { addKeyWord, removeKeyWord, setSearchFilters } from './formSlice';
 import { RootState } from '../../../core/store';
 
 export const FormElement = () => {
 
     const dispatch = useDispatch();
-    const keyWords = useSelector((state: RootState) => state.keyWords.keyWords)
-
+    const searchFilters = useSelector((state: RootState) => state.searchFilters)
+    const keyWords = searchFilters.keyWords
     const [newKeyWord, setNewKeyWord] = useState("");
+
+    const [distance, setDistance] = useState(0);
+    const [location, setLocation] = useState('');
+
+
+
 
     const onFormSubmit = (event: React.FormEvent) => {
         event.preventDefault();
+
+        dispatch(setSearchFilters({ distance, location }));
+        console.log(searchFilters);
     };
 
     const handleAddNewKeyWord = () => {
@@ -44,16 +53,22 @@ export const FormElement = () => {
                     > + </AddKeyWordButton>
                 </InputWrapper>
 
-                <Input placeholder='Location' />
-                <Select defaultValue='Distance'>
+                <Input
+                    placeholder='Location'
+                    value={location}
+                    onChange={({ target }) => setLocation(target.value)}
+                />
+                <Select value={distance} onChange={({ target }) => setDistance(parseInt(target.value))}>
                     <Option disabled value='Distance'>Distance</Option>
-                    <Option value=''>+ 30 km</Option>
-                    <Option value=''>+ 50 km</Option>
-                    <Option value=''>+ 70 km</Option>
-                    <Option value=''>+ 100 km</Option>
+                    <Option value='0'> 0 km</Option>
+                    <Option value='30'>+ 30 km</Option>
+                    <Option value='50'>+ 50 km</Option>
+                    <Option value='70'>+ 70 km</Option>
+                    <Option value='100'>+ 100 km</Option>
                 </Select>
-                <SearchButton>Search</SearchButton>
+                <SearchButton type='submit'>Search</SearchButton>
             </Form>
+
 
             {keyWords.length > 0 && (
                 <KeyWordsWrapper>

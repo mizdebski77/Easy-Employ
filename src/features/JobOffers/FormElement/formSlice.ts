@@ -1,17 +1,27 @@
 import { createSlice } from "@reduxjs/toolkit";
-import {  KeyWords } from "../../../core/interface";
+import { KeyWords, SearchFilters } from "../../../core/interface";
 
-interface KeyWordsState {
+interface searchFiltersState {
     keyWords: KeyWords[];
+    distance: number;
+    location: string;
 }
 
-const keyWordsSlice = createSlice({
-    name: "keyWords",
+const searchFiltersSlice = createSlice({
+    name: "searchFilters",
     initialState: {
         keyWords: [],
-    } as KeyWordsState,
+        distance: 0,
+        location: ''
+    } as searchFiltersState,
 
     reducers: {
+
+        setSearchFilters: (state, action) => {
+            state.distance = action.payload.distance;
+            state.location = action.payload.location;
+        },
+
         addKeyWord: ({ keyWords }, { payload: keyWord }) => {
             keyWords.push(keyWord)
         },
@@ -23,10 +33,10 @@ const keyWordsSlice = createSlice({
     }
 });
 
-export const selectKeyWordsState = (state: KeyWordsState) => state;
-export const SelectKeyWords = (state: KeyWordsState) => state.keyWords;
+export const selectSearchFiltersState = (state: searchFiltersState) => state;
+export const SelectSearchFilters = (state: searchFiltersState) => state;
 
-export const { addKeyWord, removeKeyWord } = keyWordsSlice.actions;
+export const { addKeyWord, removeKeyWord, setSearchFilters } = searchFiltersSlice.actions;
 
-export default keyWordsSlice.reducer;
+export default searchFiltersSlice.reducer;
 
