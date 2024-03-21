@@ -4,9 +4,9 @@ import {
     Wrapper,
 
 } from './styledJobOffers';
-import { FormElement } from './FormElement/formElement';
 import { Filters } from './Filters/filters';
 import { Offers } from './Offers/offers';
+import { KeyWords } from './KeyWords/keyWords';
 
 export const JobOffers = () => {
 
@@ -15,7 +15,7 @@ export const JobOffers = () => {
             <Title>
                 What kind of job are you looking for?
             </Title>
-            <FormElement />
+            <KeyWords />
             <OffersContainer>
                 <Filters />
                 <Offers />
