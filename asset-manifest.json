@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/Easy-Employ/static/js/main.fffc93b2.js",
+    "main.js": "/Easy-Employ/static/js/main.a48e7d21.js",
     "static/js/787.9d8ea4c6.chunk.js": "/Easy-Employ/static/js/787.9d8ea4c6.chunk.js",
     "static/media/profileStack.png": "/Easy-Employ/static/media/profileStack.26693078494d979746fb.png",
     "static/media/CVCreator.jpg": "/Easy-Employ/static/media/CVCreator.2d7a1ce4c27b13f5b011.jpg",
@@ -24,15 +24,16 @@
     "static/media/tof.svg": "/Easy-Employ/static/media/tof.9588148d039025e4ebdd52a72cf599cd.svg",
     "static/media/money.svg": "/Easy-Employ/static/media/money.41ae4e1f46e81c5c16a2eb53f7f86d2e.svg",
     "index.html": "/Easy-Employ/index.html",
+    "static/media/company.svg": "/Easy-Employ/static/media/company.d3552a59da859241081112f50430b6c3.svg",
     "static/media/language.svg": "/Easy-Employ/static/media/language.ff3b13b1466ffb34ed3fc18379084551.svg",
     "static/media/hide.svg": "/Easy-Employ/static/media/hide.928267b84e3f18ad61948563312aeaff.svg",
     "static/media/show.svg": "/Easy-Employ/static/media/show.c64a6d1b51d3d6dd52db131ce321d19f.svg",
     "static/media/error.svg": "/Easy-Employ/static/media/error.61aadec832bf78feb9fc7439f427ee58.svg",
     "static/media/spinner.svg": "/Easy-Employ/static/media/spinner.224f59c229647a22e13e190e5a6761ab.svg",
-    "main.fffc93b2.js.map": "/Easy-Employ/static/js/main.fffc93b2.js.map",
+    "main.a48e7d21.js.map": "/Easy-Employ/static/js/main.a48e7d21.js.map",
     "787.9d8ea4c6.chunk.js.map": "/Easy-Employ/static/js/787.9d8ea4c6.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.fffc93b2.js"
+    "static/js/main.a48e7d21.js"
   ]
 }
