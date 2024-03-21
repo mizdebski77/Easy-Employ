@@ -51,7 +51,7 @@ export const MainSection = styled.div`
     align-items: center;
     justify-content: start;
     gap: 20px;
-    padding: 20px 0;
+    padding: 12px 0;
     border-bottom: 1px solid ${({ theme }) => theme.color.fourthColor};
 `;
 
@@ -101,4 +101,18 @@ export const OfferCaptionTitle = styled.span`
 export const Img = styled.img`
     max-width: 24px;
     width: 100%;
+`;
+
+export const TechStackWrapper = styled.div`
+    padding: 16px 20px 0;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+`;
+
+export const TechStackSpan = styled.span`
+    background: ${({ theme }) => theme.color.fontMainHover};
+    padding: 4px 12px;
+    color: white;
+    border-radius: 40px;
 `;

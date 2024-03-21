@@ -15,7 +15,7 @@ interface BasicInfoProps {
 }
 export const Details: React.FC<BasicInfoProps> = ({ data }) => {
 
-    const skills = data.skills
+    const skills = data.skills;
 
     return (
         <Wrapper>

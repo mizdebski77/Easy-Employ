@@ -1,5 +1,5 @@
 import React from 'react';
-import { BasicsInformations, Img, Logo, MainSection, OfferCaptionTitle, OfferCaptionWrapper, OfferTile, OfferTitle, OffersContainer, OffersTitle, TextSection, Wrapper } from './styledOffers';
+import { BasicsInformations, Img, Logo, MainSection, OfferCaptionTitle, OfferCaptionWrapper, OfferTile, OfferTitle, OffersContainer, OffersTitle, TechStackSpan, TechStackWrapper, TextSection, Wrapper } from './styledOffers';
 import { useQuery } from '@tanstack/react-query';
 import { Loader } from '../../../common/Loader/loader';
 import { Error } from '../../../common/Error/error';
@@ -9,8 +9,7 @@ import { useSelector } from 'react-redux';
 import { RootState } from '../../../core/store';
 import company from '../../../common/Images/company.svg';
 import typeOfWork from '../../../common/Images/SVG/tof.svg';
-import { TilesWrapper } from './Offer/styledOffer';
-
+import location from '../../../common/Images/SVG/location.svg';
 
 export const Offers = () => {
 
@@ -42,7 +41,6 @@ export const Offers = () => {
                                 key={offer.id}
                                 onClick={() => scrollTop()}
                             >
-
                                 <MainSection>
                                     <Logo src={offer.logo} alt='logo' />
                                     <TextSection>
@@ -60,6 +58,11 @@ export const Offers = () => {
                                         </BasicsInformations>
                                     </TextSection>
                                 </MainSection>
+                                <TechStackWrapper >
+                                    {offer.skills.map((skill) => (
+                                        <TechStackSpan key={skill.skill}>{skill.skill}</TechStackSpan>
+                                    ))}
+                                </TechStackWrapper>
                             </OfferTile>
                         ))
                     }
