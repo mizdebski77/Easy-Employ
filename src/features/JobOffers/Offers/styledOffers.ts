@@ -13,17 +13,19 @@ export const OffersTitle = styled.h2`
     margin-bottom: 40px;
 `;
 
+export const OffersContainer = styled.div`
+    display: grid;
+    gap: 32px;
+`;
+
 export const OfferTile = styled(Link)`
     background: ${({ theme }) => theme.color.secondColor};
     padding: 20px ;
-    border-radius: 4px;
-    display: flex;
-    justify-content: space-between;
+    border-radius: 8px;
     gap: 20px;
     cursor: pointer;
     transition: 0.3s;
     box-shadow: 0 0 6px ${({ theme }) => theme.color.thirdColor};
-    margin-bottom: 24px;
     text-decoration: none;
     color: ${({ theme }) => theme.color.fontSecond};
 
@@ -31,62 +33,56 @@ export const OfferTile = styled(Link)`
         transform: scale(1.01);
     };
 
-    @media (max-width: ${({ theme }) => theme.breakPoint.firstBp}px){
-        padding: 20px 40px;
-    };
 
     @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
-        flex-wrap: wrap;
-        justify-content: center;
+        grid-template-columns: 1fr;
         gap: 10px;
         padding: 12px;
 
         &:hover {
-        transform: scale(1);
-        box-shadow: 0 0 10px ${({ theme }) => theme.color.fontMainHover};
-    };
+            transform: scale(1);
+            box-shadow: 0 0 10px ${({ theme }) => theme.color.fontMainHover};
+        };
     };
 `;
 
 export const MainSection = styled.div`
-    display: grid;
+    display: flex;
     align-items: center;
+    justify-content: start;
     gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid ${({ theme }) => theme.color.fourthColor};
 `;
 
 export const Logo = styled.img`
-    max-width: 64px;
+    max-width: 84px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         max-width: 54px;
     };
 `;
 
-export const OfferTitle = styled.h2`
-    color: ${({ theme }) => theme.color.fontMain};
-    font-size: 24px;
-    font-weight: normal;
-
-    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
-        font-size: 20px;
-    };
-`;
-
-export const ContentWrapper = styled.div`
-    display: flex;
-    justify-content: space-between;
-`;
-
-export const CaptionsContainer = styled.div`
+export const TextSection = styled.div`
     display: grid;
-    justify-content: space-between;
+    gap: 8px;
+`;
+
+export const OfferTitle = styled.h2`
+    margin: 0;
+    color: ${({ theme }) => theme.color.fontMain};
+`;
+
+export const BasicsInformations = styled.div`
+    display: flex;
+    gap: 20px;
 `;
 
 export const OfferCaptionWrapper = styled.div`
     display: flex;
-    justify-content: start;
     align-items: center;
-    gap: 12px;
+    gap: 8px;
+    min-width: auto;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         gap:10px;
@@ -95,22 +91,14 @@ export const OfferCaptionWrapper = styled.div`
 
 export const OfferCaptionTitle = styled.span`
     font-size: 16px; 
-    color: ${({ theme }) => theme.color.fontMain};
-    min-width: 120px;
-    text-align: right;
+    color: ${({ theme }) => theme.color.fontSecond};
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         font-size: 16px;
     };
 `;
 
-export const OfferCaptionTContent = styled.span`
-    font-size: 14px;
-
-    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
-        font-size: 12px;
-    };
+export const Img = styled.img`
+    max-width: 24px;
+    width: 100%;
 `;
-
-
-

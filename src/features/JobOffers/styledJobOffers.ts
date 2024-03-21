@@ -20,6 +20,8 @@ export const Title = styled.h1`
     };
 `;
 
+
+
 export const OffersContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr 2fr;

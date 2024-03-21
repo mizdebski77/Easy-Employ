@@ -1,6 +1,5 @@
 import React from 'react';
-import { Wrapper } from '../styledJobOffers';
-import { CaptionsContainer, ContentWrapper, Logo, MainSection, OfferCaptionTContent, OfferCaptionTitle, OfferCaptionWrapper, OfferTile, OfferTitle, OffersTitle } from './styledOffers';
+import { BasicsInformations, Img, Logo, MainSection, OfferCaptionTitle, OfferCaptionWrapper, OfferTile, OfferTitle, OffersContainer, OffersTitle, TextSection, Wrapper } from './styledOffers';
 import { useQuery } from '@tanstack/react-query';
 import { Loader } from '../../../common/Loader/loader';
 import { Error } from '../../../common/Error/error';
@@ -8,6 +7,10 @@ import { OfferArray } from '../../../core/interface';
 import { scrollTop } from '../../../core/scrollTop';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../../core/store';
+import company from '../../../common/Images/company.svg';
+import typeOfWork from '../../../common/Images/SVG/tof.svg';
+import { TilesWrapper } from './Offer/styledOffer';
+
 
 export const Offers = () => {
 
@@ -29,41 +32,39 @@ export const Offers = () => {
     return (
         <Wrapper>
             <OffersTitle>Offers recommended for you </OffersTitle>
+
             {isLoading ? <Loader /> : error ? <Error /> : (
-                (data
-                    .filter((offer: OfferArray) => (filtersApplied ? isOfferMatchingFilters(offer) : true))
-                    .map((offer: OfferArray) => (
-                        <OfferTile
-                            to={`/Offer/${offer.id}`}
-                            key={offer.id}
-                            onClick={() => scrollTop()}
-                        >
-                            <MainSection>
-                                <Logo src={offer.logo} alt='logo' />
-                                <OfferTitle>{offer.position}</OfferTitle>
-                            </MainSection>
+                <OffersContainer>
+                    {data.filter((offer: OfferArray) => (filtersApplied ? isOfferMatchingFilters(offer) : true))
+                        .map((offer: OfferArray) => (
+                            <OfferTile
+                                to={`/Offer/${offer.id}`}
+                                key={offer.id}
+                                onClick={() => scrollTop()}
+                            >
 
-                            <ContentWrapper>
-                                <CaptionsContainer>
-                                    <OfferCaptionWrapper>
-                                        <OfferCaptionTitle>Gross Sallary:</OfferCaptionTitle>
-                                        <OfferCaptionTContent>{offer.gross_salary}</OfferCaptionTContent>
-                                    </OfferCaptionWrapper>
+                                <MainSection>
+                                    <Logo src={offer.logo} alt='logo' />
+                                    <TextSection>
+                                        <OfferTitle>{offer.position}</OfferTitle>
+                                        <BasicsInformations>
+                                            <OfferCaptionWrapper>
+                                                <Img src={company} />
+                                                <OfferCaptionTitle>{offer.company_name}</OfferCaptionTitle>
+                                            </OfferCaptionWrapper>
 
-                                    <OfferCaptionWrapper>
-                                        <OfferCaptionTitle>Location:</OfferCaptionTitle>
-                                        <OfferCaptionTContent>{offer.location}</OfferCaptionTContent>
-                                    </OfferCaptionWrapper>
-
-                                    <OfferCaptionWrapper>
-                                        <OfferCaptionTitle>Type of work:</OfferCaptionTitle>
-                                        <OfferCaptionTContent>{offer.work_type}</OfferCaptionTContent>
-                                    </OfferCaptionWrapper>
-                                </CaptionsContainer>
-                            </ContentWrapper>
-                        </OfferTile>
-                    ))
-                ))}
+                                            <OfferCaptionWrapper>
+                                                <Img src={typeOfWork} />
+                                                <OfferCaptionTitle>{offer.work_type}</OfferCaptionTitle>
+                                            </OfferCaptionWrapper>
+                                        </BasicsInformations>
+                                    </TextSection>
+                                </MainSection>
+                            </OfferTile>
+                        ))
+                    }
+                </OffersContainer>
+            )}
         </Wrapper>
     );
 };
