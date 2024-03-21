@@ -12,7 +12,6 @@ export const Filters = () => {
     const checkedCount = checkedFilters.filter(item => item.checked).length;
 
 
-
     return (
         <Wrapper>
             <FiltersWrapper>
