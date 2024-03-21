@@ -39,7 +39,7 @@ export const Offers = () => {
                             onClick={() => scrollTop()}
                         >
                             <MainSection>
-                                <Logo src={offer.logo} />
+                                <Logo src={offer.logo} alt='logo' />
                                 <OfferTitle>{offer.position}</OfferTitle>
                             </MainSection>
 

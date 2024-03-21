@@ -4,6 +4,8 @@ import { nanoid } from '@reduxjs/toolkit';
 import { useDispatch, useSelector } from 'react-redux';
 import { addKeyWord, removeKeyWord, setSearchFilters } from './formSlice';
 import { RootState } from '../../../core/store';
+import TextInput from 'react-autocomplete-input';
+import 'react-autocomplete-input/dist/bundle.css';
 
 export const FormElement = () => {
 
@@ -14,8 +16,6 @@ export const FormElement = () => {
     const [newKeyWord, setNewKeyWord] = useState("");
     const [distance, setDistance] = useState(0);
     const [location, setLocation] = useState('');
-
-
 
 
     const onFormSubmit = (event: React.FormEvent) => {
@@ -47,6 +47,7 @@ export const FormElement = () => {
             <Form
                 onSubmit={onFormSubmit}
             >
+
                 <InputWrapper>
                     <KeyWordInput
                         placeholder='Key Words'

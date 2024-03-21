@@ -25,7 +25,7 @@ export const OfferTile = styled(Link)`
     box-shadow: 0 0 6px ${({ theme }) => theme.color.thirdColor};
     margin-bottom: 24px;
     text-decoration: none;
-    color: ${({theme}) => theme.color.fontSecond};
+    color: ${({ theme }) => theme.color.fontSecond};
 
     &:hover {
         transform: scale(1.01);
@@ -49,7 +49,7 @@ export const OfferTile = styled(Link)`
 `;
 
 export const MainSection = styled.div`
-    display: flex;
+    display: grid;
     align-items: center;
     gap: 20px;
 `;
