@@ -12,8 +12,6 @@ export const KeyWords = () => {
 
     const [newKeyWord, setNewKeyWord] = useState("");
 
-
-
     const onFormSubmit = (event: React.FormEvent) => {
         event.preventDefault();
 

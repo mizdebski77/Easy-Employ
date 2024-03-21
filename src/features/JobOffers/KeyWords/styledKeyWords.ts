@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 export const Wrapper = styled.section`
-    background: ${({ theme }) => theme.color.thirdColor};
+    background: ${({ theme }) => theme.color.secondColor};
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px;
@@ -26,7 +26,7 @@ export const Title = styled.h2`
 `;
 
 export const InputWrapper = styled.div`
-    background: ${({ theme }) => theme.color.secondColor};
+    background: ${({ theme }) => theme.color.mainColor};
     border-radius: 8px;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -40,6 +40,7 @@ export const KeyWordInput = styled.input`
     padding: 12px 20px;
     border-radius: 8px 0px 0px 8px;
     border: none;
+    background: ${({ theme }) => theme.color.mainColor};
 
     &:focus {
         outline:none;
@@ -108,7 +109,7 @@ export const KeyWordContainer = styled.div`
 
 export const KeyWord = styled.span`
     background: ${({ theme }) => theme.color.fontMainActive};
-    padding: 8px 10px;
+    padding: 8px 16px;
     border-radius: 20px;
     color: ${({ theme }) => theme.color.mainColor};
 
@@ -127,5 +128,10 @@ export const RemoveButton = styled.button`
     right: 2px;
     bottom: 20px;
     cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        background: #ff8484;
+    }
 `;
 
