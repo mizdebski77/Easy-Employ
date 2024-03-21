@@ -47,13 +47,18 @@ export const Offers = () => {
                                         <OfferTitle>{offer.position}</OfferTitle>
                                         <BasicsInformations>
                                             <OfferCaptionWrapper>
-                                                <Img src={company} />
+                                                <Img src={company} alt='company' />
                                                 <OfferCaptionTitle>{offer.company_name}</OfferCaptionTitle>
                                             </OfferCaptionWrapper>
 
                                             <OfferCaptionWrapper>
-                                                <Img src={typeOfWork} />
+                                                <Img src={typeOfWork} alt='work type' />
                                                 <OfferCaptionTitle>{offer.work_type}</OfferCaptionTitle>
+                                            </OfferCaptionWrapper>
+
+                                            <OfferCaptionWrapper>
+                                                <Img src={location} alt='location' />
+                                                <OfferCaptionTitle>{offer.location}</OfferCaptionTitle>
                                             </OfferCaptionWrapper>
                                         </BasicsInformations>
                                     </TextSection>
