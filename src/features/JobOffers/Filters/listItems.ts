@@ -1,8 +1,10 @@
+const expandState = true;
+
 export const Categories = [
     {
         id: 1,
         title: "Operating mode",
-        isExpand: true,
+        isExpand: expandState,
         items: [
             { id: 1, text: 'Hybrid', checked: false, category: "Operating mode" },
             { id: 2, text: 'Remote', checked: false, category: "Operating mode" },
@@ -13,7 +15,7 @@ export const Categories = [
     {
         id: 2,
         title: "Specializations",
-        isExpand: true,
+        isExpand: expandState,
         items: [
             { id: 5, text: "Backend", checked: false, category: "Specializations" },
             { id: 6, text: "Frontend", checked: false, category: "Specializations" },
@@ -28,7 +30,7 @@ export const Categories = [
     {
         id: 3,
         title: "Position Level",
-        isExpand: true,
+        isExpand: expandState,
         items: [
             { id: 13, text: "Trainee", checked: false, category: "Position Level" },
             { id: 14, text: "Junior", checked: false, category: "Position Level" },
@@ -42,7 +44,7 @@ export const Categories = [
     {
         id: 4,
         title: "Employment Type",
-        isExpand: true,
+        isExpand: expandState,
         items: [
             { id: 20, text: "Employment contract", checked: false, category: "Employment Type" },
             { id: 21, text: "Work contract", checked: false, category: "Employment Type" },
@@ -54,7 +56,7 @@ export const Categories = [
     {
         id: 5,
         title: "Working dimension",
-        isExpand: true,
+        isExpand: expandState,
         items: [
             { id: 26, text: "Full-Time", checked: false, category: "Working dimension" },
             { id: 27, text: "Part-Time", checked: false, category: "Working dimension" },
