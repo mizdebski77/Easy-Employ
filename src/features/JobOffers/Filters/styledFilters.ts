@@ -24,6 +24,10 @@ export const FilterTitle = styled.h3`
     text-align: center;
     padding: 20px;
     margin: 0;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 24px;
+    };
 `;
 
 export const TitleSpan = styled.span`
@@ -54,6 +58,14 @@ export const List = styled.div`
     gap: 4px;
 `;
 
+export const FilterName = styled.span`
+    font-size: 16px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 14px;
+    };
+`;
+
 export const ListItemWrapper = styled.div<{ checked?: boolean; }>`
     display: flex;
     align-items: center;
@@ -69,6 +81,10 @@ export const ListItemWrapper = styled.div<{ checked?: boolean; }>`
     ${({ checked }) => checked && css`
         background: ${({ theme }) => theme.color.mainColor};
     `};
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 14px;
+    };
 `;
 
 export const SpanCheckBox = styled.div<{ checked?: boolean; }>`
@@ -84,10 +100,19 @@ export const SpanCheckBox = styled.div<{ checked?: boolean; }>`
     ${({ checked }) => checked && css`
         background: ${({ theme }) => theme.color.fontMain};
     `};
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        height: 14px;
+        width: 14px;
+    };
 `;
 
 export const FilterCountSpan = styled.span`
     font-size: 12px;
     color: ${({ theme }) => theme.color.fontMainHover};
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 10px;
+    };
 `;
 

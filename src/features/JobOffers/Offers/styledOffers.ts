@@ -11,6 +11,11 @@ export const OffersTitle = styled.h2`
     font-size: 32px;
     font-weight: normal;
     margin-bottom: 40px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 24px;
+        margin-bottom: 20px;
+    };
 `;
 
 export const OffersContainer = styled.div`
