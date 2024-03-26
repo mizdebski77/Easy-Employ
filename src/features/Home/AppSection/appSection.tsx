@@ -17,7 +17,7 @@ export const AppSection = () => {
                 <MobileImg src={smartphone} />
             </ImagesWrapper>
 
-            <div>
+            <React.Fragment>
                 <Title>Mobile application on your phone</Title>
                 {captions.map((text) => (
                     <Captions key={text}> - {text} </Captions>
@@ -28,7 +28,7 @@ export const AppSection = () => {
                     <StoreIcon src={appStore} />
                     <StoreIcon src={googlePlay} />
                 </StoresIconsWrapper>
-            </div>
+            </React.Fragment>
         </Wrapper>
     );
 };
