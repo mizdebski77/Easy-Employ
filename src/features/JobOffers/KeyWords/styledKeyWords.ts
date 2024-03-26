@@ -6,6 +6,10 @@ export const Wrapper = styled.section`
     margin: 0 auto;
     padding: 40px;
     border-radius: 10px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        padding: 24px;
+    };
 `;
 
 export const Form = styled.form`
@@ -14,6 +18,7 @@ export const Form = styled.form`
     align-items: center;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+
     };
 `;
 
@@ -23,6 +28,10 @@ export const Title = styled.h2`
     margin: 0 0 20px ;
     text-align: center;
     font-size: 32px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 24px;
+    };
 `;
 
 export const InputWrapper = styled.div`
@@ -32,6 +41,7 @@ export const InputWrapper = styled.div`
     grid-template-columns: 2fr 1fr;
     max-width: 720px;
     margin: 0 auto;
+    width: 100%;
 `;
 
 
@@ -44,7 +54,12 @@ export const KeyWordInput = styled.input`
 
     &:focus {
         outline:none;
-    }
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 14px;
+    };
+
 `;
 
 export const SearchButton = styled.button`
@@ -57,8 +72,7 @@ export const SearchButton = styled.button`
     color:${({ theme }) => theme.color.secondColor};
     cursor: pointer;
     transition: 0.3s;
-
-
+    
     &:hover {
         background: ${({ theme }) => theme.color.fontMainHover};
     };
@@ -67,15 +81,9 @@ export const SearchButton = styled.button`
         background: ${({ theme }) => theme.color.fontMainActive};
     };
 
-    
-    @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
-        max-width: 280px;
-        width: 100%;
-    };
-
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
-        max-width: 480px;
-        width: 100%;
+        font-size: 14px;
+        padding: 8px;
     };
 `;
 
