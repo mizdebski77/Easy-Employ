@@ -71,11 +71,16 @@ export const TextSection = styled.div`
 export const OfferTitle = styled.h2`
     margin: 0;
     color: ${({ theme }) => theme.color.fontMain};
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 20px;
+    };
 `;
 
 export const BasicsInformations = styled.div`
     display: flex;
-    gap: 20px;
+    column-gap: 20px;
+    row-gap: 10px;
     flex-wrap: wrap;
 `;
 
@@ -95,13 +100,17 @@ export const OfferCaptionTitle = styled.span`
     color: ${({ theme }) => theme.color.fontSecond};
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
-        font-size: 16px;
+        font-size: 12px;
     };
 `;
 
 export const Img = styled.img`
     max-width: 24px;
     width: 100%;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        max-width: 18px;
+    };
 `;
 
 export const TechStackWrapper = styled.div`
@@ -116,4 +125,8 @@ export const TechStackSpan = styled.span`
     padding: 4px 12px;
     color: white;
     border-radius: 40px;
+    
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 12px;
+    };
 `;
