@@ -76,6 +76,7 @@ export const OfferTitle = styled.h2`
 export const BasicsInformations = styled.div`
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 `;
 
 export const OfferCaptionWrapper = styled.div`
