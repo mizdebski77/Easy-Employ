@@ -26,6 +26,4 @@ export const tiles = [
         text: 'Calculate net and gross earnings for different types of contracts.',
         link: '/Calculator',
     }
-
-
 ];

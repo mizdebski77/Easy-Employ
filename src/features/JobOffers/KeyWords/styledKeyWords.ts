@@ -30,7 +30,7 @@ export const Title = styled.h2`
     font-size: 32px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
-        font-size: 24px;
+        font-size: 20px;
     };
 `;
 
@@ -97,9 +97,7 @@ export const KeyWordsWrapper = styled.fieldset`
     gap: 30px;
     flex-wrap: wrap;
 
-    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
-        justify-content: center;
-    };
+
 `;
 
 export const Legend = styled.legend`
@@ -107,7 +105,7 @@ export const Legend = styled.legend`
     padding: 0 10px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
-        font-size: 20px;
+        font-size: 16px;
     };
 `;
 
