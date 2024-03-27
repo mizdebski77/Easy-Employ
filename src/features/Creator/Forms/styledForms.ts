@@ -32,7 +32,7 @@ export const DataForm = styled.form`
 
 export const DataInput = styled.input`
     width: 80%;
-    border-radius: 20px;
+    border-radius: 8px;
     padding: 16px;
     background: ${({ theme }) => theme.color.thirdColor};
     border: none;
