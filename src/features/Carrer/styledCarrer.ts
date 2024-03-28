@@ -32,7 +32,7 @@ export const InformationWrapper = styled.main`
     grid-template-columns: 1fr 2fr 1fr;
     gap: 10px;
     box-shadow: 0 0 10px ${({ theme }) => theme.color.fourthColor};
-    border-radius: 20px;
+    border-radius: 8px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         gap: 20px;
