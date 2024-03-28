@@ -27,7 +27,7 @@ export const InformationWrapper = styled.main`
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    padding: 20px 64px;
+    padding: 40px;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     gap: 10px;
@@ -48,7 +48,6 @@ export const PhotoSection = styled.div`
     justify-content: center;
     align-items: center;
     max-width: 240px;
-    box-shadow: 0 0 10px ${({ theme }) => theme.color.fontMain};
 `;
 
 export const Photo = styled.img`
@@ -120,9 +119,9 @@ export const ButtonWrapper = styled.div`
 export const EditButton = styled.button`
     color: ${({ theme }) => theme.color.secondColor};
     background: ${({ theme }) => theme.color.fontMain};
-    padding: 8px 40px;
+    padding: 10px 40px;
     border: none;
-    border-radius: 20px;
+    border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
     max-width: 160px;
