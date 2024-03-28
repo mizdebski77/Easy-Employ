@@ -79,12 +79,12 @@ export const Carrer = () => {
 
             <ContactWrapper>
                 <ContactItems>
-                    <ContactSpan> E-Mail </ContactSpan>
-                    <ContactInformation>mizdebski123@gmail.com</ContactInformation>
+                    <ContactSpan> E-Mail: </ContactSpan>
+                    <ContactInformation>mizdebski123@gmail.com:</ContactInformation>
                 </ContactItems>
 
                 <ContactItems>
-                    <ContactSpan> Phone </ContactSpan>
+                    <ContactSpan>Phone: </ContactSpan>
                     <ContactInformation>501375604</ContactInformation>
                 </ContactItems>
 

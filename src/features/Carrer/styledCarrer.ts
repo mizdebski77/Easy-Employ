@@ -13,6 +13,7 @@ export const Wrapper = styled.section`
 
 export const Title = styled.h1`
     font-size: 54px;
+    letter-spacing: 4px;
     font-weight: normal;
     color: ${({ theme }) => theme.color.fontMain};
     text-align: center;
@@ -48,12 +49,14 @@ export const PhotoSection = styled.div`
     justify-content: center;
     align-items: center;
     max-width: 240px;
+
 `;
 
 export const Photo = styled.img`
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 8px;
 `;
 
 export const Name = styled.h1`
@@ -158,11 +161,11 @@ export const ContactWrapper = styled.div`
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    padding: 20px 40px;
+    padding: 40px;
     display:  flex;
     justify-content: space-between;
     box-shadow: 0 0 10px ${({ theme }) => theme.color.fourthColor};
-    border-radius: 20px;
+    border-radius: 8px;
     flex-wrap: wrap;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
