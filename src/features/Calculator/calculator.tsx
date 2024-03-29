@@ -45,30 +45,7 @@ export const Calculator = () => {
     console.log(socialSecurityContributions);
 
 
-    const countCOE = () => {
-        setCOE(monthlySalary * 2)
-    };
 
-    const countMC = () => {
-        setMC(monthlySalary * 4)
-    };
-
-    const countCW = () => {
-        setCW(monthlySalary * 6)
-    };
-
-    const countB2B = () => {
-        setB2B(monthlySalary * 8)
-    };
-
-    const handleButtonCLick = () => {
-        if (selectedOption) {
-            countCOE();
-            countMC();
-            countCW();
-            countB2B();
-        }
-    };
 
 
     return (

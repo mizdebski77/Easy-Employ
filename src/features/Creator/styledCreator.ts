@@ -14,6 +14,7 @@ export const Title = styled.h1`
     text-align: center;
 `;
 
+
 export const ContentWrapper = styled.div`
     max-width: 1500px;
     margin: 0 auto;
