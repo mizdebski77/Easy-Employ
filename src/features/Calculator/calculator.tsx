@@ -42,7 +42,6 @@ export const Calculator = () => {
     };
 
 
-    console.log(socialSecurityContributions);
 
 
 
