@@ -25,4 +25,8 @@ export const ContentWrapper = styled.div`
 export const TilesWrapper = styled.div`
     display: grid;
     gap: 40px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        gap: 20px;
+    };
 `;
