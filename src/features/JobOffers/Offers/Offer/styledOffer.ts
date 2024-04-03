@@ -18,6 +18,7 @@ export const ContentWrapper = styled.div`
 
     @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
         grid-template-columns: 1fr;
+        gap: 20px;
     };
 `;
 
