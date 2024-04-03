@@ -13,6 +13,11 @@ export const ApplyTitle = styled.h3`
     text-align: center;
     font-weight: normal;
     color: ${({ theme }) => theme.color.fontSecond};
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 24px;
+        margin: 0 0 20px;
+    };
 `;
 
 export const Form = styled.form`
@@ -22,12 +27,21 @@ export const Form = styled.form`
     padding: 40px;
     display: grid;
     gap: 40px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        padding: 32px 20px;
+        gap: 20px;
+    };
 `;
 
 export const LabelWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     gap: 20px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        flex-direction: column;
+    };
 `;
 
 export const InputContainer = styled.div`
@@ -39,6 +53,12 @@ export const InputContainer = styled.div`
 
 export const Label = styled.label`
     padding: 0 12px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 12px;
+        padding: 0 8px;
+    };
+
 `;
 
 export const LabelSpan = styled.label`

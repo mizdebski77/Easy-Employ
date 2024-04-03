@@ -21,13 +21,13 @@ export const Offer = () => {
         <Wrapper>
             {isLoading ? <Loader /> : error ? <Error /> : (
                 <ContentWrapper>
-                        <TilesWrapper>
-                            <BasicInfo data={data} />
-                            <Details data={data} />
-                        </TilesWrapper>
-                    {/* <div>
+                    <TilesWrapper>
+                        <BasicInfo data={data} />
+                        <Details data={data} />
+                    </TilesWrapper>
+                    <div>
                         <Apply />
-                    </div> */}
+                    </div>
                 </ContentWrapper>
             )}
         </Wrapper>
