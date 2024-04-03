@@ -5,7 +5,6 @@ import { Loader } from '../../../../common/Loader/loader';
 import { Error } from '../../../../common/Error/error';
 import { BasicInfo } from './BasicInformations/basicsInfo';
 import { Details } from './DetailsSection/details';
-import map from '../../../../common/Images/map.png';
 import { Apply } from './Apply/apply';
 
 export const Offer = () => {
@@ -28,15 +27,9 @@ export const Offer = () => {
                             <Details data={data} />
                         </TilesWrapper>
                     </div>
-
                     <div>
-                        <MapWrapper>
-                            <Map src={map} />
-                        </MapWrapper>
+                        <Apply />
                     </div>
-
-
-                    <Apply />
                 </ContentWrapper>
             )}
         </Wrapper>
