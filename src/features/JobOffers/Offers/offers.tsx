@@ -1,5 +1,5 @@
 import React from 'react';
-import { BasicsInformations, Img, Logo, MainSection, OfferCaptionTitle, OfferCaptionWrapper, OfferTile, OfferTitle, OffersContainer, OffersTitle, TechStackSpan, TechStackWrapper, TextSection, Wrapper } from './styledOffers';
+import { BasicsInformations, Img, Logo, MainSection, OfferCaptionTitle, OfferCaptionWrapper, OfferTile, OfferTitle, OffersContainer, OffersTitle, Span, TechStackSpan, TechStackWrapper, TextSection, Wrapper } from './styledOffers';
 import { useQuery } from '@tanstack/react-query';
 import { Loader } from '../../../common/Loader/loader';
 import { Error } from '../../../common/Error/error';
@@ -28,9 +28,12 @@ export const Offers = () => {
 
     const filtersApplied = filtersList.length > 0;
 
+
     return (
         <Wrapper>
-            <OffersTitle>Offers recommended for you </OffersTitle>
+            {data && (
+                <OffersTitle>Offers recommended for you <Span>({data.length})</Span> </OffersTitle>
+            )}
 
             {isLoading ? <Loader /> : error ? <Error /> : (
                 <OffersContainer>

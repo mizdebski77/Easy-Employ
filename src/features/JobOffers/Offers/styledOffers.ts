@@ -11,11 +11,17 @@ export const OffersTitle = styled.h2`
     font-size: 32px;
     font-weight: normal;
     margin-bottom: 40px;
+    color: ${({ theme }) => theme.color.fontSecond};
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         font-size: 24px;
         margin-bottom: 20px;
     };
+`;
+
+export const Span = styled.span`
+    font-weight: bold;
+    color: ${({ theme }) => theme.color.fontMain};
 `;
 
 export const OffersContainer = styled.div`

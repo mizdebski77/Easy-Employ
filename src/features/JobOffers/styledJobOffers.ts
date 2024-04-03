@@ -14,13 +14,12 @@ export const Title = styled.h1`
     letter-spacing: 4px;
     color: ${({ theme }) => theme.color.fontMain};
     font-weight: normal;
+    margin-bottom: 80px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         font-size: 28px;
     };
 `;
-
-
 
 export const OffersContainer = styled.div`
     display: grid;
