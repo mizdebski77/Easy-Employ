@@ -22,6 +22,10 @@ export const TileTitle = styled.h2`
     font-weight: normal;
     padding: 0 0 20px 0;
     border-bottom: 2px solid ${({ theme }) => theme.color.thirdColor};
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 24px;
+    };
 `;
 
 export const SkillsWrapper = styled.div`

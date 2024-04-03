@@ -6,19 +6,24 @@ export const Wrapper = styled.section`
     background: ${({ theme }) => theme.color.secondColor};
     box-shadow: 0 0 10px ${({ theme }) => theme.color.fourthColor};
     border-radius: 8px;
+    padding: 40px 20px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        padding: 28px 20px;
+    };
 `;
 
 export const TitleWrapper = styled.div`
     border-bottom: 2px solid ${({ theme }) => theme.color.fourthColor};
-    padding: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 40px;
+    padding: 0 0 40px 0;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
-        padding: 40px 16px 20px;
         gap: 16px;
+        padding: 0 0 20px 0;
     };
 `;
 
@@ -52,12 +57,13 @@ export const CompanyName = styled.span`
 
 export const InformationsWrapper = styled.div`
     display: flex;
-    padding: 20px;
+    padding: 40px 0 0 0;
     justify-content: space-evenly;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         flex-wrap: wrap;
         gap: 12px;
+        padding: 20px 0 0 0;
     };
 `;
 

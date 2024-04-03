@@ -7,7 +7,7 @@ export const Wrapper = styled.section`
     margin: 0 auto;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
-        padding: 40px 20px;
+        padding: 20px 10px;
     };
 `;
 
