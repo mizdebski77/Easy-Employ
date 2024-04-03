@@ -25,9 +25,9 @@ export const Offer = () => {
                             <BasicInfo data={data} />
                             <Details data={data} />
                         </TilesWrapper>
-                    <div>
+                    {/* <div>
                         <Apply />
-                    </div>
+                    </div> */}
                 </ContentWrapper>
             )}
         </Wrapper>

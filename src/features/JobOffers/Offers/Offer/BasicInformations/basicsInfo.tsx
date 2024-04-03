@@ -30,9 +30,7 @@ export const BasicInfo: React.FC<BasicInfoProps> = ({ data }) => {
                     <Position>{data.position}</Position>
                     <CompanyName>{data.company_name}</CompanyName>
                 </div>
-            </TitleWrapper>
-
-            
+            </TitleWrapper>           
 
             <InformationsWrapper>
                 {informations.map((information, index,) => (
