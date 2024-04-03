@@ -85,7 +85,7 @@ export const Calculator = () => {
                         />
                         Net
                     </Label>
-                    <Button onClick={() => handleButtonCLick()}>Count</Button>
+                    {/* <Button onClick={() => handleButtonCLick()}>Count</Button> */}
                 </Form>
             </FormWrapper>
 
