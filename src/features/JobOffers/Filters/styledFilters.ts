@@ -106,13 +106,3 @@ export const SpanCheckBox = styled.div<{ checked?: boolean; }>`
         width: 14px;
     };
 `;
-
-export const FilterCountSpan = styled.span`
-    font-size: 12px;
-    color: ${({ theme }) => theme.color.fontMainHover};
-
-    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
-        font-size: 10px;
-    };
-`;
-

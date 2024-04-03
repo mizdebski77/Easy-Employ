@@ -1,4 +1,4 @@
-import { Arrow, CategoryWrapper, FilterCategory, FilterCountSpan, FilterName, FilterTitle, FiltersWrapper, List, ListItemWrapper, SpanCheckBox, TitleSpan, TitleWrapper, Wrapper } from './styledFilters';
+import { Arrow, CategoryWrapper, FilterCategory, FilterName, FilterTitle, FiltersWrapper, List, ListItemWrapper, SpanCheckBox, TitleSpan, TitleWrapper, Wrapper } from './styledFilters';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../../../core/store';
 import { switchFilterCheck, toggleFilterList } from './filtersSlice';
@@ -10,6 +10,9 @@ export const Filters = () => {
     const filters = useSelector((state: RootState) => state.filters.filters)
     const checkedFilters = useSelector((state: RootState) => state.filters.checkedFilters)
     const checkedCount = checkedFilters.filter(item => item.checked).length;
+
+    console.log(filters[0].items);
+
 
 
     return (
@@ -43,7 +46,6 @@ export const Filters = () => {
                                                 ? '✔' : ''}
                                         </SpanCheckBox>
                                         <span>{item.text}</span>
-                                        <FilterCountSpan>(12)</FilterCountSpan>
                                     </ListItemWrapper>
                                 ))}
                             </List>
