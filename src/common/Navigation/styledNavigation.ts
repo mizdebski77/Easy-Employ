@@ -38,7 +38,7 @@ export const LogoImg = styled.img`
     max-width: 64px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
-        max-width: 40px;
+        max-width: 32px;
     }
 `;
 
