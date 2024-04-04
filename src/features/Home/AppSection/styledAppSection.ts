@@ -35,7 +35,7 @@ export const MobileImg = styled.img`
     };
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
-        max-width: 240px;
+        max-width: 180px;
         position: sticky;
     };
 `;

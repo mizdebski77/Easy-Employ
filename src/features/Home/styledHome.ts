@@ -19,6 +19,7 @@ export const TitleWrapper = styled.div`
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         border-radius: 0 0 40px 40px;
         min-height: 200px;
+        padding: 10px;
     };
 `;
 

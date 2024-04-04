@@ -91,6 +91,11 @@ export const ProfileTitle = styled.h2`
 export const ProfileSpan = styled.p`
     color: ${({ theme }) => theme.color.fontSecond};
     text-align: left;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        font-size: 14px;
+        text-align: center;
+    };
 `;
 
 export const ProfileImg = styled.img`
