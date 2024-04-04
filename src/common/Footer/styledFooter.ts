@@ -19,6 +19,7 @@ export const MainSection = styled.section`
     @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
         flex-direction: column;
         gap: 40px;
+        padding: 0 0 20px;
     };
 `;
 
@@ -66,7 +67,7 @@ export const ToolsTitle = styled.span`
     margin-bottom: 20px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
-        font-size: 24px;
+        font-size: 20px;
         text-align: center;
     };
 `;
@@ -89,7 +90,7 @@ export const ToolsLink = styled(Link)`
     
     
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
-        font-size: 16px;
+        font-size: 12px;
         text-align: center;
     };
 `;
@@ -108,8 +109,9 @@ export const AppTitle = styled.span`
     margin-bottom: 20px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
-        font-size: 24px;
+        font-size: 20px;
         text-align: center;
+        margin-bottom: 10px;
     };
 `;
 
@@ -140,7 +142,7 @@ export const IformationsWrapper = styled.section`
     @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
         flex-direction: column;
         gap: 40px;
-        padding: 20px 10px;
+        padding: 20px 0px;
     };
 `;
 
@@ -167,6 +169,7 @@ export const InformationLink = styled.span`
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         text-align:center;
+        font-size: 12px;
     };
 `;
 
@@ -187,7 +190,7 @@ export const SocialLink = styled.img`
     }
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
-        max-width: 40px;
+        max-width: 32px;
     };
 `;
 
