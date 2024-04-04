@@ -16,6 +16,7 @@ export const TitleWrapper = styled.div`
     box-shadow: 100px 0px 175.8px 27px #f1f1f0 inset;
     border-radius: 0 0 160px 160px;
 
+
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         border-radius: 0 0 40px 40px;
         min-height: 200px;
@@ -29,6 +30,10 @@ export const Title = styled.h1`
     text-align: center;
     color: ${({ theme }) => theme.color.fontMain};
     margin: 40px 0 20px 0;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
+        font-size: 52px;
+    };
     
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         font-size: 32px;
@@ -40,6 +45,10 @@ export const Captions = styled.h2`
     font-weight: normal;
     color: ${({ theme }) => theme.color.fontSecond};
     text-align: center;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
+        font-size: 32px;
+    };
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         font-size: 24px;

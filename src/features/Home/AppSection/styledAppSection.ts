@@ -31,7 +31,7 @@ export const MobileImg = styled.img`
     bottom: 40px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.secondBp}px){
-        max-width: 360px;
+        max-width: 240px;
     };
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
