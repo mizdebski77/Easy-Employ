@@ -25,7 +25,7 @@ export const Title = styled.h1`
     margin: 0 0 80px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
-        font-size: 32px;
+        font-size: 24px;
         margin: 20px 0;
     };
 `;
@@ -178,7 +178,7 @@ export const TileTitle = styled.h3`
     border-bottom: 1px solid ${({ theme }) => theme.color.fourthColor};
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
-        font-size: 24px;
+        font-size: 20px;
     };
 `;
 
@@ -186,7 +186,7 @@ export const TileSpan = styled.span`
     font-size: 20px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
-        font-size: 16px;
+        font-size: 14px;
     };    
 `;
 

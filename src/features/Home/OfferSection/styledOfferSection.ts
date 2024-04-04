@@ -21,7 +21,7 @@ export const OffersTitle = styled.h3`
     color: ${({ theme }) => theme.color.fontMain};
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
-        font-size: 32px;
+        font-size: 24px;
     };
 `;
 

@@ -51,7 +51,7 @@ export const Title = styled.h1`
     };
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
-        font-size: 32px;
+        font-size: 24px;
     };
 `;
 
