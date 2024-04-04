@@ -63,6 +63,7 @@ export const Navigation = () => {
             </Wrapper>
             <MobileNavbar
                 mobileNavigation={mobileNavigation}
+                setMobileNavigation={setMobileNavigation}
             />
             {languageWindow && (
                 < Language

@@ -7,9 +7,15 @@ import { AnimatePresence, motion } from 'framer-motion';
 
 interface MobileNavbarProps {
     mobileNavigation: boolean;
+    setMobileNavigation: React.Dispatch<React.SetStateAction<boolean>>; // dodanie setMobileNavigation do props
 }
 
-export const MobileNavbar: React.FC<MobileNavbarProps> = ({ mobileNavigation }) => {
+export const MobileNavbar: React.FC<MobileNavbarProps> = ({ mobileNavigation, setMobileNavigation }) => {
+
+
+    const toggleMobileNavigation = () => {
+        setMobileNavigation(false);
+    };
 
     const mobileNavbarVariant = {
         hidden: {
@@ -33,7 +39,7 @@ export const MobileNavbar: React.FC<MobileNavbarProps> = ({ mobileNavigation }) 
                 variants={mobileNavbarVariant}
             >
                 {links.map((link, index) => (
-                    <NavbarLink key={index} to={link.link}>
+                    <NavbarLink key={index} to={link.link} onClick={toggleMobileNavigation}>
                         {link.text}
                     </NavbarLink>
                 ))}
@@ -41,8 +47,6 @@ export const MobileNavbar: React.FC<MobileNavbarProps> = ({ mobileNavigation }) 
                     <LinkImg to="/Log-In">
                         <Img src={accountImg} />
                     </LinkImg>
-
-
                     <Img src={languageImg} />
 
                 </ImgWrapper>
