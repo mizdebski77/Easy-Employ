@@ -17,8 +17,8 @@ export const Categories = [
         title: "Specializations",
         isExpand: expandState,
         items: [
-            { id: 5, text: "Backend", checked: false, category: "Specializations" },
-            { id: 6, text: "Frontend", checked: false, category: "Specializations" },
+            { id: 5, text: "backend", checked: false, category: "Specializations" },
+            { id: 6, text: "frontend", checked: false, category: "Specializations" },
             { id: 7, text: "Full-Stack", checked: false, category: "Specializations" },
             { id: 8, text: "Mobile", checked: false, category: "Specializations" },
             { id: 9, text: "DevOps", checked: false, category: "Specializations" },

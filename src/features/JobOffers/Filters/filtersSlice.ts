@@ -2,6 +2,10 @@ import { createSlice } from "@reduxjs/toolkit";
 import { FilterItem, Filters } from "../../../core/interface";
 import { Categories } from "./listItems";
 
+interface CategoryCheckedFilters {
+    categoryId: string;
+    checkedFilters: FilterItem[];
+}
 interface FiltersState {
     filters: Filters[];
     checkedFilters: FilterItem[];
