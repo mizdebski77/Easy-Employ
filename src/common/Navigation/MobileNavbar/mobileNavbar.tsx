@@ -1,21 +1,19 @@
-import React from 'react';
 import { ImgWrapper, NavbarLink, Wrapper, Img, LinkImg } from './styledMobileNavbar';
 import { links } from '../links';
 import accountImg from '../../Images/SVG/account.svg';
 import languageImg from '../../Images/SVG/language.svg';
 import { AnimatePresence, motion } from 'framer-motion';
+import { useDispatch, useSelector } from 'react-redux';
+import { RootState } from '../../../core/store';
+import { toggleMobileNavigation } from './navigationSlice';
 
-interface MobileNavbarProps {
-    mobileNavigation: boolean;
-    setMobileNavigation: React.Dispatch<React.SetStateAction<boolean>>; // dodanie setMobileNavigation do props
-}
+export const MobileNavbar = () => {
 
-export const MobileNavbar: React.FC<MobileNavbarProps> = ({ mobileNavigation, setMobileNavigation }) => {
+    const dispatch = useDispatch();
 
+    const navigationState = useSelector((state: RootState) => state.navigation);
+    const mobileNavigation = navigationState.mobileNavigation
 
-    const toggleMobileNavigation = () => {
-        setMobileNavigation(false);
-    };
 
     const mobileNavbarVariant = {
         hidden: {
@@ -39,7 +37,7 @@ export const MobileNavbar: React.FC<MobileNavbarProps> = ({ mobileNavigation, se
                 variants={mobileNavbarVariant}
             >
                 {links.map((link, index) => (
-                    <NavbarLink key={index} to={link.link} onClick={toggleMobileNavigation}>
+                    <NavbarLink key={index} to={link.link} onClick={() => dispatch(toggleMobileNavigation())}>
                         {link.text}
                     </NavbarLink>
                 ))}

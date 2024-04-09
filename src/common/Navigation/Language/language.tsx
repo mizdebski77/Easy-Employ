@@ -4,13 +4,17 @@ import { AiOutlineClose } from 'react-icons/ai'
 import { AnimatePresence, motion } from 'framer-motion';
 import { languages } from './languagesData';
 import { closeWindow, closeWrapper, openWindow, openWrapper } from '../../../core/animationsStore';
+import { useDispatch, useSelector } from 'react-redux';
+import { RootState } from '../../../core/store';
+import { toggleLanguageWindow } from '../MobileNavbar/navigationSlice';
 
-interface CloseLangWindow {
-    languageWindow: boolean;
-    closeLangWindow: () => void;
-};
 
-export const Language: React.FC<CloseLangWindow> = ({ closeLangWindow, languageWindow }) => {
+export const Language = () => {
+
+    const dispatch = useDispatch();
+
+    const navigationState = useSelector((state: RootState) => state.navigation);
+    const languageWindow = navigationState.languageWindow
 
     return (
         <Wrapper>
@@ -37,7 +41,7 @@ export const Language: React.FC<CloseLangWindow> = ({ closeLangWindow, languageW
                         ))}
                     </LanguagesWindow>
 
-                    <CloseButton onClick={closeLangWindow}>
+                    <CloseButton onClick={() => dispatch(toggleLanguageWindow())}>
                         <AiOutlineClose size={35} />
                     </CloseButton>
                 </FullScreenWrapper>

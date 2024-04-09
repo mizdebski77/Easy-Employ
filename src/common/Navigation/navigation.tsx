@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { LinkImg, ImgWrapper, LinksWrapper, LogoFirstLetters, LinkImgWrapperLang, LogoImg, LogoLink, LogoText, NavbarLink, Wrapper, PhoneNavbar, LinkImgWrapper, LinkImgSpan } from './styledNavigation';
 import logo from '../Images/logo.png';
 import { links } from './links';
@@ -8,23 +7,15 @@ import { Divide as Hamburger } from 'hamburger-react';
 import { MobileNavbar } from './MobileNavbar/mobileNavbar';
 import { Language } from './Language/language';
 import { scrollTop } from '../../core/scrollTop';
+import { useDispatch, useSelector } from 'react-redux';
+import { RootState } from '../../core/store';
+import { toggleLanguageWindow, toggleMobileNavigation } from './MobileNavbar/navigationSlice';
 
 export const Navigation = () => {
 
-    const [mobileNavigation, setMobileNavigation] = useState(false);
-    const [languageWindow, setLanguageWindow] = useState(false);
-
-    const toggleMobileNavigation = () => {
-        setMobileNavigation(!mobileNavigation);
-    };
-
-    const openLanguagWindow = () => {
-        setLanguageWindow(!languageWindow);
-    };
-
-    const closeLangWindow = () => {
-        setLanguageWindow(false);
-    };
+    const navigationState = useSelector((state: RootState) => state.navigation);
+    const dispatch = useDispatch();
+    const languageWindow = navigationState.languageWindow
 
     return (
         <>
@@ -51,25 +42,19 @@ export const Navigation = () => {
                         <LinkImgSpan>Account</LinkImgSpan>
                     </LinkImgWrapper>
 
-                    <LinkImgWrapperLang onClick={openLanguagWindow}>
+                    <LinkImgWrapperLang onClick={() => dispatch(toggleLanguageWindow())}>
                         <LinkImg src={languageImg} />
                         <LinkImgSpan>English</LinkImgSpan>
                     </LinkImgWrapperLang>
                 </ImgWrapper>
 
-                <PhoneNavbar onClick={toggleMobileNavigation}>
+                <PhoneNavbar onClick={() => dispatch(toggleMobileNavigation())}>
                     <Hamburger color='#0096ff' size={24} />
                 </PhoneNavbar>
             </Wrapper>
-            <MobileNavbar
-                mobileNavigation={mobileNavigation}
-                setMobileNavigation={setMobileNavigation}
-            />
+            <MobileNavbar/>
             {languageWindow && (
-                < Language
-                    languageWindow={languageWindow}
-                    closeLangWindow={closeLangWindow}
-                />
+                < Language />
             )}
 
         </>
