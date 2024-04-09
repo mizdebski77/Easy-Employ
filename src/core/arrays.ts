@@ -151,6 +151,13 @@ export const iconsArray = [
     }
 ];
 
+export const footerLinks = [
+    "Easy Employ Group",
+    'Statute',
+    'Privacy policy',
+    'Cookie policy'
+];
+
 
 
 

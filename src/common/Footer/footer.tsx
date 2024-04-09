@@ -7,7 +7,7 @@ import link from '../Images/SocialMedia/link.png';
 import fb from '../Images/SocialMedia/fb.png';
 import insta from '../Images/SocialMedia/ig.png';
 import { scrollTop } from '../../core/scrollTop';
-import { links } from '../../core/arrays';
+import { footerLinks, links } from '../../core/arrays';
 
 
 export const Footer = () => {
@@ -39,12 +39,11 @@ export const Footer = () => {
             </MainSection>
 
             <IformationsWrapper>
-                <InformationsLinksWrapper>
-                    <InformationLink>Easy Employ Group</InformationLink>
-                    <InformationLink>Statute</InformationLink>
-                    <InformationLink>Privacy policy</InformationLink>
-                    <InformationLink>Cookie policy</InformationLink>
-                </InformationsLinksWrapper>
+                {footerLinks.map((footerLink) => (
+                    <InformationsLinksWrapper key={footerLink}>
+                        <InformationLink>{footerLink}</InformationLink>
+                    </InformationsLinksWrapper>
+                ))}
 
                 <InformationAppWrapper>
                     <SocialLink src={link} />
