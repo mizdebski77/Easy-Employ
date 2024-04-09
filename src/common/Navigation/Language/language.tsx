@@ -2,11 +2,11 @@ import React from 'react';
 import { CloseButton, FlagImg, FullScreenWrapper, LangCaption, LangWrapper, LanguagesWindow, Wrapper } from './styledLanguage';
 import { AiOutlineClose } from 'react-icons/ai'
 import { AnimatePresence, motion } from 'framer-motion';
-import { languages } from './languagesData';
 import { closeWindow, closeWrapper, openWindow, openWrapper } from '../../../core/animationsStore';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../../../core/store';
 import { toggleLanguageWindow } from '../MobileNavbar/navigationSlice';
+import { languages } from '../../../core/arrays';
 
 
 export const Language = () => {

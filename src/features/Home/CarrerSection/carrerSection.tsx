@@ -2,15 +2,9 @@ import React from 'react';
 import { CarrerImg, CarrerTile, Container, ContentWrapper, ProfileImg, ProfileLink, ProfileSpan, ProfileTitle, ProfileWrapper, TextContainer, TextWrapper, TileLink, TileSpan, TileTitle, TilesWrapper, Title, Wrapper } from './styledCarrerSection';
 import profile from '../../../common/Images/Home/profile.png';
 import { scrollTop } from '../../../core/scrollTop';
-import { tiles } from '../../../core/arrays';
+import { profileSpan, tiles } from '../../../core/arrays';
 
 export const CarrerSection = () => {
-
-    const profileSpan = [
-        'simpler application',
-        'faster access to recruitment documents',
-        'automatic completion of questions from employers',
-    ]
 
     return (
         <Wrapper>

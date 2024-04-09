@@ -1,13 +1,13 @@
 import React from 'react';
 import { AppImg, AppTitle, AppWrapper, IformationsWrapper, InformationAppWrapper, InformationLink, InformationsLinksWrapper, Logo, LogoFirstLetters, LogoText, LogoWrapper, MainSection, SocialLink, ToolsLink, ToolsLinksWrapper, ToolsTitle, ToolsWrapper, Wrapper } from './styledFooter';
 import logo from '../Images/logo.png';
-import { links } from '../Navigation/links';
 import app from '../Images/Home/app.png';
 import google from '../Images/Home/google.png';
 import link from '../Images/SocialMedia/link.png';
 import fb from '../Images/SocialMedia/fb.png';
 import insta from '../Images/SocialMedia/ig.png';
 import { scrollTop } from '../../core/scrollTop';
+import { links } from '../../core/arrays';
 
 
 export const Footer = () => {

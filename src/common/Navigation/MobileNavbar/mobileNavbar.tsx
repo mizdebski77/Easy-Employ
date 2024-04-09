@@ -1,11 +1,11 @@
 import { ImgWrapper, NavbarLink, Wrapper, Img, LinkImg } from './styledMobileNavbar';
-import { links } from '../links';
 import accountImg from '../../Images/SVG/account.svg';
 import languageImg from '../../Images/SVG/language.svg';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../../../core/store';
 import { toggleMobileNavigation } from './navigationSlice';
+import { links } from '../../../core/arrays';
 
 export const MobileNavbar = () => {
 

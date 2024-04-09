@@ -3,14 +3,11 @@ import { Captions, DownloadInformation, ImagesWrapper, MobileImg, StoreIcon, Sto
 import appStore from '../../../common/Images/Home/app.png';
 import googlePlay from '../../../common/Images/Home/google.png';
 import smartphone from '../../../common/Images/Home/smartphone.png';
+import { captions } from '../../../core/arrays';
 
 export const AppSection = () => {
 
-    const captions = [
-        'Notifications about recruitment progress',
-        'Latest job offers',
-        'Efficient contact with the employer'
-    ]
+
     return (
         <Wrapper>
             <ImagesWrapper>

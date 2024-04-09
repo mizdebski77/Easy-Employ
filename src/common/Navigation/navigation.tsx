@@ -1,6 +1,5 @@
 import { LinkImg, ImgWrapper, LinksWrapper, LogoFirstLetters, LinkImgWrapperLang, LogoImg, LogoLink, LogoText, NavbarLink, Wrapper, PhoneNavbar, LinkImgWrapper, LinkImgSpan } from './styledNavigation';
 import logo from '../Images/logo.png';
-import { links } from './links';
 import accountImg from '../Images/SVG/account.svg';
 import languageImg from '../Images/SVG/language.svg';
 import { Divide as Hamburger } from 'hamburger-react';
@@ -10,6 +9,7 @@ import { scrollTop } from '../../core/scrollTop';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../../core/store';
 import { toggleLanguageWindow, toggleMobileNavigation } from './MobileNavbar/navigationSlice';
+import { links } from '../../core/arrays';
 
 export const Navigation = () => {
 
@@ -52,7 +52,7 @@ export const Navigation = () => {
                     <Hamburger color='#0096ff' size={24} />
                 </PhoneNavbar>
             </Wrapper>
-            <MobileNavbar/>
+            <MobileNavbar />
             {languageWindow && (
                 < Language />
             )}

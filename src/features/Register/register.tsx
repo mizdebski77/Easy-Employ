@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
 import { CheckBox, CreateAccountButton, Form, Icon, IconContainer, IconSpan, IconsWrapper, InfoWrapper, InformationSpan, InfosWrapper, Input, Label, PasswordInput, PasswordLabel, RegisterTitle, ShowHideButton, SignUpPanel, Span, SpanColor, Wrapper } from './styledRegister';
-import fb from '../../common/Images/SocialMedia/fb.png';
-import link from '../../common/Images/SocialMedia/link.png';
-import google from '../../common/Images/SocialMedia/google.png';
 import show from '../../common/Images/SVG/show.svg';
 import hide from '../../common/Images/SVG/hide.svg';
+import { iconsArray } from '../../core/arrays';
 
 export const Register = () => {
 
@@ -19,20 +17,6 @@ export const Register = () => {
         setShowPassword2(!showPassword2);
     };
 
-    const iconsArray = [
-        {
-            src: fb,
-            text: 'Sign up with Facebook'
-        },
-        {
-            src: link,
-            text: 'Sign up with Linkedin'
-        },
-        {
-            src: google,
-            text: 'Sign up with Google'
-        }
-    ];
 
 
     return (
