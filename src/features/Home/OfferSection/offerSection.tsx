@@ -13,7 +13,7 @@ export const OfferSection: React.FC<OfferSectionProps> = ({ data }) => {
             <OffersTitle>Offer zone</OffersTitle>
             <OfferWrapper>
                 {data.map((offer: OfferArray) => (
-                    <OfferTile to={`/Offer/${offer.id}`} key={offer.id}>
+                    <OfferTile to={`/Offer/${offer.id}`} key={offer.id} onClick={() => scrollTop()} >
                         <OfferLogo src={offer.logo} />
                         <OfferArticle>
                             <OfferTitle >{offer.position}</OfferTitle>
