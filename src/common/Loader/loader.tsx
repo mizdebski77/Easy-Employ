@@ -1,6 +1,6 @@
 import React from 'react';
 import { Spinner, Title, Wrapper } from './styledLoader';
-import spinner from './spinner.svg';
+import spinner from '../../common/Images/SVG/spinner.svg';
 
 export const Loader = () => {
     return (

@@ -3,11 +3,11 @@ import { BasicsInformations, Img, Logo, MainSection, OfferCaptionTitle, OfferCap
 import { useQuery } from '@tanstack/react-query';
 import { Loader } from '../../../common/Loader/loader';
 import { Error } from '../../../common/Error/error';
-import { FilterItem, OfferArray } from '../../../core/interface';
+import { OfferArray } from '../../../core/interface';
 import { scrollTop } from '../../../core/scrollTop';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../../core/store';
-import company from '../../../common/Images/company.svg';
+import company from '../../../common/Images/SVG/company.svg';
 import typeOfWork from '../../../common/Images/SVG/tof.svg';
 import location from '../../../common/Images/SVG/location.svg';
 

@@ -1,5 +1,5 @@
 import { Image, Title, Wrapper } from './styledError';
-import error from './error.svg';
+import error from './../../common/Images/SVG/error.svg';
 
 export const Error = () => {
 

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ApplyButton, ApplyTitle, Form, Input, InputContainer, LabelWrapper, Label, Wrapper, LabelSpan, FileWrapper, FileName, FileImg, RemoveButton } from './styledApply';
 import { FileUploader } from "react-drag-drop-files";
 import dnd from '../../../../../common/Images/draganddrop.png';
-import fileImg from '../../../../../common/Images/file.svg';
+import fileImg from '../../../../../common/Images/SVG/file.svg';
 
 export const Apply = () => {
     const [file, setFile] = useState<File | null>(null);
