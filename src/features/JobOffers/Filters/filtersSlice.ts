@@ -25,16 +25,10 @@ const filterSlice = createSlice({
                 const item = filter.items.find(item => item.id === filterID);
                 if (item) {
                     item.checked = !item.checked;
-                    state.checkedFiltersCount += item.checked ? 1 : -1; // Zaktualizuj liczbę zaznaczonych filtrów
+                    state.checkedFiltersCount += item.checked ? 1 : -1;
                 }
             });
         },
-
-        // switchFilterCheck: ({ checkedFilters }, { payload: filterID }) => {
-        //     const index = checkedFilters.findIndex((({ id }) => id === filterID));
-        //     checkedFilters[index].checked = !checkedFilters[index].checked;
-        // },
-
     }
 })
 
