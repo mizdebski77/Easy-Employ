@@ -4,14 +4,14 @@ import { Categories } from "../../../core/arrays";
 
 interface FiltersState {
     filters: Filters[];
-    checkedFilters: FilterItem[];
+    checkedFiltersCount: number;
 }
 
 const filterSlice = createSlice({
     name: "filters",
     initialState: {
         filters: Categories,
-        checkedFilters: Categories.flatMap(category => category.items),
+        checkedFiltersCount: 0,
     } as FiltersState,
 
     reducers: {
@@ -20,10 +20,20 @@ const filterSlice = createSlice({
             filters[index].isExpand = !filters[index].isExpand;
         },
 
-        switchFilterCheck: ({ checkedFilters }, { payload: filterID }) => {
-            const index = checkedFilters.findIndex((({ id }) => id === filterID));
-            checkedFilters[index].checked = !checkedFilters[index].checked;
+        toggleFilterChecked: (state, { payload: filterID }) => {
+            state.filters.forEach(filter => {
+                const item = filter.items.find(item => item.id === filterID);
+                if (item) {
+                    item.checked = !item.checked;
+                    state.checkedFiltersCount += item.checked ? 1 : -1; // Zaktualizuj liczbę zaznaczonych filtrów
+                }
+            });
         },
+
+        // switchFilterCheck: ({ checkedFilters }, { payload: filterID }) => {
+        //     const index = checkedFilters.findIndex((({ id }) => id === filterID));
+        //     checkedFilters[index].checked = !checkedFilters[index].checked;
+        // },
 
     }
 })
@@ -31,7 +41,7 @@ const filterSlice = createSlice({
 export const selectFiltersState = (state: FiltersState) => state;
 export const SelectFilters = (state: FiltersState) => state.filters;
 
-export const { toggleFilterList, switchFilterCheck } = filterSlice.actions;
+export const { toggleFilterList, toggleFilterChecked } = filterSlice.actions;
 
 export default filterSlice.reducer;
 
