@@ -12,9 +12,6 @@ export const Apply = () => {
 
     const fileTypes = ["PDF",];
 
-    console.log(file);
-
-
     return (
         <Wrapper>
             <ApplyTitle>Apply for this position</ApplyTitle>

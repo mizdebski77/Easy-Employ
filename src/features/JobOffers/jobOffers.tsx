@@ -2,7 +2,6 @@ import {
     OffersContainer,
     Title,
     Wrapper,
-
 } from './styledJobOffers';
 import { Filters } from './Filters/filters';
 import { Offers } from './Offers/offers';

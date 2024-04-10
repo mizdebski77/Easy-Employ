@@ -11,8 +11,6 @@ export const Filters = () => {
     const checkedFilters = useSelector((state: RootState) => state.filters.checkedFilters)
     const checkedCount = checkedFilters.filter(item => item.checked).length;
 
-    
-
 
     return (
         <Wrapper>

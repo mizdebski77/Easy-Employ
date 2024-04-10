@@ -24,7 +24,6 @@ export const Offers = () => {
 
     console.log(filtersList);
 
-
     return (
         <Wrapper>
             {data && (
