@@ -12,26 +12,30 @@ import typeOfWork from '../../../common/Images/SVG/tof.svg';
 import location from '../../../common/Images/SVG/location.svg';
 
 export const Offers = () => {
-
     const { data, isLoading, error } = useQuery({
         queryKey: ['offers'],
         queryFn: () => fetch("https://esay-employ-database-wfsz.onrender.com/")
             .then((response: Response) => response.json())
     });
 
-    const checkedFilters = useSelector((state: RootState) => state.filters);
-    // const filtersList = checkedFilters.filter(item => item.checked);
+    const filters = useSelector((state: RootState) => state.filters.filters);
 
+    const filteredOffers = data && filters && data.filter((offer: OfferArray) => {
+        return filters.every(filter => {
+            if (!filter.isExpand || !filter.items.some(item => item.checked)) return true;
+            return filter.items.some(item => item.checked && offer.keywords.includes(item.text));
+        });
+    });
 
     return (
         <Wrapper>
             {data && (
-                <OffersTitle>Offers recommended for you <Span>({data.length})</Span> </OffersTitle>
+                <OffersTitle>Offers recommended for you <Span>({filteredOffers.length})</Span> </OffersTitle>
             )}
 
             {isLoading ? <Loader /> : error ? <Error /> : (
                 <OffersContainer>
-                    {data.map((offer: OfferArray) => (
+                    {filteredOffers.map((offer: OfferArray) => (
                         <OfferTile
                             to={`/Offer/${offer.id}`}
                             key={offer.id}
@@ -72,4 +76,3 @@ export const Offers = () => {
         </Wrapper>
     );
 };
-

@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { FilterItem, Filters } from "../../../core/interface";
+import {  Filters } from "../../../core/interface";
 import { Categories } from "../../../core/arrays";
 
 interface FiltersState {

@@ -10,10 +10,6 @@ export const Filters = () => {
     const filters = useSelector((state: RootState) => state.filters.filters)
     const checkedFiltersCount = useSelector((state: RootState) => state.filters.checkedFiltersCount)
 
-    console.log(checkedFiltersCount);
-
-
-
     return (
         <Wrapper>
             <FiltersWrapper>
