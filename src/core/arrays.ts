@@ -157,30 +157,3 @@ export const footerLinks = [
     'Privacy policy',
     'Cookie policy'
 ];
-
-export const formInputs = [
-    {
-        text: "Name & Surname",
-        type: 'text'
-    },
-
-    {
-        text: "E-Mail",
-        type: 'text'
-    },
-
-    {
-        text: "GitHub / Porfolio Link",
-        type: 'text'
-    },
-
-    {
-        text: "Linkedin",
-        type: 'text'
-    },
-];
-
-
-
-
-

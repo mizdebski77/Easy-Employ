@@ -61,39 +61,6 @@ export const InputContainer = styled.div`
     gap: 8px;
 `;
 
-export const Label = styled.label`
-    padding: 0 12px;
-
-    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
-        font-size: 12px;
-        padding: 0 8px;
-    };
-
-`;
-
-export const LabelSpan = styled.label`
-    color:red;
-`;
-
-export const Input = styled.input`
-    padding:  12px;
-    border-radius: 8px;
-    border: 2px solid ${({ theme }) => theme.color.thirdColor};
-    color: black;
-    transition: 0.3s;
-    max-width: 480px;
-    width: 100%;
-
-    &:focus {
-        outline: ${({ theme }) => theme.color.fontMain};
-    };
-
-    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
-        padding: 8px;
-        font-size: 14px;
-    };
-`;
-
 export const ApplyButton = styled.button`
     width: 40%;
     margin: 0 auto;
