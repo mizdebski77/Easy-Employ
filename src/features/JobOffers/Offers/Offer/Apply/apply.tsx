@@ -7,21 +7,32 @@ import TextField from '@mui/material/TextField';
 
 export const Apply = () => {
 
-
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [portfolio, setPortfolio] = useState('');
     const [linkedin, setLinkedin] = useState('');
-
     const [file, setFile] = useState<File | null>(null);
+
     const handleChange = (file: File) => {
         setFile(file);
     };
+
+    const resetInputs = () => {
+        setName('');
+        setEmail('');
+        setPortfolio('');
+        setLinkedin('');
+        setFile(null); 
+    }
 
     const fileTypes = ["PDF",];
 
     const onFormSubmit = (event: React.FormEvent) => {
         event.preventDefault();
+        const formData = { name, email, portfolio, linkedin, file };
+
+        console.log(formData);
+        resetInputs();
     }
 
 
@@ -41,7 +52,6 @@ export const Apply = () => {
                         type='name'
                         helperText='Please enter your full name'
                         onChange={({ target }) => setName(target.value)}
-
                     />
 
                     <TextField
@@ -52,7 +62,7 @@ export const Apply = () => {
                         required
                         type='email'
                         helperText='Please use correct formatting'
-                        onChange={({ target }) => setName(target.value)}
+                        onChange={({ target }) => setEmail(target.value)}
 
                     />
 
@@ -64,7 +74,7 @@ export const Apply = () => {
                         required
                         type='text'
                         helperText='Please use correct link'
-                        onChange={({ target }) => setName(target.value)}
+                        onChange={({ target }) => setPortfolio(target.value)}
 
                     />
 
@@ -75,7 +85,7 @@ export const Apply = () => {
                         variant="outlined"
                         type='text'
                         helperText='Please use correct link'
-                        onChange={({ target }) => setName(target.value)}
+                        onChange={({ target }) => setLinkedin(target.value)}
 
                     />
                 </InputsWrapper>
