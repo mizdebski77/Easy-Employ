@@ -34,6 +34,16 @@ export const Form = styled.form`
     };
 `;
 
+export const InputsWrapper = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        grid-template-columns: 1fr;
+    };
+`;
+
 export const LabelWrapper = styled.div`
     display: flex;
     justify-content: space-between;
@@ -85,7 +95,7 @@ export const Input = styled.input`
 `;
 
 export const ApplyButton = styled.button`
-    width: 32%;
+    width: 40%;
     margin: 0 auto;
     padding: 12px;
     border-radius: 8px;
@@ -101,6 +111,10 @@ export const ApplyButton = styled.button`
 
     &:active {
         background: ${({ theme }) => theme.color.fontMainActive};
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
+        width: 100%;
     };
 `;
 
