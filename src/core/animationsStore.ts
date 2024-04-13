@@ -14,6 +14,7 @@ export const closeWindow = {
     scale: 0,
 };
 
+
 export const menuVariant = {
     hidden: {
         x: "-100%",
