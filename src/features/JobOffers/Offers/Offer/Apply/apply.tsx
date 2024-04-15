@@ -17,22 +17,11 @@ export const Apply = () => {
         setFile(file);
     };
 
-    const resetInputs = () => {
-        setName('');
-        setEmail('');
-        setPortfolio('');
-        setLinkedin('');
-        setFile(null); 
-    }
 
     const fileTypes = ["PDF",];
 
     const onFormSubmit = (event: React.FormEvent) => {
         event.preventDefault();
-        const formData = { name, email, portfolio, linkedin, file };
-
-        console.log(formData);
-        resetInputs();
     }
 
 
