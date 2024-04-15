@@ -10,6 +10,7 @@ import { Footer } from "../common/Footer/footer";
 import { Register } from "../features/Register/register";
 import { ResetPassword } from "../features/LogIn/ResetPassword/resetPassword";
 import { Offer } from "../features/JobOffers/Offers/Offer/offer";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   return (
@@ -27,6 +28,18 @@ function App() {
         <Route path="/Register" element={<Register />} />
         <Route path="/password-reset" element={<ResetPassword />} />
       </Routes>
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover={false}
+        theme="dark"
+      />
       <Footer />
     </BrowserRouter>
   );

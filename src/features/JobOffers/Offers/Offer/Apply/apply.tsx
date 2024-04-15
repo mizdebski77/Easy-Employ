@@ -25,7 +25,7 @@ export const Apply = () => {
         event.preventDefault();
     };
 
-    const notify = () => toast("Wow so easy!")
+    const notify = () => toast.success("Wow so easy!")
 
 
 
@@ -97,7 +97,7 @@ export const Apply = () => {
                         </FileUploader>
                     </InputContainer>
                 </LabelWrapper>
-                <ApplyButton>Apply</ApplyButton>
+                <ApplyButton onClick={notify}>Apply</ApplyButton>
             </Form>
         </Wrapper>
     );
