@@ -4,7 +4,8 @@ import { FileUploader } from "react-drag-drop-files";
 import dnd from '../../../../../common/Images/draganddrop.png';
 import fileImg from '../../../../../common/Images/SVG/file.svg';
 import TextField from '@mui/material/TextField';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const Apply = () => {
 
@@ -25,7 +26,7 @@ export const Apply = () => {
         event.preventDefault();
     };
 
-    const notify = () => toast.success("Wow so easy!")
+    const notify = () => toast.success("Wow! That was easy!");
 
 
 
