@@ -12,7 +12,7 @@ import SP from '../common/Images/Flags/sp.png'
 import fb from '../common/Images/SocialMedia/fb.png';
 import link from '../common/Images/SocialMedia/link.png';
 import google from '../common/Images/SocialMedia/google.png';
-
+import insta from '../common/Images/SocialMedia/ig.png';
 
 export const tiles = [
     {
@@ -157,3 +157,9 @@ export const footerLinks = [
     'Privacy policy',
     'Cookie policy'
 ];
+
+export const socials = [
+    { path: fb, text: 'Facebook' },
+    { path: insta, text: 'Instagram' },
+    { path: link, text: 'Linkedin' }
+]

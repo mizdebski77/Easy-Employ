@@ -7,10 +7,12 @@ import link from '../Images/SocialMedia/link.png';
 import fb from '../Images/SocialMedia/fb.png';
 import insta from '../Images/SocialMedia/ig.png';
 import { scrollTop } from '../../core/scrollTop';
-import { footerLinks, links } from '../../core/arrays';
+import { footerLinks, links, socials } from '../../core/arrays';
 
 
 export const Footer = () => {
+
+
     return (
         <Wrapper>
             <MainSection>
@@ -46,9 +48,9 @@ export const Footer = () => {
                 ))}
 
                 <InformationAppWrapper>
-                    <SocialLink src={link} />
-                    <SocialLink src={fb} />
-                    <SocialLink src={insta} />
+                    {socials.map((image) => (
+                        <SocialLink key={image.text} src={image.path} alt={image.text} />
+                    ))}
                 </InformationAppWrapper>
             </IformationsWrapper>
         </Wrapper>
