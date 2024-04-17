@@ -21,7 +21,17 @@ export const Apply = () => {
         portfolio: false,
     });
 
-    const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const [file, setFile] = useState<File | null>(null)
+
+    const handleChange = (file: File) => {
+        setFile(file);
+    };
+
+    const fileTypes = ["PDF",];
+
+
+
+    const handleInputsChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = event.target;
         setFormData({ ...formData, [name]: value });
 
@@ -47,17 +57,12 @@ export const Apply = () => {
         event.preventDefault();
     };
 
-    console.log(formData);
-    
-
-
-
 
     return (
         <Wrapper>
             <ApplyTitle>Apply for this position</ApplyTitle>
 
-            <Form onSubmit={onFormSubmit}>
+            <Form onSubmit={onFormSubmit} noValidate>
                 <InputsWrapper>
 
                     <TextField
@@ -65,7 +70,7 @@ export const Apply = () => {
                         label="Name"
                         name="name"
                         value={formData.name}
-                        onChange={handleChange}
+                        onChange={handleInputsChange}
                         error={formErrors.name}
                         inputProps={{
                             pattern: "[A-Za-z ]+",
@@ -77,10 +82,10 @@ export const Apply = () => {
 
                     <TextField
                         required
-                        label="Name"
+                        label="Surname"
                         name="surname"
                         value={formData.surname}
-                        onChange={handleChange}
+                        onChange={handleInputsChange}
                         error={formErrors.surname}
                         inputProps={{
                             pattern: "[A-Za-z ]+",
@@ -95,11 +100,11 @@ export const Apply = () => {
                         label="Email"
                         name="email"
                         value={formData.email}
-                        onChange={handleChange}
+                        onChange={handleInputsChange}
                         error={formErrors.email}
                         helperText={formErrors.email ? "Please enter a valid email Example: name@domain.com" : ""}
                         inputProps={{
-                            type: "email",
+                            pattern: "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                         }}
                     />
 
@@ -108,7 +113,7 @@ export const Apply = () => {
                         label="Github / Portfolio Link"
                         name="portfolio"
                         value={formData.portfolio}
-                        onChange={handleChange}
+                        onChange={handleInputsChange}
                         error={formErrors.portfolio}
                         helperText={formErrors.portfolio ? "Please use the correct link. Example: https://domain.com" : ""}
                         inputProps={{
@@ -120,7 +125,16 @@ export const Apply = () => {
 
                 <LabelWrapper>
                     <InputContainer>
+                        <FileUploader handleChange={handleChange} name="my FIle" types={fileTypes} required >
+                            <FileWrapper>
+                                <FileImg src={file ? fileImg : dnd} />
+                                <FileName>{file ? file.name : 'Upload your CV'}</FileName>
+                                {file ? (
+                                    <RemoveButton onClick={() => setFile(null)}>✖</RemoveButton>
+                                ) : null}
+                            </FileWrapper>
 
+                        </FileUploader>
                     </InputContainer>
                 </LabelWrapper>
                 <ApplyButton >Apply</ApplyButton>
