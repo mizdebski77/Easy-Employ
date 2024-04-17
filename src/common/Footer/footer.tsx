@@ -3,9 +3,6 @@ import { AppImg, AppTitle, AppWrapper, IformationsWrapper, InformationAppWrapper
 import logo from '../Images/logo.png';
 import app from '../Images/Home/app.png';
 import google from '../Images/Home/google.png';
-import link from '../Images/SocialMedia/link.png';
-import fb from '../Images/SocialMedia/fb.png';
-import insta from '../Images/SocialMedia/ig.png';
 import { scrollTop } from '../../core/scrollTop';
 import { footerLinks, links, socials } from '../../core/arrays';
 
