@@ -80,6 +80,15 @@ export const ApplyButton = styled.button`
         background: ${({ theme }) => theme.color.fontMainActive};
     };
 
+    &:disabled {
+        opacity: 0.3;
+        cursor: no-drop;
+
+        &:hover {
+            background: ${({ theme }) => theme.color.fontMain};
+    };
+    }
+
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         width: 100%;
     };

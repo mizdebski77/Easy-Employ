@@ -6,7 +6,7 @@ import fileImg from '../../../../../common/Images/SVG/file.svg';
 import TextField from '@mui/material/TextField';
 
 export const Apply = () => {
-
+    const [formdValidate, setFormValidate] = useState(false);
     const [formData, setFormData] = useState({
         name: '',
         surname: '',
@@ -30,6 +30,17 @@ export const Apply = () => {
     const fileTypes = ["PDF",];
 
 
+    const isFormValid = () => {
+        if (formData.name.trim() === '' ||
+            formData.surname.trim() === '' ||
+            formData.email.trim() === '' ||
+            formData.portfolio.trim() === '' ||
+            file === null) {
+            return false;
+        } else {
+            return true;
+        }
+    };
 
     const handleInputsChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = event.target;
@@ -56,6 +67,9 @@ export const Apply = () => {
     const onFormSubmit = (event: React.FormEvent) => {
         event.preventDefault();
     };
+
+    console.log(formData.name);
+
 
 
     return (
@@ -137,7 +151,7 @@ export const Apply = () => {
                         </FileUploader>
                     </InputContainer>
                 </LabelWrapper>
-                <ApplyButton >Apply</ApplyButton>
+                <ApplyButton disabled={!isFormValid()}>Apply</ApplyButton>
             </Form>
         </Wrapper>
     );
