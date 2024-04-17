@@ -4,29 +4,52 @@ import { FileUploader } from "react-drag-drop-files";
 import dnd from '../../../../../common/Images/draganddrop.png';
 import fileImg from '../../../../../common/Images/SVG/file.svg';
 import TextField from '@mui/material/TextField';
-import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
 export const Apply = () => {
 
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [portfolio, setPortfolio] = useState('');
-    const [linkedin, setLinkedin] = useState('');
-    const [file, setFile] = useState<File | null>(null);
+    const [formData, setFormData] = useState({
+        name: '',
+        surname: '',
+        email: '',
+        portfolio: '',
+    });
 
-    const handleChange = (file: File) => {
-        setFile(file);
+    const [formErrors, setFormErrors] = useState({
+        name: false,
+        surname: false,
+        email: false,
+        portfolio: false,
+    });
+
+    const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        const { name, value } = event.target;
+        setFormData({ ...formData, [name]: value });
+
+        switch (name) {
+            case 'name':
+                setFormErrors({ ...formErrors, name: !event.target.validity.valid });
+                break;
+            case 'surname':
+                setFormErrors({ ...formErrors, surname: !event.target.validity.valid });
+                break;
+            case 'email':
+                setFormErrors({ ...formErrors, email: !event.target.validity.valid });
+                break;
+            case 'portfolio':
+                setFormErrors({ ...formErrors, portfolio: !event.target.validity.valid });
+                break;
+            default:
+                break;
+        }
     };
-
-
-    const fileTypes = ["PDF",];
 
     const onFormSubmit = (event: React.FormEvent) => {
         event.preventDefault();
     };
 
-    const notify = () => toast.success("Wow! That was easy!");
+    console.log(formData);
+    
+
 
 
 
@@ -36,69 +59,71 @@ export const Apply = () => {
 
             <Form onSubmit={onFormSubmit}>
                 <InputsWrapper>
+
                     <TextField
-                        error
-                        id="outlined-basic"
-                        label='Full Name'
-                        variant="outlined"
                         required
-                        type='name'
-                        helperText='Please enter your full name'
-                        onChange={({ target }) => setName(target.value)}
+                        label="Name"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleChange}
+                        error={formErrors.name}
+                        inputProps={{
+                            pattern: "[A-Za-z ]+",
+                        }}
+                        helperText={
+                            formErrors.name ? "Please enter your name (letters and spaces only)" : ""
+                        }
                     />
 
                     <TextField
-                        error
-                        id="outlined-basic"
-                        label='E-Mail'
-                        variant="outlined"
                         required
-                        type='email'
-                        helperText='Please use correct formatting'
-                        onChange={({ target }) => setEmail(target.value)}
-
+                        label="Name"
+                        name="surname"
+                        value={formData.surname}
+                        onChange={handleChange}
+                        error={formErrors.surname}
+                        inputProps={{
+                            pattern: "[A-Za-z ]+",
+                        }}
+                        helperText={
+                            formErrors.surname ? "Please enter your surname (letters and spaces only)" : ""
+                        }
                     />
 
                     <TextField
-                        error
-                        id="outlined-basic"
-                        label='GitHub / Porfolio Link'
-                        variant="outlined"
                         required
-                        type='text'
-                        helperText='Please use correct link'
-                        onChange={({ target }) => setPortfolio(target.value)}
-
+                        label="Email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        error={formErrors.email}
+                        helperText={formErrors.email ? "Please enter a valid email Example: name@domain.com" : ""}
+                        inputProps={{
+                            type: "email",
+                        }}
                     />
 
                     <TextField
-                        error
-                        id="outlined-basic"
-                        label='Linkedin'
-                        variant="outlined"
-                        type='text'
-                        helperText='Please use correct link'
-                        onChange={({ target }) => setLinkedin(target.value)}
-
+                        required
+                        label="Github / Portfolio Link"
+                        name="portfolio"
+                        value={formData.portfolio}
+                        onChange={handleChange}
+                        error={formErrors.portfolio}
+                        helperText={formErrors.portfolio ? "Please use the correct link. Example: https://domain.com" : ""}
+                        inputProps={{
+                            pattern: "^(ftp|http|https):\/\/[^ \" ]+$",
+                        }}
                     />
+
                 </InputsWrapper>
-
 
                 <LabelWrapper>
                     <InputContainer>
-                        <FileUploader handleChange={handleChange} name="my FIle" types={fileTypes} >
-                            <FileWrapper>
-                                <FileImg src={file ? fileImg : dnd} />
-                                <FileName>{file ? file.name : 'Upload your CV'}</FileName>
-                                {file ? (
-                                    <RemoveButton onClick={() => setFile(null)}>✖</RemoveButton>
-                                ) : null}
-                            </FileWrapper>
 
-                        </FileUploader>
                     </InputContainer>
                 </LabelWrapper>
-                <ApplyButton onClick={notify}>Apply</ApplyButton>
+                <ApplyButton >Apply</ApplyButton>
             </Form>
         </Wrapper>
     );
