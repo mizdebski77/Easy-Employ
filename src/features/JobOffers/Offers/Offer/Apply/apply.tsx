@@ -4,6 +4,9 @@ import { FileUploader } from "react-drag-drop-files";
 import dnd from '../../../../../common/Images/draganddrop.png';
 import fileImg from '../../../../../common/Images/SVG/file.svg';
 import TextField from '@mui/material/TextField';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 export const Apply = () => {
     const [formdValidate, setFormValidate] = useState(false);
@@ -66,9 +69,11 @@ export const Apply = () => {
 
     const onFormSubmit = (event: React.FormEvent) => {
         event.preventDefault();
+
+        console.log(formData, file);
     };
 
-    console.log(formData.name);
+    const notify = () => toast.success("Your application has been sent!");
 
 
 
@@ -87,10 +92,10 @@ export const Apply = () => {
                         onChange={handleInputsChange}
                         error={formErrors.name}
                         inputProps={{
-                            pattern: "[A-Za-z ]+",
+                            pattern: "[A-Za-z]+",
                         }}
                         helperText={
-                            formErrors.name ? "Please enter your name (letters and spaces only)" : ""
+                            formErrors.name ? "Please enter your name (letters only)" : ""
                         }
                     />
 
@@ -102,10 +107,10 @@ export const Apply = () => {
                         onChange={handleInputsChange}
                         error={formErrors.surname}
                         inputProps={{
-                            pattern: "[A-Za-z ]+",
+                            pattern: "[A-Za-z]+",
                         }}
                         helperText={
-                            formErrors.surname ? "Please enter your surname (letters and spaces only)" : ""
+                            formErrors.surname ? "Please enter your surname (letters only)" : ""
                         }
                     />
 
@@ -151,7 +156,7 @@ export const Apply = () => {
                         </FileUploader>
                     </InputContainer>
                 </LabelWrapper>
-                <ApplyButton disabled={!isFormValid()}>Apply</ApplyButton>
+                <ApplyButton onClick={notify} disabled={!isFormValid()}>Apply</ApplyButton>
             </Form>
         </Wrapper>
     );
