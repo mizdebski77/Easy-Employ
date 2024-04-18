@@ -66,14 +66,23 @@ export const Apply = () => {
                 break;
         }
     };
+    const notify = () => toast.success("Your application has been sent!");
 
     const onFormSubmit = (event: React.FormEvent) => {
         event.preventDefault();
 
-        console.log(formData, file);
+        setFormData({
+            name: '',
+            surname: '',
+            email: '',
+            portfolio: '',
+        });
+        setFile(null);
+
+        notify();
     };
 
-    const notify = () => toast.success("Your application has been sent!");
+
 
 
 
@@ -156,7 +165,7 @@ export const Apply = () => {
                         </FileUploader>
                     </InputContainer>
                 </LabelWrapper>
-                <ApplyButton onClick={notify} disabled={!isFormValid()}>Apply</ApplyButton>
+                <ApplyButton disabled={!isFormValid()}>Apply</ApplyButton>
             </Form>
         </Wrapper>
     );
