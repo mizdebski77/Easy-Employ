@@ -9,7 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 export const Apply = () => {
-    const [formdValidate, setFormValidate] = useState(false);
+
     const [formData, setFormData] = useState({
         name: '',
         surname: '',
@@ -132,7 +132,7 @@ export const Apply = () => {
                         error={formErrors.email}
                         helperText={formErrors.email ? "Please enter a valid email Example: name@domain.com" : ""}
                         inputProps={{
-                            pattern: "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                            type: "email",
                         }}
                     />
 
