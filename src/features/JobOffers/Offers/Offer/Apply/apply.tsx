@@ -32,6 +32,10 @@ export const Apply = () => {
 
     const fileTypes = ["PDF",];
 
+    const hasErrors = Object.values(formErrors).some(error => error);
+
+    console.log(hasErrors);
+
 
     const isFormValid = () => {
         if (formData.name.trim() === '' ||
@@ -81,8 +85,6 @@ export const Apply = () => {
 
         notify();
     };
-
-
 
 
 
@@ -165,8 +167,8 @@ export const Apply = () => {
                         </FileUploader>
                     </InputContainer>
                 </LabelWrapper>
-                <ApplyButton disabled={!isFormValid()}>Apply</ApplyButton>
+                <ApplyButton disabled={!isFormValid() || hasErrors === true}>Apply</ApplyButton>
             </Form>
-        </Wrapper>
+        </Wrapper >
     );
 };
