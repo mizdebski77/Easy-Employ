@@ -134,9 +134,9 @@ export const Carrer = () => {
 
                 </Tile>
 
-            </ElementWrapper> 
+            </ElementWrapper>
 
-             <SectionTitle>
+            <SectionTitle>
                 Education
             </SectionTitle>
 

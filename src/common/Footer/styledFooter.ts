@@ -65,6 +65,7 @@ export const ToolsTitle = styled.span`
     font-size: 32px;
     font-weight: normal;
     margin-bottom: 20px;
+    text-align: center;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         font-size: 20px;
@@ -75,7 +76,8 @@ export const ToolsTitle = styled.span`
 export const ToolsLinksWrapper = styled.div`
     display: grid;  
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
+    text-align: center;
 `;
 
 export const ToolsLink = styled(Link)`

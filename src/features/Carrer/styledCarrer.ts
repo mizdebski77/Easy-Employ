@@ -308,11 +308,12 @@ export const ButtonsWrapper = styled.div`
 export const DeleteButton = styled.button`
     color: ${({ theme }) => theme.color.secondColor};
     background: #ca0000;
-    padding: 8px 40px;
+    padding: 10px 40px;
     border: none;
-    border-radius: 20px;
+    border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
+    max-width: 160px;
 
     &:hover {
         background: #f40000;
