@@ -143,6 +143,8 @@ export const IformationsWrapper = styled.section`
         flex-direction: column;
         gap: 40px;
         padding: 20px 0px;
+        justify-content: center;
+        align-items: center;
     };
 `;
 
@@ -154,7 +156,7 @@ export const InformationsLinksWrapper = styled.div`
     
     @media (max-width: ${({ theme }) => theme.breakPoint.thirdBp}px){
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 20px;
     };
 `;
