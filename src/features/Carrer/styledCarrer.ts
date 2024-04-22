@@ -339,7 +339,7 @@ export const Input = styled.input`
     padding:  12px;
     max-width: 640px;
     width: 100%;
-    border-radius: 20px 0 0 20px;
+    border-radius: 8px 0 0 8px;
     border: none;
     background: ${({ theme }) => theme.color.thirdColor};
 
@@ -355,7 +355,7 @@ export const Input = styled.input`
 export const AddButton = styled.button`
     padding: 0 80px;
     border: none;
-    border-radius: 0 20px 20px 0;
+    border-radius: 0 8px 8px 0;
     background: ${({ theme }) => theme.color.fontMain};
     color: ${({ theme }) => theme.color.secondColor};
     transition: 0.3s;

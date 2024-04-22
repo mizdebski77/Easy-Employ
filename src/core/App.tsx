@@ -21,10 +21,8 @@ function App() {
         <Route path="/Home" element={<Home />} />
         <Route path="/Log-In" element={<LogIn />} />
         <Route path="/Carrer" element={<Carrer />} />
-        <Route path="/Calculator" element={<Calculator />} />
         <Route path="/Offers" element={<JobOffers />} />
         <Route path="/Offer/:id" element={<Offer />} />
-        <Route path="/CV-Creator" element={<Creator />} />
         <Route path="/Register" element={<Register />} />
         <Route path="/password-reset" element={<ResetPassword />} />
       </Routes>

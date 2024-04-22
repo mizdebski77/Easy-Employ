@@ -173,8 +173,6 @@ export const Carrer = () => {
             <SectionTitle>
                 Skillset
             </SectionTitle>
-
-
             <ElementWrapper>
                 <SkillsForm>
                     <Input placeholder='Skill' />
