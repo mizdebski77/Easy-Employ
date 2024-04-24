@@ -14,7 +14,41 @@ const carrerSlice = createSlice({
             position: '',
             email: '',
             number: ''
-        }
+        },
+
+        workExperience: {
+            position: '',
+            date: '',
+            company: '',
+            description: ''
+        },
+
+        education: {
+            school: '',
+            date: '',
+            profile: '',
+            title: '',
+        },
+
+        languages: {
+            languuage: '',
+            level: '',
+        },
+
+        keyWords: [],
+
+        courses: {
+            name: '',
+            date: '',
+            organizer: '',
+        },
+
+        hobbies: [],
+
+        links: {
+            name: '',
+            linkg: ''
+        },
     },
     reducers: {
 
