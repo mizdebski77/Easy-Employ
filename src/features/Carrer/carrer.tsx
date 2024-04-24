@@ -48,6 +48,7 @@ import linkedin from '../../common/Images/SocialMedia/link.png';
 import gh from '../../common/Images/SocialMedia/gh.png';
 
 export const Carrer = () => {
+
     return (
         <Wrapper>
             <Title> My Career</Title>

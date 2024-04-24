@@ -41,3 +41,21 @@ export interface OfferArray {
     keywords: string[];
 };
 
+export interface BasicInformations {
+    name: string;
+    location: string;
+    position: string;
+    email: string;
+    number: number
+}
+
+export interface CarrerArray {
+    basicInormations: Array<{
+        name: string;
+        location: string;
+        position: string;
+        email: string;
+        number: number
+    }>
+}
+

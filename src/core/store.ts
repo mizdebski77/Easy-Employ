@@ -1,10 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
 import filtersReducer from '../features/JobOffers/Filters/filtersSlice';
 import navigationReducer from '../common/Navigation/MobileNavbar/navigationSlice';
+import carrerReducer from '../features/Carrer/carrerSlice';
+
 const store = configureStore({
     reducer: {
         filters: filtersReducer,
-        navigation: navigationReducer
+        navigation: navigationReducer,
+        carrer: carrerReducer,
     },
 });
 
