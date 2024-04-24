@@ -46,8 +46,13 @@ import location from '../../common/Images/location.png';
 import facebook from '../../common/Images/SocialMedia/fb.png';
 import linkedin from '../../common/Images/SocialMedia/link.png';
 import gh from '../../common/Images/SocialMedia/gh.png';
+import { useSelector } from 'react-redux';
+import { RootState } from '../../core/store';
 
 export const Carrer = () => {
+
+    const basicInformations = useSelector((state: RootState) => state.carrer.basicInformations)
+
 
     return (
         <Wrapper>
@@ -59,14 +64,14 @@ export const Carrer = () => {
                 </PhotoSection>
 
                 <ContentWrapper>
-                    <Name>Marcin Izdebski </Name>
+                    <Name>{basicInformations.name} </Name>
 
                     <LocationWrapper>
                         <LocationImg src={location} />
-                        <LocationSpan> Olkusz, Małopolskie</LocationSpan>
+                        <LocationSpan> {basicInformations.location} </LocationSpan>
                     </LocationWrapper>
 
-                    <TitleSpan>Frontend Developer</TitleSpan>
+                    <TitleSpan>{basicInformations.position} </TitleSpan>
                 </ContentWrapper>
 
                 <ButtonWrapper>
@@ -81,12 +86,12 @@ export const Carrer = () => {
             <ContactWrapper>
                 <ContactItems>
                     <ContactSpan> E-Mail: </ContactSpan>
-                    <ContactInformation>mizdebski123@gmail.com:</ContactInformation>
+                    <ContactInformation>{basicInformations.email}</ContactInformation>
                 </ContactItems>
 
                 <ContactItems>
                     <ContactSpan>Phone: </ContactSpan>
-                    <ContactInformation>501375604</ContactInformation>
+                    <ContactInformation>{basicInformations.number}</ContactInformation>
                 </ContactItems>
 
                 <IconsWrapper>
