@@ -54,6 +54,7 @@ export const Carrer = () => {
     const basicInformations = useSelector((state: RootState) => state.carrer.basicInformations)
 
 
+
     return (
         <Wrapper>
             <Title> My Career</Title>
