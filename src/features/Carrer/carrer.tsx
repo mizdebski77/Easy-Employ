@@ -40,6 +40,7 @@ import {
     SkillsContainer,
     RemoveSkillButton,
     Skill,
+    FullScreenWrapper,
 } from './styledCarrer';
 import profile from '../../common/Images/profileStack.png';
 import location from '../../common/Images/location.png';
@@ -53,10 +54,14 @@ export const Carrer = () => {
 
     const basicInformations = useSelector((state: RootState) => state.carrer.basicInformations)
 
+    console.log(basicInformations);
 
 
     return (
         <Wrapper>
+            <FullScreenWrapper>
+                    
+            </FullScreenWrapper>
             <Title> My Career</Title>
 
             <InformationWrapper>

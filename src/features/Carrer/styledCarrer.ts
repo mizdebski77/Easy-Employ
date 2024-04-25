@@ -11,6 +11,37 @@ export const Wrapper = styled.section`
     };
 `;
 
+export const FullScreenWrapper = styled.div`
+    display: block;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`;
+
+export const CloseButton = styled.button`
+    position: fixed;
+    z-index: 1;
+    top: 80px;
+    color: ${({ theme }) => theme.color.fontMain};
+    transition: 0.3s;
+    cursor: pointer;
+    right: 80px;
+    background: transparent;
+    border: none;
+
+    &:hover {
+        transform: scale(1.2);
+    };
+`;
+
 export const Title = styled.h1`
     font-size: 54px;
     letter-spacing: 4px;
