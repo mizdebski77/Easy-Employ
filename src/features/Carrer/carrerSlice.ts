@@ -8,6 +8,7 @@ interface CarrerState {
 const carrerSlice = createSlice({
     name: "carrer",
     initialState: {
+        editWindow: false,
         basicInformations: {
             name: '',
             location: '',
@@ -52,10 +53,16 @@ const carrerSlice = createSlice({
     },
     reducers: {
 
+        toggleEditWindow: state => {
+            state.editWindow = !state.editWindow
+        },
+
     }
 })
 
 export const selectCarrerState = (state: CarrerState) => state;
 export const SelectCarrer = (state: CarrerState) => state.basicInformations;
 
+
+export const { toggleEditWindow } = carrerSlice.actions;
 export default carrerSlice.reducer;

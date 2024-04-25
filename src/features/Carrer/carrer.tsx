@@ -48,21 +48,24 @@ import location from '../../common/Images/location.png';
 import facebook from '../../common/Images/SocialMedia/fb.png';
 import linkedin from '../../common/Images/SocialMedia/link.png';
 import gh from '../../common/Images/SocialMedia/gh.png';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../../core/store';
 import { AiOutlineClose } from 'react-icons/ai'
+import { toggleEditWindow } from './carrerSlice';
 
 export const Carrer = () => {
 
-    const basicInformations = useSelector((state: RootState) => state.carrer.basicInformations)
+    const dispatch = useDispatch();
+    const data = useSelector((state: RootState) => state.carrer)
+    const editWindow = data.editWindow;
 
-    console.log(basicInformations);
+    console.log(data);
 
 
     return (
         <Wrapper>
             <FullScreenWrapper>
-                <CloseButton>
+                <CloseButton onClick={() => dispatch(toggleEditWindow())}>
                     <AiOutlineClose size={35} />
                 </CloseButton>
             </FullScreenWrapper>
@@ -74,14 +77,14 @@ export const Carrer = () => {
                 </PhotoSection>
 
                 <ContentWrapper>
-                    <Name>{basicInformations.name} </Name>
+                    <Name>{data.basicInformations.name} </Name>
 
                     <LocationWrapper>
                         <LocationImg src={location} />
-                        <LocationSpan> {basicInformations.location} </LocationSpan>
+                        <LocationSpan> {data.basicInformations.location} </LocationSpan>
                     </LocationWrapper>
 
-                    <TitleSpan>{basicInformations.position} </TitleSpan>
+                    <TitleSpan>{data.basicInformations.position} </TitleSpan>
                 </ContentWrapper>
 
                 <ButtonWrapper>
@@ -96,12 +99,12 @@ export const Carrer = () => {
             <ContactWrapper>
                 <ContactItems>
                     <ContactSpan> E-Mail: </ContactSpan>
-                    <ContactInformation>{basicInformations.email}</ContactInformation>
+                    <ContactInformation>{data.basicInformations.email}</ContactInformation>
                 </ContactItems>
 
                 <ContactItems>
                     <ContactSpan>Phone: </ContactSpan>
-                    <ContactInformation>{basicInformations.number}</ContactInformation>
+                    <ContactInformation>{data.basicInformations.number}</ContactInformation>
                 </ContactItems>
 
                 <IconsWrapper>
