@@ -41,6 +41,7 @@ import {
     RemoveSkillButton,
     Skill,
     FullScreenWrapper,
+    CloseButton,
 } from './styledCarrer';
 import profile from '../../common/Images/profileStack.png';
 import location from '../../common/Images/location.png';
@@ -49,6 +50,7 @@ import linkedin from '../../common/Images/SocialMedia/link.png';
 import gh from '../../common/Images/SocialMedia/gh.png';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../core/store';
+import { AiOutlineClose } from 'react-icons/ai'
 
 export const Carrer = () => {
 
@@ -60,7 +62,9 @@ export const Carrer = () => {
     return (
         <Wrapper>
             <FullScreenWrapper>
-                    
+                <CloseButton>
+                    <AiOutlineClose size={35} />
+                </CloseButton>
             </FullScreenWrapper>
             <Title> My Career</Title>
 
