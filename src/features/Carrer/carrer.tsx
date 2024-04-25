@@ -52,6 +52,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../../core/store';
 import { AiOutlineClose } from 'react-icons/ai'
 import { toggleEditWindow } from './carrerSlice';
+import { AnimatePresence, motion } from 'framer-motion';
+import { closeWrapper, openWrapper } from '../../core/animationsStore';
 
 export const Carrer = () => {
 
@@ -59,16 +61,26 @@ export const Carrer = () => {
     const data = useSelector((state: RootState) => state.carrer)
     const editWindow = data.editWindow;
 
-    console.log(data);
+    console.log(editWindow);
 
 
     return (
         <Wrapper>
-            <FullScreenWrapper>
-                <CloseButton onClick={() => dispatch(toggleEditWindow())}>
-                    <AiOutlineClose size={35} />
-                </CloseButton>
-            </FullScreenWrapper>
+
+            {editWindow && (
+                <AnimatePresence>
+                    <FullScreenWrapper
+                        as={motion.div}
+                        initial={closeWrapper}
+                        animate={editWindow ? openWrapper : closeWrapper}
+                        transition={{ duration: 0.5 }}
+                    >
+                        <CloseButton onClick={() => dispatch(toggleEditWindow())}>
+                            <AiOutlineClose size={35} />
+                        </CloseButton>
+                    </FullScreenWrapper>
+                </AnimatePresence>
+            )}
             <Title> My Career</Title>
 
             <InformationWrapper>
@@ -88,7 +100,7 @@ export const Carrer = () => {
                 </ContentWrapper>
 
                 <ButtonWrapper>
-                    <EditButton>✎ Edit</EditButton>
+                    <EditButton onClick={() => dispatch(toggleEditWindow())}>✎ Edit</EditButton>
                 </ButtonWrapper>
             </InformationWrapper>
 
