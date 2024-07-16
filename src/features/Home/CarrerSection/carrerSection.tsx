@@ -21,7 +21,7 @@ export const CarrerSection = () => {
                             ))}
                         </TextWrapper>
                     </ContentWrapper>
-                    <ProfileLink to="/Carrer" onClick={() => scrollTop()}>Go to profile </ProfileLink>
+                    <ProfileLink to="/Carrer" onClick={() => scrollTop()}>Log In </ProfileLink>
                 </ProfileWrapper>
 
                 <TilesWrapper>

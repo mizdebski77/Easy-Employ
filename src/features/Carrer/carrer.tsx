@@ -61,9 +61,6 @@ export const Carrer = () => {
     const data = useSelector((state: RootState) => state.carrer)
     const editWindow = data.editWindow;
 
-    console.log(editWindow);
-
-
     return (
         <Wrapper>
 
@@ -149,25 +146,9 @@ export const Carrer = () => {
 
                 </Tile>
 
-                <Tile>
-                    <ContentWrapper>
-                        <TileTitle>Frontend Developer / <ExperienceDate>02.12 - 04.12</ExperienceDate></TileTitle>
-                        <TileSecondTitle>Freelance</TileSecondTitle>
-
-                        <TileDescription>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur non, consectetur sint libero magni dolorum, eius nam quaerat distinctio ullam molestiae cum sit excepturi dolorem dolores architecto iusto inventore hic.
-                        </TileDescription>
-                    </ContentWrapper>
-                    <ButtonsWrapper>
-                        <EditButton>✎ Edit</EditButton>
-                        <DeleteButton>Delete</DeleteButton>
-                    </ButtonsWrapper>
-
-                </Tile>
-
             </ElementWrapper>
 
-            <SectionTitle>
+            {/* <SectionTitle>
                 Education
             </SectionTitle>
 
@@ -203,8 +184,8 @@ export const Carrer = () => {
 
             <SectionTitle>
                 Skillset
-            </SectionTitle>
-            <ElementWrapper>
+            </SectionTitle> */}
+            {/* <ElementWrapper>
                 <SkillsForm>
                     <Input placeholder='Skill' />
                     <AddButton>Add</AddButton>
@@ -266,7 +247,7 @@ export const Carrer = () => {
                         <DeleteButton>Delete</DeleteButton>
                     </ButtonsWrapper>
                 </Tile>
-            </ElementWrapper>
+            </ElementWrapper> */}
         </Wrapper>
     );
 };

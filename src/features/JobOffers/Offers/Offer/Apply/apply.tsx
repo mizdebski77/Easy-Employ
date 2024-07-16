@@ -34,8 +34,6 @@ export const Apply = () => {
 
     const hasErrors = Object.values(formErrors).some(error => error);
 
-    console.log(hasErrors);
-
 
     const isFormValid = () => {
         if (formData.name.trim() === '' ||
