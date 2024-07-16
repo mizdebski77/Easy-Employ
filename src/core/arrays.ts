@@ -20,7 +20,7 @@ export const tiles = [
         img: cv,
         title: 'CV Creator',
         text: 'Create your CV in a few simple steps with our "Your CV Maker" website',
-        link: 'https://ycm-rhj5xm8pt-mizdebski77s-projects.vercel.app/',
+        link: 'https://ycm-orcin.vercel.app/',
     },
 
     {
